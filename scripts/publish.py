@@ -102,9 +102,14 @@ class Graph:
                        {"creation_id": container_id})
         return r["id"]
 
+    def identity(self):
+        """Real call even in a dry run: this is how we prove the token works."""
+        return self._call("GET", f"/{self.ig}", {"fields": "username,account_type"})
+
     def quota(self):
-        if self.dry_run:
-            return {"quota_usage": 0, "config": {"quota_total": 100}}
+        # Deliberately NOT faked in dry-run mode. A dry run that never talks to
+        # Meta cannot tell you the token is good, which is the main thing you
+        # want to know before a real post is due.
         return self._call("GET", f"/{self.ig}/content_publishing_limit",
                           {"fields": "config,quota_usage"})
 
@@ -213,6 +218,18 @@ def publish_one(g, cfg, post):
     return media_id
 
 
+def health_check(g):
+    """Prove the token, the account and the quota endpoint all work."""
+    me = g.identity()
+    print(f"connected to @{me.get('username','?')} "
+          f"({me.get('account_type','?')}, id {me.get('id', g.ig)})")
+    q = g.quota()
+    used = q.get("quota_usage", 0)
+    total = (q.get("config") or {}).get("quota_total", 100)
+    print(f"publishing quota: {used}/{total} used in the last 24h")
+    return used, total
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true",
@@ -236,6 +253,19 @@ def main():
     now = datetime.now(ZoneInfo("Europe/London"))
     print(f"now (London): {now:%Y-%m-%d %H:%M %Z}")
 
+    # Build the client either way: a dry run with no token still exercises the
+    # whole flow offline, which is what scripts/selftest.py relies on.
+    g = Graph(ig_user_id, token, cfg.get("api_version", "v25.0"), dry_run=dry)
+    used = total = None
+    if token and ig_user_id:
+        try:
+            used, total = health_check(g)
+        except PublishError as e:
+            print(f"CANNOT REACH INSTAGRAM: {e}", file=sys.stderr)
+            return 2
+    else:
+        print("no token set, skipping the Instagram connection check")
+
     due, stale = due_posts(queue, now)
 
     changed = False
@@ -252,13 +282,7 @@ def main():
             save(QUEUE, queue)
         return 1 if stale else 0
 
-    g = Graph(ig_user_id, token, cfg.get("api_version", "v25.0"), dry_run=dry)
-
-    q = g.quota()
-    used = q.get("quota_usage", 0)
-    total = (q.get("config") or {}).get("quota_total", 100)
-    print(f"publishing quota: {used}/{total} used in the last 24h")
-    if used + len(due) > total:
+    if used is not None and used + len(due) > total:
         print("would exceed the 24h publishing quota, stopping", file=sys.stderr)
         return 2
 
