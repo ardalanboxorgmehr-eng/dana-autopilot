@@ -1,0 +1,63 @@
+{
+  "glow": [40, 96, 170],
+  "tag": "ChatGPT · Interactive Flashcards",
+  "bgsrc": "s1.png",
+  "bgcrop": [0, 0, 1080, 900],
+  "slides": [
+    {
+      "kind": "cover",
+      "src": "s1.png",
+      "crop": [0, 0, 1080, 900],
+      "ph": 840,
+      "lines": [
+        "رایگان، روی همه‌ی اکانت‌ها",
+        "ChatGPT حالا از جزوه‌ی خودت",
+        "فلش‌کارت تعاملی می‌سازه"
+      ]
+    },
+    {
+      "kind": "card",
+      "title": "۱. دقیقا چی اضافه شده؟",
+      "sub": "از بیست‌ودوم سپتامبر، ChatGPT می‌تونه هر چیزی رو تبدیل به فلش‌کارت کنه.\nکارت‌ها تو خود چت باز می‌شن، برمی‌گردن و می‌شه باهاشون تمرین کرد. روی موبایل و وب، روی همه‌ی پلن‌ها از جمله رایگان."
+    },
+    {
+      "kind": "card",
+      "title": "۲. دو راه برای ساختنش",
+      "sub": "یا اسم موضوع رو بهش می‌گی و خودش کارت‌ها رو می‌سازه، یا جزوه و عکس و پی‌دی‌اف خودت رو آپلود می‌کنی و می‌گی از این فلش‌کارت بساز.",
+      "src": "d1.png"
+    },
+    {
+      "kind": "card",
+      "title": "۳. چطور باهاش تمرین می‌کنی",
+      "sub": "روی کارت ضربه می‌زنی تا برگرده و جواب رو ببینی. اگه بلد بودی تیک می‌زنی، اگه نه ضربدر، تا بعدا دوباره بیاد. ترتیب کارت‌ها رو هم می‌تونی به هم بزنی.",
+      "src": "d2.png"
+    },
+    {
+      "kind": "prompt",
+      "title": "۴. از جزوه‌ی خودت",
+      "sub": "فایل یا عکس جزوه رو آپلود کن، بعد این رو بفرست",
+      "prompt": "Turn the notes I just uploaded into interactive flashcards. One idea per card: a short question on the front, a short answer on the back. Start with the 20 hardest points and skip anything that is just a definition I already know.",
+      "hint": "برای امتحان و کنکور، دقیقا از روی جزوه‌ی خودت"
+    },
+    {
+      "kind": "prompt",
+      "title": "۵. برای لغت انگلیسی",
+      "sub": "بدون جزوه، فقط سطحت رو بگو",
+      "prompt": "Make interactive flashcards for 30 English words at IELTS band 6.5 level. Front: the word plus one natural example sentence. Back: a short Persian meaning and the two most common collocations.",
+      "hint": "سطح و تعداد رو هر جور خواستی عوض کن"
+    },
+    {
+      "kind": "card",
+      "acc": true,
+      "title": "۶. یه نکته که خیلی‌ها نمی‌دونن",
+      "sub": "کارت‌ها خودکار تو Library اکانتت ذخیره می‌شن. لازم نیست دوباره بسازی‌شون، کافیه بعدا بگی همون فلش‌کارت‌ها رو بیار تا مرورشون کنی."
+    },
+    {
+      "kind": "endcard",
+      "src": "s1.png",
+      "crop": [0, 0, 1080, 900],
+      "cta1": "کلمه‌ی «فلش» رو کامنت کن",
+      "cta2": "هر دو پرامپت رو آماده برات می‌فرستم تا فقط کپی کنی"
+    }
+  ]
+}

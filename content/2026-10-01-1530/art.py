@@ -1,7 +1,9 @@
 import math, os, random
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageChops
-POP="/usr/share/fonts/truetype/google-fonts/Poppins-Medium.ttf"
-POPB="/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf"
+import os as _os
+_FD=_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))),"build","fonts")
+POP=_os.path.join(_FD,"Poppins-Medium.ttf")
+POPB=_os.path.join(_FD,"Poppins-Bold.ttf")
 def F(p,s): return ImageFont.truetype(p,s)
 MINT=(110,230,190); BLU=(120,170,255); AMB=(255,206,84); VIO=(160,140,255)
 def glowlayer(size, fn, blur=18):

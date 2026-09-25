@@ -1,7 +1,9 @@
 import math, os
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
-POP="/usr/share/fonts/truetype/google-fonts/Poppins-Medium.ttf"
-POPB="/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf"
+import os as _os
+_FD=_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))),"build","fonts")
+POP=_os.path.join(_FD,"Poppins-Medium.ttf")
+POPB=_os.path.join(_FD,"Poppins-Bold.ttf")
 def F(p,s): return ImageFont.truetype(p,s)
 TEAL=(72,214,196); AMB=(255,206,84); VIO=(150,130,255)
 

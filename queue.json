@@ -17,6 +17,22 @@
       "notes": "ChatGPT Voice: plugins + Work delegation",
       "status": "external",
       "note_status": "already scheduled inside Instagram's own scheduler, autopilot must not repost"
+    },
+    {
+      "id": "2026-10-02-0600",
+      "publish_at": "2026-10-02T06:00",
+      "slides": 7,
+      "keyword": "نفوذ",
+      "notes": "OpenAI agent accessed Australia's Medicare statistics portal",
+      "status": "pending"
+    },
+    {
+      "id": "2026-10-02-1530",
+      "publish_at": "2026-10-02T15:30",
+      "slides": 8,
+      "keyword": "فلش",
+      "notes": "ChatGPT interactive flashcards, free on all plans",
+      "status": "pending"
     }
   ]
 }

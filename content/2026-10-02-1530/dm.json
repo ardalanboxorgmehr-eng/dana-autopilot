@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "فلش",
+    "فلش‌کارت",
+    "flashcard"
+  ],
+  "dm_single": "سلام! مرسی که کامنت گذاشتی 😊\n\nپرامپت اول، از روی جزوه‌ی خودت. اول فایل یا عکس جزوه رو آپلود کن، بعد این رو بفرست:\n\n\"Turn the notes I just uploaded into interactive flashcards. One idea per card: a short question on the front, a short answer on the back. Start with the 20 hardest points and skip anything that is just a definition I already know.\"\n\nپرامپت دوم، برای لغت انگلیسی:\n\n\"Make interactive flashcards for 30 English words at IELTS band 6.5 level. Front: the word plus one natural example sentence. Back: a short Persian meaning and the two most common collocations.\"\n\nکارت‌ها خودکار تو Library ذخیره می‌شن، پس دفعه‌ی بعد فقط بگو همون فلش‌کارت‌ها رو بیار تا مرورشون کنی.",
+  "dm1": "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا هر دو پرامپت فلش‌کارت رو برات بفرستم",
+  "button": "پرامپت‌ها رو بفرست",
+  "dm2": "بفرما 👇\n\nپرامپت اول، از روی جزوه‌ی خودت. اول فایل یا عکس جزوه رو آپلود کن، بعد این رو بفرست:\n\n\"Turn the notes I just uploaded into interactive flashcards. One idea per card: a short question on the front, a short answer on the back. Start with the 20 hardest points and skip anything that is just a definition I already know.\"\n\nپرامپت دوم، برای لغت انگلیسی:\n\n\"Make interactive flashcards for 30 English words at IELTS band 6.5 level. Front: the word plus one natural example sentence. Back: a short Persian meaning and the two most common collocations.\"\n\nکارت‌ها خودکار تو Library ذخیره می‌شن، پس دفعه‌ی بعد فقط بگو همون فلش‌کارت‌ها رو بیار تا مرورشون کنی."
+}
