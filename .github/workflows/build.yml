@@ -1,0 +1,73 @@
+name: build slides
+
+# Rebuilds any post whose spec or art changed, and republishes GitHub Pages so
+# Meta can fetch the JPEGs. Slides must be live on Pages BEFORE their publish
+# time, which is why this runs on every push to content/ as well as nightly.
+on:
+  push:
+    paths:
+      - "content/**"
+      - "build/**"
+      - "scripts/build_all.py"
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild every post, even unchanged ones"
+        type: boolean
+        default: false
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet Pillow
+
+      - name: Build slides
+        run: python scripts/build_all.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Commit rebuilt slides
+        run: |
+          if [ -n "$(git status --porcelain docs queue.json)" ]; then
+            git config user.name "dana-autopilot"
+            git config user.email "actions@github.com"
+            git add docs queue.json
+            git commit -m "build: refresh slides"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push
+          else
+            echo "no slide changes"
+          fi
+
+  deploy-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4

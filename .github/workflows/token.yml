@@ -1,0 +1,24 @@
+name: token watch
+
+# Instagram long-lived tokens last 60 days. With GH_PAT set this refreshes and
+# stores the new one automatically. Without it, this run FAILS when the token is
+# nearly out, which is the point: a failed run emails you while there is still
+# time to fix it.
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+jobs:
+  token:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pynacl
+      - env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python scripts/refresh_token.py

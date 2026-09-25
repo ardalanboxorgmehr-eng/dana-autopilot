@@ -1,0 +1,11 @@
+{
+  "ig_user_id": "",
+  "site_base_url": "https://REPLACE-ME.github.io/dana-autopilot",
+  "api_version": "v25.0",
+  "timezone": "Europe/London",
+  "slots": [
+    "06:00",
+    "15:30"
+  ],
+  "handle": "danestani.ruzz"
+}

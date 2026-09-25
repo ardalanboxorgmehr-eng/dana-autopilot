@@ -1,0 +1,54 @@
+name: publish due posts
+
+# Every 15 minutes. The script itself decides what is due, using London local
+# time, so this keeps working across the BST/GMT change without edits.
+# GitHub's cron can run a few minutes late under load, which is why the window
+# is generous rather than two exact daily runs.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Resolve everything but change nothing on Instagram"
+        type: boolean
+        default: false
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publish
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: python scripts/publish.py
+
+      - name: Record what was published
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain queue.json)" ]; then
+            git config user.name "dana-autopilot"
+            git config user.email "actions@github.com"
+            git add queue.json
+            git commit -m "publish: update queue status"
+            # The scheduler may have committed since checkout.
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push
+          else
+            echo "queue unchanged"
+          fi

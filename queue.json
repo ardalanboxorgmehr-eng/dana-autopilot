@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "2026-10-01-0600",
+      "publish_at": "2026-10-01T06:00",
+      "slides": 7,
+      "keyword": "کشف",
+      "notes": "Claude finds a novel enzyme system (ART)",
+      "status": "external",
+      "note_status": "already scheduled inside Instagram's own scheduler, autopilot must not repost"
+    },
+    {
+      "id": "2026-10-01-1530",
+      "publish_at": "2026-10-01T15:30",
+      "slides": 7,
+      "keyword": "صدا",
+      "notes": "ChatGPT Voice: plugins + Work delegation",
+      "status": "external",
+      "note_status": "already scheduled inside Instagram's own scheduler, autopilot must not repost"
+    }
+  ]
+}
