@@ -33,6 +33,22 @@
       "keyword": "فلش",
       "notes": "ChatGPT interactive flashcards, free on all plans",
       "status": "pending"
+    },
+    {
+      "id": "2026-10-03-0600",
+      "publish_at": "2026-10-03T06:00",
+      "slides": 7,
+      "keyword": "گجت",
+      "notes": "Meta Muse Charm, pocket AI device",
+      "status": "pending"
+    },
+    {
+      "id": "2026-10-03-1530",
+      "publish_at": "2026-10-03T15:30",
+      "slides": 7,
+      "keyword": "دوربین",
+      "notes": "Flock camera wrongful arrest, Senate testimony",
+      "status": "pending"
     }
   ]
 }
