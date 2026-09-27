@@ -49,6 +49,22 @@
       "keyword": "دوربین",
       "notes": "Flock camera wrongful arrest, Senate testimony",
       "status": "pending"
+    },
+    {
+      "id": "2026-10-04-0600",
+      "publish_at": "2026-10-04T06:00",
+      "slides": 8,
+      "keyword": "انیگما",
+      "notes": "GPT-6 Astra breaks a 1941 Enigma message unsolved since 2005",
+      "status": "pending"
+    },
+    {
+      "id": "2026-10-04-1530",
+      "publish_at": "2026-10-04T15:30",
+      "slides": 7,
+      "keyword": "ویندوز",
+      "notes": "Gemini app for Windows, Alt + Space",
+      "status": "pending"
     }
   ]
 }
