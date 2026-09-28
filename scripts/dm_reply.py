@@ -19,12 +19,20 @@ Safety:
   * Instagram only allows a private reply within 7 days of the comment.
   * At most MAX_SENDS_PER_RUN sends a run, a few seconds apart.
 
+When a DM bounces because the person's inbox is closed to pages (Instagram
+error 2534001), it leaves a threaded public reply asking them to DM the keyword
+instead. Keyword DMs that people send the page are answered from the inbox
+(Instagram allows a reply within 24 hours of their message).
+
 Exit codes: 0 fine, 1 some sends failed, 2 the Instagram connection is broken
 (so GitHub emails the owner the same hour instead of DMs silently stopping).
 
 Env: IG_ACCESS_TOKEN (required). DM_MODE overrides config ("dry_run"/"live").
      DM_LOOKBACK_HOURS or config dm.dry_run_lookback_hours (test runs only) looks back
      that many hours instead of start_at. Ignored in live mode.
+Config dm.bounce_backlog: true also leaves the bounce reply on comments whose DM
+     bounced before this feature existed (each once). Off by default.
+Config dm.inbox: false turns off answering keyword DMs. On by default.
 """
 import glob, json, os, random, re, sys, time, unicodedata
 import urllib.parse, urllib.request, urllib.error
@@ -45,6 +53,12 @@ PUBLIC_REPLIES = [
     "دایرکتت رو ببین، اونجاست ✨",
     "تو دایرکت منتظرته 📩",
 ]
+BOUNCE_CODE = "2534001"      # inbox closed to pages / thread deleted: retrying never helps
+INBOX_HOURS = 24             # Instagram's reply window for a message they sent us
+
+
+def bounce_text(keyword):
+    return f"نشد برات بفرستم، دایرکتت برای پیج‌ها بسته‌ست 🙏 یه دایرکت «{keyword}» بهمون بده تا برات بفرستیم"
 
 
 class IGError(RuntimeError):
@@ -170,6 +184,14 @@ class IG:
     def public_reply(self, comment_id, text):
         return self._call("POST", f"/{comment_id}/replies", {"message": text})
 
+    def conversations(self):
+        return self._call("GET", "/me/conversations", {
+            "platform": "instagram", "limit": 50,
+            "fields": "updated_time,messages.limit(10){id,created_time,from,message}"}).get("data", [])
+
+    def send_to_user(self, user_id, text):
+        return self._call("POST", "/me/messages", body={"recipient": {"id": user_id}, "message": {"text": text}})
+
 
 def ts(s):
     return datetime.strptime(s.replace("Z", "+0000"), "%Y-%m-%dT%H:%M:%S%z")
@@ -195,17 +217,27 @@ def run(ig, cfg, state, now, log=print):
     own = {str(who.get("user_id", "")), who.get("username", "")}
     log(f"connected to @{who.get('username')} · mode={mode} · handling comments after {window_start.isoformat()}")
 
-    sends = errors = skipped = 0
+    sends = errors = skipped = bounced = 0
     failures = []
+    active = []                      # (media, rule) for every recent post with a rule, newest first
     for m in ig.recent_media():
-        if ts(m["timestamp"]) < now - timedelta(days=WINDOW_DAYS + 1):
-            continue
         rule = rule_for(m.get("caption", ""), rules)
-        if not rule:
+        if rule:
+            active.append((m, rule))
+    for m, rule in active:
+        if ts(m["timestamp"]) < now - timedelta(days=WINDOW_DAYS + 1):
             continue
         _, kws, msg, rid = rule
         done = state.setdefault(m["id"], {})
         users_done = {v.get("user") for v in done.values() if "failed" not in v}
+        if dmcfg.get("bounce_backlog") and mode == "live":
+            for cid, rec in done.items():
+                if BOUNCE_CODE in rec.get("failed", "") and "bounced" not in rec and "bounce_failed" not in rec:
+                    if bounced >= MAX_SENDS_PER_RUN:
+                        break
+                    bounce(ig, cid, rec, kws[0], now, log, rid)
+                    bounced += 1
+                    time.sleep(SEND_GAP_S)
         comments = ig.comments(m["id"])
         fresh = [c for c in comments if ts(c["timestamp"]) >= window_start]
         log(f"post {rid}: {len(comments)} comments read, {len(fresh)} in the window")
@@ -243,6 +275,9 @@ def run(ig, cfg, state, now, log=print):
                 done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err}
                 failures.append({"post": rid, "user": user, "error": err})
                 log(f"DM FAILED {rid} @{user}: {err}")
+                if BOUNCE_CODE in err:
+                    bounce(ig, c["id"], done[c["id"]], kws[0], now, log, rid)
+                time.sleep(SEND_GAP_S)
                 continue
             done[c["id"]] = {"user": user, "at": now.isoformat()}
             users_done.add(user)
@@ -256,19 +291,91 @@ def run(ig, cfg, state, now, log=print):
             time.sleep(SEND_GAP_S)
         if sends >= MAX_SENDS_PER_RUN:
             break
+    inbox_sent = 0
+    if dmcfg.get("inbox", True) and sends < MAX_SENDS_PER_RUN:
+        inbox_sent = answer_inbox(ig, state, active, own, exclude, mode, max(start_at, now - timedelta(hours=INBOX_HOURS)),
+                                  now, MAX_SENDS_PER_RUN - sends, log)
     state["_report"] = {"at": now.isoformat(), "mode": mode, "sent": sends, "failed": errors,
-                        "skipped": skipped, "failures": failures[:20]}
-    log(f"done: {sends} sent, {errors} failed, {skipped} skipped")
+                        "skipped": skipped, "inbox_sent": inbox_sent, "bounce_backlog": bounced,
+                        "failures": failures[:20]}
+    log(f"done: {sends} sent, {errors} failed, {skipped} skipped, {inbox_sent} answered from the inbox")
     # A failed send is recorded and not retried. Only fail the job (and email
     # the owner) when sending is broken outright: errors and nothing went out.
     return (1 if errors and not sends else 0), sends
+
+
+def bounce(ig, comment_id, rec, keyword, now, log, rid):
+    """Public threaded reply when the DM could not be delivered. Once per comment."""
+    try:
+        ig.public_reply(comment_id, bounce_text(keyword))
+        rec["bounced"] = now.isoformat()
+        log(f"bounce reply left {rid} @{rec.get('user')}")
+    except IGError as e:
+        rec["bounce_failed"] = str(e)[:200]
+        log(f"bounce reply failed {rid} @{rec.get('user')}: {e}")
+
+
+def answer_inbox(ig, state, active, own, exclude, mode, since, now, budget, log):
+    """Send the post's DM to people who messaged the page one of its keywords."""
+    try:
+        convs = ig.conversations()
+    except IGError as e:
+        log(f"inbox not readable, skipped this run: {e}")
+        return 0
+    box = state.setdefault("_inbox", {})
+    got = {}                                         # media id -> usernames already sent by comment
+    sent = 0
+    for conv in convs:
+        msgs = (conv.get("messages") or {}).get("data", [])
+        for mm in sorted(msgs, key=lambda x: x.get("created_time", "")):
+            if sent >= budget:
+                return sent
+            frm = mm.get("from") or {}
+            uid, user = str(frm.get("id", "")), frm.get("username", "")
+            if not uid or uid in own or user in own or mm.get("id") in box:
+                continue
+            try:
+                if ts(mm["created_time"]) < since:
+                    continue
+            except (KeyError, ValueError):
+                continue
+            hit = None
+            for m, (_, kws, msg, rid) in active:     # newest post first
+                if matches(mm.get("message", ""), kws, exclude):
+                    hit = (m, kws, msg, rid)
+                    break
+            if not hit:
+                continue
+            m, kws, msg, rid = hit
+            if m["id"] not in got:
+                got[m["id"]] = {v.get("user") for v in state.get(m["id"], {}).values() if "failed" not in v}
+            if user in got[m["id"]] or any(v.get("uid") == uid and v.get("rule") == rid and "failed" not in v
+                                          for v in box.values()):
+                if mode == "live":
+                    box[mm["id"]] = {"user": user, "uid": uid, "rule": rid, "at": now.isoformat(), "skipped": "already has it"}
+                continue
+            if mode != "live":
+                log(f"[dry run] inbox {rid}: would DM @{user} for «{mm.get('message','')[:30]}»")
+                continue
+            try:
+                ig.send_to_user(uid, msg)
+            except IGError as e:
+                box[mm["id"]] = {"user": user, "uid": uid, "rule": rid, "at": now.isoformat(), "failed": str(e)[:300]}
+                log(f"inbox DM FAILED {rid} @{user}: {e}")
+                continue
+            box[mm["id"]] = {"user": user, "uid": uid, "rule": rid, "at": now.isoformat()}
+            got[m["id"]].add(user)
+            sent += 1
+            log(f"inbox DM sent {rid} @{user}")
+            time.sleep(SEND_GAP_S)
+    return sent
 
 
 def prune(state, now, days=90):
     """Forget sent-message records older than the privacy policy allows."""
     cutoff = now - timedelta(days=days)
     for mid in list(state):
-        if mid.startswith("_"):
+        if mid.startswith("_") and mid != "_inbox":
             continue
         recs = state[mid]
         for cid in list(recs):
