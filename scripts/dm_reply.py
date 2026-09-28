@@ -23,7 +23,8 @@ Exit codes: 0 fine, 1 some sends failed, 2 the Instagram connection is broken
 (so GitHub emails the owner the same hour instead of DMs silently stopping).
 
 Env: IG_ACCESS_TOKEN (required). DM_MODE overrides config ("dry_run"/"live").
-     DM_LOOKBACK_HOURS (test runs only) looks back that many hours instead of start_at.
+     DM_LOOKBACK_HOURS or config dm.dry_run_lookback_hours (test runs only) looks back
+     that many hours instead of start_at. Ignored in live mode.
 """
 import glob, json, os, random, re, sys, time, unicodedata
 import urllib.parse, urllib.request, urllib.error
@@ -177,7 +178,7 @@ def run(ig, cfg, state, now, log=print):
     dmcfg = cfg.get("dm", {})
     mode = os.environ.get("DM_MODE") or dmcfg.get("mode", "dry_run")
     start_at = ts(dmcfg["start_at"]) if dmcfg.get("start_at") else now
-    look = os.environ.get("DM_LOOKBACK_HOURS")
+    look = os.environ.get("DM_LOOKBACK_HOURS") or dmcfg.get("dry_run_lookback_hours")
     if look and mode != "live":          # test runs only: look further back
         start_at = now - timedelta(hours=float(look))
     window_start = max(start_at, now - timedelta(days=WINDOW_DAYS))
