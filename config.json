@@ -10,8 +10,8 @@
   "handle": "danestani.ruzz",
   "dm": {
     "mode": "live",
-    "start_at": "2026-09-28T11:05:00+0000",
-    "_note": "live since 28 Sep 2026 11:05 UTC (ReplyRush automations removed). Set mode to dry_run to pause sending.",
+    "start_at": "2026-09-28T10:49:00+0000",
+    "_note": "live since 28 Sep 2026 10:49 UTC, when the ReplyRush automations were unlinked. Set mode to dry_run to pause sending.",
     "dry_run_lookback_hours": 12
   }
 }
