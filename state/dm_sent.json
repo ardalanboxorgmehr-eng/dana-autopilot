@@ -670,6 +670,256 @@
       "user": "sayed_mahdy2596",
       "at": "2026-09-28T11:32:20.187676+00:00",
       "skipped": "already sent to this person"
+    },
+    "18121561003705740": {
+      "user": "covergod021",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AM8zDaJPIwS7JdLh7GnETl1\"}}"
+    },
+    "18120026671798499": {
+      "user": "mahroorad_haircolor",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AaodTbgTWknKXdWqwV0CRN7\"}}"
+    },
+    "18116792699093583": {
+      "user": "md.rezai7",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMlu9JPH6jmtgIVsZB7-9F1\"}}"
+    },
+    "17935847181127547": {
+      "user": "amirhoseinmotahari61",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AS7o1HHO3IhH_A4uNl91aiO\"}}"
+    },
+    "18113051942171484": {
+      "user": "amirhoseinmotahari61",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AOVrBbindQ5ixaKLpf01No2\"}}"
+    },
+    "18102657461638997": {
+      "user": "jimmim.ai",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"APD1SUU_IvmssNE27NYT1Yo\"}}"
+    },
+    "17889628713454404": {
+      "user": "alnoor1373",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AcBMVdxcExrHFsHzSifGWMw\"}}"
+    },
+    "18125616250872078": {
+      "user": "farzad_rafat",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AYOrUc3aod5DSH7UiowX3Ov\"}}"
+    },
+    "18394822513201300": {
+      "user": "javad.ranjbar78",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A00ly_l7BzJQuDhLruIJLiQ\"}}"
+    },
+    "18079167401371704": {
+      "user": "shirafkan.bakhsha",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A9Wk36eb00fEe12iqU42p5o\"}}"
+    },
+    "18112009637464043": {
+      "user": "elhmmz_",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AnAZoWkoH-qUAYe-9UxGzRX\"}}"
+    },
+    "17988855669026148": {
+      "user": "ayooby_lawyer",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANlxipXbVln0sn2UJA4V7ah\"}}"
+    },
+    "17975028150136510": {
+      "user": "mohsenlist",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AfPBp7HDPlrZ_bZsGlvgen7\"}}"
+    },
+    "18122956897909979": {
+      "user": "mirtalebi_76",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AjpfqUO9nDXdsuoZSd280C_\"}}"
+    },
+    "17904453099583977": {
+      "user": "mar_zira",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AVmTvcvNzVUKz-GrOMEIiLX\"}}"
+    },
+    "18060534149790425": {
+      "user": "_nili.art_",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AvNOTPMUW0KcRPs_F2F1EEt\"}}"
+    },
+    "17959613451000549": {
+      "user": "maedekasaei",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AkBcM7Khvcx-ZSESmJZfedX\"}}"
+    },
+    "18225564115329470": {
+      "user": "bazarganidelta",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A4Aq3zRwa4H5piUFbFKSnZy\"}}"
+    },
+    "18138267442722962": {
+      "user": "kian_acoustic",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AEydboRGVjeFFAp4oG2z488\"}}"
+    },
+    "18130732024765107": {
+      "user": "azadehrahmani6",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AbEDDI9_xU3WHg0-oAZ9ANn\"}}"
+    },
+    "18188886121367652": {
+      "user": "alijadavi_music",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AQXnqRmmPmENs_tWKj29ztI\"}}"
+    },
+    "17896675812607851": {
+      "user": "amir.pakodak",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A5UAOeEFM49Unt7uBbdMDkd\"}}"
+    },
+    "17985811847877762": {
+      "user": "__pinkyygirlll_____",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A1avs127xQ3zGbG8X3sSBdV\"}}"
+    },
+    "18132264112666011": {
+      "user": "tahmineh_re",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ABGIAyTgp2-JW5YZ4InIaCb\"}}"
+    },
+    "18115977998092103": {
+      "user": "leyla_artgraphic",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AAKOxUajvAFe8_CoUSN7GNo\"}}"
+    },
+    "17889178206460268": {
+      "user": "yaldaebrm",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Aga7qR6kA5PsX1mApCxGMqi\"}}"
+    },
+    "17951690967256593": {
+      "user": "pooryasadeghi11",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AR-yBVOwZSYNTpF4pcFF21U\"}}"
+    },
+    "18102355088196707": {
+      "user": "elyasrahimii",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A0zU70CpjWFAXvEG0Bg8R_E\"}}"
+    },
+    "18114153409824804": {
+      "user": "villa.shakeri",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AtlbaBtn2nZ_WGEtL45giLF\"}}"
+    },
+    "18113797471820413": {
+      "user": "miladeslamii69",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ay6UjIi0x_MFvd4fhKxgJxI\"}}"
+    },
+    "18174255439449923": {
+      "user": "r.bbarbiton",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHplO387FM_FSRd-XWcacnB\"}}"
+    },
+    "18069222512772304": {
+      "user": "aframetal",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AVi58GZ3XFMFcp2bxF7J3TN\"}}"
+    },
+    "17999255375812135": {
+      "user": "kourosh_3",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwQM0XmMWGKoL1N-7xKnieI\"}}"
+    },
+    "18075908504422662": {
+      "user": "kutahyaex",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ac11b3T2RSMALuZQzI0P5ch\"}}"
+    },
+    "18134298064655710": {
+      "user": "j.azami",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHXQiII2Rw2ASsA9MlUYhG2\"}}"
+    },
+    "17948100273318257": {
+      "user": "neginflow",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ApFOWwaIMclK7SAHJj7GXtb\"}}"
+    },
+    "18159098263496593": {
+      "user": "matin_amani_stone",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AGe2OO3aE4CRvqG8peS_kfH\"}}"
+    },
+    "18099677558374860": {
+      "user": "s.i.n.a.v",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ATaJ9-Ig9nvEEgGB5P1Qh31\"}}"
+    },
+    "17906742561328856": {
+      "user": "vahidjb",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AWN7gd191yJeMzfZCgVH31s\"}}"
+    },
+    "18118193258318746": {
+      "user": "floraaa_83",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A_GplmH08z-FdEOR_belR7D\"}}"
+    },
+    "18167634007461927": {
+      "user": "sajtune",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AaHq1ZvXJbSFKsNx0x_KZUI\"}}"
+    },
+    "18115469657001509": {
+      "user": "mr.mohtavachi",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ArGbmlU6btu1Csw_J10_fKL\"}}"
+    },
+    "18107277035210248": {
+      "user": "amirali_arefzadeh",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Aumk8KFwIhc7sudkZnykZnL\"}}"
+    },
+    "18089732192226188": {
+      "user": "na.va_1",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AoZhr3pp_C28vU2JaFDPALz\"}}"
+    },
+    "18040359461635614": {
+      "user": "alishafaat2015",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AbENWCiUySEOxRi_IzFrj9m\"}}"
+    },
+    "18113714624322855": {
+      "user": "ebrahim__nobahar",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AauOtYOrZ7g6EFkpCu85fka\"}}"
+    },
+    "17912053776531168": {
+      "user": "marjan19801",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ArqpK42aHx0h1Pq2YjMcRe5\"}}"
+    },
+    "18373580704213383": {
+      "user": "m.rn0body",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A0d_di0fz7Iy60bswmFtCtA\"}}"
+    },
+    "17973725475130048": {
+      "user": "neda_zaraei",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AaorFl5nhEtrmm9dnQmSzZu\"}}"
+    },
+    "18118991408057891": {
+      "user": "aali060",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANBv5nGVi8cOfOqh_HrzEiK\"}}"
     }
   },
   "18017930855731657": {
@@ -680,6 +930,120 @@
     "18633979282042763": {
       "user": "marjan_pn",
       "at": "2026-09-28T11:32:20.187676+00:00"
+    },
+    "18165163801480465": {
+      "user": "ehsanhasemeei",
+      "at": "2026-09-28T11:45:01.284236+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ASLbTnbQt_cZGYTOrq2SwAZ\"}}"
     }
+  },
+  "_report": {
+    "at": "2026-09-28T11:45:01.284236+00:00",
+    "mode": "live",
+    "sent": 0,
+    "failed": 51,
+    "skipped": 0,
+    "failures": [
+      {
+        "post": "p02",
+        "user": "covergod021",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AM8zDaJPIwS7JdLh7GnETl1\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "mahroorad_haircolor",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AaodTbgTWknKXdWqwV0CRN7\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "md.rezai7",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMlu9JPH6jmtgIVsZB7-9F1\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "amirhoseinmotahari61",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AS7o1HHO3IhH_A4uNl91aiO\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "amirhoseinmotahari61",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AOVrBbindQ5ixaKLpf01No2\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "jimmim.ai",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"APD1SUU_IvmssNE27NYT1Yo\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "alnoor1373",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AcBMVdxcExrHFsHzSifGWMw\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "farzad_rafat",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AYOrUc3aod5DSH7UiowX3Ov\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "javad.ranjbar78",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A00ly_l7BzJQuDhLruIJLiQ\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "shirafkan.bakhsha",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A9Wk36eb00fEe12iqU42p5o\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "elhmmz_",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AnAZoWkoH-qUAYe-9UxGzRX\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "ayooby_lawyer",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANlxipXbVln0sn2UJA4V7ah\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "mohsenlist",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AfPBp7HDPlrZ_bZsGlvgen7\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "mirtalebi_76",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AjpfqUO9nDXdsuoZSd280C_\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "mar_zira",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AVmTvcvNzVUKz-GrOMEIiLX\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "_nili.art_",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AvNOTPMUW0KcRPs_F2F1EEt\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "maedekasaei",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AkBcM7Khvcx-ZSESmJZfedX\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "bazarganidelta",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A4Aq3zRwa4H5piUFbFKSnZy\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "kian_acoustic",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AEydboRGVjeFFAp4oG2z488\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "azadehrahmani6",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AbEDDI9_xU3WHg0-oAZ9ANn\"}}"
+      }
+    ]
   }
 }
