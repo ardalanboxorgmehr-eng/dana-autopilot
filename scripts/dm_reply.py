@@ -23,6 +23,7 @@ Exit codes: 0 fine, 1 some sends failed, 2 the Instagram connection is broken
 (so GitHub emails the owner the same hour instead of DMs silently stopping).
 
 Env: IG_ACCESS_TOKEN (required). DM_MODE overrides config ("dry_run"/"live").
+     DM_LOOKBACK_HOURS (test runs only) looks back that many hours instead of start_at.
 """
 import glob, json, os, random, re, sys, time, unicodedata
 import urllib.parse, urllib.request, urllib.error
@@ -176,6 +177,9 @@ def run(ig, cfg, state, now, log=print):
     dmcfg = cfg.get("dm", {})
     mode = os.environ.get("DM_MODE") or dmcfg.get("mode", "dry_run")
     start_at = ts(dmcfg["start_at"]) if dmcfg.get("start_at") else now
+    look = os.environ.get("DM_LOOKBACK_HOURS")
+    if look and mode != "live":          # test runs only: look further back
+        start_at = now - timedelta(hours=float(look))
     window_start = max(start_at, now - timedelta(days=WINDOW_DAYS))
     rules, exclude = load_rules()
 
@@ -197,7 +201,10 @@ def run(ig, cfg, state, now, log=print):
         _, kws, msg, rid = rule
         done = state.setdefault(m["id"], {})
         users_done = {v.get("user") for v in done.values()}
-        for c in ig.comments(m["id"]):
+        comments = ig.comments(m["id"])
+        fresh = [c for c in comments if ts(c["timestamp"]) >= window_start]
+        log(f"post {rid}: {len(comments)} comments read, {len(fresh)} in the window")
+        for c in comments:
             if c["id"] in done or ts(c["timestamp"]) < window_start:
                 continue
             frm = c.get("from") or {}
