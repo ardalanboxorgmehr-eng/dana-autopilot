@@ -153,7 +153,10 @@ class IG:
 
     def comments(self, media_id):
         out = []
-        r = self._call("GET", f"/{media_id}/comments", {"fields": "id,text,timestamp,from,username", "limit": 50})
+        try:
+            r = self._call("GET", f"/{media_id}/comments", {"fields": "id,text,timestamp,from,username,replies{username,from}", "limit": 50})
+        except IGError:   # older API versions without nested replies
+            r = self._call("GET", f"/{media_id}/comments", {"fields": "id,text,timestamp,from,username", "limit": 50})
         while True:
             out += r.get("data", [])
             nxt = r.get("paging", {}).get("next")
@@ -192,7 +195,8 @@ def run(ig, cfg, state, now, log=print):
     own = {str(who.get("user_id", "")), who.get("username", "")}
     log(f"connected to @{who.get('username')} · mode={mode} · handling comments after {window_start.isoformat()}")
 
-    sends = errors = 0
+    sends = errors = skipped = 0
+    failures = []
     for m in ig.recent_media():
         if ts(m["timestamp"]) < now - timedelta(days=WINDOW_DAYS + 1):
             continue
@@ -201,7 +205,7 @@ def run(ig, cfg, state, now, log=print):
             continue
         _, kws, msg, rid = rule
         done = state.setdefault(m["id"], {})
-        users_done = {v.get("user") for v in done.values()}
+        users_done = {v.get("user") for v in done.values() if "failed" not in v}
         comments = ig.comments(m["id"])
         fresh = [c for c in comments if ts(c["timestamp"]) >= window_start]
         log(f"post {rid}: {len(comments)} comments read, {len(fresh)} in the window")
@@ -214,12 +218,20 @@ def run(ig, cfg, state, now, log=print):
                 continue
             if not matches(c.get("text", ""), kws, exclude):
                 continue
+            replies = (c.get("replies") or {}).get("data", [])
+            if any((r.get("username") in own) or (str((r.get("from") or {}).get("id", "")) in own) for r in replies):
+                if mode == "live":
+                    done[c["id"]] = {"user": user, "at": now.isoformat(), "skipped": "we already replied"}
+                skipped += 1
+                continue
             if user in users_done:
-                done[c["id"]] = {"user": user, "at": now.isoformat(), "skipped": "already sent to this person"}
+                if mode == "live":
+                    done[c["id"]] = {"user": user, "at": now.isoformat(), "skipped": "already sent to this person"}
+                skipped += 1
                 continue
             if sends >= MAX_SENDS_PER_RUN:
                 log("send limit for this run reached, the rest go next run")
-                return (1 if errors else 0), sends
+                break
             if mode != "live":
                 log(f"[dry run] {rid}: would DM @{user} for «{c.get('text','')[:30]}»")
                 continue
@@ -227,7 +239,10 @@ def run(ig, cfg, state, now, log=print):
                 ig.private_reply(c["id"], msg)
             except IGError as e:
                 errors += 1
-                log(f"DM FAILED {rid} @{user}: {e}")
+                err = str(e)[:300]
+                done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err}
+                failures.append({"post": rid, "user": user, "error": err})
+                log(f"DM FAILED {rid} @{user}: {err}")
                 continue
             done[c["id"]] = {"user": user, "at": now.isoformat()}
             users_done.add(user)
@@ -236,16 +251,25 @@ def run(ig, cfg, state, now, log=print):
             try:
                 ig.public_reply(c["id"], random.choice(PUBLIC_REPLIES))
             except IGError as e:
+                done[c["id"]]["public_failed"] = str(e)[:200]
                 log(f"public reply failed {rid} @{user}: {e}")
             time.sleep(SEND_GAP_S)
-    log(f"done: {sends} sent, {errors} failed")
-    return (1 if errors else 0), sends
+        if sends >= MAX_SENDS_PER_RUN:
+            break
+    state["_report"] = {"at": now.isoformat(), "mode": mode, "sent": sends, "failed": errors,
+                        "skipped": skipped, "failures": failures[:20]}
+    log(f"done: {sends} sent, {errors} failed, {skipped} skipped")
+    # A failed send is recorded and not retried. Only fail the job (and email
+    # the owner) when sending is broken outright: errors and nothing went out.
+    return (1 if errors and not sends else 0), sends
 
 
 def prune(state, now, days=90):
     """Forget sent-message records older than the privacy policy allows."""
     cutoff = now - timedelta(days=days)
     for mid in list(state):
+        if mid.startswith("_"):
+            continue
         recs = state[mid]
         for cid in list(recs):
             try:
