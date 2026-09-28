@@ -1009,6 +1009,10 @@
     "17932899825145479": {
       "user": "doctor.laminate",
       "at": "2026-09-28T15:02:30.937179+00:00"
+    },
+    "18077952857720237": {
+      "user": "we.art.ir",
+      "at": "2026-09-28T15:20:33.492567+00:00"
     }
   },
   "18017930855731657": {
@@ -1024,12 +1028,16 @@
       "user": "ehsanhasemeei",
       "at": "2026-09-28T11:45:01.284236+00:00",
       "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ASLbTnbQt_cZGYTOrq2SwAZ\"}}"
+    },
+    "18353183677218378": {
+      "user": "mohsen_tajik_artwork",
+      "at": "2026-09-28T15:20:33.492567+00:00"
     }
   },
   "_report": {
-    "at": "2026-09-28T15:02:30.937179+00:00",
+    "at": "2026-09-28T15:20:33.492567+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 2,
     "failed": 0,
     "skipped": 0,
     "failures": []
