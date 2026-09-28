@@ -242,6 +242,21 @@ def run(ig, cfg, state, now, log=print):
     return (1 if errors else 0), sends
 
 
+def prune(state, now, days=90):
+    """Forget sent-message records older than the privacy policy allows."""
+    cutoff = now - timedelta(days=days)
+    for mid in list(state):
+        recs = state[mid]
+        for cid in list(recs):
+            try:
+                if datetime.fromisoformat(recs[cid]["at"]) < cutoff:
+                    del recs[cid]
+            except (KeyError, ValueError):
+                pass
+        if not recs:
+            del state[mid]
+
+
 def main():
     token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
     if not token:
@@ -250,7 +265,9 @@ def main():
     cfg = load(CONFIG, {})
     state = load(STATE, {})
     ig = IG(token, cfg.get("api_version", "v25.0"))
-    code, _ = run(ig, cfg, state, datetime.now(timezone.utc))
+    now = datetime.now(timezone.utc)
+    code, _ = run(ig, cfg, state, now)
+    prune(state, now)
     save(STATE, state)
     return code
 
