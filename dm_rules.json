@@ -1,0 +1,158 @@
+{
+  "_note": "DM rules for posts published before the autopilot owned the queue (up to 1 Oct 2026). Autopilot posts use content/<id>/dm.json. Matched by the start of the Instagram caption.",
+  "exclude": [
+    "bad",
+    "horrible",
+    "disappointed"
+  ],
+  "rules": [
+    {
+      "id": "p00",
+      "caption_starts": "خداحافظ پاورپوینت",
+      "keywords": [
+        "پرامپت",
+        "prompt"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why."
+    },
+    {
+      "id": "p01",
+      "caption_starts": "اولین مبارزه‌ی بوکس انسان و ربات",
+      "keywords": [
+        "ربات",
+        "robot"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nاولین مبارزه‌ی بوکس انسان و ربات برگزار شد: فرانکی لاپنا رفت تو رینگ با ربات انسان‌نمای T800 و ربات زمینش زد.\n\nنکته‌ی مهم: ربات خودکار نبود، یه نفر از بیرون رینگ با هدست VR کنترلش می‌کرد.\n\nویدیو و گزارش کامل:\ntmz.com/2026/09/21/frankie-lapenna-robot-boxing-match/"
+    },
+    {
+      "id": "p02",
+      "caption_starts": "دیگه لازم نیست ساعت‌ها تو کپ‌کات",
+      "keywords": [
+        "جمنای",
+        "gemini",
+        "جمینای",
+        "جیمینای",
+        "جمنا",
+        "جمینا",
+        "چمنای",
+        "gemeni",
+        "جمنتی"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊 اینم ۴ پرامپت ادیت ویدیو با Gemini، ویدیوت رو آپلود کن و پرامپت رو بفرست 👇\n\n۱. سینمایی: Edit this video into a cinematic clip. Keep [subject] consistent, change the lighting to [golden hour], add depth of field and a smooth push-in.\n\n۲. لوکیشن: Replace the background with [place]. Keep [subject] unchanged and match the lighting, shadows and perspective.\n\n۳. پاک کردن: Remove [object or person] from this video and rebuild the background realistically, with no artifacts.\n\n۴. شب کردن: Turn this daytime video into a realistic night scene. Darken the sky, add streetlights and reflections, keep everything else the same.\n\nبرای Gemini Omni اشتراک Google AI لازمه."
+    },
+    {
+      "id": "p03",
+      "caption_starts": "یکی با صدای دقیق زنش",
+      "keywords": [
+        "امنیت",
+        "security"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊 اینم چک‌لیست محافظت در برابر تماس با صدای جعلی 👇\n\n۱. با خانواده یه کلمه‌ی رمز بذارید که فقط خودتون بدونید و هر تماس مشکوک رو با اون بسنجید\n۲. اگه کسی پول، رمز، کد یا شماره‌ی کارت خواست، قطع کن و خودت با شماره‌ای که از قبل داری زنگ بزن\n۳. به شماره‌ای که رو صفحه میفته اعتماد نکن، شماره هم قابل جعل کردنه\n۴. عجله و ترس نشونه‌ی کلاهبرداریه، هیچ‌وقت تحت فشار تصمیم نگیر\n۵. کد تأیید پیامکی رو به هیچ‌کس نگو، حتی اگه صداش آشنا باشه\n۶. صدای بچه‌ها و بزرگ‌ترها رو کمتر عمومی پست کن، چند ثانیه صدا برای ساختن صدای جعلی کافیه\n۷. این رو برای پدر و مادرت هم بفرست، اونا بیشتر هدف این کلاهبرداری‌ها هستن"
+    },
+    {
+      "id": "p04",
+      "caption_starts": "دنبال کار دورکاری هستی",
+      "keywords": [
+        "دورکاری",
+        "remote",
+        "دور کاری"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊 اینم ۴ پرامپت کار دورکاری با Claude، کپی کن و بفرست 👇\n\n۱. نقشه: Act as an expert remote-job recruiter. Analyze my skills and interests, list 10 remote roles that fit me with typical salary and where to apply, then give me a 30-day plan. Ask about my background first.\n\n۲. شغل‌های مناسب: Find the remote jobs I'm most likely to get. Explain why I fit, what employers look for, and list companies and job boards to target.\n\n۳. رزومه: Rewrite my resume for remote jobs. Results-focused language, optimized for ATS with keywords for my target role. Resume: [paste]\n\n۴. مصاحبه: Act as an interview coach. Give me the likely questions with STAR answers, then run a mock interview one question at a time with feedback."
+    },
+    {
+      "id": "p05",
+      "caption_starts": "یه برنامه‌نویس گفته هوش مصنو",
+      "keywords": [
+        "کدنویسی",
+        "code"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۵ قانون کدنویسی با هوش مصنوعی بدون اینکه فکر کردن رو فراموش کنی 👇\n\n۱. قبل از اینکه از AI کد بخوای، خودت مسئله رو تو دو سه خط بنویس. اگه نمی‌تونی توضیحش بدی، هنوز نفهمیدیش\n۲. هر کدی که AI نوشت رو خط به خط بخون. کدی که نمی‌فهمی رو قبول نکن\n۳. ازش بخواه تست هم بنویسه و خودت تست‌ها رو اجرا کن\n۴. تغییرها رو کوچیک نگه دار، یه تیکه کوچیک هر بار، نه کل پروژه یهو\n۵. هفته‌ای یه کار رو بدون AI انجام بده که مهارتت زنگ نزنه"
+    },
+    {
+      "id": "p06",
+      "caption_starts": "هنوز برای فتوشاپ و آفیس و Dr",
+      "keywords": [
+        "رایگان",
+        "free"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nاینم لینک رسمی هر ۸ تا 👇\n\n۱. Penpot به‌جای Canva: penpot.app\n۲. GIMP به‌جای فتوشاپ: gimp.org\n۳. LibreOffice به‌جای آفیس: libreoffice.org\n۴. Nextcloud به‌جای Dropbox: nextcloud.com\n۵. Mattermost به‌جای Slack: mattermost.com\n۶. Matomo به‌جای گوگل آنالیتیکس: matomo.org\n۷. Navidrome به‌جای یوتیوب موزیک: navidrome.org\n۸. Immich به‌جای گوگل فوتوز: immich.app\n\nفقط از سایت رسمی دانلود کن 🔒"
+    },
+    {
+      "id": "p07",
+      "caption_starts": "قوی‌ترین هوش مصنوعی OpenAI ۱",
+      "keywords": [
+        "ماینکرفت",
+        "minecraft"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nاینم گزارش کامل آزمایش ۱۴۱ ساعته‌ی GPT-6 Astra تو ماینکرفت 👇\nhttps://www.tomshardware.com/tech-industry/artificial-intelligence/defeated-gpt-6-astra-model-spent-several-hours-just-farming-potatoes-after-being-blown-up-by-a-creeper-in-minecraft-openai-offering-gets-further-than-any-other-ai-system-in-141-hour-test"
+    },
+    {
+      "id": "p08",
+      "caption_starts": "دیگه لازم نیست ده تا سایت کد",
+      "keywords": [
+        "تخفیف",
+        "discount"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nمرورگر داخلی تو اپ دسکتاپ ChatGPT هست: از نوار ابزار بازش کن یا Ctrl+Shift+B (تو مک Cmd+Shift+B) رو بزن. بعد پرامپت رو با اسم یا لینک محصول بفرست.\n\nاینم پرامپت، کپی کن و اسم یا لینک محصول رو اولش بنویس 👇\n\n@browser find every current discount code for this item. Open the retailer's site, add it to my cart, and test the codes one at a time. Compare the discounted totals and leave the code that saves me the most applied. Do not enter any payment details and do not complete the purchase. Stop once the best code is applied, then show me the original price, the discounted price and the amount saved.\n\nپرداخت رو همیشه خودت انجام بده 🔒"
+    },
+    {
+      "id": "p09",
+      "caption_starts": "این ۳ ابزار هوش مصنوعی رایگا",
+      "keywords": [
+        "گیت‌هاب",
+        "گیتهاب",
+        "github"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nاینم لینک هر ۳ ابزار روی گیت‌هاب 👇\n\n۱. Open Notebook (جایگزین رایگان NotebookLM):\ngithub.com/lfnovo/open-notebook\n\n۲. No AI Slop (طبیعی کردن متن‌های AI):\ngithub.com/petergyang/no-ai-slop\n\n۳. Book to Skill (کتاب به مهارت دستیار برنامه‌نویسی):\ngithub.com/virgiliojr94/book-to-skill"
+    },
+    {
+      "id": "p10",
+      "caption_starts": "تو شانگهای دیگه پیک موتوری س",
+      "keywords": [
+        "پهپاد",
+        "drone"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nاینم گزارش کامل مسیر پهپادی مک‌دونالد و میتوآن تو شانگهای 👇\nhttps://www.scmp.com/tech/big-tech/article/3367482/cloudy-chance-big-macs-mcdonalds-and-meituan-launch-drone-route-shanghai"
+    },
+    {
+      "id": "p11",
+      "caption_starts": "Anthropic مدل جدیدش رو داد ب",
+      "keywords": [
+        "اوپوس",
+        "opus",
+        "کلاد"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nاینم معرفی رسمی مدل جدید 👇\nanthropic.com/claude-opus-5-5\n\nکجا می‌تونی امتحانش کنی:\n• claude.ai (تو اشتراک‌های Pro و Max و تیمی)\n• از طریق API با نام claude-opus-5-5\n\nنکته: حدود ۴۰٪ ارزون‌تر از Opus 5 و بیش از ۳۰٪ سریع‌تره ⚡"
+    },
+    {
+      "id": "p12",
+      "caption_starts": "iOS 27 اومد و بیشتر از ۲۰ قا",
+      "keywords": [
+        "آیفون",
+        "ios",
+        "ایفون"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nقابلیت‌های تازه‌ی iOS 27 که بیشتر به کار میان 👇\n\n۱. Reframe: زاویه و کادر عکس رو بعد از گرفتن عوض کن\n۲. Clean Up: آدم، شیء یا انعکاس اضافه رو از عکس پاک کن\n۳. سیری کاملا بازسازی‌شده، مکالمه‌ای و با درک بهتر موقعیت\n۴. Extend Wallpaper: گسترش عکس برای صفحه‌ی قفل\n۵. Visual Intelligence: درباره‌ی چیزی که رو صفحه‌ست از سیری بپرس\n۶. نوشتن با سیری هر جا که تایپ می‌کنی\n۷. ساختن یادآور و رویداد با زبان معمولی\n۸. جواب‌های پیشنهادی تو پیام‌ها و ایمیل\n۹. غلط‌گیری خودکار تو کل گوشی\n\nلیست کامل: 9to5mac.com/2026/09/18/apple-intelligence-has-20-brand-new-features-in-ios-27-heres-the-full-list/"
+    },
+    {
+      "id": "p13",
+      "caption_starts": "۹۵۰ عامل هوش مصنوعی ۲۱ ساعت ",
+      "keywords": [
+        "کشف",
+        "enzyme",
+        "آنزیم"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nحدود ۹۵۰ عامل Claude تو ۲۱ ساعت بیش از ۲۰۰ هزار آنزیم رو بررسی کردن، ۳۵۰۰ گزینه‌ی تازه پیدا کردن و آخرش به یه سیستم ناشناخته به اسم ART رسیدن: یه آنزیم، یه ژن همراه و یه ردیف تکرار منظم DNA، بیشتر تو ویروس‌های باکتری‌خوار.\n\nچیدمان این تکرارها شبیه CRISPR ـه و برای همین هیجان‌انگیزه. پروتئینش تو آزمایشگاه خود Anthropic ساخته و بررسی شده، ولی هنوز نمی‌دونن کارش چیه.\n\nگزارش رسمی:\nanthropic.com/news/claude-discovers-novel-enzyme-system"
+    },
+    {
+      "id": "p14",
+      "caption_starts": "ChatGPT حالا وسط حرف زدن ایم",
+      "keywords": [
+        "صدا",
+        "voice",
+        "ویس"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n۵ دستور آماده برای حالت صوتی ChatGPT، فقط بگو 👇\n\n۱. ایمیل‌های امروزم رو خلاصه کن و بگو کدوم‌ها جواب فوری می‌خوان\n۲. از این اعداد یه جدول بساز و ستون جمع رو هم اضافه کن\n۳. برای جلسه‌ی فردا یه فهرست ۵ نکته‌ای آماده کن\n۴. تو تقویمم ببین هفته‌ی بعد کی وقت خالی دارم\n۵. این موضوع رو تو وب بگرد و یه خلاصه‌ی یه‌صفحه‌ای بده\n\nنکته: حالت صوتی فعلا ویدیو و اشتراک صفحه نداره و فایل‌های کتابخانه‌ت رو خودش پیدا نمی‌کنه."
+    }
+  ]
+}

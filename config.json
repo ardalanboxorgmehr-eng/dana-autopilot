@@ -7,5 +7,10 @@
     "06:00",
     "15:30"
   ],
-  "handle": "danestani.ruzz"
+  "handle": "danestani.ruzz",
+  "dm": {
+    "mode": "dry_run",
+    "start_at": "2026-09-28T10:00:00+0000",
+    "_note": "dry_run only logs. Set mode to live and start_at to the switch-over moment once the ReplyRush automations are off."
+  }
 }
