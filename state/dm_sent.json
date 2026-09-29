@@ -1244,17 +1244,33 @@
     }
   },
   "_report": {
-    "at": "2026-09-29T05:16:50.693888+00:00",
+    "at": "2026-09-29T05:30:44.733775+00:00",
     "mode": "live",
-    "sent": 4,
+    "sent": 0,
     "failed": 0,
     "skipped": 0,
+    "inbox_sent": 2,
+    "bounce_backlog": 0,
     "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
       "user": "koroshkakee",
       "at": "2026-09-29T05:16:50.693888+00:00"
+    }
+  },
+  "_inbox": {
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI3OTA1NjEzNTg0NDYzMjozMzAzMTgzMjU3MjQyMDYxNTY4NDQ4NjkxOTkzNzMyNzEwNAZDZD": {
+      "user": "maryaam.idea",
+      "uid": "1448793387122134",
+      "rule": "p00",
+      "at": "2026-09-29T05:30:44.733775+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MjYyNjU4Njg2NTU5MTcxNzozMzAzMTE1NzM4OTg1MzM0NDI3NzIyMjI3NDQ2ODE1MTI5NgZDZD": {
+      "user": "sharin_photo",
+      "uid": "1398094798572092",
+      "rule": "p02",
+      "at": "2026-09-29T05:30:44.733775+00:00"
     }
   }
 }
