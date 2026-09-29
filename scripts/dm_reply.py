@@ -76,11 +76,41 @@ def norm(s):
     return re.sub(r"[\s‌‍ـ]+", "", s)
 
 
+_DIGITS = str.maketrans("۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩", "01234567890123456789")
+
+
+def tokens(s):
+    """Whole words of a comment, each normalised like norm(). ZWNJ, emoji and punctuation split words."""
+    s = unicodedata.normalize("NFKC", s or "").translate(_DIGITS)
+    return {norm(w) for w in re.split(r"[^\w]+|_", s) if norm(w)}
+
+
+def hit(text, t, words, k):
+    """Match rules, set 29 Sep 2026.
+    A number keyword (the 7 Oct onward CTA) fires only when the comment IS that
+    number, once digits are made Latin and spaces, emoji and punctuation are
+    dropped: "5", "۵", "5 🙏" yes; "10/10", "۵ دقیقه" no.
+    A keyword of 3 letters or fewer must be a whole word, so «ورد» no longer
+    fires on «مورد», «متا» on «متاسفانه», «ویس» on «بنویس».
+    Longer keywords keep the old contains-match, which catches misspellings."""
+    nk = norm(k).translate(_DIGITS)
+    if not nk:
+        return False
+    if nk.isdigit():
+        bare = "".join(ch for ch in unicodedata.normalize("NFKC", text or "").translate(_DIGITS)
+                       if ch.isalnum())
+        return bare == nk
+    if len(nk) <= 3:
+        return nk in words
+    return nk in t
+
+
 def matches(text, keywords, exclude):
     t = norm(text)
-    if any(norm(x) and norm(x) in t for x in exclude):
+    words = tokens(text)
+    if any(hit(text, t, words, x) for x in exclude):
         return False
-    return any(norm(k) and norm(k) in t for k in keywords)
+    return any(hit(text, t, words, k) for k in keywords)
 
 
 # ------------------------------------------------------------------ io
