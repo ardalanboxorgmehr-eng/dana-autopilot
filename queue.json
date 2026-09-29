@@ -65,6 +65,38 @@
       "keyword": "ویندوز",
       "notes": "Gemini app for Windows, Alt + Space",
       "status": "pending"
+    },
+    {
+      "id": "2026-10-05-0600",
+      "publish_at": "2026-10-05T06:00",
+      "slides": 7,
+      "keyword": "فیزیک",
+      "notes": "Claude computes a nine-loop physics amplitude (Anthropic, 25 Sep)",
+      "status": "pending"
+    },
+    {
+      "id": "2026-10-05-1530",
+      "publish_at": "2026-10-05T15:30",
+      "slides": 7,
+      "keyword": "ورد",
+      "notes": "ChatGPT for Word add-in, all plans",
+      "status": "pending"
+    },
+    {
+      "id": "2026-10-06-0600",
+      "publish_at": "2026-10-06T06:00",
+      "slides": 7,
+      "keyword": "حافظه",
+      "notes": "Georgetown/UW study: misleading AI summaries distort memory",
+      "status": "pending"
+    },
+    {
+      "id": "2026-10-06-1530",
+      "publish_at": "2026-10-06T15:30",
+      "slides": 7,
+      "keyword": "اکانت",
+      "notes": "ChatGPT security history and active sessions, all plans",
+      "status": "pending"
     }
   ]
 }
