@@ -1345,6 +1345,10 @@
     "18067356329786356": {
       "user": "milad_hosenvand7",
       "at": "2026-09-29T16:50:50.836909+00:00"
+    },
+    "18629803387012717": {
+      "user": "pahlevonabolfazl.official",
+      "at": "2026-09-29T17:31:04.874639+00:00"
     }
   },
   "18017930855731657": {
@@ -1472,17 +1476,28 @@
     "18115466294517754": {
       "user": "sedaghat.hamzeh",
       "at": "2026-09-29T17:00:11.890830+00:00"
+    },
+    "18115867763049666": {
+      "user": "neda_abdolahi65",
+      "at": "2026-09-29T17:31:04.874639+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9fhlYgEYp8dFHvu4kIypOo\"}}"
     }
   },
   "_report": {
-    "at": "2026-09-29T17:00:11.890830+00:00",
+    "at": "2026-09-29T17:31:04.874639+00:00",
     "mode": "live",
     "sent": 1,
-    "failed": 0,
+    "failed": 1,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "p00",
+        "user": "neda_abdolahi65",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9fhlYgEYp8dFHvu4kIypOo\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
