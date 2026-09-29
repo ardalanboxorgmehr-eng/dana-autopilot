@@ -1429,6 +1429,10 @@
     "18141777730560594": {
       "user": "12398000h4",
       "at": "2026-09-29T21:16:29.172254+00:00"
+    },
+    "18128194858833196": {
+      "user": "farhadiroyall",
+      "at": "2026-09-29T21:30:20.118398+00:00"
     }
   },
   "18017930855731657": {
@@ -1661,15 +1665,27 @@
     "17977675349914855": {
       "user": "dr.aryani6",
       "at": "2026-09-29T21:16:29.172254+00:00"
+    },
+    "17972302733946803": {
+      "user": "hirochica",
+      "at": "2026-09-29T21:30:20.118398+00:00"
+    },
+    "17942372538357319": {
+      "user": "mansour_50_50",
+      "at": "2026-09-29T21:30:20.118398+00:00"
+    },
+    "18039160889834048": {
+      "user": "radmaneshdepartment2299",
+      "at": "2026-09-29T21:30:20.118398+00:00"
     }
   },
   "_report": {
-    "at": "2026-09-29T21:16:29.172254+00:00",
+    "at": "2026-09-29T21:30:20.118398+00:00",
     "mode": "live",
     "sent": 4,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -1708,6 +1724,12 @@
       "rule": "p06",
       "at": "2026-09-29T19:56:51.049700+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTYwMjAzMjYzNjYxNDY1OTozMzAzMjg5NzMxNDkyNTI4NDg4MDgwODA4OTkxOTQyMjQ2NAZDZD": {
+      "user": "mmhezs",
+      "uid": "28488333470805309",
+      "rule": "p00",
+      "at": "2026-09-29T21:30:20.118398+00:00"
     }
   },
   "18630278164012008": {
