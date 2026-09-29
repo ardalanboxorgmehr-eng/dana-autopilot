@@ -24,7 +24,8 @@
       "slides": 7,
       "keyword": "نفوذ",
       "notes": "OpenAI agent accessed Australia's Medicare statistics portal",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-02-1530",
@@ -32,7 +33,8 @@
       "slides": 8,
       "keyword": "فلش",
       "notes": "ChatGPT interactive flashcards, free on all plans",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-03-0600",
@@ -40,7 +42,8 @@
       "slides": 7,
       "keyword": "گجت",
       "notes": "Meta Muse Charm, pocket AI device",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-03-1530",
@@ -48,7 +51,8 @@
       "slides": 7,
       "keyword": "دوربین",
       "notes": "Flock camera wrongful arrest, Senate testimony",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-04-0600",
@@ -56,7 +60,8 @@
       "slides": 8,
       "keyword": "انیگما",
       "notes": "GPT-6 Astra breaks a 1941 Enigma message unsolved since 2005",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-04-1530",
@@ -64,7 +69,8 @@
       "slides": 7,
       "keyword": "ویندوز",
       "notes": "Gemini app for Windows, Alt + Space",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-05-0600",
@@ -72,7 +78,8 @@
       "slides": 7,
       "keyword": "فیزیک",
       "notes": "Claude computes a nine-loop physics amplitude (Anthropic, 25 Sep)",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-05-1530",
@@ -80,7 +87,8 @@
       "slides": 7,
       "keyword": "ورد",
       "notes": "ChatGPT for Word add-in, all plans",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-06-0600",
@@ -88,7 +96,8 @@
       "slides": 7,
       "keyword": "حافظه",
       "notes": "Georgetown/UW study: misleading AI summaries distort memory",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     },
     {
       "id": "2026-10-06-1530",
@@ -96,7 +105,8 @@
       "slides": 7,
       "keyword": "اکانت",
       "notes": "ChatGPT security history and active sessions, all plans",
-      "status": "pending"
+      "status": "external",
+      "scheduled_via": "Instagram web scheduler (Chrome), 29 Sep 2026"
     }
   ]
 }
