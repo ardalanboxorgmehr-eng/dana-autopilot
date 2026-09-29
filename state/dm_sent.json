@@ -25,6 +25,10 @@
     "17973073487944268": {
       "user": "amrezrj",
       "at": "2026-09-28T16:49:02.584843+00:00"
+    },
+    "17949683766053935": {
+      "user": "jimmim.ai",
+      "at": "2026-09-29T19:56:51.049700+00:00"
     }
   },
   "18090474026675518": {
@@ -1592,9 +1596,9 @@
     }
   },
   "_report": {
-    "at": "2026-09-29T19:44:48.824574+00:00",
+    "at": "2026-09-29T19:56:51.049700+00:00",
     "mode": "live",
-    "sent": 6,
+    "sent": 1,
     "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
@@ -1629,6 +1633,13 @@
       "uid": "1809169663429020",
       "rule": "p00",
       "at": "2026-09-29T19:17:34.310075+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTcwNTQ5NjU1Mjg1MjY3ODozMzAzMjgwMjk3NzQyNTQ3NTY2NzQzNDIzMDg1MTMwNTQ3MgZDZD": {
+      "user": "jimmim.ai",
+      "uid": "28365211139766665",
+      "rule": "p06",
+      "at": "2026-09-29T19:56:51.049700+00:00",
+      "skipped": "already has it"
     }
   }
 }
