@@ -1244,12 +1244,12 @@
     }
   },
   "_report": {
-    "at": "2026-09-29T05:30:44.733775+00:00",
+    "at": "2026-09-29T05:45:21.934297+00:00",
     "mode": "live",
     "sent": 0,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 2,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
     "failures": []
   },
