@@ -11,7 +11,15 @@
       "caption_starts": "خداحافظ پاورپوینت",
       "keywords": [
         "پرامپت",
-        "prompt"
+        "prompt",
+        "پرامیت",
+        "پراپمت",
+        "پرایمت",
+        "پرامت",
+        "پرمپت",
+        "پرامپ",
+        "پروامپت",
+        "promt"
       ],
       "message": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why."
     },
