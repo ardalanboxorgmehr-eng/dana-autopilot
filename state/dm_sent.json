@@ -2599,12 +2599,40 @@
     "18079355678374427": {
       "user": "asma_a313",
       "at": "2026-09-30T08:37:03.967661+00:00"
+    },
+    "18091716488655519": {
+      "user": "vafa.ghobadpour",
+      "at": "2026-09-30T08:51:20.947847+00:00"
+    },
+    "17909855802491009": {
+      "user": "nacmhe",
+      "at": "2026-09-30T08:51:20.947847+00:00"
+    },
+    "18112788160981830": {
+      "user": "its_me_hossein",
+      "at": "2026-09-30T08:51:20.947847+00:00"
+    },
+    "18079762838348606": {
+      "user": "royaghaffariy",
+      "at": "2026-09-30T08:51:20.947847+00:00"
+    },
+    "18146242690562852": {
+      "user": "mahsaei.mi729094",
+      "at": "2026-09-30T08:51:20.947847+00:00"
+    },
+    "18352824502169388": {
+      "user": "elham_rzae",
+      "at": "2026-09-30T08:51:20.947847+00:00"
+    },
+    "18162439546497804": {
+      "user": "dr.mohamad.mehdi.mirzaei61",
+      "at": "2026-09-30T08:51:20.947847+00:00"
     }
   },
   "_report": {
-    "at": "2026-09-30T08:37:03.967661+00:00",
+    "at": "2026-09-30T08:51:20.947847+00:00",
     "mode": "live",
-    "sent": 9,
+    "sent": 7,
     "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
@@ -2665,6 +2693,13 @@
       "uid": "939476082114969",
       "rule": "p00",
       "at": "2026-09-30T06:50:55.111164+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI5ODY0NDI3MzAwNjQxNTIyMzozMzAzMzY1MDYxMTkyMTIwMTg2NjQ1MzQxODI2MDgyNDA2NAZDZD": {
+      "user": "royaghaffariy",
+      "uid": "1267486085511508",
+      "rule": "p00",
+      "at": "2026-09-30T08:51:20.947847+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
