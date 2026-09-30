@@ -5063,15 +5063,31 @@
     "18117212872795902": {
       "user": "delsa.mahdaviii1396",
       "at": "2026-09-30T21:31:52.786516+00:00"
+    },
+    "18465153544137670": {
+      "user": "papalounadi",
+      "at": "2026-09-30T21:46:39.701466+00:00"
+    },
+    "18116016367795669": {
+      "user": "paris_sh",
+      "at": "2026-09-30T21:46:39.701466+00:00"
+    },
+    "18112311530015340": {
+      "user": "iamnasermohammadi",
+      "at": "2026-09-30T21:46:39.701466+00:00"
+    },
+    "17895550548612863": {
+      "user": "saratohidinia2024",
+      "at": "2026-09-30T21:46:39.701466+00:00"
     }
   },
   "_report": {
-    "at": "2026-09-30T21:31:52.786516+00:00",
+    "at": "2026-09-30T21:46:39.701466+00:00",
     "mode": "live",
-    "sent": 12,
+    "sent": 4,
     "failed": 0,
-    "skipped": 1,
-    "inbox_sent": 0,
+    "skipped": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -5167,6 +5183,19 @@
       "uid": "1120884017293592",
       "rule": "p00",
       "at": "2026-09-30T20:17:41.733849+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTkwNzc2NTk4NDg5MDc2NzozMzAzNDUxMTI3ODkzMzg1MDI2MjM5MjIxMTE3MzgwMTk4NAZDZD": {
+      "user": "atfh.mqbli67",
+      "uid": "2191987065035915",
+      "rule": "p04",
+      "at": "2026-09-30T21:46:39.701466+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc5NDMwODY5MDM1MDQwMDozMzAzNDUwNDMxMjQ1NzM2NDg5OTE1Nzk2NjU2Njk4MTYzMgZDZD": {
+      "user": "nazanin_rastegar69",
+      "uid": "1104619005552147",
+      "rule": "p00",
+      "at": "2026-09-30T21:46:39.701466+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
