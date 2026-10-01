@@ -7959,12 +7959,28 @@
     "18102004685034591": {
       "user": "siamnem",
       "at": "2026-10-01T22:15:40.255448+00:00"
+    },
+    "18067812584749959": {
+      "user": "neginsh99._",
+      "at": "2026-10-01T22:28:55.377382+00:00"
+    },
+    "17968285185178119": {
+      "user": "sabarahmati_72",
+      "at": "2026-10-01T22:28:55.377382+00:00"
+    },
+    "17884494099505106": {
+      "user": "zsoil1394_1989",
+      "at": "2026-10-01T22:28:55.377382+00:00"
+    },
+    "18286676692293652": {
+      "user": "dr.z_soortiji",
+      "at": "2026-10-01T22:28:55.377382+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-01T22:15:40.255448+00:00",
+    "at": "2026-10-01T22:28:55.377382+00:00",
     "mode": "live",
-    "sent": 3,
+    "sent": 4,
     "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
@@ -8147,6 +8163,13 @@
       "uid": "1431183378987220",
       "rule": "p04",
       "at": "2026-10-01T20:47:58.370363+00:00",
+      "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc1MTg2OTY0MDU5OTgzNDozMzAzNjE1NjE3NzYwNzYyMDMwMDE4MjE2NjUyMTc3NDA4MAZDZD": {
+      "user": "zsoil1394_1989",
+      "uid": "923982700507670",
+      "rule": "p00",
+      "at": "2026-10-01T22:28:55.377382+00:00",
       "skipped": "already has it"
     }
   },
