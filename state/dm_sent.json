@@ -7120,15 +7120,32 @@
     "17913021831496491": {
       "user": "meysam61m",
       "at": "2026-10-01T14:38:04.649558+00:00"
+    },
+    "18027796505887566": {
+      "user": "at.melika",
+      "at": "2026-10-01T14:59:04.790366+00:00"
+    },
+    "18031118771677139": {
+      "user": "a.6874.f",
+      "at": "2026-10-01T14:59:04.790366+00:00"
+    },
+    "18116839321988394": {
+      "user": "a.6874.f",
+      "at": "2026-10-01T14:59:04.790366+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18117405121988702": {
+      "user": "mortazavi793",
+      "at": "2026-10-01T14:59:04.790366+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-01T14:38:04.649558+00:00",
+    "at": "2026-10-01T14:59:04.790366+00:00",
     "mode": "live",
-    "sent": 8,
+    "sent": 5,
     "failed": 0,
     "skipped": 1,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -7277,6 +7294,12 @@
       "rule": "p00",
       "at": "2026-10-01T11:17:18.228186+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTUxMTk4NTk2MjEwMTc5MDozMzAzNTY0NzUxMjIxMzY3ODQwMjg4MDkxNzU2MTQwOTUzNgZDZD": {
+      "user": "akbarimarzieh40",
+      "uid": "1512249717595406",
+      "rule": "p00",
+      "at": "2026-10-01T14:59:04.790366+00:00"
     }
   },
   "18630278164012008": {
@@ -7321,6 +7344,16 @@
     "18102336434360938": {
       "user": "nazari_elinaa",
       "at": "2026-10-01T05:46:17.146583+00:00"
+    }
+  },
+  "18143673127579140": {
+    "17951324916275873": {
+      "user": "asli_nots_",
+      "at": "2026-10-01T14:59:04.790366+00:00"
+    },
+    "18059815748793549": {
+      "user": "alireza_eram",
+      "at": "2026-10-01T14:59:04.790366+00:00"
     }
   }
 }
