@@ -8438,15 +8438,47 @@
     "18116321455956978": {
       "user": "omidollomii",
       "at": "2026-10-02T06:21:55.235709+00:00"
+    },
+    "17871535425649405": {
+      "user": "sarah_hn98",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "17981454149904610": {
+      "user": "shabnam.mti",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "18034493165904046": {
+      "user": "elec.engeen2011",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "18122781688926360": {
+      "user": "shamesoozan.psychology",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "18112631818844601": {
+      "user": "aynaz__esmailzadeh82",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "18634837636011248": {
+      "user": "peyman.pouria",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "18043724627822540": {
+      "user": "nur_naz_2000",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "18096643520388509": {
+      "user": "saraa_rma",
+      "at": "2026-10-02T06:42:20.223100+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-02T06:21:55.235709+00:00",
+    "at": "2026-10-02T06:42:20.223100+00:00",
     "mode": "live",
-    "sent": 16,
+    "sent": 8,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 2,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -8647,6 +8679,18 @@
       "rule": "p00",
       "at": "2026-10-02T05:16:49.299478+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgzNDc3Njk0OTYwODA3NTozMzAzNjcwMTcxMzc2Mzc0NTE5Mjg5MDE3NTIxMDkxMzc5MgZDZD": {
+      "user": "siamaksalahi",
+      "uid": "2539668946531099",
+      "rule": "p00",
+      "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgzNDc3Njk0OTYwODA3NTozMzAzNjcwNDM3MjIzMzI1NjgyNjgzNDA5Mjg0Nzc5MjEyOAZDZD": {
+      "user": "siamaksalahi",
+      "uid": "2539668946531099",
+      "rule": "2026-10-01-1530",
+      "at": "2026-10-02T06:42:20.223100+00:00"
     }
   },
   "18630278164012008": {
