@@ -8715,15 +8715,31 @@
     "17969127756172106": {
       "user": "0_.mariy._0",
       "at": "2026-10-02T08:35:36.685813+00:00"
+    },
+    "18093308009549739": {
+      "user": "mojtaba1986_",
+      "at": "2026-10-02T08:48:29.640050+00:00"
+    },
+    "18113601926106604": {
+      "user": "hamid.hamed.mahmoud",
+      "at": "2026-10-02T08:48:29.640050+00:00"
+    },
+    "18021592235920897": {
+      "user": "milad.rjb95",
+      "at": "2026-10-02T08:48:29.640050+00:00"
+    },
+    "18070037114753236": {
+      "user": "dr.arabfarashahi",
+      "at": "2026-10-02T08:48:29.640050+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-02T08:35:36.685813+00:00",
+    "at": "2026-10-02T08:48:29.640050+00:00",
     "mode": "live",
-    "sent": 11,
+    "sent": 4,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -8936,6 +8952,12 @@
       "uid": "2539668946531099",
       "rule": "2026-10-01-1530",
       "at": "2026-10-02T06:42:20.223100+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgwODY5MzQ4ODg4Mzk1NTozMzAzNjgzOTM3MjM5MDgyMzgwMjEwNTY2NTY1NjE5MzAyNAZDZD": {
+      "user": "baharnayeri55",
+      "uid": "1104142272260525",
+      "rule": "p00",
+      "at": "2026-10-02T08:48:29.640050+00:00"
     }
   },
   "18630278164012008": {
