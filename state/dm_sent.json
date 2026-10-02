@@ -9854,15 +9854,31 @@
     "17956810032251707": {
       "user": "dr_seyed.saeid.taghaviyan",
       "at": "2026-10-02T21:30:59.050638+00:00"
+    },
+    "18110325866173349": {
+      "user": "gheidarisamira",
+      "at": "2026-10-02T21:45:54.607004+00:00"
+    },
+    "18008454398989012": {
+      "user": "fatemehamerijam",
+      "at": "2026-10-02T21:45:54.607004+00:00"
+    },
+    "17953169142037596": {
+      "user": "opal1.4044",
+      "at": "2026-10-02T21:45:54.607004+00:00"
+    },
+    "18095164283551335": {
+      "user": "atefeh_g2003",
+      "at": "2026-10-02T21:45:54.607004+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-02T21:30:59.050638+00:00",
+    "at": "2026-10-02T21:45:54.607004+00:00",
     "mode": "live",
     "sent": 4,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -10112,6 +10128,12 @@
       "uid": "1645992606923578",
       "rule": "p06",
       "at": "2026-10-02T16:49:04.472956+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTYwODY5NDQxNTgxMDk3ODozMzAzNzY5ODQ5MDkxNzU4NzczMzEyODIyNjA1MDkzMjczNgZDZD": {
+      "user": "yeganmd._",
+      "uid": "1446661113980706",
+      "rule": "p00",
+      "at": "2026-10-02T21:45:54.607004+00:00"
     }
   },
   "18630278164012008": {
