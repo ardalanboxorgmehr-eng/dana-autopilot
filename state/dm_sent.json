@@ -8246,15 +8246,43 @@
     "17933308833400704": {
       "user": "na.sim2537",
       "at": "2026-10-02T04:57:59.469850+00:00"
+    },
+    "18001140491796788": {
+      "user": "sh.shahab666",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    },
+    "18116142967791873": {
+      "user": "anti.usa15",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    },
+    "17975167365135525": {
+      "user": "navidotr",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    },
+    "18105943643349645": {
+      "user": "elimeli2017",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    },
+    "18033711812667165": {
+      "user": "mandana.zeb",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    },
+    "18088308230260109": {
+      "user": "mamasfeiz",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    },
+    "17924382087203339": {
+      "user": "mmd_kk01",
+      "at": "2026-10-02T05:16:49.299478+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-02T04:57:59.469850+00:00",
+    "at": "2026-10-02T05:16:49.299478+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 9,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -8442,6 +8470,19 @@
       "rule": "p00",
       "at": "2026-10-01T22:28:55.377382+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTg0MzY0Njk5ODYxNzAxNzozMzAzNjYwNjM1OTA4MTg5Mzc0ODYwMTQ2Mzk0MTEwMzYxNgZDZD": {
+      "user": "hessamebrahimi_org",
+      "uid": "1429189282638394",
+      "rule": "p00",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTg0MzY0Njk5ODYxNzAxNzozMzAzNjYwNzU4NjE1Njg3NDU2MTU0MzEwNzc3NjYxMDMwNAZDZD": {
+      "user": "hessamebrahimi_org",
+      "uid": "1429189282638394",
+      "rule": "p00",
+      "at": "2026-10-02T05:16:49.299478+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
@@ -8520,6 +8561,16 @@
     "18134106508646481": {
       "user": "mm.mhasani",
       "at": "2026-10-02T03:17:35.689950+00:00"
+    },
+    "18141777016508943": {
+      "user": "elimeli2017",
+      "at": "2026-10-02T05:16:49.299478+00:00"
+    }
+  },
+  "18043727183817647": {
+    "17915694336264710": {
+      "user": "mojtabaabaie",
+      "at": "2026-10-02T05:16:49.299478+00:00"
     }
   }
 }
