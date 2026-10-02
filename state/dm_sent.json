@@ -2024,6 +2024,10 @@
     "18088704569305765": {
       "user": "mersede.mj68",
       "at": "2026-10-02T00:50:22.495340+00:00"
+    },
+    "17911594905531855": {
+      "user": "atossa.sm",
+      "at": "2026-10-02T04:48:11.398925+00:00"
     }
   },
   "18017930855731657": {
@@ -8213,28 +8217,42 @@
     "18131028598784125": {
       "user": "aliii.ashouri",
       "at": "2026-10-02T04:33:39.944356+00:00"
+    },
+    "18114798272090113": {
+      "user": "morad_baradaran",
+      "at": "2026-10-02T04:48:11.398925+00:00"
+    },
+    "17873955360588063": {
+      "user": "mh.basereh",
+      "at": "2026-10-02T04:48:11.398925+00:00"
+    },
+    "17946192087346030": {
+      "user": "mohammad.s.h91",
+      "at": "2026-10-02T04:48:11.398925+00:00"
+    },
+    "18031676861852383": {
+      "user": "mohammad.s.h91",
+      "at": "2026-10-02T04:48:11.398925+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18083202173328882": {
+      "user": "metanoia_skin_beauty04",
+      "at": "2026-10-02T04:48:11.398925+00:00"
+    },
+    "18494687458096887": {
+      "user": "farzaneh.basir",
+      "at": "2026-10-02T04:48:11.398925+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-02T04:33:39.944356+00:00",
+    "at": "2026-10-02T04:48:11.398925+00:00",
     "mode": "live",
-    "sent": 4,
-    "failed": 2,
-    "skipped": 0,
+    "sent": 6,
+    "failed": 0,
+    "skipped": 1,
     "inbox_sent": 0,
     "bounce_backlog": 0,
-    "failures": [
-      {
-        "post": "p00",
-        "user": "javad.a970",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AP1SQrxm8WGk-4oIIMLcLl9\"}}"
-      },
-      {
-        "post": "p00",
-        "user": "hessamebrahimi_org",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A-kzr_pMn4qAMDrJLMLc9Hs\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
