@@ -9424,15 +9424,39 @@
     "18110288141605216": {
       "user": "mahshid.jeihouni",
       "at": "2026-10-02T16:33:36.349253+00:00"
+    },
+    "17991284115045962": {
+      "user": "calledpano",
+      "at": "2026-10-02T16:49:04.472956+00:00"
+    },
+    "17960345061229417": {
+      "user": "z.a.r.a.1992",
+      "at": "2026-10-02T16:49:04.472956+00:00"
+    },
+    "18098586002544971": {
+      "user": "sobhan__sadeghi",
+      "at": "2026-10-02T16:49:04.472956+00:00"
+    },
+    "18138424387618121": {
+      "user": "goli_behtar_",
+      "at": "2026-10-02T16:49:04.472956+00:00"
+    },
+    "17943278172086653": {
+      "user": "a_zeinal_com",
+      "at": "2026-10-02T16:49:04.472956+00:00"
+    },
+    "18083153081324813": {
+      "user": "naserkh4956",
+      "at": "2026-10-02T16:49:04.472956+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-02T16:33:36.349253+00:00",
+    "at": "2026-10-02T16:49:04.472956+00:00",
     "mode": "live",
     "sent": 6,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -9676,6 +9700,12 @@
       "rule": "p00",
       "at": "2026-10-02T13:19:11.843027+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTYyODQzMDQ5NzE1MjAzNTozMzAzNzM2NTUxMTc1NTI4NTk0NjkwNzI0MjE3MDE1NTAwOAZDZD": {
+      "user": "pegah_rozati",
+      "uid": "1645992606923578",
+      "rule": "p06",
+      "at": "2026-10-02T16:49:04.472956+00:00"
     }
   },
   "18630278164012008": {
