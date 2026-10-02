@@ -8186,17 +8186,55 @@
       "user": "zahrahadidoost",
       "at": "2026-10-02T04:18:11.519204+00:00",
       "skipped": "already sent to this person"
+    },
+    "17889372951654228": {
+      "user": "javad.a970",
+      "at": "2026-10-02T04:33:39.944356+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AP1SQrxm8WGk-4oIIMLcLl9\"}}"
+    },
+    "18335632924277296": {
+      "user": "s.falah10978",
+      "at": "2026-10-02T04:33:39.944356+00:00"
+    },
+    "18634727392048848": {
+      "user": "hessamebrahimi_org",
+      "at": "2026-10-02T04:33:39.944356+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A-kzr_pMn4qAMDrJLMLc9Hs\"}}",
+      "bounced": "2026-10-02T04:33:39.944356+00:00"
+    },
+    "18122769883936602": {
+      "user": "shimabeiraghi",
+      "at": "2026-10-02T04:33:39.944356+00:00"
+    },
+    "18078941609380287": {
+      "user": "ervin.a2284",
+      "at": "2026-10-02T04:33:39.944356+00:00"
+    },
+    "18131028598784125": {
+      "user": "aliii.ashouri",
+      "at": "2026-10-02T04:33:39.944356+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-02T04:18:11.519204+00:00",
+    "at": "2026-10-02T04:33:39.944356+00:00",
     "mode": "live",
-    "sent": 3,
-    "failed": 0,
-    "skipped": 1,
+    "sent": 4,
+    "failed": 2,
+    "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "p00",
+        "user": "javad.a970",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AP1SQrxm8WGk-4oIIMLcLl9\"}}"
+      },
+      {
+        "post": "p00",
+        "user": "hessamebrahimi_org",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A-kzr_pMn4qAMDrJLMLc9Hs\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
