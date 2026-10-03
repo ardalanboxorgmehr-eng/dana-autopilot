@@ -62,6 +62,10 @@
     "18107494049233238": {
       "user": "firozehrazavi",
       "at": "2026-10-02T07:18:47.257392+00:00"
+    },
+    "18115311443279342": {
+      "user": "h.b.369",
+      "at": "2026-10-03T11:04:06.663644+00:00"
     }
   },
   "18090474026675518": {
@@ -10204,12 +10208,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-03T10:33:13.575753+00:00",
+    "at": "2026-10-03T11:04:06.663644+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 1,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 2,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -10471,6 +10475,18 @@
       "uid": "1096515873085427",
       "rule": "p00",
       "at": "2026-10-03T04:56:23.657492+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI1NTgzMTQ4ODY2OTYyMTozMzAzODU4Njc4MzMyMDUwMDEzOTQ4Njc4MDA4MjYxODM2OAZDZD": {
+      "user": "sarah.yoosefi",
+      "uid": "1420864339427812",
+      "rule": "p00",
+      "at": "2026-10-03T11:04:06.663644+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDAwODc2NDE1MTU2NjI1MzozMzAzODU4NTY3NjI1NTcwMTI4NTI0MjE1NzMxNjE3NzkyMAZDZD": {
+      "user": "arashqarachorlu",
+      "uid": "2110193266268219",
+      "rule": "p00",
+      "at": "2026-10-03T11:04:06.663644+00:00"
     }
   },
   "18630278164012008": {
