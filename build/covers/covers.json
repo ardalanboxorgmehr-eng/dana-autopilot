@@ -1,0 +1,586 @@
+{
+"12-1530": {
+"lines": [
+"پرو لباس بدون اتاق پرو؟",
+"ChatGPT لباس رو تنت می‌کنه",
+"ولی عکست پیشش می‌مونه"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.5,
+0.35
+],
+"side": "right",
+"credit": "Photo: TechCrunch / CC BY 2.0"
+},
+"13-0600": {
+"lines": [
+"هوش مصنوعی بلوف زدن یاد گرفت",
+"قهرمان استراتگو رو",
+"۱۵ به ۱ شکست داد"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: zizou man / CC BY 2.0"
+},
+"13-1530": {
+"lines": [
+"دیگه هر روز سایت رو چک نکن",
+"گوگل خودش حواسش هست",
+"و خبرت می‌کنه"
+],
+"badges": [
+"google"
+],
+"focus": [
+0.5,
+0.38
+],
+"credit": "Photo: YouTube / CC BY 3.0"
+},
+"14-0600": {
+"lines": [
+"مقتول با هوش مصنوعی",
+"تو دادگاه حرف زد",
+"حالا حکمش باطل شد"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Brandonrush / CC0"
+},
+"14-1530": {
+"lines": [
+"اختاپوس سه تا قلب داره",
+"خونش آبیه",
+"و مغزش تو بازوهاشه"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Betty Wills (Atsme) / CC BY-SA 4.0"
+},
+"15-0600": {
+"lines": [
+"چت‌بات‌ها همه یه جواب می‌دن؟",
+"تحقیق جدید می‌گه آره",
+"حتی کم‌تنوع‌تر از گوگل"
+],
+"badges": [
+"chatgpt",
+"gemini"
+],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Océanos y dados / CC0"
+},
+"15-1530": {
+"lines": [
+"متا گفت AI جات زنگ می‌زنه",
+"ولی پشت خط",
+"یه آدم واقعی بود"
+],
+"badges": [
+"meta"
+],
+"focus": [
+0.5,
+0.18
+],
+"side": "right",
+"credit": "Photo: Anthony Quintano from Westminster, United States / CC BY 2.0"
+},
+"16-0600": {
+"lines": [
+"پرسشنامه رو AI پر کرد",
+"پیو آزمایشش کرد",
+"جواب‌ها با آدم‌ها جور نبود"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Raimond Spekking / CC BY-SA 4.0"
+},
+"16-1530": {
+"lines": [
+"خداحافظ پرامپت تکراری؟",
+"جمنای حالا اسکیل داره",
+"یه بار بنویس، همیشه استفاده کن"
+],
+"badges": [
+"gemini"
+],
+"focus": [
+0.5,
+0.55
+],
+"zoom": 2.6,
+"credit": "Photo: Steven Zimmerman / CC BY-SA 4.0"
+},
+"17-0600": {
+"lines": [
+"یه روز روی زهره",
+"از یه سالش طولانی‌تره",
+"و خورشید از غرب درمیاد"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: NASA/JPL / Public domain"
+},
+"17-1530": {
+"lines": [
+"ابزار تشخیص متن AI؟",
+"خود OpenAI جمعش کرد",
+"فقط ۲۶٪ رو درست می‌گرفت"
+],
+"badges": [
+{
+"logo": "openai",
+"cross": true
+}
+],
+"focus": [
+0.5,
+0.5
+],
+"side": "right",
+"credit": "Photo: Alison wood / CC BY 3.0"
+},
+"18-0600": {
+"lines": [
+"جواب چت‌باتت معمولیه؟",
+"این فرمول ۴ تیکه‌ای گوگل",
+"همه‌چی رو عوض می‌کنه"
+],
+"badges": [
+"gemini"
+],
+"focus": [
+0.42,
+0.3
+],
+"zoom": 1.8,
+"credit": "Photo: John Sears / CC BY-SA 4.0"
+},
+"18-1530": {
+"lines": [
+"وکیل به ChatGPT اعتماد کرد",
+"۶ تا پرونده‌ی خیالی گرفت",
+"و دادگاه جریمه‌ش کرد"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.5,
+0.45
+],
+"credit": "Photo: PAT M IN NYC (Wikis Take Manhattan 2009 participant) / CC BY-SA"
+},
+"19-0600": {
+"lines": [
+"چت‌بات جواب رو نمی‌دونه",
+"کلمه به کلمه حدس می‌زنه",
+"برای همین گاهی چرت می‌گه"
+],
+"badges": [
+"openai"
+],
+"focus": [
+0.5,
+0.3
+],
+"side": "right",
+"credit": "Photo: TechCrunch / CC BY 2.0"
+},
+"19-1530": {
+"lines": [
+"وقتی به دنیا اومدی",
+"حدود ۳۰۰ تا استخون داشتی",
+"الان ۲۰۶ تا. بقیه کجا رفتن؟"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: TheDigitalArtist / CC0"
+},
+"20-0600": {
+"lines": [
+"خداحافظ کلاس اسپیکینگ؟",
+"با حالت صوتی چت‌بات",
+"مثل جلسه‌ی آیلتس تمرین کن"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.6,
+0.35
+],
+"credit": "Photo: Shixart1985 / CC BY 2.0"
+},
+"20-1530": {
+"lines": [
+"چتت با AI خصوصی نیست",
+"گوگل خودش هشدار داده",
+"این‌ها رو هیچ‌وقت نفرست"
+],
+"badges": [
+"gemini"
+],
+"focus": [
+0.5,
+0.3
+],
+"side": "right",
+"credit": "Photo: Lukasz Kobus (European Commission) / CC BY 4.0"
+},
+"21-0600": {
+"lines": [
+"۲۵ میلیون دلار با یه ویدیوکال",
+"مدیر مالی دیپ‌فیک بود",
+"و کارمند ۱۵ بار پول فرستاد"
+],
+"badges": [],
+"focus": [
+0.62,
+0.4
+],
+"zoom": 1.3,
+"credit": "Photo: Bernd Schwabe in Hannover / CC BY-SA 4.0"
+},
+"21-1530": {
+"lines": [
+"فقط غلط‌های رزومه رو گرفتن",
+"۸٪ بیشتر استخدام شدن",
+"حالا با یه پرامپت شدنیه"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.4,
+0.45
+],
+"side": "right",
+"credit": "Photo: amtec_photos / CC BY-SA 2.0"
+},
+"22-0600": {
+"lines": [
+"دلفین با نصف مغزش می‌خوابه",
+"نصف دیگه بیدار می‌مونه",
+"مغز تو هم یه نسخه‌ش رو داره"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: NOAA Fisheries / Public domain"
+},
+"22-1530": {
+"lines": [
+"هر سؤالت از هوش مصنوعی",
+"چقدر آب و برق می‌خوره؟",
+"عدد گوگل، و نقدهاش"
+],
+"badges": [
+"google"
+],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Chad Davis / CC BY 2.0"
+},
+"23-0600": {
+"lines": [
+"تو ۷۳٪ بازی‌ها",
+"AI رو آدم واقعی دیدن",
+"نه آدم کنارش رو"
+],
+"badges": [],
+"focus": [
+0.5,
+0.35
+],
+"credit": "Photo: Elliott & Fry / Public domain"
+},
+"23-1530": {
+"lines": [
+"یه معمای ۵۰ ساله",
+"با هوش مصنوعی حل شد",
+"و نوبل شیمی گرفت"
+],
+"badges": [
+"deepmind"
+],
+"focus": [
+0.5,
+0.35
+],
+"zoom": 1.2,
+"credit": "Photo: Arthur Petron / CC BY-SA 4.0"
+},
+"24-0600": {
+"lines": [
+"نمی‌تونی ساده توضیحش بدی؟",
+"یعنی هنوز یادش نگرفتی",
+"روش فاینمن، با هوش مصنوعی"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.5,
+0.4
+],
+"side": "right",
+"credit": "Photo: unknown / Public domain"
+},
+"24-1530": {
+"lines": [
+"حافظه‌ی ماهی قرمز ۳ ثانیه‌ست؟",
+"نه، یه افسانه‌ست",
+"ماه‌ها یادش می‌مونه"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: James St. John / CC BY 2.0"
+},
+"25-0600": {
+"lines": [
+"اولین چت‌بات دنیا، ۱۹۶۶",
+"هیچی نمی‌فهمید",
+"ولی آدم‌ها باهاش درددل کردن"
+],
+"badges": [],
+"focus": [
+0.5,
+0.4
+],
+"credit": "Photo: Ulrich Hansen, Germany (Journalist). / CC BY-SA 3.0"
+},
+"25-1530": {
+"lines": [
+"خداحافظ ایمیل‌نویسی؟",
+"نکته‌هات رو بده، ایمیل بگیر",
+"۵ ترفند که فرق رو می‌سازه"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.45,
+0.5
+],
+"side": "right",
+"credit": "Photo: Kristin Bradley (USAG Hohenfels) / Public domain"
+},
+"26-0600": {
+"lines": [
+"حرکت ۳۷",
+"احتمالش ۱ در ۱۰ هزار بود",
+"و دنیای Go رو عوض کرد"
+],
+"badges": [
+"deepmind"
+],
+"focus": [
+0.5,
+0.4
+],
+"side": "right",
+"credit": "Photo: LG Electronics / CC BY 2.0"
+},
+"26-1530": {
+"lines": [
+"عکس‌های AIت معمولی درمیان؟",
+"پرامپتت یه تکه‌ست، نه پنج تا",
+"سوژه، سبک، نور، دوربین، حس"
+],
+"badges": [
+"gemini"
+],
+"focus": [
+0.5,
+0.4
+],
+"side": "right",
+"credit": "Photo: jon jordan / CC BY 2.0"
+},
+"27-0600": {
+"lines": [
+"صاعقه دو بار یه جا نمی‌زنه؟",
+"به امپایر استیت",
+"سالی ۲۰ تا ۲۵ بار می‌زنه"
+],
+"badges": [],
+"focus": [
+0.5,
+0.45
+],
+"credit": "Photo: NOAA Photo Library / Public domain"
+},
+"27-1530": {
+"lines": [
+"هوش مصنوعی داشت می‌باخت",
+"پس خود بازی رو هک کرد",
+"بدون اینکه کسی بهش بگه"
+],
+"badges": [
+"openai"
+],
+"focus": [
+0.5,
+0.4
+],
+"side": "right",
+"credit": "Photo: 64Wolves / CC0"
+},
+"28-0600": {
+"lines": [
+"خداحافظ برنامه‌ریزی سفر؟",
+"مسیر، بودجه، لیست وسایل",
+"تو ۵ دقیقه با چند پرامپت"
+],
+"badges": [
+"chatgpt"
+],
+"focus": [
+0.7,
+0.5
+],
+"credit": "Photo: Backpacker-Dude.com / CC BY-SA 3.0 de"
+},
+"28-1530": {
+"lines": [
+"چرا AI با اطمینان",
+"چیز غلط می‌گه؟",
+"۳ راه ساده که کمترش کنی"
+],
+"badges": [
+"openai"
+],
+"focus": [
+0.5,
+0.4
+],
+"zoom": 1.4,
+"side": "right",
+"credit": "Photo: Village Global / CC BY 2.0"
+},
+"29-0600": {
+"lines": [
+"خداحافظ فرمول‌های اکسل؟",
+"فقط بگو چی می‌خوای",
+"AI فرمولش رو می‌نویسه"
+],
+"badges": [
+{
+"logo": "excel"
+},
+{
+"logo": "chatgpt"
+}
+],
+"focus": [
+0.45,
+0.35
+],
+"credit": "Photo: Brian Smale and Microsoft / CC BY-SA 4.0"
+},
+"29-1530": {
+"lines": [
+"عسل تقریبا خراب نمی‌شه",
+"ولی عسل ۳۰۰۰ ساله‌ی مصر؟",
+"آخری از همه عجیب‌تره"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Matthew T Rader / CC BY-SA 4.0"
+},
+"30-0600": {
+"lines": [
+"۲۹٪ سرطان پستان بیشتر پیدا شد",
+"کار پزشک‌ها ۴۴٪ کم شد",
+"ولی AI جای پزشک رو نگرفت"
+],
+"badges": [],
+"focus": [
+0.85,
+0.35
+],
+"zoom": 1.6,
+"credit": "Photo: National Cancer Institute / Public domain"
+},
+"30-1530": {
+"lines": [
+"خداحافظ خوندن PDF صدصفحه‌ای؟",
+"تو ۲ دقیقه بفهمش",
+"اگه درست ازش بخوای"
+],
+"badges": [
+"claude"
+],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Blogtrepreneur / CC BY 2.0"
+},
+"31-0600": {
+"lines": [
+"از هر ۴ شغل دنیا، ۱ شغل",
+"در معرض هوش مصنوعیه",
+"ولی معنیش اخراج نیست"
+],
+"badges": [],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: VeronicaTherese / CC BY-SA 3.0"
+},
+"31-1530": {
+"lines": [
+"لیست کارهات تموم نمی‌شه؟",
+"به هر کار یه جا تو تقویم بده",
+"AI تو یه دقیقه می‌چینه"
+],
+"badges": [
+"gemini"
+],
+"focus": [
+0.5,
+0.5
+],
+"credit": "Photo: Duc Ly from Portland, Oregon, usa / CC BY-SA 2.0"
+}
+}

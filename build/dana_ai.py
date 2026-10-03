@@ -59,11 +59,43 @@ def photo_top(im,ph):
     for y in range(fade): ImageDraw.Draw(g).line([(0,y),(W,y)],fill=int(255*(y/fade)**1.4))
     c.paste(Image.new("RGB",(W,fade),(0,0,0)),(0,hh-fade),g)
     return c
+def photo_fill(im,ph,focus=(0.5,0.35),zoom=1.0):
+    # cover-fit the photo into W x ph around a focus point, then fade into black
+    sc=max(W/im.width,ph/im.height)*zoom; p=im.resize((max(W,int(im.width*sc)),max(ph,int(im.height*sc))),Image.LANCZOS)
+    fx,fy=focus; x=int(min(max(fx*p.width-W/2,0),p.width-W)); y=int(min(max(fy*p.height-ph/2,0),p.height-ph))
+    c=Image.new("RGB",(W,H),(0,0,0)); c.paste(p.crop((x,y,x+W,y+ph)),(0,0))
+    fade=200; g=Image.new("L",(W,fade))
+    for yy in range(fade): ImageDraw.Draw(g).line([(0,yy),(W,yy)],fill=int(255*(yy/fade)**1.6))
+    c.paste(Image.new("RGB",(W,fade),(0,0,0)),(0,ph-fade),g)
+    return c
+BADGE_DIR=os.path.join(os.path.dirname(os.path.abspath(__file__)),"covers")
+def badge(c,name,cx,cy,r=118,cross=False):
+    lg=Image.open(os.path.join(BADGE_DIR,"L-"+name+".png")).convert("RGBA")
+    m=Image.new("L",(r*8,r*8),0); ImageDraw.Draw(m).ellipse([0,0,r*8-1,r*8-1],fill=255); m=m.resize((r*2,r*2),Image.LANCZOS)
+    disc=Image.new("RGBA",(r*2,r*2),(255,255,255,255))
+    lg.thumbnail((int(r*1.25),int(r*1.25)),Image.LANCZOS); disc.alpha_composite(lg,((r*2-lg.width)//2,(r*2-lg.height)//2))
+    sh=Image.new("L",(W,H),0); ImageDraw.Draw(sh).ellipse([cx-r-6,cy-r+4,cx+r+6,cy+r+16],fill=150); sh=sh.filter(ImageFilter.GaussianBlur(14))
+    c.paste(Image.new("RGB",(W,H),(0,0,0)),(0,0),sh)
+    c.paste(disc.convert("RGB"),(cx-r,cy-r),m)
+    d=ImageDraw.Draw(c); d.ellipse([cx-r,cy-r,cx+r,cy+r],outline=(255,255,255),width=7)
+    if cross:
+        k=int(r*0.62); d.line([(cx-k,cy-k),(cx+k,cy+k)],fill=(232,40,40),width=22); d.line([(cx-k,cy+k),(cx+k,cy-k)],fill=(232,40,40),width=22)
 def cover(s,sp):
-    c=photo_top(load(sp["src"],sp.get("crop")),sp.get("ph",830)); d=ImageDraw.Draw(c)
-    lines=sp["lines"]; top=sp.get("ph",830)-10
-    f=min([fitfa(d,t,BLACK,W-120,sp.get("size",90)) for t in lines],key=lambda x:x.size)
-    lh=f.size*1.42; y=top+(H-top-lh*len(lines))/2-f.size*0.1
+    ph=sp.get("ph",840)
+    if "photo" in sp:
+        c=photo_fill(load(sp["photo"],sp.get("crop")),ph,tuple(sp.get("focus",(0.5,0.35))),sp.get("zoom",1.0))
+    else:
+        c=photo_top(load(sp["src"],sp.get("crop")),ph)
+    bs=sp.get("badges",[]); slots=[(170,170),(W-170,170)]
+    for i,b in enumerate(bs):
+        b=b if isinstance(b,dict) else {"logo":b}
+        cx,cy=b.get("at",slots[i] if sp.get("side","left")=="left" else slots[1-i])
+        badge(c,b["logo"],cx,cy,b.get("r",118),b.get("cross",False))
+    d=ImageDraw.Draw(c)
+    if sp.get("credit"): d.text((W-22,ph-30),sp["credit"],font=F(POP,17),fill=(150,150,150),anchor="rs")
+    lines=sp["lines"]; top=ph-40
+    f=min([fitfa(d,t,BOLD,W-110,sp.get("size",78)) for t in lines],key=lambda x:x.size)
+    lh=f.size*1.5; y=top+(H-top-lh*len(lines))/2-f.size*0.05
     for i,t in enumerate(lines):
         d.text((W/2,y),t,font=f,fill=ACC if i==0 else (255,255,255),anchor="ma",**FA); y+=lh
     return c
