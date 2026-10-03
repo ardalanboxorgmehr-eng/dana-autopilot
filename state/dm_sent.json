@@ -10216,12 +10216,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-03T13:27:10.612192+00:00",
+    "at": "2026-10-03T18:26:29.728819+00:00",
     "mode": "live",
-    "sent": 3,
+    "sent": 1,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -10495,6 +10495,12 @@
       "uid": "2110193266268219",
       "rule": "p00",
       "at": "2026-10-03T11:04:06.663644+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI3MzYwODE5Njc3ODE2MDozMzAzODgwMDIyODE4Mzg0MDk2OTk1NzMwOTYyNTEzOTIwMAZDZD": {
+      "user": "sogiihz",
+      "uid": "1663918085745079",
+      "rule": "p00",
+      "at": "2026-10-03T18:26:29.728819+00:00"
     }
   },
   "18630278164012008": {
@@ -10577,6 +10583,10 @@
     "18105965825362393": {
       "user": "knowledge_paper",
       "at": "2026-10-03T13:27:10.612192+00:00"
+    },
+    "18218382151344130": {
+      "user": "ngol__3.9.600",
+      "at": "2026-10-03T18:26:29.728819+00:00"
     }
   },
   "18115467637951827": {
