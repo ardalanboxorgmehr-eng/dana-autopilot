@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "6",
+    "۶",
+    "٦"
+  ],
+  "dm_single": "سلام! مرسی که کامنت گذاشتی 😊\n\n6 پرامپت فرمول اکسل و گوگل شیت 👇\nستون‌ها رو با شیت خودت عوض کن:\n\n1. جستجو:\n\"Find the code in A2 in sheet Prices column A, return its price from column B\"\n=XLOOKUP(A2,Prices!A:A,Prices!B:B,\"Not found\")\n2. جمع با شرط:\n\"Sum C where A is North and B is a date from 2026 on\"\n=SUMIFS(C:C,A:A,\"North\",B:B,\">=\"&DATE(2026,1,1))\n3. تکراری‌ها:\n\"Flag duplicates in column A\"\n=COUNTIF(A:A,A2)>1\n4. تمیز کردن متن:\n\"Remove extra spaces in A2, capitalise each word\"\n=PROPER(TRIM(A2))\n5. نمره:\n\"Grade B2: 17+ is A, 14+ is B, else C\"\n=IFS(B2>=17,\"A\",B2>=14,\"B\",TRUE,\"C\")\n6. روز کاری:\n\"Count working days from A2 to B2\"\n=NETWORKDAYS(A2,B2)\n\nبه آخر هر پرامپت بنویس: Write the formula and explain each part.\nراهنما: support.google.com/docs/answer/12405947",
+  "dm1": "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا 6 پرامپت رو برات بفرستم",
+  "button": "بفرست",
+  "dm2": "6 پرامپت فرمول اکسل و گوگل شیت 👇\nستون‌ها رو با شیت خودت عوض کن:\n\n1. جستجو:\n\"Find the code in A2 in sheet Prices column A, return its price from column B\"\n=XLOOKUP(A2,Prices!A:A,Prices!B:B,\"Not found\")\n2. جمع با شرط:\n\"Sum C where A is North and B is a date from 2026 on\"\n=SUMIFS(C:C,A:A,\"North\",B:B,\">=\"&DATE(2026,1,1))\n3. تکراری‌ها:\n\"Flag duplicates in column A\"\n=COUNTIF(A:A,A2)>1\n4. تمیز کردن متن:\n\"Remove extra spaces in A2, capitalise each word\"\n=PROPER(TRIM(A2))\n5. نمره:\n\"Grade B2: 17+ is A, 14+ is B, else C\"\n=IFS(B2>=17,\"A\",B2>=14,\"B\",TRUE,\"C\")\n6. روز کاری:\n\"Count working days from A2 to B2\"\n=NETWORKDAYS(A2,B2)\n\nبه آخر هر پرامپت بنویس: Write the formula and explain each part.\nراهنما: support.google.com/docs/answer/12405947"
+}

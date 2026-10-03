@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "5",
+    "۵",
+    "٥"
+  ],
+  "dm_single": "سلام! مرسی که کامنت گذاشتی 😊\n\n5 پرامپت آماده با فرمول نقش + کار + زمینه + قالب 👇\nجای کروشه‌ها رو پر کن:\n\n1. توضیح درس:\n\"You are a patient tutor. Explain [topic] to a beginner with one everyday example. 5 short bullets, in Persian.\"\n2. ایمیل به استاد:\n\"You are a professional editor. Rewrite this email to my professor to be polite and clear, under 120 words: [text]\"\n3. خلاصه برای امتحان:\n\"You are a study assistant. My exam is tomorrow. Summarise this text as a table: key idea, example: [text]\"\n4. برنامه‌ی درسی:\n\"You are a study coach. Make a 2-week plan for [exam]. I have [hours] a day. Format: table with day and task.\"\n5. تصمیم‌گیری:\n\"You are a careful advisor. Compare [A] and [B] for someone who [situation]. Give a pros and cons table and one recommendation.\"\n\nمنبع: راهنمای پرامپت‌نویسی گوگل\nworkspace.google.com/resources/ai/writing-effective-prompts",
+  "dm1": "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا 5 پرامپت آماده رو برات بفرستم",
+  "button": "بفرست",
+  "dm2": "5 پرامپت آماده با فرمول نقش + کار + زمینه + قالب 👇\nجای کروشه‌ها رو پر کن:\n\n1. توضیح درس:\n\"You are a patient tutor. Explain [topic] to a beginner with one everyday example. 5 short bullets, in Persian.\"\n2. ایمیل به استاد:\n\"You are a professional editor. Rewrite this email to my professor to be polite and clear, under 120 words: [text]\"\n3. خلاصه برای امتحان:\n\"You are a study assistant. My exam is tomorrow. Summarise this text as a table: key idea, example: [text]\"\n4. برنامه‌ی درسی:\n\"You are a study coach. Make a 2-week plan for [exam]. I have [hours] a day. Format: table with day and task.\"\n5. تصمیم‌گیری:\n\"You are a careful advisor. Compare [A] and [B] for someone who [situation]. Give a pros and cons table and one recommendation.\"\n\nمنبع: راهنمای پرامپت‌نویسی گوگل\nworkspace.google.com/resources/ai/writing-effective-prompts"
+}

@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "3",
+    "۳",
+    "٣"
+  ],
+  "dm_single": "سلام! مرسی که کامنت گذاشتی 😊\n\n3 پرامپت آماده برای برنامه‌ریزی روز و هفته 👇\nجاهای خالی رو پر کن:\n\n1. برنامه‌ی امروز:\n\"My tasks with deadlines and time estimates: ___. I work ___ to ___, fixed meetings at ___, and I focus best in the ___. Time-block my day: hardest tasks in my best hours, add 25% extra time to each estimate, and a short break every 90 minutes.\"\n2. برنامه‌ی هفته:\n\"Plan my week from this list: ___. Put each task on a day based on its deadline, leave one free block each day for surprises, and show it as a table.\"\n3. وقتی به هم ریخت:\n\"It's ___ now and I didn't finish ___. Re-plan the rest of my day and tell me what to drop or move to tomorrow.\"\n\nراهنمای پرامپت‌نویسی: platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+  "dm1": "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا 3 پرامپت رو برات بفرستم",
+  "button": "بفرست",
+  "dm2": "3 پرامپت آماده برای برنامه‌ریزی روز و هفته 👇\nجاهای خالی رو پر کن:\n\n1. برنامه‌ی امروز:\n\"My tasks with deadlines and time estimates: ___. I work ___ to ___, fixed meetings at ___, and I focus best in the ___. Time-block my day: hardest tasks in my best hours, add 25% extra time to each estimate, and a short break every 90 minutes.\"\n2. برنامه‌ی هفته:\n\"Plan my week from this list: ___. Put each task on a day based on its deadline, leave one free block each day for surprises, and show it as a table.\"\n3. وقتی به هم ریخت:\n\"It's ___ now and I didn't finish ___. Re-plan the rest of my day and tell me what to drop or move to tomorrow.\"\n\nراهنمای پرامپت‌نویسی: platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+}

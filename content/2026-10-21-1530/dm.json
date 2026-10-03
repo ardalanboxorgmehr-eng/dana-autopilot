@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "3",
+    "۳",
+    "٣"
+  ],
+  "dm_single": "سلام! مرسی که کامنت گذاشتی 😊\n\n3 پرامپت آماده برای رزومه 👇\nاول شماره، آدرس و ایمیلت رو از متن حذف کن:\n\n1. غلط‌گیری بدون دست بردن در محتوا:\n\"Act as a recruiter in [field]. List the spelling, grammar and clarity problems in my CV below and suggest fixes. Do not add any skill or fact that is not in my text. [CV]\"\n2. وظیفه به دستاورد:\n\"Rewrite these bullet points as achievements: action verb + result. Use only facts I gave. Where a number is missing, write [number?] instead of inventing one. [bullets]\"\n3. هماهنگ با آگهی:\n\"Here is a job ad and my CV. List the 5 key skills in the ad, show which ones my CV already proves, and suggest wording changes using only my real experience. [ad] [CV]\"\n\nپژوهش: nber.org/papers/w30886",
+  "dm1": "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا 3 پرامپت رو برات بفرستم",
+  "button": "بفرست",
+  "dm2": "3 پرامپت آماده برای رزومه 👇\nاول شماره، آدرس و ایمیلت رو از متن حذف کن:\n\n1. غلط‌گیری بدون دست بردن در محتوا:\n\"Act as a recruiter in [field]. List the spelling, grammar and clarity problems in my CV below and suggest fixes. Do not add any skill or fact that is not in my text. [CV]\"\n2. وظیفه به دستاورد:\n\"Rewrite these bullet points as achievements: action verb + result. Use only facts I gave. Where a number is missing, write [number?] instead of inventing one. [bullets]\"\n3. هماهنگ با آگهی:\n\"Here is a job ad and my CV. List the 5 key skills in the ad, show which ones my CV already proves, and suggest wording changes using only my real experience. [ad] [CV]\"\n\nپژوهش: nber.org/papers/w30886"
+}

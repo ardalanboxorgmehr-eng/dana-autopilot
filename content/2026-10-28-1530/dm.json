@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "3",
+    "۳",
+    "٣"
+  ],
+  "dm_single": "سلام! مرسی که کامنت گذاشتی 😊\n\n3 قانون برای کم کردن جواب‌های ساختگی هوش مصنوعی 👇\n\n1. اجازه‌ی نمی‌دونم بده:\n\"If you are not sure, say I don't know instead of guessing.\"\n2. فقط از منبع خودت:\n\"Answer only from the text I paste below. If the answer is not in it, say so.\"\n3. برای هر ادعا مدرک بخواه:\n\"For each claim, quote the exact sentence from the source that supports it. Remove any claim you cannot support.\"\n\nبا اینا هم صفر نمی‌شه، برای کارهای مهم خودت چک کن.\nراهنمای Anthropic: platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+  "dm1": "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا 3 قانون رو برات بفرستم",
+  "button": "بفرست",
+  "dm2": "3 قانون برای کم کردن جواب‌های ساختگی هوش مصنوعی 👇\n\n1. اجازه‌ی نمی‌دونم بده:\n\"If you are not sure, say I don't know instead of guessing.\"\n2. فقط از منبع خودت:\n\"Answer only from the text I paste below. If the answer is not in it, say so.\"\n3. برای هر ادعا مدرک بخواه:\n\"For each claim, quote the exact sentence from the source that supports it. Remove any claim you cannot support.\"\n\nبا اینا هم صفر نمی‌شه، برای کارهای مهم خودت چک کن.\nراهنمای Anthropic: platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+}

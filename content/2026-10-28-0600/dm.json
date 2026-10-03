@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "5",
+    "۵",
+    "٥"
+  ],
+  "dm_single": "سلام! مرسی که کامنت گذاشتی 😊\n\n5 پرامپت آماده‌ی برنامه‌ریزی سفر 👇\nجاهای خالی رو پر کن:\n\n1. برنامه:\n\"Plan a ___-day trip to ___ for ___ people, budget ___. We like ___. Group nearby places on the same day, with morning, afternoon and evening plans.\"\n2. بودجه:\n\"Turn this plan into a budget table: stay, food, transport, tickets, plus 10% emergency money. Mark prices as estimates.\"\n3. وسایل:\n\"Make a packing checklist for ___ in ___ (month), based on usual weather and our plan.\"\n4. روز بارونی:\n\"Give me an indoor backup plan for each day.\"\n5. چک نهایی:\n\"Check this plan for problems: too much travel time, places that may be closed, and what I must confirm on official websites.\"\n\nقیمت، ساعت کاری و قوانین ویزا رو همیشه از سایت رسمی چک کن.\nراهنمای پرامپت‌نویسی: platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+  "dm1": "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا 5 پرامپت سفر رو برات بفرستم",
+  "button": "بفرست",
+  "dm2": "5 پرامپت آماده‌ی برنامه‌ریزی سفر 👇\nجاهای خالی رو پر کن:\n\n1. برنامه:\n\"Plan a ___-day trip to ___ for ___ people, budget ___. We like ___. Group nearby places on the same day, with morning, afternoon and evening plans.\"\n2. بودجه:\n\"Turn this plan into a budget table: stay, food, transport, tickets, plus 10% emergency money. Mark prices as estimates.\"\n3. وسایل:\n\"Make a packing checklist for ___ in ___ (month), based on usual weather and our plan.\"\n4. روز بارونی:\n\"Give me an indoor backup plan for each day.\"\n5. چک نهایی:\n\"Check this plan for problems: too much travel time, places that may be closed, and what I must confirm on official websites.\"\n\nقیمت، ساعت کاری و قوانین ویزا رو همیشه از سایت رسمی چک کن.\nراهنمای پرامپت‌نویسی: platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+}
