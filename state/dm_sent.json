@@ -10139,15 +10139,19 @@
     "17949645330289622": {
       "user": "yeganeh_t_kh",
       "at": "2026-10-03T04:46:37.936636+00:00"
+    },
+    "18345946312254759": {
+      "user": "faroughimohammadreza",
+      "at": "2026-10-03T04:56:23.657492+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-03T04:46:37.936636+00:00",
+    "at": "2026-10-03T04:56:23.657492+00:00",
     "mode": "live",
-    "sent": 3,
+    "sent": 1,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -10403,6 +10407,12 @@
       "uid": "1446661113980706",
       "rule": "p00",
       "at": "2026-10-02T21:45:54.607004+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDI4NDUxNDkzMDE5Mzg2OTozMzAzODE4MDA0NTEzMzA3NDIxODMzMDY5ODM1NDI2MjAxNgZDZD": {
+      "user": "kh.ghahremani5758",
+      "uid": "1096515873085427",
+      "rule": "p00",
+      "at": "2026-10-03T04:56:23.657492+00:00"
     }
   },
   "18630278164012008": {
