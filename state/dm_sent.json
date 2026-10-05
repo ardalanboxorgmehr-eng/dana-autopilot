@@ -10240,9 +10240,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-05T16:00:12.582754+00:00",
+    "at": "2026-10-05T16:19:09.080426+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 2,
     "failed": 0,
     "skipped": 1,
     "inbox_sent": 0,
@@ -10543,6 +10543,13 @@
       "uid": "1838437277594969",
       "rule": "p00",
       "at": "2026-10-05T05:14:51.453412+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTk2NzYzMjg4NTQ5NjI0NzozMzA0MjExOTIxNTUyODMyMzYzNDMyODcyODIxMDc2Nzg3MgZDZD": {
+      "user": "smtabatabaeiii",
+      "uid": "1624584175951395",
+      "rule": "2026-10-05-1530",
+      "at": "2026-10-05T16:19:09.080426+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
@@ -10694,6 +10701,11 @@
     "18109842404463903": {
       "user": "_zarrin.pv",
       "at": "2026-10-05T12:01:00.750566+00:00"
+    },
+    "18374035126211664": {
+      "user": "shm_1650",
+      "at": "2026-10-05T16:19:09.080426+00:00",
+      "skipped": "already sent to this person"
     }
   },
   "18115467637951827": {
@@ -10895,6 +10907,10 @@
       "user": "mohammadshafii",
       "at": "2026-10-05T16:00:12.582754+00:00",
       "skipped": "already sent to this person"
+    },
+    "18109516091463774": {
+      "user": "davemohammadi",
+      "at": "2026-10-05T16:19:09.080426+00:00"
     }
   },
   "17977527015015936": {
@@ -10927,6 +10943,10 @@
     "17951334123319206": {
       "user": "___.zk_mahhssa.___",
       "at": "2026-10-05T15:49:23.374152+00:00"
+    },
+    "18069504578778701": {
+      "user": "smtabatabaeiii",
+      "at": "2026-10-05T16:19:09.080426+00:00"
     }
   }
 }
