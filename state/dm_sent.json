@@ -10236,12 +10236,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-05T04:42:18.789070+00:00",
+    "at": "2026-10-05T05:14:51.453412+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 0,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -10533,6 +10533,12 @@
       "uid": "39086564604292766",
       "rule": "p02",
       "at": "2026-10-04T18:04:35.207556+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc2Mzk1Mzg0MDA3MjgxMzozMzA0MTM2OTI2MTgzNDQxNDMyNzAxODkyMjU2MDE5MjUxMgZDZD": {
+      "user": "llsfia",
+      "uid": "1838437277594969",
+      "rule": "p00",
+      "at": "2026-10-05T05:14:51.453412+00:00"
     }
   },
   "18630278164012008": {
