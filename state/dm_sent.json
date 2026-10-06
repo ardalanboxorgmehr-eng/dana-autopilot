@@ -10240,11 +10240,11 @@
     }
   },
   "_report": {
-    "at": "2026-10-06T08:18:55.600553+00:00",
+    "at": "2026-10-06T08:35:51.046916+00:00",
     "mode": "live",
-    "sent": 4,
+    "sent": 1,
     "failed": 0,
-    "skipped": 2,
+    "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "failures": []
@@ -11365,6 +11365,10 @@
       "user": "rbaghaee",
       "at": "2026-10-06T08:18:55.600553+00:00",
       "skipped": "already sent to this person"
+    },
+    "18108930860622474": {
+      "user": "amin_hkr",
+      "at": "2026-10-06T08:35:51.046916+00:00"
     }
   }
 }
