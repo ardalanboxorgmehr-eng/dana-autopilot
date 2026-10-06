@@ -10240,12 +10240,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-06T14:51:15.977277+00:00",
+    "at": "2026-10-06T15:02:52.263353+00:00",
     "mode": "live",
     "sent": 2,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -10556,6 +10556,19 @@
       "uid": "1776564053627889",
       "rule": "p02",
       "at": "2026-10-06T11:58:27.620991+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTkxMzU0ODg2MTE3MTk1MDozMzA0MzYzMDI3NDYzMDM5NTIxMTkwMzM3MzUxMzA2NDQ0OAZDZD": {
+      "user": "tabtab11015",
+      "uid": "1078757401595536",
+      "rule": "p09",
+      "at": "2026-10-06T15:02:52.263353+00:00",
+      "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTEzMzM1MTc0MTA4NzI4MjozMzA0MzYyNTA0MjEzMTk4ODU3NzQ2MzU5MDU5NTg1NDMzNgZDZD": {
+      "user": "kheiri_b",
+      "uid": "2051825608805542",
+      "rule": "2026-10-05-1530",
+      "at": "2026-10-06T15:02:52.263353+00:00"
     }
   },
   "18630278164012008": {
@@ -10720,6 +10733,10 @@
     "18228297889331267": {
       "user": "miiim.arrrr",
       "at": "2026-10-05T21:31:22.927253+00:00"
+    },
+    "18180660652427420": {
+      "user": "tabtab11015",
+      "at": "2026-10-06T15:02:52.263353+00:00"
     }
   },
   "18115467637951827": {
@@ -11569,6 +11586,10 @@
     "18151395118551846": {
       "user": "maziartaleb",
       "at": "2026-10-06T14:51:15.977277+00:00"
+    },
+    "18133110970664111": {
+      "user": "yasensaliminya",
+      "at": "2026-10-06T15:02:52.263353+00:00"
     }
   },
   "18092615075180960": {
