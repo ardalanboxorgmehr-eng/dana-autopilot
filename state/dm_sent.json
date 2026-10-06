@@ -10240,12 +10240,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-06T11:46:47.143034+00:00",
+    "at": "2026-10-06T11:58:27.620991+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 3,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": []
   },
@@ -10550,6 +10550,12 @@
       "rule": "2026-10-05-1530",
       "at": "2026-10-05T16:19:09.080426+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc5MzM2MzM1MzUzMTkyNTozMzA0MzQyNTIwMDg2MjMyNjM5NDc3NDc2ODg1NTI4NTc2MAZDZD": {
+      "user": "fusiion_tv",
+      "uid": "1776564053627889",
+      "rule": "p02",
+      "at": "2026-10-06T11:58:27.620991+00:00"
     }
   },
   "18630278164012008": {
@@ -11057,6 +11063,14 @@
     "18118440607997873": {
       "user": "m.a.r.d4",
       "at": "2026-10-06T10:33:49.496698+00:00"
+    },
+    "17948987148300253": {
+      "user": "espresso_board",
+      "at": "2026-10-06T11:58:27.620991+00:00"
+    },
+    "17872459155602202": {
+      "user": "da7ood",
+      "at": "2026-10-06T11:58:27.620991+00:00"
     }
   },
   "17977527015015936": {
@@ -11482,6 +11496,10 @@
     "17897967270397492": {
       "user": "bahar_keighobadi",
       "at": "2026-10-06T11:46:47.143034+00:00"
+    },
+    "18113668685029170": {
+      "user": "_raheleh_teacher",
+      "at": "2026-10-06T11:58:27.620991+00:00"
     }
   }
 }
