@@ -46,6 +46,7 @@ CONTENT = os.path.join(ROOT, "content")
 
 MAX_SENDS_PER_RUN = 80
 SEND_GAP_S = 3
+RUN_BUDGET_S = 20 * 60       # stop starting new posts after 20 minutes; the next run carries on
 WINDOW_DAYS = 7
 PUBLIC_REPLIES = [
     "برات فرستادم، دایرکتت رو چک کن 📩",
@@ -195,17 +196,26 @@ class IG:
     def recent_media(self, limit=60):
         return self._call("GET", "/me/media", {"fields": "id,caption,timestamp", "limit": limit}).get("data", [])
 
-    def comments(self, media_id):
+    def comments(self, media_id, since=None):
+        """All comments, or, when the API returns them newest first, stop paging
+        once a whole page is older than `since` (fixed 7 Oct 2026: re-reading
+        5,000 comments on the big posts every run made runs take 45 minutes)."""
         out = []
         try:
             r = self._call("GET", f"/{media_id}/comments", {"fields": "id,text,timestamp,from,username,replies{username,from}", "limit": 50})
         except IGError:   # older API versions without nested replies
             r = self._call("GET", f"/{media_id}/comments", {"fields": "id,text,timestamp,from,username", "limit": 50})
         while True:
-            out += r.get("data", [])
+            page = r.get("data", [])
+            out += page
             nxt = r.get("paging", {}).get("next")
-            if not nxt or len(out) > 2000:
+            if not nxt or len(out) > 6000:
                 return out
+            if since is not None and page:
+                stamps = [ts(c["timestamp"]) for c in page if c.get("timestamp")]
+                newest_first = all(a >= b for a, b in zip(stamps, stamps[1:]))
+                if newest_first and stamps and stamps[-1] < since:
+                    return out
             r = self._call("GET", nxt)
 
     def private_reply(self, comment_id, text):
@@ -229,7 +239,7 @@ def ts(s):
 
 # ------------------------------------------------------------------ main
 
-def run(ig, cfg, state, now, log=print):
+def run(ig, cfg, state, now, log=print, checkpoint=None):
     dmcfg = cfg.get("dm", {})
     mode = os.environ.get("DM_MODE") or dmcfg.get("mode", "dry_run")
     start_at = ts(dmcfg["start_at"]) if dmcfg.get("start_at") else now
@@ -247,6 +257,7 @@ def run(ig, cfg, state, now, log=print):
     own = {str(who.get("user_id", "")), who.get("username", "")}
     log(f"connected to @{who.get('username')} · mode={mode} · handling comments after {window_start.isoformat()}")
 
+    started = time.monotonic()
     sends = errors = skipped = bounced = 0
     failures = []
     active = []                      # (media, rule) for every recent post with a rule, newest first
@@ -269,7 +280,17 @@ def run(ig, cfg, state, now, log=print):
                     bounce(ig, cid, rec, kws[0], now, log, rid)
                     bounced += 1
                     time.sleep(SEND_GAP_S)
-        comments = ig.comments(m["id"])
+        if time.monotonic() - started > RUN_BUDGET_S:
+            log("time budget for this run used, the rest go next run")
+            break
+        try:
+            comments = ig.comments(m["id"], since=window_start)
+        except IGError as e:
+            # One unreadable post must not stop the others (fixed 7 Oct 2026).
+            err = str(e)[:300]
+            failures.append({"post": rid, "user": "", "error": "read: " + err})
+            log(f"READ FAILED {rid}: {err}")
+            continue
         fresh = [c for c in comments if ts(c["timestamp"]) >= window_start]
         log(f"post {rid}: {len(comments)} comments read, {len(fresh)} in the window")
         for c in comments:
@@ -313,6 +334,8 @@ def run(ig, cfg, state, now, log=print):
             done[c["id"]] = {"user": user, "at": now.isoformat()}
             users_done.add(user)
             sends += 1
+            if checkpoint:
+                checkpoint()
             log(f"DM sent {rid} @{user}")
             try:
                 ig.public_reply(c["id"], random.choice(PUBLIC_REPLIES))
@@ -428,9 +451,14 @@ def main():
     state = load(STATE, {})
     ig = IG(token, cfg.get("api_version", "v25.0"))
     now = datetime.now(timezone.utc)
-    code, _ = run(ig, cfg, state, now)
-    prune(state, now)
-    save(STATE, state)
+    # Save after every send and on any crash, so a run that dies half way
+    # (7 Oct 2026: two runs died after sending and recorded nothing) keeps
+    # its record and nobody is messaged twice.
+    try:
+        code, _ = run(ig, cfg, state, now, checkpoint=lambda: save(STATE, state))
+    finally:
+        prune(state, now)
+        save(STATE, state)
     return code
 
 
