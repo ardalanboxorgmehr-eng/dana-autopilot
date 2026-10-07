@@ -13066,12 +13066,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T14:19:19.876052+00:00",
+    "at": "2026-10-07T14:36:20.771872+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 2,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 12,
     "thanks": 0,
@@ -13079,17 +13079,17 @@
       {
         "post": "p02",
         "user": "eslamii2021",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"APiUrqT0GgX3XHIvzenOPP9\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Au5FO7GMNt6YtGNOP8QnlTT\"}}"
       },
       {
         "post": "p02",
         "user": "sarin_javadi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Agq3wPZXMHLMm3S_xVojluO\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AYsV1kPJHlEXef4CqZejhEp\"}}"
       },
       {
         "post": "p02",
         "user": "geramestudio",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AGqJYsnVDLI-PzzMQcY0RjQ\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Av8gdmz30uEDwjE8uKTLfys\"}}"
       }
     ]
   },
@@ -13810,6 +13810,12 @@
       "uid": "1059956837096084",
       "rule": "p00",
       "at": "2026-10-07T12:54:48.358066+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTMzMDk4NjM0NzQxMTYzNjozMzA0NTIwMDE5ODY5MTAxMzg1NzIxMjE4ODM1NTE5ODk3NgZDZD": {
+      "user": "delnnnnaa",
+      "uid": "1409996624650664",
+      "rule": "p00",
+      "at": "2026-10-07T14:36:20.771872+00:00"
     }
   },
   "18630278164012008": {
@@ -14469,6 +14475,10 @@
     "18123062404713842": {
       "user": "zahrayraha",
       "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "18057786383559486": {
+      "user": "msm113.red",
+      "at": "2026-10-07T14:36:20.771872+00:00"
     }
   },
   "17977527015015936": {
@@ -15249,6 +15259,10 @@
     "18131808991795127": {
       "user": "hamid.azizi.1986",
       "at": "2026-10-07T13:59:36.281188+00:00"
+    },
+    "18140976535614420": {
+      "user": "msm113.red",
+      "at": "2026-10-07T14:36:20.771872+00:00"
     }
   },
   "18092615075180960": {
@@ -15305,21 +15319,22 @@
     "17893335345655676": "p03",
     "18339980485287304": "p02",
     "18017930855731657": "p00",
-    "18087900869693182": "p01"
+    "18087900869693182": "p01",
+    "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T13:59:36.281188+00:00",
-    "at": "2026-10-07T14:19:19.876052+00:00",
+    "last_sent_at": "2026-10-07T14:36:20.771872+00:00",
+    "at": "2026-10-07T14:36:20.771872+00:00",
     "mode": "live",
     "waiting": {
       "p02": 20
     },
     "waiting_total": 20,
     "unmatched_posts": [],
-    "posts_read": 24,
-    "posts_with_rule": 26,
+    "posts_read": 25,
+    "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 479
+    "queue_left": 467
   },
   "_thanked": {
     "18130502443748401": {
@@ -15667,16 +15682,72 @@
     "18127143745808677": {
       "at": "2026-10-07T14:19:19.876052+00:00",
       "kind": "thanks"
+    },
+    "18125824045836545": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18024794543703672": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18226833379335995": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18378346561233312": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18013353800969820": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18097624322564422": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18391549981163593": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18093226151149669": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "17888222544615476": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18462799576137617": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18582908077067668": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
+    },
+    "18095179568382476": {
+      "at": "2026-10-07T14:36:20.771872+00:00",
+      "kind": "thanks"
     }
   },
   "_tries": {
-    "17943025899085373": 2,
-    "18022330415871175": 2,
-    "18125258246304900": 2
+    "17943025899085373": 3,
+    "18022330415871175": 3,
+    "18125258246304900": 3
   },
   "_desk": {
-    "at": "2026-10-07T14:19:19.876052+00:00",
+    "at": "2026-10-07T14:36:20.771872+00:00",
     "items": [
+      {
+        "id": "18198514591388106",
+        "media": "18121478000484793",
+        "rule": "2026-10-05-1530",
+        "user": "hoory_danaee",
+        "text": "۲ تا کار می کنه میگه پول",
+        "at": "2026-10-07T14:35:23+0000"
+      },
       {
         "id": "18376662616242031",
         "media": "18121478000484793",
@@ -15812,14 +15883,6 @@
         "user": "drhamidrezaezzati",
         "text": "اسپوتیفلک به جای اپل موزیک و اسپوتیفای و تایدال های فای و کوباز و آمازون موزیک و دیزر و هرچی سرویس پولی و آنلاینه که تا 24 بیت 192 khz هم میتونه دانلود کنه.",
         "at": "2026-10-04T04:06:10+0000"
-      },
-      {
-        "id": "18099167285637843",
-        "media": "18339980485287304",
-        "rule": "p02",
-        "user": "rafieeartist",
-        "text": "ک ی ر😂",
-        "at": "2026-10-02T14:14:57+0000"
       },
       {
         "id": "17910817689535933",
