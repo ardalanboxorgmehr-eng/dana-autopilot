@@ -293,7 +293,10 @@ def push():
         if not n and not l.get("auto_dirty"):
             return {"ok": True, "log": "nothing to send"}
         log = []
-        files = ["reply_queue.json"] + (["desk_auto.json"] if os.path.exists(dc.AUTO) else [])
+        if l.get("dmkey") and l.get("outbox"):
+            dc.write_sealed(dc.OUTBOX_ENC, l["dmkey"], {"items": l["outbox"][-200:]})
+        files = ["reply_queue.json"] + [os.path.relpath(f, ROOT) for f in (dc.AUTO, dc.OUTBOX_ENC, dc.IDEAS_QUEUE)
+                                        if os.path.exists(f)]
         code, out = git("add", *files); log.append(out)
         msg = "desk: %d approved replies" % n if n else "desk: auto-send settings"
         code, out = git("commit", "-m", msg); log.append(out)
@@ -318,6 +321,185 @@ def lan_ip():
         return ip
     except OSError:
         return ""
+
+
+# ------------------------------------------------------------------ DM inbox, alerts, ideas, TikTok, weekly (7 Oct 2026)
+
+INBOX_CACHE = os.path.join(HERE, "inbox_cache.json")
+REPO = "ardalanboxorgmehr-eng/dana-autopilot"
+TIKTOK = "danestani.ruzz"
+
+
+def gh_secret(name, value):
+    try:
+        r = subprocess.run(["gh", "secret", "set", name, "-R", REPO], input=value, text=True,
+                           capture_output=True, timeout=60)
+        return r.returncode == 0, (r.stderr or r.stdout).strip()[-300:]
+    except Exception as e:
+        return False, str(e)
+
+
+def connect_inbox():
+    with LOCK:
+        l = local()
+        if not l.get("dmkey"):
+            l["dmkey"] = secrets.token_urlsafe(32)
+            save(LOCAL, l)
+        ok, log = gh_secret("DESK_KEY", l["dmkey"])
+        if ok:
+            l["dm_connected"] = True
+            save(LOCAL, l)
+        return {"ok": ok, "log": "" if ok else log}
+
+
+def inbox():
+    l = local()
+    if not l.get("dmkey"):
+        return {"connected": False, "items": []}
+    box = dc.read_sealed(dc.INBOX_ENC, l["dmkey"], None)
+    if box is None:
+        return {"connected": True, "waiting_for_job": True, "items": []}
+    sent = {o["id"] for o in l.get("outbox", [])}
+    drafts = load(DRAFTS, {})
+    items = []
+    for it in box.get("items", []):
+        if it["id"] in sent:
+            continue
+        items.append(dict(it, draft=drafts.get(it["id"], ""), has_claude_draft=it["id"] in drafts))
+    save(INBOX_CACHE, {"at": box.get("at"), "items": items})       # for Claude's drafting run (local only)
+    return {"connected": True, "at": box.get("at", ""), "items": items}
+
+
+def inbox_send(b):
+    with LOCK:
+        l = local()
+        box = {i["id"]: i for i in dc.read_sealed(dc.INBOX_ENC, l.get("dmkey", ""), {"items": []}).get("items", [])}
+        it = box.get(b.get("id"))
+        text = (b.get("text") or "").strip()
+        if not it or not text:
+            return {"ok": False}
+        l.setdefault("outbox", []).append({"id": it["id"], "uid": it["uid"], "text": text, "at": int(time.time())})
+        l["outbox"] = l["outbox"][-300:]
+        l["auto_dirty"] = True
+        l["approved"][it["id"]] = int(time.time())
+        save(LOCAL, l)
+        draft = b.get("draft") or ""
+        learn = load(LEARN, [])
+        last = next((m["text"] for m in reversed(it.get("thread", [])) if not m.get("me")), "")
+        learn.append({"id": it["id"], "platform": "dm", "group": "dm", "comment": last, "user": it.get("user", ""),
+                      "draft": draft, "draft_kind": "dm", "final": text, "kind": "dm",
+                      "edited": (not draft) or not same(draft, text), "wrote_own": not draft,
+                      "at": datetime.now(timezone.utc).isoformat()})
+        save(LEARN, learn[-3000:])
+        return {"ok": True}
+
+
+def setup_alerts():
+    with LOCK:
+        l = local()
+        if not l.get("ntfy"):
+            l["ntfy"] = "dana-desk-" + secrets.token_hex(6)
+            save(LOCAL, l)
+        ok, log = gh_secret("NTFY_TOPIC", l["ntfy"])
+        if ok:
+            l["alerts_on"] = True
+            save(LOCAL, l)
+        return {"ok": ok, "log": "" if ok else log, "topic": l["ntfy"], "url": "https://ntfy.sh/" + l["ntfy"]}
+
+
+def queue_idea(b):
+    with LOCK:
+        topic, post = (b.get("topic") or "").strip(), (b.get("post") or "").strip()
+        if not topic:
+            return {"ok": False}
+        q = load(dc.IDEAS_QUEUE, {"_note": "Ideas Ehsan sent from Reply Desk. Dana's daily run uses the oldest 'new' one first, then marks it used.", "items": []})
+        if not any(i["topic"] == topic for i in q["items"]):
+            q["items"].append({"topic": topic, "post": post, "count": b.get("count", 0), "status": "new",
+                               "added": datetime.now(timezone.utc).strftime("%Y-%m-%d")})
+            save(dc.IDEAS_QUEUE, q)
+        ideas = load(IDEAS, {"ideas": []})
+        for d in ideas.get("ideas", []):
+            if d.get("topic") == topic:
+                d["status"] = "queued"
+        save(IDEAS, ideas)
+        l = local()
+        l["auto_dirty"] = True
+        save(LOCAL, l)
+        return {"ok": True}
+
+
+def first_line(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    return line.strip()[:90]
+    except OSError:
+        pass
+    return ""
+
+
+def tiktok():
+    from zoneinfo import ZoneInfo
+    now = datetime.now(ZoneInfo("Europe/London")).strftime("%Y-%m-%d-%H%M")
+    base = os.path.join(ROOT, "content")
+    posts = []
+    for d in sorted(os.listdir(base) if os.path.isdir(base) else [], reverse=True):
+        if not d[:4].isdigit() or d > now:
+            continue
+        title = first_line(os.path.join(base, d, "caption-tiktok.txt")) or first_line(os.path.join(base, d, "caption.txt"))
+        posts.append({"id": d, "title": title})
+        if len(posts) >= 14:
+            break
+    return {"handle": TIKTOK, "profile": "https://www.tiktok.com/@" + TIKTOK,
+            "studio": "https://www.tiktok.com/tiktokstudio/comment", "posts": posts}
+
+
+def weekly():
+    now = datetime.now(timezone.utc)
+    cut = (now.timestamp() - 7 * 86400)
+
+    def recent(v):
+        try:
+            return datetime.fromisoformat(v["at"]).timestamp() >= cut and "failed" not in v and "skipped" not in v
+        except (KeyError, ValueError, TypeError):
+            return False
+    st = load(STATE, {})
+    rules = st.get("_media_rules", {})
+    old_rules = {r["id"]: r.get("caption_starts", "") for r in load(os.path.join(ROOT, "dm_rules.json"), {}).get("rules", [])}
+    per_post = []
+    kw_total = 0
+    for k, recs in st.items():
+        if k.startswith("_") or not isinstance(recs, dict):
+            continue
+        n = sum(1 for v in recs.values() if recent(v))
+        kw_total += n
+        if n:
+            rid = rules.get(k, "")
+            title = first_line(os.path.join(ROOT, "content", rid, "caption.txt")) if rid else ""
+            per_post.append({"post": rid, "title": title or old_rules.get(rid, ""), "dms": n})
+    per_post.sort(key=lambda x: -x["dms"])
+    q = [v for v in st.get("_queue", {}).values() if recent(v)]
+    yt = load(YT, {})
+    learn = [e for e in load(LEARN, []) if recent(e)]
+    ideas = load(IDEAS, {"ideas": []}).get("ideas", [])[:5]
+    return {"since": datetime.fromtimestamp(cut, timezone.utc).strftime("%d %b"),
+            "keyword_dms": kw_total,
+            "keyword_dms_inbox": sum(1 for v in st.get("_inbox", {}).values() if recent(v)),
+            "replies_desk": sum(1 for v in q if v.get("via", "desk") == "desk"),
+            "replies_auto": sum(1 for v in q if v.get("via") == "auto"),
+            "thanks_emoji": sum(1 for v in st.get("_thanked", {}).values() if recent(v)),
+            "dm_replies": sum(1 for v in st.get("_inbox_sent", {}).values() if recent(v)),
+            "yt_replies": sum(1 for v in yt.get("done", {}).values() if recent(v)),
+            "edited_pct": round(100 * sum(1 for e in learn if e.get("edited")) / len(learn)) if learn else 0,
+            "approved": len(learn), "top_posts": per_post[:6], "top_questions": ideas,
+            "summary": load(os.path.join(HERE, "weekly.json"), {}).get("summary", "")}
+
+
+def settings():
+    l = local()
+    return {"dm_connected": bool(l.get("dm_connected")), "alerts_on": bool(l.get("alerts_on")),
+            "ntfy": ("https://ntfy.sh/" + l["ntfy"]) if l.get("ntfy") else ""}
 
 
 # ------------------------------------------------------------------ web
@@ -361,6 +543,14 @@ class Handler(BaseHTTPRequestHandler):
             return self.send(200, learned())
         if u.path == "/api/ideas":
             return self.send(200, load(IDEAS, {"ideas": []}))
+        if u.path == "/api/inbox":
+            return self.send(200, inbox())
+        if u.path == "/api/tiktok":
+            return self.send(200, tiktok())
+        if u.path == "/api/weekly":
+            return self.send(200, weekly())
+        if u.path == "/api/settings":
+            return self.send(200, settings())
         if u.path == "/api/phone":
             ip = lan_ip()
             return self.send(200, {"url": "http://%s:%d/?k=%s" % (ip, PORT, key) if ip else ""})
@@ -379,6 +569,14 @@ class Handler(BaseHTTPRequestHandler):
             return self.send(200, set_auto(body.get("group"), body.get("on")))
         if self.path == "/api/style":
             return self.send(200, save_style(body.get("text", "")))
+        if self.path == "/api/inbox_send":
+            return self.send(200, inbox_send(body))
+        if self.path == "/api/connect_inbox":
+            return self.send(200, connect_inbox())
+        if self.path == "/api/alerts":
+            return self.send(200, setup_alerts())
+        if self.path == "/api/idea_queue":
+            return self.send(200, queue_idea(body))
         if self.path == "/api/refresh":
             return self.send(200, refresh())
         if self.path == "/api/push":

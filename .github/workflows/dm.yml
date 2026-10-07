@@ -26,6 +26,8 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           DM_MODE: ${{ inputs.mode }}
+          DESK_KEY: ${{ secrets.DESK_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python scripts/dm_reply.py
       - name: YouTube comments
         if: always()
@@ -37,11 +39,12 @@ jobs:
       - name: Record who was sent a DM
         if: always()
         run: |
-          if [ -n "$(git status --porcelain state/dm_sent.json state/yt_desk.json)" ]; then
+          if [ -n "$(git status --porcelain state/dm_sent.json state/yt_desk.json state/desk_inbox.enc)" ]; then
             git config user.name "dana-autopilot"
             git config user.email "actions@github.com"
             git add state/dm_sent.json
             [ -f state/yt_desk.json ] && git add state/yt_desk.json
+            [ -f state/desk_inbox.enc ] && git add state/desk_inbox.enc
             git commit -m "dm: record sent messages"
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
             git push

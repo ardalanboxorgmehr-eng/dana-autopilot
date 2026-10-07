@@ -416,6 +416,14 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
             break
     queue_sent = run_queue(ig, state, own, mode, now, log, extra=auto_items(state, now, log)) if mode == "live" else 0
     desk_snapshot(state, desk_seen, own, exclude, now)
+    try:
+        desk_inbox(ig, state, own, mode, now, log)
+    except Exception as e:                       # never break the comment job
+        log(f"desk inbox skipped: {e}")
+    try:
+        phone_alerts(state, now, log)
+    except Exception as e:
+        log(f"phone alert skipped: {e}")
     inbox_sent = 0
     if dmcfg.get("inbox", True) and sends < MAX_SENDS_PER_RUN:
         inbox_sent = answer_inbox(ig, state, active, own, exclude, mode, max(start_at, now - timedelta(hours=INBOX_HOURS)),
@@ -599,6 +607,114 @@ def desk_snapshot(state, seen, own, exclude, now):
                       "posts": {k: v for k, v in posts.items() if any(i["media"] == k for i in items[:DESK_MAX])}}
 
 
+def desk_inbox(ig, state, own, mode, now, log):
+    """Reply Desk DM inbox (added 7 Oct 2026). Conversations whose last message
+    is theirs and inside Instagram's 24-hour reply window are written to
+    state/desk_inbox.enc, sealed with DESK_KEY so DM text never sits in the
+    public repo. Replies Ehsan approves arrive sealed in desk_out.enc and are
+    sent here. Keyword DMs are still answered by answer_inbox()."""
+    import desk_common
+    key = os.environ.get("DESK_KEY", "").strip()
+    if not key:
+        return
+    done = state.setdefault("_inbox_sent", {})
+    out = desk_common.read_sealed(desk_common.OUTBOX_ENC, key, {"items": []})
+    sent = 0
+    if mode == "live":
+        for it in out.get("items", []):
+            if it.get("id") in done or not it.get("uid") or not it.get("text"):
+                continue
+            if sent >= 10:
+                break
+            try:
+                ig.send_to_user(it["uid"], it["text"])
+                done[it["id"]] = {"at": now.isoformat()}
+                sent += 1
+            except IGError as e:
+                done[it["id"]] = {"at": now.isoformat(), "failed": str(e)[:200]}
+                log(f"desk DM failed: {e}")
+            time.sleep(SEND_GAP_S)
+    convs = ig.conversations()
+    keyword = {k for k in state.get("_inbox", {})}
+    items = []
+    for conv in convs:
+        msgs = sorted((conv.get("messages") or {}).get("data", []), key=lambda x: x.get("created_time", ""))
+        if not msgs:
+            continue
+        last = msgs[-1]
+        frm = last.get("from") or {}
+        uid, user = str(frm.get("id", "")), frm.get("username", "")
+        if not uid or uid in own or user in own or last.get("id") in keyword or last.get("id") in done:
+            continue
+        try:
+            if now - ts(last["created_time"]) > timedelta(hours=23):
+                continue
+        except (KeyError, ValueError):
+            continue
+        thread = [{"me": (str((m.get("from") or {}).get("id", "")) in own or (m.get("from") or {}).get("username") in own),
+                   "text": (m.get("message") or "")[:600], "at": m.get("created_time", "")} for m in msgs[-6:]]
+        items.append({"id": last["id"], "uid": uid, "user": user, "at": last.get("created_time", ""), "thread": thread})
+    import hashlib
+    digest = hashlib.sha256(json.dumps(items, sort_keys=True).encode()).hexdigest()[:16]
+    if digest != state.get("_inbox_hash") or not os.path.exists(os.path.join(ROOT, "state", "desk_inbox.enc")):
+        desk_common.write_sealed(os.path.join(ROOT, "state", "desk_inbox.enc"), key, {"at": now.isoformat(), "items": items})
+        state["_inbox_hash"] = digest
+    state.setdefault("_health", {})["inbox_waiting"] = len(items)
+    if sent:
+        log(f"desk inbox: {sent} DMs sent")
+
+
+def phone_alerts(state, now, log):
+    """Push to Ehsan's phone through ntfy (added 7 Oct 2026): questions or DMs
+    waiting more than 2 hours, once each, never 23:00-08:00 London; and a
+    Monday-morning nudge that the weekly summary is ready. Counts only, no
+    comment text, because ntfy topics are not private."""
+    import desk_common
+    from zoneinfo import ZoneInfo
+    topic = os.environ.get("NTFY_TOPIC", "").strip()
+    if not topic:
+        return
+    local = now.astimezone(ZoneInfo("Europe/London"))
+    if local.hour < 8 or local.hour >= 23:
+        return
+    seen = state.setdefault("_alerted", {})
+    old = now - timedelta(hours=2)
+    new_q = []
+    desk = state.get("_desk", {})
+    for it in desk.get("items", []):
+        if it["id"] in seen or it["id"] in state.get("_queue", {}):
+            continue
+        kw = desk.get("posts", {}).get(it["media"], {}).get("keyword", "")
+        try:
+            late = ts(it["at"]) < old and ts(it["at"]) > now - timedelta(days=3)
+        except (KeyError, ValueError):
+            continue
+        if late and desk_common.group_of(it["text"], kw, near_keyword) == "question":
+            new_q.append(it["id"])
+    dms = state.get("_health", {}).get("inbox_waiting", 0)
+    lines = []
+    if new_q:
+        lines.append(f"{len(new_q)} question{'s' if len(new_q) > 1 else ''} waiting over 2 hours")
+    last_dm = state.get("_alerted_dm", "")
+    if dms and (not last_dm or datetime.fromisoformat(last_dm) < now - timedelta(hours=3)):
+        lines.append(f"{dms} DM{'s' if dms > 1 else ''} waiting for a reply")
+        state["_alerted_dm"] = now.isoformat()
+    week = local.strftime("%G-W%V")
+    if local.weekday() == 0 and state.get("_weekly_push") != week:
+        lines.append("Weekly summary is ready in the Weekly tab")
+        state["_weekly_push"] = week
+    if not lines:
+        return
+    req = urllib.request.Request("https://ntfy.sh/" + urllib.parse.quote(topic), data="\n".join(lines).encode(),
+                                 headers={"Title": "Reply Desk", "Tags": "speech_balloon"}, method="POST")
+    urllib.request.urlopen(req, timeout=20).read()
+    for i in new_q:
+        seen[i] = now.isoformat()
+    cut = (now - timedelta(days=10)).isoformat()
+    state["_alerted"] = {k: v for k, v in seen.items() if v >= cut}
+    log("phone alert: " + "; ".join(lines))
+
+
 def count_waiting(comments, done, own, kws, exclude):
     """Keyword comments in the window that still have no DM and no reply from us."""
     users = {v.get("user") for v in done.values() if "failed" not in v}
@@ -733,7 +849,7 @@ def prune(state, now, days=90):
     """Forget sent-message records older than the privacy policy allows."""
     cutoff = now - timedelta(days=days)
     for mid in list(state):
-        if mid.startswith("_") and mid != "_inbox":
+        if mid.startswith("_") and mid not in ("_inbox", "_inbox_sent"):
             continue
         recs = state[mid]
         for cid in list(recs):

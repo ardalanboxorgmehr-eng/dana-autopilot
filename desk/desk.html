@@ -79,7 +79,7 @@ select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:5px 8
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 const GROUPS = {all:"All", wants_dm:"Wants the DM", question:"Questions", chat:"Chat", spam:"Spam or ads"};
-const VIEWS = {ideas:"Ideas", learned:"Learned"};
+const VIEWS = {inbox:"DMs", ideas:"Ideas", tiktok:"TikTok", weekly:"Weekly", learned:"Learned"};
 const KINDS = {dm:"Send the post's DM", answer:"Threaded reply", thanks:"Threaded thanks", nudge:"Ask them to DM the keyword"};
 const YT_KINDS = {answer:"Threaded reply", thanks:"Threaded thanks"};
 let data = {items:[]}, tab = "all", plat = "all";
@@ -118,6 +118,9 @@ async function load(){
   $("#push").textContent = data.pending_push ? `Send approved (${data.pending_push})` : "Send approved";
   $("#push").disabled = !data.pending_push;
   if (tab === "learned") return renderLearned();
+  if (tab === "inbox") return renderInbox();
+  if (tab === "tiktok") return renderTiktok();
+  if (tab === "weekly") return renderWeekly();
   if (tab === "ideas") return renderIdeas();
   render();
 }
@@ -179,10 +182,11 @@ async function renderIdeas(){
     I.ideas.map(d => `<div class="card idea"><div class="top"><span class="n">${d.count}×</span><span class="chip">${esc(d.status||"new")}</span></div>
       <div class="text" style="font-size:16px;font-weight:600">${esc(d.topic)}</div>
       ${(d.examples||[]).slice(0,3).map(x=>`<div class="ex">«${esc(x)}»</div>`).join("")}
-      ${d.post?`<div class="new" style="margin-top:8px">💡 ${esc(d.post)}</div>`:""}</div>`).join("");
+      ${d.post?`<div class="new" style="margin-top:8px">💡 ${esc(d.post)}</div>`:""}
+      <div class="acts">${d.status==="queued"?'<span class="hint">In the carousel queue</span>':`<button class="pri" data-idea="${esc(d.topic)}" data-post="${esc(d.post||"")}" data-count="${d.count||0}">Make it a carousel</button>`}</div></div>`).join("");
 }
 $("#tabs").addEventListener("click", async e => {
-  if (e.target.dataset.p){ plat = e.target.dataset.p; if (tab==="learned"||tab==="ideas") tab="all"; load(); }
+  if (e.target.dataset.p){ plat = e.target.dataset.p; if (VIEWS[tab]) tab="all"; load(); }
   if (e.target.dataset.g){ tab = e.target.dataset.g; load(); }
   if (e.target.id === "allchat"){
     const batch = data.items.filter(i => i.group==="chat" && i.draft && (plat==="all"||i.platform===plat))
@@ -191,6 +195,18 @@ $("#tabs").addEventListener("click", async e => {
   }
 });
 $("#list").addEventListener("click", async e => {
+  if (e.target.dataset.idea !== undefined){
+    const r = await api("/api/idea_queue", {topic:e.target.dataset.idea, post:e.target.dataset.post, count:+e.target.dataset.count});
+    $("#log").textContent = r.ok ? "Added to the carousel queue. Press Send approved so Dana's next run picks it up." : "Could not add it.";
+    return load();
+  }
+  if (e.target.id === "connectdm"){ $("#log").textContent = "connecting..."; const r = await api("/api/connect_inbox", {}); $("#log").textContent = r.ok ? "Connected. DMs appear within 15 minutes." : "Could not connect:\n"+r.log; return load(); }
+  if (e.target.dataset.dm){
+    const card = e.target.closest(".card"); const text = card.querySelector("textarea").value.trim();
+    if (!text){ card.querySelector("textarea").focus(); return; }
+    await api("/api/inbox_send", {id:e.target.dataset.dm, text, draft:card.dataset.draft});
+    card.remove(); $("#log").textContent = "Queued. Press Send approved."; return load();
+  }
   if (e.target.id === "savestyle"){ await api("/api/style", {text:$("#style").value}); $("#saved").textContent = "Saved"; return; }
   if (e.target.dataset.auto){
     const on = e.target.dataset.on === "1";
@@ -217,7 +233,48 @@ $("#push").onclick = async () => {
   $("#log").textContent = r.ok ? "Sent. The job posts them in its next runs (every 15 minutes)." : "Push failed:\n"+r.log;
   load();
 };
+async function renderInbox(){
+  const I = await api("/api/inbox");
+  if (!I.connected){ $("#list").innerHTML = `<div class="card"><b>Answer Instagram DMs here</b><div class="hint" style="margin:6px 0 10px">Messages are locked with a private key that only this Mac and GitHub know, so they never sit readable in the public repo. One click sets it up.</div><button class="pri" id="connectdm">Connect DMs</button></div>`; return; }
+  if (I.waiting_for_job){ $("#list").innerHTML = `<div class="empty">Connected. The first DMs arrive after the next job run, within 15 minutes. Press Refresh then.</div>`; return; }
+  if (!I.items.length){ $("#list").innerHTML = `<div class="empty">No DMs waiting. Read ${ago(I.at)}.</div>`; return; }
+  $("#list").innerHTML = `<div class="hint" style="margin-bottom:10px">Instagram only allows a reply within 24 hours of their last message. Keyword DMs are answered by the job on its own.</div>` +
+    I.items.map(i => `<div class="card" data-draft="${esc(i.draft)}">
+      <div class="top"><span><span class="user">@${esc(i.user)}</span> · ${ago(i.at)}</span><span class="chip">DM</span></div>
+      ${i.thread.map(m => `<div class="${m.me?"cap":"text"}" style="${m.me?"":"font-size:16px;margin:4px 0"}">${m.me?"You: ":""}${esc(m.text)}</div>`).join("")}
+      <textarea rows="2" placeholder="Write the reply">${esc(i.draft)}</textarea>
+      <div class="acts"><button class="pri" data-dm="${i.id}">Approve</button>${i.has_claude_draft?'<span class="hint">drafted by Claude</span>':""}</div></div>`).join("");
+}
+async function renderTiktok(){
+  const T = await api("/api/tiktok");
+  $("#list").innerHTML = `<div class="card"><b>TikTok @${esc(T.handle)}</b>
+    <div class="hint" style="margin:6px 0 10px">TikTok does not let apps read or answer comments, so reply there. TikTok Studio shows every comment on one page.</div>
+    <div class="acts"><a href="${T.studio}" target="_blank"><button class="pri">Open TikTok Studio comments</button></a><a href="${T.profile}" target="_blank"><button>Open profile</button></a></div></div>
+    <h2>Recent posts</h2>` + T.posts.map(p => `<div class="card"><div class="top"><span>${esc(p.id)}</span></div><div class="text" style="font-size:15px">${esc(p.title)}</div></div>`).join("");
+}
+async function renderWeekly(){
+  const W = await api("/api/weekly"), S = await api("/api/settings");
+  const tile = (n,l) => `<div class="card stat"><b>${n}</b><div class="hint">${l}</div></div>`;
+  $("#list").innerHTML = `<div class="hint" style="margin-bottom:10px">Last 7 days, since ${esc(W.since)}</div>
+    <div class="grid">${tile(W.keyword_dms + W.keyword_dms_inbox,"keyword DMs sent")}${tile(W.replies_desk,"replies you approved")}${tile(W.replies_auto,"auto replies")}${tile(W.thanks_emoji,"emoji thank-yous")}${tile(W.dm_replies,"DM replies")}${tile(W.yt_replies,"YouTube replies")}${tile(W.edited_pct+"%","drafts you changed")}</div>
+    ${W.summary?`<h2>Claude's note</h2><div class="card text" style="font-size:15px">${esc(W.summary)}</div>`:""}
+    <h2>Posts that drove the most DMs</h2>${W.top_posts.length?W.top_posts.map(p=>`<div class="card"><div class="top"><span>${esc(p.post)}</span><b>${p.dms}</b></div><div class="cap">${esc(p.title)}</div></div>`).join(""):'<div class="hint">None this week.</div>'}
+    <h2>Most asked</h2>${W.top_questions.length?W.top_questions.map(d=>`<div class="card"><div class="top"><span class="text" style="margin:0;font-size:15px">${esc(d.topic)}</span><b>${d.count}×</b></div></div>`).join(""):'<div class="hint">Fills after the first drafting run.</div>'}
+    <h2>Phone alerts</h2><div class="card">${S.alerts_on?`<div class="hint">On. Alerts go to the ntfy app, subscribed to the link below.</div><div class="url">${esc(S.ntfy)}</div>`:`<div class="hint" style="margin-bottom:8px">Get a push when a question or DM has waited over 2 hours (never 23:00 to 08:00), and on Monday mornings.</div><button class="pri" id="alertson">Turn on phone alerts</button>`}</div>`;
+}
+$("#list").addEventListener("click", async e => {
+  if (e.target.id !== "alertson") return;
+  const r = await api("/api/alerts", {});
+  if (!r.ok){ $("#log").textContent = "Could not turn on alerts:\n"+r.log; return; }
+  $("#qr").innerHTML = ""; $("#purl").textContent = r.url;
+  if (window.QRCode) new QRCode($("#qr"), {text:r.url, width:220, height:220});
+  document.querySelector("#modal b").textContent = "Phone alerts";
+  document.querySelector("#modal .hint").textContent = "Install the free ntfy app on your iPhone, then scan this code (or open the link) and subscribe.";
+  $("#modal").classList.add("on"); load();
+});
 $("#phone").onclick = async () => {
+  document.querySelector("#modal b").textContent = "Open on your iPhone";
+  document.querySelector("#modal .hint").textContent = "Same Wi-Fi as the Mac. Scan with the camera, then Share, Add to Home Screen.";
   const r = await api("/api/phone");
   $("#qr").innerHTML = ""; $("#purl").textContent = r.url || "No Wi-Fi address found";
   if (r.url && window.QRCode) new QRCode($("#qr"), {text:r.url, width:220, height:220});
