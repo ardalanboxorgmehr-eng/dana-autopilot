@@ -44,6 +44,10 @@
     "18118511939075817": {
       "user": "dayaku_median",
       "at": "2026-10-05T15:49:23.374152+00:00"
+    },
+    "18010064543970014": {
+      "user": "pshakibvand",
+      "at": "2026-10-07T11:59:07.976053+00:00"
     }
   },
   "18102800627254089": {
@@ -110,6 +114,10 @@
     "18123533671697662": {
       "user": "liana.s2959",
       "at": "2026-10-07T05:49:06.216720+00:00"
+    },
+    "18103448576169006": {
+      "user": "e.rousta",
+      "at": "2026-10-07T11:59:07.976053+00:00"
     }
   },
   "18090474026675518": {
@@ -13037,28 +13045,35 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T11:48:00.643054+00:00",
+    "at": "2026-10-07T11:59:07.976053+00:00",
     "mode": "live",
-    "sent": 2,
-    "failed": 3,
+    "sent": 12,
+    "failed": 4,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
+    "queue_replies": 12,
+    "thanks": 2,
     "failures": [
       {
         "post": "p06",
         "user": "alirezaazarpour",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A70t9q9i4cHbD-i-2f7QmTK\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A65aLpp0kilI_yqepa4a37m\"}}"
       },
       {
         "post": "p02",
         "user": "faranapm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A0xZovXuAlKN_SNPSFeZ8Fa\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A5c9-4XN46_1uPxPj6aBwkP\"}}"
       },
       {
         "post": "p02",
         "user": "pixel__motion_new",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Az-mF69cjszEoOFZtBUinai\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AOhYxgcfx_DXDHWPn4oioFm\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "eslamii2021",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AYjorVwjhOgwUARfupiW-Hi\"}}"
       }
     ]
   },
@@ -13952,6 +13967,34 @@
     "18117013012791414": {
       "user": "askar.ekh0",
       "at": "2026-10-07T11:01:29.974207+00:00"
+    },
+    "17974752093069965": {
+      "user": "mohammad.amin.rostami1376",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "18622068634030321": {
+      "user": "shaghaygharjmandi",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "17972585463137947": {
+      "user": "soussan_aram",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "18114572351117801": {
+      "user": "nejatullah_joya",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "17912609538522241": {
+      "user": "boykavir1",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "18001188752796358": {
+      "user": "mohseen_hsnkhny534",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "18338875312286556": {
+      "user": "shukrullah85",
+      "at": "2026-10-07T11:59:07.976053+00:00"
     }
   },
   "18115467637951827": {
@@ -14373,6 +14416,18 @@
     "18119397410473492": {
       "user": "abbasmaleki1974",
       "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "17910068502554724": {
+      "user": "masooodhafizi",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "17986232601082571": {
+      "user": "masoudghadamii",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "18123062404713842": {
+      "user": "zahrayraha",
+      "at": "2026-10-07T11:59:07.976053+00:00"
     }
   },
   "17977527015015936": {
@@ -15183,17 +15238,78 @@
     "18087900869693182": "p01"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T11:48:00.643054+00:00",
-    "at": "2026-10-07T11:48:00.643054+00:00",
+    "last_sent_at": "2026-10-07T11:59:07.976053+00:00",
+    "at": "2026-10-07T11:59:07.976053+00:00",
     "mode": "live",
     "waiting": {
       "p06": 1,
-      "p02": 21
+      "p02": 22
     },
-    "waiting_total": 22,
+    "waiting_total": 23,
     "unmatched_posts": [],
     "posts_read": 24,
     "posts_with_rule": 26,
-    "problems": []
+    "problems": [],
+    "queue_left": 551
+  },
+  "_thanked": {
+    "18130502443748401": {
+      "user": "nepton.ka",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    },
+    "18487182559111852": {
+      "user": "1988__ehsan",
+      "at": "2026-10-07T11:59:07.976053+00:00"
+    }
+  },
+  "_queue": {
+    "17862673527693176": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18388428241228263": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "17912181459531752": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18035917376894189": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18117830321053042": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18128381557888359": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18045573647820775": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18068869298749627": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18072878825572731": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "18094412387662698": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "17910376917546621": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    },
+    "17984328183117788": {
+      "at": "2026-10-07T11:59:07.976053+00:00",
+      "kind": "answer"
+    }
   }
 }
