@@ -13112,9 +13112,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T16:49:29.333161+00:00",
+    "at": "2026-10-07T17:10:25.855375+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 2,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 1,
@@ -13125,17 +13125,17 @@
       {
         "post": "p02",
         "user": "mohsen.porsche",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A4RsFRGSY58wyjoEXEi6lNo\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A_NRgDQQoHFQ8IfLnrfZLgP\"}}"
       },
       {
         "post": "p02",
         "user": "arezoo.taiarani",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AtR4O4ysbH73NLlUy4LNVl6\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A4Y1zldfksly2b0YAtLCPA5\"}}"
       },
       {
         "post": "p02",
         "user": "boutique_amoot",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AUh2NnYw-37oOf45FNuMVM5\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AzuwUSpnKPMtagMYZFEziJg\"}}"
       }
     ]
   },
@@ -13892,6 +13892,12 @@
       "uid": "1358339613041832",
       "rule": "p00",
       "at": "2026-10-07T16:49:29.333161+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQ5ODM0NTk2MDE4NTYwMzozMzA0NTM2ODY2ODQ1NDMyNDk0NDkwMDEwMDAxNjA0NjA4MAZDZD": {
+      "user": "sheikhi.sami",
+      "uid": "1099987806339215",
+      "rule": "p00",
+      "at": "2026-10-07T17:10:25.855375+00:00"
     }
   },
   "18630278164012008": {
@@ -14555,6 +14561,10 @@
     "18057786383559486": {
       "user": "msm113.red",
       "at": "2026-10-07T14:36:20.771872+00:00"
+    },
+    "18004709355050623": {
+      "user": "mohsen255908",
+      "at": "2026-10-07T17:10:25.855375+00:00"
     }
   },
   "17977527015015936": {
@@ -15347,6 +15357,10 @@
     "17965542090187039": {
       "user": "h.sirous62",
       "at": "2026-10-07T16:04:55.717934+00:00"
+    },
+    "17870691102642584": {
+      "user": "madjid.navid",
+      "at": "2026-10-07T17:10:25.855375+00:00"
     }
   },
   "18092615075180960": {
@@ -15407,8 +15421,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T16:49:29.333161+00:00",
-    "at": "2026-10-07T16:49:29.333161+00:00",
+    "last_sent_at": "2026-10-07T17:10:25.855375+00:00",
+    "at": "2026-10-07T17:10:25.855375+00:00",
     "mode": "live",
     "waiting": {
       "p02": 14
@@ -15418,7 +15432,7 @@
     "posts_read": 25,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 383
+    "queue_left": 371
   },
   "_thanked": {
     "18130502443748401": {
@@ -16150,15 +16164,63 @@
     "17912609538522241": {
       "at": "2026-10-07T16:49:29.333161+00:00",
       "kind": "nudge"
+    },
+    "18468252520137863": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "17950006311298617": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "18627515275008329": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "17966024031188653": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "17907791457561422": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "18126694037511283": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "17881099932536337": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "18105437009194645": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "18133422580662546": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "18073505567753187": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "18109864922166223": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
+    },
+    "17910817689535933": {
+      "at": "2026-10-07T17:10:25.855375+00:00",
+      "kind": "nudge"
     }
   },
   "_tries": {
-    "17874107979636528": 2,
-    "18159429796503882": 2,
-    "18131869567740519": 2
+    "17874107979636528": 3,
+    "18159429796503882": 3,
+    "18131869567740519": 3
   },
   "_desk": {
-    "at": "2026-10-07T16:49:29.333161+00:00",
+    "at": "2026-10-07T17:10:25.855375+00:00",
     "items": [
       {
         "id": "18025797482866693",
@@ -16271,14 +16333,6 @@
         "user": "drhamidrezaezzati",
         "text": "اسپوتیفلک به جای اپل موزیک و اسپوتیفای و تایدال های فای و کوباز و آمازون موزیک و دیزر و هرچی سرویس پولی و آنلاینه که تا 24 بیت 192 khz هم میتونه دانلود کنه.",
         "at": "2026-10-04T04:06:10+0000"
-      },
-      {
-        "id": "17910817689535933",
-        "media": "18339980485287304",
-        "rule": "p02",
-        "user": "zizii.saraf",
-        "text": "4",
-        "at": "2026-10-01T22:10:50+0000"
       },
       {
         "id": "18120433795975075",
