@@ -13045,12 +13045,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T12:23:47.728696+00:00",
+    "at": "2026-10-07T12:54:48.358066+00:00",
     "mode": "live",
     "sent": 0,
     "failed": 3,
-    "skipped": 1,
-    "inbox_sent": 2,
+    "skipped": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 12,
     "thanks": 0,
@@ -13058,17 +13058,17 @@
       {
         "post": "p06",
         "user": "alirezaazarpour",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Am4Z47Q1s_2yIvD3Y7R53RK\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AHOFXFV-VYTyzSq_o9wtq36\"}}"
       },
       {
         "post": "p02",
         "user": "faranapm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ap-JtVohCMPA15jpgqQ9NQu\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AS1xFQJj0nvC_y8uiaUbEIP\"}}"
       },
       {
         "post": "p02",
         "user": "pixel__motion_new",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AuJKgoxiZzSY48cjG-QhfMp\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AKdrCKRKNfMdm4pZ2bY07Xt\"}}"
       }
     ]
   },
@@ -13783,6 +13783,12 @@
       "rule": "p00",
       "at": "2026-10-07T12:23:47.728696+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTMxMTI1NTg5OTE1NTU4OTozMzA0NTA1NDQ1Njc0NzY2NjAwNTYyNjkxODAwNjY4NTY5NgZDZD": {
+      "user": "samane.b.a.a",
+      "uid": "1059956837096084",
+      "rule": "p00",
+      "at": "2026-10-07T12:54:48.358066+00:00"
     }
   },
   "18630278164012008": {
@@ -15257,8 +15263,8 @@
     "18087900869693182": "p01"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T12:23:47.728696+00:00",
-    "at": "2026-10-07T12:23:47.728696+00:00",
+    "last_sent_at": "2026-10-07T12:54:48.358066+00:00",
+    "at": "2026-10-07T12:54:48.358066+00:00",
     "mode": "live",
     "waiting": {
       "p06": 1,
@@ -15269,7 +15275,7 @@
     "posts_read": 24,
     "posts_with_rule": 26,
     "problems": [],
-    "queue_left": 539
+    "queue_left": 527
   },
   "_thanked": {
     "18130502443748401": {
@@ -15377,11 +15383,59 @@
     "18642722773014901": {
       "at": "2026-10-07T12:23:47.728696+00:00",
       "kind": "answer"
+    },
+    "18144441814594154": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18125879545658267": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "17896855347605715": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18129011704826286": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18088875431290999": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18063291755538429": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18150221599545794": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18113398313136199": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18106566325944541": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18009603305770461": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18115656617114835": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
+    },
+    "18125816170880191": {
+      "at": "2026-10-07T12:54:48.358066+00:00",
+      "kind": "answer"
     }
   },
   "_tries": {
-    "18023768120920346": 1,
-    "18109743056232123": 1,
-    "18112206701332591": 1
+    "18023768120920346": 2,
+    "18109743056232123": 2,
+    "18112206701332591": 2
   }
 }
