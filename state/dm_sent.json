@@ -2632,6 +2632,10 @@
       "user": "habib_avm",
       "at": "2026-10-07T06:45:49.283932+00:00",
       "skipped": "already sent to this person"
+    },
+    "18141832348608059": {
+      "user": "aluluwear",
+      "at": "2026-10-07T10:51:11.973321+00:00"
     }
   },
   "18017930855731657": {
@@ -13033,28 +13037,33 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T10:36:14.806659+00:00",
+    "at": "2026-10-07T10:51:11.973321+00:00",
     "mode": "live",
-    "sent": 2,
-    "failed": 3,
+    "sent": 1,
+    "failed": 4,
     "skipped": 0,
-    "inbox_sent": 1,
+    "inbox_sent": 2,
     "bounce_backlog": 0,
     "failures": [
       {
         "post": "p06",
         "user": "alirezaazarpour",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AX253pwuvY-nVKfCs7I5blB\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9H9LMLaSKeMal72xyO2NDd\"}}"
       },
       {
         "post": "p02",
         "user": "faranapm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AmD7SmtVY4813R6W-7enKQZ\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A7Y1jvtu2AiBC8M26GyJdns\"}}"
       },
       {
         "post": "p02",
         "user": "pixel__motion_new",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ATCyiR0QGJ6WSMcBSm6Tuuc\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AXfYB7ZmqIgU_cCxPrOcNpT\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "eslamii2021",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AhjV38foRxm5zxU88Qobebv\"}}"
       }
     ]
   },
@@ -13702,6 +13711,18 @@
       "uid": "1392001155980955",
       "rule": "p00",
       "at": "2026-10-07T10:36:14.806659+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI3Nzg4MjA1MjY2NDAxNjozMzA0NDk0OTQ3NjMxNjE2NjcxMTg0NDgxNDE2NzQ3NDE3NgZDZD": {
+      "user": "sadaf_pn1",
+      "uid": "1433306648750597",
+      "rule": "p00",
+      "at": "2026-10-07T10:51:11.973321+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc4Njg1MzUxNDcxMzYxMjozMzA0NDk0NTcxNzIwODgzMDk4NjE0NTE5NzUxNDAzMTEwNAZDZD": {
+      "user": "mahtaamoghaddam",
+      "uid": "1438918201566834",
+      "rule": "p00",
+      "at": "2026-10-07T10:51:11.973321+00:00"
     }
   },
   "18630278164012008": {
@@ -15081,5 +15102,47 @@
       "user": "ghasemhoseinpour",
       "at": "2026-10-07T10:36:14.806659+00:00"
     }
+  },
+  "_media_rules": {
+    "18135383341710257": "2026-10-07-0600",
+    "18092615075180960": "2026-10-06-1530",
+    "18151794439551279": "2026-10-06-0600",
+    "18121478000484793": "2026-10-05-1530",
+    "17977527015015936": "2026-10-05-0600",
+    "18466775050185777": "2026-10-04-1530",
+    "18131093890741931": "2026-10-04-0600",
+    "18114990104325879": "2026-10-03-1530",
+    "17996807103009088": "2026-10-03-0600",
+    "18035661662836835": "2026-10-02-1530",
+    "18043727183817647": "2026-10-02-0600",
+    "18143673127579140": "2026-10-01-1530",
+    "18115467637951827": "2026-10-01-0600",
+    "18118291519740191": "p12",
+    "18061887221788549": "p11",
+    "18431333590176280": "p10",
+    "18630278164012008": "p09",
+    "18098287586435729": "p08",
+    "18117297362054742": "p07",
+    "18102800627254089": "p06",
+    "18126796037498955": "p05",
+    "18090474026675518": "p04",
+    "17893335345655676": "p03",
+    "18339980485287304": "p02",
+    "18017930855731657": "p00",
+    "18087900869693182": "p01"
+  },
+  "_health": {
+    "last_sent_at": "2026-10-07T10:51:11.973321+00:00",
+    "at": "2026-10-07T10:51:11.973321+00:00",
+    "mode": "live",
+    "waiting": {
+      "p06": 1,
+      "p02": 21
+    },
+    "waiting_total": 22,
+    "unmatched_posts": [],
+    "posts_read": 24,
+    "posts_with_rule": 26,
+    "problems": []
   }
 }
