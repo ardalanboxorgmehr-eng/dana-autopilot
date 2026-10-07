@@ -110,6 +110,11 @@
     "18123533671697662": {
       "user": "liana.s2959",
       "at": "2026-10-07T05:49:06.216720+00:00"
+    },
+    "18023768120920346": {
+      "user": "alirezaazarpour",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A_nq7xKsGsbRhuTetxqZxY9\"}}"
     }
   },
   "18090474026675518": {
@@ -15039,116 +15044,1104 @@
       "at": "2026-10-07T06:45:49.283932+00:00",
       "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AIGLTM9jp3GvQ2rpy-zDvlz\"}}",
       "bounce_failed": "POST /17902319499598919/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18411012781081816": {
+      "user": "fateme_sltni",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A7YOQyDerT7BWQCFV2L4lM2\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17930738973410295": {
+      "user": "sara.aquamarine",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AXTF9FfRdRZ0WdLVuMa2npv\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18092781779473138": {
+      "user": "mahtab.rahmani.1995",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A7TXPSwDZU0xpQKPE6ojkax\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17971065417161745": {
+      "user": "faatemeh_k_313",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AJjMRAUs1zMvRKY8Yy_LHCS\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18493487854099862": {
+      "user": "mahdieh.khani218",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AqxZWhd6Z3P_snoxgK3SRXh\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18217295647361632": {
+      "user": "somikar87",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"APv_PW0UqVOkdAO_Hp-hygX\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18097277024434491": {
+      "user": "its_.aisan",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHCskkRsWLZNwPMFeXPzJLN\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18114917642098917": {
+      "user": "hani.mohmdpour",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18037351700840015": {
+      "user": "whatjasmineblooms",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AvuEEVE6coKX3ylPPsrgq-L\"}}"
+    },
+    "17905492680578975": {
+      "user": "elham.rz00",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMqJA11Yd8zQnNMmpCuhxTy\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18136332280645695": {
+      "user": "saeed.robatipoor.23",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AB8N3uuFIJFRY7rfjUB5yy4\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18484224037110558": {
+      "user": "mehrdad_haji",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AgOlbnr9cP99EkRq_2Tt6fz\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18110342783605966": {
+      "user": "hamtamoo",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AyzM6_CJLnOFyWpGlmuhm0b\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17888787558617721": {
+      "user": "mansour.binandeh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AGY8A0H4tqvCPlKRLX2w1Wz\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18129808162753450": {
+      "user": "mah985",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18085541678329776": {
+      "user": "mohammadzadeh.geotechnic",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHC0wJoU0MPSB2nxs7FkNMD\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18428457451196964": {
+      "user": "sahar.nabipour",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AlYT-3oANwTffFdMNpm5WjH\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17910437883501123": {
+      "user": "seyyed_jafar_mousavi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AbwJTXfC-iAxfUIUeBh_o92\"}}",
+      "bounce_failed": "POST /17910437883501123/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18080593169711987": {
+      "user": "soghra_ramzani_8684",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AU0o7ONkoA1MOIIad3FyQci\"}}",
+      "bounce_failed": "POST /18080593169711987/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18110738206886803": {
+      "user": "mohammadjavadsaeidirad",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "17921398023435499": {
+      "user": "meta_civil",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A0vYz6CODEVL5_PcdTGnE4i\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18086081393694149": {
+      "user": "lei_ly1354",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ApMZPdTX7xQVvZe1RXs3G-F\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17945687700300245": {
+      "user": "mohammad.ahmadifard136",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AYAJQvLkSyulJ4BxCY3xHw-\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18333512302277596": {
+      "user": "behnazboroon",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18118211525472141": {
+      "user": "peykarshenasi_ir",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AZyaZ_xQR4hlkQRxDYHy0dw\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18027225299857695": {
+      "user": "mana41458",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ASWeBRFkQqa6L2XLmvdlAZd\"}}",
+      "bounce_failed": "POST /18027225299857695/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17954669400254013": {
+      "user": "dr.nurse.fatemebiabani",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AoRKgfWjiVQ4r5x5IzNad3K\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18182537656422951": {
+      "user": "khadem7539",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AxRfqjmHKjAwJlvfmbX-WQe\"}}",
+      "bounce_failed": "POST /18182537656422951/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17892490935437521": {
+      "user": "dr.foroughi.psy",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AsU2kXLxvU6DdKeeBaeNor-\"}}",
+      "bounce_failed": "POST /17892490935437521/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17911030227542091": {
+      "user": "e.gh_1374",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ab9KyoOoRpeOPBDP8cZ7qQb\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18144487396569554": {
+      "user": "hesam.mashhadi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwSvOcHUU2eDoga2MxUMxIf\"}}",
+      "bounce_failed": "POST /18144487396569554/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18132737362732281": {
+      "user": "negaritto",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ALKxmhNgfYmPs3ck6gnvebn\"}}",
+      "bounce_failed": "POST /18132737362732281/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17942842503356579": {
+      "user": "farzad_.hashemii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Abo2CyMbXLyxOaGJPdu8JOU\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18002426661005593": {
+      "user": "azikh73",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "17918001414450338": {
+      "user": "sahand70365",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ADXRc4WJeQ84oGnlYVWbz28\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18494745118102433": {
+      "user": "donya.j.67",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"APYxGc_bzuJaFbgFMm2utBa\"}}",
+      "bounce_failed": "POST /18494745118102433/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18138376558704964": {
+      "user": "blac_k4770",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHn35CL2pbdW1RMhdjljneK\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18108387338521761": {
+      "user": "melika.changizi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A_w3BYg6KmXkoRDpbkg8Dws\"}}",
+      "bounce_failed": "POST /18108387338521761/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18114880244054527": {
+      "user": "jabbarhosseni",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHZaGNqp6nS3ej7gLHgaysA\"}}",
+      "bounce_failed": "POST /18114880244054527/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17918611428448891": {
+      "user": "hoory_danaee",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18139577251620199": {
+      "user": "tizhooshan_kazemi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A13Y90K7hlyRXzbYy-iSDUL\"}}",
+      "bounce_failed": "POST /18139577251620199/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18003917879794762": {
+      "user": "ahmari.niloofar",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A8LZ8LGqrECTn_v86levBt_\"}}",
+      "bounce_failed": "POST /18003917879794762/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18104757035344492": {
+      "user": "z_eskandari",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ALYjc4XYessLDurIDotS0Ac\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18136000210636765": {
+      "user": "chalick877",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AiPWZ_bWo8_wkmA6rW6aobm\"}}",
+      "bounce_failed": "POST /18136000210636765/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17898262182603779": {
+      "user": "s.s39254",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AjbpQqinooz3rEiQxQP66cv\"}}",
+      "bounce_failed": "POST /17898262182603779/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17869335987645925": {
+      "user": "nazanin.orazi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AhTvam_73TBsOuImUukEY7T\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18095593487120633": {
+      "user": "setare_mehri68",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AgvW18fR1Y3qegs1JjEJcxj\"}}",
+      "bounce_failed": "POST /18095593487120633/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18154500805519708": {
+      "user": "somayehmohamadi1971",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "public_failed": "POST /18154500805519708/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18188162056407148": {
+      "user": "abedini__m",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A0TzPs_ExphZqDKT4q_tVpy\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17969799300153137": {
+      "user": "nm_jfr_1979",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6YJBoutkiip6HHRZgvwGSX\"}}",
+      "bounce_failed": "POST /17969799300153137/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17971510227153546": {
+      "user": "pouyafanavaran",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Au5NrbHOuTmjVxwVWLHwSFr\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18140647963614154": {
+      "user": "nt_8690",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AlKEsou_lQW2AexBjDiGDRF\"}}",
+      "bounce_failed": "POST /18140647963614154/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18108699626223741": {
+      "user": "m.keshvari.7",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A1TSStnfGaAKLIK6CoWhrow\"}}",
+      "bounce_failed": "POST /18108699626223741/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17913300012538533": {
+      "user": "sepenta0009",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18091802021394215": {
+      "user": "reza_salavatian",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AiJmR0RwE-SjD435Bm3loUB\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18355170172222301": {
+      "user": "succulent4533",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6y3YuXd9ryFvgHtD1hFxC6\"}}",
+      "bounce_failed": "POST /18355170172222301/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18208694383364934": {
+      "user": "m._swx",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AUDX4lGCGFAbtC_s5X8Pvoq\"}}",
+      "bounce_failed": "POST /18208694383364934/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18090377546208603": {
+      "user": "nazerian3",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AiHpZyggO512TvKNHBpYHWI\"}}",
+      "bounce_failed": "POST /18090377546208603/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17970156366171456": {
+      "user": "alireza.shaverdi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AOBstSir8GIVLpe6SHnS6el\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18124697473846664": {
+      "user": "shans.6150",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A1AOp-LlpVh892MNJfn5TMq\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18114194252092523": {
+      "user": "clinical.hanieh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AjnEVBiRf741cEhMKYLj37s\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17879375673548820": {
+      "user": "saeedallahkarami60",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AiJARyDasrQZt8HkmukKsvB\"}}",
+      "bounce_failed": "POST /17879375673548820/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18007684232995712": {
+      "user": "smh03554",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ApdSWSBVhMcU2w_XOla4Pfr\"}}",
+      "bounce_failed": "POST /18007684232995712/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17884025397623132": {
+      "user": "malihe.e1377",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"As-hII_WWsxW1n2Hn1vlOAT\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18104749400209325": {
+      "user": "mary.mgh18",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AcWh58d_cEhs54u_ZQPsj3F\"}}",
+      "bounce_failed": "POST /18104749400209325/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18102724613619236": {
+      "user": "dr.hadijoudaki",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ARw7aNaHMxu1tetdAos1U5X\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17891185107681003": {
+      "user": "mahla.nazri",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AXAVWzjd-OSMYH4HiO-lF8O\"}}",
+      "bounce_failed": "POST /17891185107681003/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18125510635853415": {
+      "user": "mohammadmohammadi5775",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ae2BiaB1p7nQiRE5M1EYd_f\"}}",
+      "bounce_failed": "POST /18125510635853415/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18635579464041030": {
+      "user": "dr.mahyagoldasteh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwLtkzKeeSyrw4wykBX9iAh\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18149708926578037": {
+      "user": "maryamnorouzi1366",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18103655276629678": {
+      "user": "felicita_shadi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AUK2JKYwoRZYUk07eovxjIC\"}}",
+      "bounce_failed": "POST /18103655276629678/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18139627543537951": {
+      "user": "sasasa9984",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ahw0u5yE7gcgcN-UNSUpTkc\"}}",
+      "bounce_failed": "POST /18139627543537951/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17970884916156524": {
+      "user": "ph.dr.b.ra",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AKireooYkBC67doeHp7oJIX\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18114583942897592": {
+      "user": "mohamadreza_rubiks",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AmhuAbm9oEajwhdHUVhRMKi\"}}",
+      "bounce_failed": "POST /18114583942897592/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18117098008962716": {
+      "user": "mahtabemehalood",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AcjMmugj2svExqFVhrokRQs\"}}",
+      "bounce_failed": "POST /18117098008962716/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17924266401203578": {
+      "user": "sash123118",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AdQjvu9NwcWvJAqEZueTIhw\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17991115992107184": {
+      "user": "dr.gelareh.sagheb",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A9E86MLwurueuEpCIsMgIbb\"}}",
+      "bounce_failed": "POST /17991115992107184/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17892648972439867": {
+      "user": "lasers_biomedical_photonics",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A5dv6-OIx_L2dcGJ9emoc-x\"}}",
+      "bounce_failed": "POST /17892648972439867/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18075921800424900": {
+      "user": "abbasi890da",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A8n9jAuD7T6zjBLL840_Xq5\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18077952995448528": {
+      "user": "aliiieshraghiii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A3rX0seI8t0VDscscaBIhP8\"}}",
+      "bounce_failed": "POST /18077952995448528/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17904524049586300": {
+      "user": "dr.kheiran",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ABFanOWzF-Sz8DEWq6RZT8p\"}}",
+      "bounce_failed": "POST /17904524049586300/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18122376008307179": {
+      "user": "afshin.aghazadeh.official",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AP5G_vs8cex5CyocBpOZHeR\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18386617525226329": {
+      "user": "davodabdoli.ir",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AOVo2A2CiROOaUk6s1IK9yw\"}}",
+      "bounce_failed": "POST /18386617525226329/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18249050734309314": {
+      "user": "_.sabakazemi._",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AtF7rfXhkmxV3E35hcyDUwL\"}}",
+      "bounce_failed": "POST /18249050734309314/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18332236174272920": {
+      "user": "m.a__hamidi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A7Z1_RFi4J5OtNxdcf82t__\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18106975000935629": {
+      "user": "dr__arasteh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AKNNjwVo_QLkUzi7LeN1-0N\"}}",
+      "bounce_failed": "POST /18106975000935629/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18128951446757249": {
+      "user": "laleh.mousavi1996",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6-CKkI0_ak11rVEHAeUKA2\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18011442317959428": {
+      "user": "___sh.ah.ab",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AkmfZngAu6J5Y6YvuXV1HSe\"}}",
+      "bounce_failed": "POST /18011442317959428/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18116354698890213": {
+      "user": "amf9309",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AP0vE_3oQD0g3tUtRbJ03DX\"}}",
+      "bounce_failed": "POST /18116354698890213/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17977523840922855": {
+      "user": "aysan_khorsandi1995",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AhwtPGN8M7oGPXKC6z0Dx-f\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18071265392735058": {
+      "user": "amirmehdikalhorzadeh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AUTUC12tyzx3sPilN0C5ZIy\"}}",
+      "bounce_failed": "POST /18071265392735058/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17949218745278626": {
+      "user": "azhinn_b",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AQeTZYf5fHLM5NsP_QEyM-Z\"}}",
+      "bounce_failed": "POST /17949218745278626/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18112521476168388": {
+      "user": "sfarokhzadeh87",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANcwJs2dFN7U1eL_Y-mRkbr\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17970238482156459": {
+      "user": "majedmansouri061",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHGr7f6pttWfD5OfCmeGLGt\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18226779952327231": {
+      "user": "maryrafii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AbbpAshT8zwTsoqbl8q0HZ4\"}}",
+      "bounce_failed": "POST /18226779952327231/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18105219143215526": {
+      "user": "mryam_hsnzdh_",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A5bEBr1AX6o8AZE7OLmx7kv\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18096971171421221": {
+      "user": "mryam_hsnzdh_",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AY8yWZuzr7TV1yXtO0pQX0c\"}}",
+      "bounce_failed": "POST /18096971171421221/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18095661134650169": {
+      "user": "xarasadeghi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AbdbIjQRHEOv0vfUkPc-Mta\"}}",
+      "bounce_failed": "POST /18095661134650169/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17973049590150795": {
+      "user": "shimahmadi60",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ATA8fRxckItv-cRK5r4Hu_K\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17973716085151807": {
+      "user": "sepid_ebrahimi70",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AoCHYwgZhTL3zF3Q7TB-2Oq\"}}",
+      "bounce_failed": "POST /17973716085151807/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18143308732602497": {
+      "user": "dr_ramin_rouhi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AvKY_XraF5hwI5u2sldy4Xg\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18077225885405004": {
+      "user": "nafass.frh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AR154hYnfc3SL7IvLMijc1Q\"}}",
+      "bounce_failed": "POST /18077225885405004/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18095549942536615": {
+      "user": "drshahramsoltani6",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AKQULJaSPO9lSWOO0zTg-p_\"}}",
+      "bounce_failed": "POST /18095549942536615/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18207818650365767": {
+      "user": "mahmathamat",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AfHtFfdXNrNgLIWWx86VS2r\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18098926439387689": {
+      "user": "drshahramsoltani6",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AKdsKJh5IKY-ORfOYSBoZd9\"}}",
+      "bounce_failed": "POST /18098926439387689/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18133201975740876": {
+      "user": "sedkha37",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AjZ_PVgcsGGPkdeZayCXjNw\"}}",
+      "bounce_failed": "POST /18133201975740876/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18117284852470199": {
+      "user": "zaaahraaa7568",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AAkzBR3Q2UY7wceLBJIHrJD\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17884143723503611": {
+      "user": "kamransoltani",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AVnPd_e7gdtW5cZWZ-a7_SA\"}}",
+      "bounce_failed": "POST /17884143723503611/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18144198361580356": {
+      "user": "m.s.dehbozorgi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AVSzrVsY7VikuUE7SSXi_Rf\"}}",
+      "bounce_failed": "POST /18144198361580356/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18394477039163901": {
+      "user": "tabiatkadeh.reyhan",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AqbJMpZgv92G9ZeRKWplkBa\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18065800760716496": {
+      "user": "vafa4340",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AmOzJUOqnRroMc8XhkC17ob\"}}",
+      "bounce_failed": "POST /18065800760716496/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18103568009200579": {
+      "user": "mehdiahmadi19046",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AH7idpIhl5LXfsZy-ExTBF7\"}}",
+      "bounce_failed": "POST /18103568009200579/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18113500583519907": {
+      "user": "sorayasalavati65",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AVtFl-USIHJDO7agJerimYx\"}}",
+      "bounce_failed": "POST /18113500583519907/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18143786713600598": {
+      "user": "shadi_leilaeyoon",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ACl0G81yyUcLmqIeIZL1dWL\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18218879677339287": {
+      "user": "mohsen_aghaalikhani",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AsDGUlZA4ncL32Vc07wQPt0\"}}",
+      "bounce_failed": "POST /18218879677339287/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17915666310260767": {
+      "user": "mirtaheri1979",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AZ1LnfMUTSiRVwd9pCgIyCE\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17913877725534416": {
+      "user": "liaa.panii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AvZ0Y9Qh8ukQC8_d7VVsHNY\"}}",
+      "bounce_failed": "POST /17913877725534416/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18110658028891426": {
+      "user": "shahpari_al",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AIYJd7gCEsHFc_Q2qiG0LlL\"}}",
+      "bounce_failed": "POST /18110658028891426/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18347179273280063": {
+      "user": "dr.mohammadrezagazmeh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AiZ_4ALm8iaoIdU0Q763Ucu\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17948971410314348": {
+      "user": "omid.kazemzade",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A7hG-LV4gYSQppsHkZ5MTKz\"}}",
+      "bounce_failed": "POST /17948971410314348/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18224294626331782": {
+      "user": "sh.dezh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwvKKBLBtsi3uxx4q7CAQwp\"}}",
+      "bounce_failed": "POST /18224294626331782/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18176385415399496": {
+      "user": "armin_jarrahi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ATY1gyQpxYuPbtFQ2_b_f7k\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18058919288550035": {
+      "user": "sarveonline",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANOvPmTvp0wefeQcXksPCJV\"}}",
+      "bounce_failed": "POST /18058919288550035/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18353970331173368": {
+      "user": "saeid.pakdel.official",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Aws5syQbgz7eRZjGkCHE65C\"}}",
+      "bounce_failed": "POST /18353970331173368/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18021816329717962": {
+      "user": "amirvahidinia9",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AEaZkzHQtiqVV6-Nhnsfqvh\"}}",
+      "bounce_failed": "POST /18021816329717962/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18102770033010505": {
+      "user": "r.mehdipour2021",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Aif-ODzzedVpo2otHsTvPbR\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18110553275272166": {
+      "user": "sourenahmadi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AoTuG-3XEO2gTBBmK3UYJIE\"}}",
+      "bounce_failed": "POST /18110553275272166/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18088482353244320": {
+      "user": "yasinahmad123456",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Aa6n2xsdlOBmCJhYNxUoSvi\"}}",
+      "bounce_failed": "POST /18088482353244320/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18137252857711050": {
+      "user": "kiaei56",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AizAdrjL_jiENxvBO6SLnE7\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18111736115139632": {
+      "user": "sadat__math",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AIikBeQEYW_nCAkKxgoUkpg\"}}",
+      "bounce_failed": "POST /18111736115139632/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18097005044178976": {
+      "user": "yasi_7820",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Adi4LDordrWWgOOjsZepiRg\"}}",
+      "bounce_failed": "POST /18097005044178976/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18011766761979522": {
+      "user": "mehdibeynaghi2221",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Av9JXtE_-IupW7j43jDDxWT\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18041639597833134": {
+      "user": "eb.vanda",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AoyUfpbdsy_09iliLC_umj-\"}}",
+      "bounce_failed": "POST /18041639597833134/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18071614493492465": {
+      "user": "jdhor.manesh",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AlT7mFuMJUqAiQjBPgl5ts8\"}}",
+      "bounce_failed": "POST /18071614493492465/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17929872978167911": {
+      "user": "neshansafety",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AxKyMuVNK8MRoRDFzcNm_Pg\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18129244216769845": {
+      "user": "nazila_abolmohammadi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AuhMljF2zcGHoqQP8k7J8j5\"}}",
+      "bounce_failed": "POST /18129244216769845/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17996718168011130": {
+      "user": "fatemeh.homayun",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "17867362191661025": {
+      "user": "meysam.savameri",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ap1zgHsImtbiTeH68j-N76q\"}}",
+      "bounce_failed": "POST /17867362191661025/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18129887692744660": {
+      "user": "razieh6161",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AM87s-aaVocl_yOfTEkOYtr\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18141567190526330": {
+      "user": "razieh6161",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AqPPKurYxrYaa3pBGDUnamg\"}}",
+      "bounce_failed": "POST /18141567190526330/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18117338158969167": {
+      "user": "armaniiiiyy",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AhO-R8d8u8si2qJMu3MyIh4\"}}",
+      "bounce_failed": "POST /18117338158969167/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17883653229513616": {
+      "user": "me.letters",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A_WF9HmQYUpsyXLAJ3F7mFL\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18108763481125742": {
+      "user": "ary.ameli1984",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A3HKdXIdHeY1-mWPsVOJTkS\"}}",
+      "bounce_failed": "POST /18108763481125742/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18228863725323919": {
+      "user": "abba_aydin",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ACMcfEC8QJPVxgjmro9T5qW\"}}",
+      "bounce_failed": "POST /18228863725323919/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17965964118194414": {
+      "user": "m.urban1990",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18177788926437623": {
+      "user": "mkarimi980.ir",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"An1UPvSPGeRGeEhjlDF7ZNS\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18108064865063436": {
+      "user": "mi74k",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AR5Y1NjILPYCcHQEDHliT2x\"}}",
+      "bounce_failed": "POST /18108064865063436/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18094306145416656": {
+      "user": "mohamadrezasalargarna198222",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A4zvb24k2DtWMnalsWvc7EX\"}}",
+      "bounce_failed": "POST /18094306145416656/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18112591478120921": {
+      "user": "ali.rami53",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ARkbkVTALLhewpCdeotLLhz\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18165778987468847": {
+      "user": "saman_samiiii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AKtcQgq0iwKoWXQ4dKBIx-A\"}}",
+      "bounce_failed": "POST /18165778987468847/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17923908684205963": {
+      "user": "pedramk.m.f",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AnWguBJU6aDNK6kgAEG6GJf\"}}",
+      "bounce_failed": "POST /17923908684205963/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18105782483263426": {
+      "user": "mina.emranii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AmN4DgDQrMHQxssUEVdgV6d\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18111811529032423": {
+      "user": "farhad_fh65",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AA283MmNUs2nrzS3V2zzon-\"}}",
+      "bounce_failed": "POST /18111811529032423/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18409912552091189": {
+      "user": "ynjmshyd",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18142592461598765": {
+      "user": "zshadmehr7",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ApqGOkpnQDhlN9wX0emd1fp\"}}",
+      "bounce_failed": "POST /18142592461598765/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18106213646240090": {
+      "user": "maryam.r.45",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AVsXuDORgB8Opq8EaAIbDxk\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18119529145940392": {
+      "user": "saiedshams8020",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ah6GwzPRUxvEUyOQdHKK-s1\"}}",
+      "bounce_failed": "POST /18119529145940392/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "17982054263901158": {
+      "user": "alih3045",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AeEbqOy-CbV6JE175d2I557\"}}",
+      "bounce_failed": "POST /17982054263901158/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18126334336884919": {
+      "user": "mohamad_heydari968",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Aej4yShtIK8XgLYY-rSmAbt\"}}",
+      "bounce_failed": "POST /18126334336884919/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18037473800647810": {
+      "user": "ahmadhussein.mohammadi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AetkW_pv31WY9bAx-ve4fCj\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18073660988768442": {
+      "user": "nabil.sayahi",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ApRI86xR9LOwNxKlhJQvU8C\"}}",
+      "bounce_failed": "POST /18073660988768442/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18397874101203603": {
+      "user": "sina_davarzadeh.7",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
+    },
+    "17922373239434780": {
+      "user": "minasoltani95",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ALmBFpoL_voMceQcXUFJtru\"}}",
+      "bounce_failed": "POST /17922373239434780/replies -> HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Ra"
+    },
+    "18168117817460780": {
+      "user": "onthecourtbasketball",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANP6uUyTdyKrRDvwPcF58mF\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18155898385514111": {
+      "user": "bkolivand",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"According policy for private replies, the comment is too old get a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534024,\"fbtrace_id\":\"A0eqOtTjS3T6qSIOvF4pgs9\"}}"
+    },
+    "18116190479014832": {
+      "user": "ebrahimasgary",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"According policy for private replies, the comment is too old get a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534024,\"fbtrace_id\":\"AcoxA-zpQNnYqN2tD8vtdIe\"}}"
+    },
+    "17900905521376829": {
+      "user": "wafaa.sleman11",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"According policy for private replies, the comment is too old get a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534024,\"fbtrace_id\":\"AoK5POSrRG-JlgqGToif9Pb\"}}"
+    },
+    "17877200700631123": {
+      "user": "nacmhe",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already sent to this person"
     }
   },
   "_report": {
-    "at": "2026-10-07T06:45:49.283932+00:00",
+    "at": "2026-10-07T08:48:14.702781+00:00",
     "mode": "live",
-    "sent": 18,
-    "failed": 737,
-    "skipped": 14,
-    "inbox_sent": 14,
+    "sent": 5,
+    "failed": 162,
+    "skipped": 11,
+    "inbox_sent": 16,
     "bounce_backlog": 0,
     "failures": [
       {
         "post": "2026-10-05-1530",
-        "user": "r.rama1384",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ao24rFHJ8-bDNWzPqmCYjto\"}}"
+        "user": "dr_abasalipour",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AOZ5y2tGNZ_E9R3pUfRWoUj\"}}"
       },
       {
         "post": "2026-10-05-1530",
-        "user": "amin_abbas.niya",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AWJofgjwDyGuIsSIiDYVWSu\"}}"
+        "user": "babadi7987",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwVWl45XSkkrLgLbhIY3Ms3\"}}"
       },
       {
-        "post": "2026-10-04-1530",
-        "user": "roshdijalal",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6yvUd7Da_DC7sU4kQYcZWB\"}}"
+        "post": "2026-10-05-1530",
+        "user": "atoosa_h_r",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AtroMsxUBj0dBpn2iytYhFi\"}}"
       },
       {
-        "post": "p02",
-        "user": "dr.naderi_lifestyle",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AahN0hBenOcJ_LL8SKhnMSZ\"}}"
+        "post": "2026-10-05-1530",
+        "user": "antriebsmotor",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AJxr57vZgrPNXaHWxOsnymJ\"}}"
       },
       {
-        "post": "p02",
-        "user": "faranapm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AOAT45gWyx8AWLm1oy_c6z0\"}}"
+        "post": "2026-10-05-1530",
+        "user": "_wiish_._",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AoAWkearMNDQui0j3BvVkRo\"}}"
       },
       {
-        "post": "p02",
-        "user": "pixel__motion_new",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AJiZTpjywWTDFh-QH1ltGcr\"}}"
+        "post": "2026-10-05-1530",
+        "user": "at.tehranii",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AWJ8x4np7MBCjPWwP19XbzA\"}}"
       },
       {
-        "post": "p02",
-        "user": "eslamii2021",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AysL2EEso904m1lUVfFvtU-\"}}"
+        "post": "p12",
+        "user": "farhd_ahmdii",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6tFSvnhKzZseJ2aqXJlhWh\"}}"
       },
       {
-        "post": "p02",
-        "user": "sarin_javadi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A7WO_1zZ-yUfJY5q-XJkZaH\"}}"
+        "post": "p06",
+        "user": "alirezaazarpour",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A_nq7xKsGsbRhuTetxqZxY9\"}}"
       },
       {
-        "post": "p02",
-        "user": "geramestudio",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AqbNw0FomEy-jiDXvCqUFit\"}}"
+        "post": "p00",
+        "user": "fateme_sltni",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A7YOQyDerT7BWQCFV2L4lM2\"}}"
       },
       {
-        "post": "p02",
-        "user": "palm.iran",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ARC698fpNz8vdJ-DDkDrmRA\"}}"
+        "post": "p00",
+        "user": "sara.aquamarine",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AXTF9FfRdRZ0WdLVuMa2npv\"}}"
       },
       {
-        "post": "p02",
-        "user": "vianovaskin",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Aqx21Ze2TbX3aoOi1dFpR99\"}}"
+        "post": "p00",
+        "user": "mahtab.rahmani.1995",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A7TXPSwDZU0xpQKPE6ojkax\"}}"
       },
       {
-        "post": "p02",
-        "user": "benyamin972",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A6TuC_1XmRG4b1kPDi73wAB\"}}"
+        "post": "p00",
+        "user": "faatemeh_k_313",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AJjMRAUs1zMvRKY8Yy_LHCS\"}}"
       },
       {
-        "post": "p02",
-        "user": "mohsen.porsche",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ArfCpAwDe_-fJxjYWKwTb68\"}}"
+        "post": "p00",
+        "user": "mahdieh.khani218",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AqxZWhd6Z3P_snoxgK3SRXh\"}}"
       },
       {
-        "post": "p02",
-        "user": "arezoo.taiarani",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AkKEKQOuNzPldWIkBMvajlA\"}}"
+        "post": "p00",
+        "user": "somikar87",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"APv_PW0UqVOkdAO_Hp-hygX\"}}"
       },
       {
-        "post": "p02",
-        "user": "boutique_amoot",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A6ZgueyUB5gniZK5KkIdBDB\"}}"
+        "post": "p00",
+        "user": "its_.aisan",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHCskkRsWLZNwPMFeXPzJLN\"}}"
       },
       {
-        "post": "p02",
-        "user": "hadis_beatey",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AOAENYCjTPUtq-e9MdsSP9n\"}}"
+        "post": "p00",
+        "user": "whatjasmineblooms",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AvuEEVE6coKX3ylPPsrgq-L\"}}"
       },
       {
-        "post": "p02",
-        "user": "mohammadshahmoradiii",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A3eK0HQ7wtIn_IugCfYh56C\"}}"
+        "post": "p00",
+        "user": "elham.rz00",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMqJA11Yd8zQnNMmpCuhxTy\"}}"
       },
       {
-        "post": "p02",
-        "user": "arat_ftm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A5zajbBB4ee_-tkmSLuHP1I\"}}"
+        "post": "p00",
+        "user": "saeed.robatipoor.23",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AB8N3uuFIJFRY7rfjUB5yy4\"}}"
       },
       {
-        "post": "p02",
-        "user": "yousef_karimi1",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AR6l_d0tSt7URje9VHk_W6u\"}}"
+        "post": "p00",
+        "user": "mehrdad_haji",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AgOlbnr9cP99EkRq_2Tt6fz\"}}"
       },
       {
-        "post": "p02",
-        "user": "jetfollow_official",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AyCKWtFlUJjE5ZwRU6ezCdj\"}}"
+        "post": "p00",
+        "user": "hamtamoo",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AyzM6_CJLnOFyWpGlmuhm0b\"}}"
       }
     ]
   },
@@ -15590,6 +16583,109 @@
       "rule": "p00",
       "at": "2026-10-07T06:45:49.283932+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTIwODQxNDM4MzUxMzcwNTozMzA0NDgwNDQ0NzYxMDYyNjAwMDI3MzE3MDQ3NjU2NDQ4MAZDZD": {
+      "user": "elnaz.jozi",
+      "uid": "1601714331690227",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQxNDA3OTE0NTUxMjQ3MjozMzA0NDc2NTkxNjk0NjMyNzI2MzU2ODg4OTM1Nzc5NTMyOAZDZD": {
+      "user": "hani.mohmdpour",
+      "uid": "1742075887491058",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY4NDcwMzAzMTM4ODI3OTozMzA0NDgxNDU3Mjc0MTM0MjkzNDY4MjgzNzAzNzYxMzA1NgZDZD": {
+      "user": "themohjam",
+      "uid": "2699659450454806",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgyNzI4MTYyMDIzNDQ2NzozMzA0NDgxMjQzNzQ3MjQ0MzEzODI3MzM4OTAxMjA1ODExMgZDZD": {
+      "user": "dr.rahnama.m",
+      "uid": "847148571789552",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgxOTAyNDg1NzczMjI3NTozMzA0NDc3MDQ1Mzk1NTAwMDM5OTkxMjg0Nzk2NTk0NTg1NgZDZD": {
+      "user": "mojtabaa.omidvar",
+      "uid": "1494659479384361",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc3MzA4MDM3OTE4MzQ3NDozMzA0NDc4MDI5MDk5NDEzNDQ4NTAyMTM2MTE5MzM1MzIxNgZDZD": {
+      "user": "moniwre._.t",
+      "uid": "3639339262888836",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc2NTU4MDQyOTA5NDQwMDozMzA0NDc4MjQxNTY2OTI3MjA3NDA4NDIyNDUzMDkwNzEzNgZDZD": {
+      "user": "azinheydaryan_",
+      "uid": "3746543072163073",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MjY4ODQwNzQzOTQwOTA1NTozMzA0NDc5MTY5MjQ2MTMwODg3ODg5MTgxNzg5Mzg4ODAwMAZDZD": {
+      "user": "kamyar7.6",
+      "uid": "1833563600974618",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU4OTQ4OTAxMDUzNDEzNzozMzA0NDc5Mjg4Mjg0NjEwMzExMDg1MDcxMTQ2NTc1NDYyNAZDZD": {
+      "user": "__lenarj",
+      "uid": "1430013149099076",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDMxNjEzMzI0MDM2NDgxNTozMzA0NDc5NzM4MTk2MDU1MjIzMzc3NjgyMzY2NjczNzE1MgZDZD": {
+      "user": "negaar.bns",
+      "uid": "1580463973386184",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDQxMjEyNTEyMDkwMTAxNTozMzA0NDc5ODc4NjUzMTgwMTYyNDQwNjU1NDQzMDE0NDUxMgZDZD": {
+      "user": "mobinaaa_h82",
+      "uid": "1130258349677918",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDkyMDU3Njk1MjkyNjUxNjozMzA0NDgwMDMwNjM2NzkzNzE4Nzk4MDA0MDA3NjI2MzQyNAZDZD": {
+      "user": "mehrnazfarahany",
+      "uid": "1578410553410153",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDA2NDM0NjkzOTEzOTI3NjozMzA0NDgwMDU2Njg4NTcxNDM3NzUyNTcwMzU1NDg5MTc3NgZDZD": {
+      "user": "fatemeh.bagrii",
+      "uid": "1641552250963063",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDI1ODk0NTQ3OTMwOTUwOTozMzA0NDgwNTM0NTExMDIyOTU3NDQ0ODU5OTIxMjc1Mjg5NgZDZD": {
+      "user": "meysam.ramezanali",
+      "uid": "1412050937048676",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDAxOTkwNDQwNzM1NzEzMTozMzA0NDgwOTg3MTgxNzE3MDkwODg3Njg2OTA0NDUzNTI5NgZDZD": {
+      "user": "ghazghaz_al",
+      "uid": "2144721239735013",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgwMTU2MjUzOTMwMzQ1NDozMzA0NDc2NTY1ODk0MDQ4MDEwODAyODQwMjk0MTgyMDkyOAZDZD": {
+      "user": "mediya.___.m",
+      "uid": "1436292508565944",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc0ODc0NzI4MTA2MjMwMDozMzA0NDc2NTA0MDYyMzI1Mzg0NDYxODY5OTEwNDg0NTgyNAZDZD": {
+      "user": "hedayati_ieltsmax",
+      "uid": "1119720983909984",
+      "rule": "p00",
+      "at": "2026-10-07T08:48:14.702781+00:00"
     }
   },
   "18630278164012008": {
@@ -16881,12 +17977,66 @@
     "18036795344657042": {
       "user": "tajdari_f",
       "at": "2026-10-07T06:45:49.283932+00:00"
+    },
+    "18106414922628652": {
+      "user": "dr_abasalipour",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AOZ5y2tGNZ_E9R3pUfRWoUj\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18492444613110122": {
+      "user": "babadi7987",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwVWl45XSkkrLgLbhIY3Ms3\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18183038440422071": {
+      "user": "atoosa_h_r",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AtroMsxUBj0dBpn2iytYhFi\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18125589125486330": {
+      "user": "antriebsmotor",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AJxr57vZgrPNXaHWxOsnymJ\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18088587203257501": {
+      "user": "_wiish_._",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AoAWkearMNDQui0j3BvVkRo\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18384074227227238": {
+      "user": "at.tehranii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AWJ8x4np7MBCjPWwP19XbzA\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
     }
   },
   "18092615075180960": {
     "18121952401783977": {
       "user": "aalavi938",
       "at": "2026-10-06T14:37:03.221489+00:00"
+    }
+  },
+  "18118291519740191": {
+    "18456468469123392": {
+      "user": "farhd_ahmdii",
+      "at": "2026-10-07T08:48:14.702781+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6tFSvnhKzZseJ2aqXJlhWh\"}}",
+      "bounced": "2026-10-07T08:48:14.702781+00:00"
+    }
+  },
+  "18061887221788549": {
+    "17925301548427692": {
+      "user": "melodiii80003",
+      "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "18125668192891893": {
+      "user": "nazari_elinaa",
+      "at": "2026-10-07T08:48:14.702781+00:00"
     }
   }
 }
