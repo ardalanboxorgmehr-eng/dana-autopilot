@@ -13546,12 +13546,43 @@
     "18126817370485650": {
       "user": "mohammad_ghorbanib",
       "at": "2026-10-07T23:13:54.194197+00:00"
+    },
+    "17865390327679228": {
+      "user": "_mobina_abolfathi_",
+      "at": "2026-10-07T23:55:21.465928+00:00"
+    },
+    "18130629187749787": {
+      "user": "mahdiss_81139",
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AHyODwPTmx6AaoaZOSD2F0E\"}}",
+      "tries": 4,
+      "c_at": "2026-10-07T05:08:08+0000",
+      "text": "واسه ساخت پی دی اف جزوه های دانشگاهی پرامپتی ندارین؟",
+      "bounced": "2026-10-07T23:55:21.465928+00:00"
+    },
+    "18008801783779964": {
+      "user": "yousefisep",
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AoShOvimQQOU3KQ8bdrApsF\"}}",
+      "tries": 4,
+      "c_at": "2026-10-07T05:00:27+0000",
+      "text": "پرامپ",
+      "bounced": "2026-10-07T23:55:21.465928+00:00"
+    },
+    "17991665910022852": {
+      "user": "lalmohammadrashidi",
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9WtzOvn7mUB2nscwfEztmi\"}}",
+      "tries": 4,
+      "c_at": "2026-10-07T04:47:47+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-07T23:55:21.465928+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-07T23:44:43.776451+00:00",
+    "at": "2026-10-07T23:55:21.465928+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 1,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -13562,17 +13593,17 @@
       {
         "post": "p00",
         "user": "mahdiss_81139",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A1qqaXtYmDxML4jgddsumuq\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AHyODwPTmx6AaoaZOSD2F0E\"}}"
       },
       {
         "post": "p00",
         "user": "yousefisep",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AnYrzms5e_hoFZNEL-OzX1O\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AoShOvimQQOU3KQ8bdrApsF\"}}"
       },
       {
         "post": "p00",
         "user": "lalmohammadrashidi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ac_YcmquMQ2cgR2tH_lR7Zn\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9WtzOvn7mUB2nscwfEztmi\"}}"
       }
     ]
   },
@@ -15990,18 +16021,18 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T23:28:54.136691+00:00",
-    "at": "2026-10-07T23:44:43.776451+00:00",
+    "last_sent_at": "2026-10-07T23:55:21.465928+00:00",
+    "at": "2026-10-07T23:55:21.465928+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 443
+      "p00": 440
     },
-    "waiting_total": 443,
+    "waiting_total": 440,
     "unmatched_posts": [],
     "posts_read": 26,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 100,
+    "queue_left": 88,
     "inbox_waiting": 0
   },
   "_thanked": {
@@ -18306,15 +18337,71 @@
       "at": "2026-10-07T23:44:43.776451+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "17888883429621319": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18629439769032827": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18194126272391210": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17986896378113740": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18167862748474615": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18085450259306960": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18113865482087138": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18135814576654276": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17911116999518893": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18107704598264471": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18133770883677032": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17940474993099250": {
+      "at": "2026-10-07T23:55:21.465928+00:00",
+      "kind": "nudge",
+      "via": "desk"
     }
   },
-  "_tries": {
-    "18130629187749787": 3,
-    "18008801783779964": 3,
-    "17991665910022852": 3
-  },
+  "_tries": {},
   "_desk": {
-    "at": "2026-10-07T23:44:43.776451+00:00",
+    "at": "2026-10-07T23:55:21.465928+00:00",
     "items": [
       {
         "id": "18153826318525474",
