@@ -13033,14 +13033,30 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T09:51:53.345936+00:00",
-    "mode": "dry_run",
-    "sent": 0,
-    "failed": 0,
+    "at": "2026-10-07T10:02:57.349778+00:00",
+    "mode": "live",
+    "sent": 3,
+    "failed": 3,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 11,
     "bounce_backlog": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "p06",
+        "user": "alirezaazarpour",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AVou2K2hy9pRIFx4IQfPq8a\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "faranapm",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9pZphzqDmBgS9wbZn18W3y\"}}"
+      },
+      {
+        "post": "p02",
+        "user": "pixel__motion_new",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ApU8NCSZ_tbj0UuuXS2G0Tm\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -13589,6 +13605,79 @@
       "uid": "4769835703282557",
       "rule": "p00",
       "at": "2026-10-07T09:18:47.046523+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI4NjczMDI4NTM3MTIyNjcyMjozMzA0NDg1OTA0NjEwMzQ3Mzc4MjcxNTc1Mzc3NDk3MjkyOAZDZD": {
+      "user": "mortezakhoshdoni",
+      "uid": "1807127777268979",
+      "rule": "p09",
+      "at": "2026-10-07T10:02:57.349778+00:00",
+      "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI4NjcxODczMDE4NTY3MjMyNjozMzA0NDg5MjI2MDc4OTU4NDgxMDA5OTUwOTAzNTAwODAwMAZDZD": {
+      "user": "a.lee.smi",
+      "uid": "1679130043805077",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDcwOTAzNDA3NzUxNjczMTozMzA0NDg4NjQ5NTc2NTUzNDI5NDY4MDI2NzM1OTUxODcyMAZDZD": {
+      "user": "im__hsdy",
+      "uid": "1283720873879793",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY4NDA4OTI4ODMyNzg2NDozMzA0NDg3NDI4NzA3NDM3MzI1ODUwMTk0NDgwODMwODczNgZDZD": {
+      "user": "asrisolmaz",
+      "uid": "1622808436252528",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDc3NjQ0NTMxMDc0MDQ4NjozMzA0NDg3NDAzNjI2NjcyMjM0MTY4NDAzMTA3NjE3MTc3NgZDZD": {
+      "user": "armin_jarrahi",
+      "uid": "2681857685605013",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTE0MjE0MDUxNjMzNjk5MzozMzA0NDg3Mjk1MzgwNjcwNzI0MTc4NzI3MjEyMjU5NzM3NgZDZD": {
+      "user": "011babyy",
+      "uid": "2187471328850050",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc5ODA5NDAxOTY3NjI0NjozMzA0NDg2OTUxOTkyMjY0NTMxOTAzMTcyMzQ3NDgxMjkyOAZDZD": {
+      "user": "_itmohiw_",
+      "uid": "1722855345473408",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI1OTcxODUwNzkzNTE0MTozMzA0NDg2NjQ2MzY4NDAxNzQyMjA3Mjg1NzQyMDEwMzY4MAZDZD": {
+      "user": "yaseman_ch",
+      "uid": "1078365301709219",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgyMjU3MTY5NzQxMzM5MjozMzA0NDg1OTgwODE1NjU2NzcyMzU5MzY0MDEwMjA2ODIyNAZDZD": {
+      "user": "fatttiii._.00",
+      "uid": "4146416352161060",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MTgwNTU2NjA5MDg0NjIzNDozMzA0NDg1NzYyMzcyMjQ4MzI4NDcyOTgwOTYzMTk2OTI4MAZDZD": {
+      "user": "naghme_haghighat",
+      "uid": "4618897211702949",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTQxMDUzNDI2OTIxNTc1MTozMzA0NDg1NTg2NTQ1MDk0NjUwMTMxOTQ4MDIzMjExNjIyNAZDZD": {
+      "user": "mobinaafshaaar",
+      "uid": "4421845908079703",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU4NzIxNjAwNDg0NjA1ODozMzA0NDg1MDI2MTM3NjMyNDQ0OTAwNjQxNTQyNzY2NTkyMAZDZD": {
+      "user": "imahdi_arz",
+      "uid": "2094566381451071",
+      "rule": "p00",
+      "at": "2026-10-07T10:02:57.349778+00:00"
     }
   },
   "18630278164012008": {
@@ -13779,6 +13868,10 @@
       "at": "2026-10-07T09:18:47.046523+00:00",
       "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AjeZ5rqrf-UupKI-TcQJ4YH\"}}",
       "bounced": "2026-10-07T09:18:47.046523+00:00"
+    },
+    "17933361519142687": {
+      "user": "mortezakhoshdoni",
+      "at": "2026-10-07T10:02:57.349778+00:00"
     }
   },
   "18115467637951827": {
@@ -14192,6 +14285,10 @@
       "at": "2026-10-07T06:45:49.283932+00:00",
       "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6yvUd7Da_DC7sU4kQYcZWB\"}}",
       "bounced": "2026-10-07T06:45:49.283932+00:00"
+    },
+    "18119397410473492": {
+      "user": "abbasmaleki1974",
+      "at": "2026-10-07T10:02:57.349778+00:00"
     }
   },
   "17977527015015936": {
@@ -14923,6 +15020,10 @@
       "at": "2026-10-07T09:18:47.046523+00:00",
       "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A01qeuDBGi6fBcyByagSsQH\"}}",
       "bounced": "2026-10-07T09:18:47.046523+00:00"
+    },
+    "18167812939426014": {
+      "user": "s.abedini1994",
+      "at": "2026-10-07T10:02:57.349778+00:00"
     }
   },
   "18092615075180960": {
