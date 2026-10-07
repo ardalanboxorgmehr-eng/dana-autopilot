@@ -79,7 +79,7 @@ select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:5px 8
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 const GROUPS = {all:"All", wants_dm:"Wants the DM", question:"Questions", chat:"Chat", spam:"Spam or ads"};
-const VIEWS = {inbox:"DMs", ideas:"Ideas", tiktok:"TikTok", weekly:"Weekly", learned:"Learned"};
+const VIEWS = {failed:"Failed DMs", inbox:"DMs", ideas:"Ideas", tiktok:"TikTok", weekly:"Weekly", learned:"Learned"};
 const KINDS = {dm:"Send the post's DM", answer:"Threaded reply", thanks:"Threaded thanks", nudge:"Ask them to DM the keyword"};
 const YT_KINDS = {answer:"Threaded reply", thanks:"Threaded thanks"};
 let data = {items:[]}, tab = "all", plat = "all";
@@ -119,6 +119,7 @@ async function load(){
   $("#push").disabled = !data.pending_push;
   if (tab === "learned") return renderLearned();
   if (tab === "inbox") return renderInbox();
+  if (tab === "failed") return renderFailed();
   if (tab === "tiktok") return renderTiktok();
   if (tab === "weekly") return renderWeekly();
   if (tab === "ideas") return renderIdeas();
@@ -233,6 +234,38 @@ $("#push").onclick = async () => {
   $("#log").textContent = r.ok ? "Sent. The job posts them in its next runs (every 15 minutes)." : "Push failed:\n"+r.log;
   load();
 };
+let showLater = false;
+async function renderFailed(){
+  const F = await api("/api/failed");
+  const open = F.items.filter(i => showLater || !i.handled);
+  const handled = F.items.filter(i => i.handled).length;
+  const canAll = open.filter(i => i.can_dm && !i.queued && !i.closed).map(i => i.id);
+  let html = `<div class="hint" style="margin-bottom:10px">Keyword comments whose DM could not be sent.${F.retrying?` ${F.retrying} more are still being retried by the job.`:""}
+    Instagram allows the DM as a private reply only within 7 days of the comment; after that, the only option is a public reply asking them to DM the keyword. "Inbox does not take messages from pages" is the person's own Instagram setting, so a retry usually fails again; the public reply is the fix there.</div>
+    <div class="acts" style="margin-bottom:12px">${canAll.length?`<button class="pri" data-fa="dm" data-ids="${canAll.join(",")}">Retry all ${canAll.length} DMs</button>`:""}
+    <button data-later="1">${showLater?"Show only ones that need you":`Show all, incl. ${handled} already handled`}</button></div>`;
+  if (!open.length) html += `<div class="empty">Nothing needs you here.${handled?` ${handled} older failures were already handled with a public reply or a later DM.`:""}</div>`;
+  html += open.map(i => `<div class="card">
+    <div class="top"><span><span class="user">@${esc(i.user)}</span> · ${ago(i.at)} · keyword «${esc(i.keyword)}»</span><span class="chip spam">${esc(i.reason)}</span></div>
+    <div class="cap">${esc(i.post)} · ${esc(i.title)}</div>
+    ${i.text?`<div class="text" style="font-size:16px">${esc(i.text)}</div>`:""}
+    <details><summary class="hint">DM they should get</summary><div class="cap" style="white-space:pre-wrap">${esc(i.message||"(no DM text found for this post)")}</div></details>
+    <div class="acts">
+      ${i.queued?'<span class="hint">Queued, press Send approved</span>':`
+      ${i.can_dm?`<button class="pri" data-fa="dm" data-ids="${i.id}">Retry DM</button>`:'<span class="hint">Over 7 days, DM not allowed</span>'}
+      ${i.bounced?'<span class="hint">Public "DM us the keyword" reply already left</span>':`<button data-fa="nudge" data-ids="${i.id}">Reply: DM us «${esc(i.keyword)}»</button>`}`}
+      ${i.got_later?'<span class="hint">Got it later by DM</span>':""}
+      <button data-fa="dismiss" data-ids="${i.id}">Dismiss</button>
+    </div></div>`).join("");
+  $("#list").innerHTML = html;
+}
+$("#list").addEventListener("click", async e => {
+  if (e.target.dataset.later){ showLater = !showLater; return renderFailed(); }
+  if (!e.target.dataset.fa) return;
+  const r = await api("/api/failed_action", {action:e.target.dataset.fa, ids:e.target.dataset.ids.split(",")});
+  $("#log").textContent = e.target.dataset.fa==="dismiss" ? "Dismissed." : `${r.done} queued. Press Send approved.`;
+  load();
+});
 async function renderInbox(){
   const I = await api("/api/inbox");
   if (!I.connected){ $("#list").innerHTML = `<div class="card"><b>Answer Instagram DMs here</b><div class="hint" style="margin:6px 0 10px">Messages are locked with a private key that only this Mac and GitHub know, so they never sit readable in the public repo. One click sets it up.</div><button class="pri" id="connectdm">Connect DMs</button></div>`; return; }

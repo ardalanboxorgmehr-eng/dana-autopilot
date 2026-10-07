@@ -502,6 +502,96 @@ def settings():
             "ntfy": ("https://ntfy.sh/" + l["ntfy"]) if l.get("ntfy") else ""}
 
 
+# ------------------------------------------------------------------ failed keyword DMs (7 Oct 2026)
+
+def reason_of(err):
+    e = err or ""
+    if job.BOUNCE_CODE in e:
+        return "Their inbox does not take messages from pages"
+    if "HTTP 500" in e:
+        return "Instagram server error"
+    if "HTTP 400" in e and ("does not exist" in e or "Unsupported" in e):
+        return "Comment was deleted"
+    if "HTTP 4" in e:
+        return "Instagram refused it"
+    return e[:80] or "Unknown"
+
+
+def failed():
+    st = load(STATE, {})
+    l = local()
+    gone = set(l.get("failed_dismissed", {}))
+    queued = {i["id"] for i in load(QUEUE, {"items": []}).get("items", [])}
+    try:
+        rules, _ = job.load_rules()
+        msgs = {r[3]: (r[1], r[2]) for r in rules}
+    except Exception:
+        msgs = {}
+    old_rules = {r["id"]: r.get("caption_starts", "") for r in load(os.path.join(ROOT, "dm_rules.json"), {}).get("rules", [])}
+    pins = st.get("_media_rules", {})
+    later = {(v.get("user"), v.get("rule")) for v in st.get("_inbox", {}).values() if "failed" not in v and "skipped" not in v}
+    now = datetime.now(timezone.utc)
+    out = []
+    for mid, recs in st.items():
+        if mid.startswith("_") or not isinstance(recs, dict):
+            continue
+        rid = pins.get(mid, "")
+        kws, msg = msgs.get(rid, ([""], ""))
+        title = first_line(os.path.join(ROOT, "content", rid, "caption.txt")) if rid else ""
+        for cid, r in recs.items():
+            if not r.get("failed") or cid in gone:
+                continue
+            got_later = (r.get("user"), rid) in later
+            when = r.get("c_at") or r.get("at", "")
+            try:
+                t = job.ts(when) if "+0000" in when or when.endswith("Z") else datetime.fromisoformat(when)
+                age_days = (now - t).total_seconds() / 86400
+            except (ValueError, TypeError):
+                age_days = 99
+            out.append({"id": cid, "media": mid, "post": rid, "title": title or old_rules.get(rid, ""),
+                        "keyword": kws[0] if kws else "", "message": msg, "user": r.get("user", ""),
+                        "text": r.get("text", ""), "at": r.get("at", ""), "reason": reason_of(r["failed"]),
+                        "bounced": bool(r.get("bounced")), "can_dm": age_days < 6.8 and bool(msg),
+                        "got_later": got_later, "queued": cid in queued,
+                        "closed": job.BOUNCE_CODE in r["failed"],
+                        "handled": got_later or (bool(r.get("bounced")) and job.BOUNCE_CODE in r["failed"])})
+    out.sort(key=lambda i: i["at"], reverse=True)
+    return {"items": out, "retrying": len(st.get("_tries", {}))}
+
+
+def failed_action(b):
+    with LOCK:
+        f = {i["id"]: i for i in failed()["items"]}
+        l = local()
+        q = load(QUEUE, {"items": []})
+        have = {i["id"] for i in q["items"]}
+        n = 0
+        for cid in b.get("ids", []):
+            it = f.get(cid)
+            if not it:
+                continue
+            if b.get("action") == "dismiss":
+                l.setdefault("failed_dismissed", {})[cid] = int(time.time())
+                n += 1
+                continue
+            if cid in have:
+                continue
+            if b.get("action") == "dm" and it["can_dm"]:
+                item = {"id": cid, "media": it["media"], "user": it["user"], "kind": "dm", "text": it["message"],
+                        "at": int(time.time()), "via": "desk", "retry": True}
+            elif b.get("action") == "nudge" and not it["bounced"]:
+                item = {"id": cid, "media": it["media"], "user": it["user"], "kind": "nudge",
+                        "text": job.bounce_text(it["keyword"]), "at": int(time.time()), "via": "desk"}
+            else:
+                continue
+            q["items"].append(item)
+            l["approved"][cid] = int(time.time())
+            n += 1
+        save(QUEUE, q)
+        save(LOCAL, l)
+        return {"ok": True, "done": n}
+
+
 # ------------------------------------------------------------------ web
 
 class Handler(BaseHTTPRequestHandler):
@@ -543,6 +633,8 @@ class Handler(BaseHTTPRequestHandler):
             return self.send(200, learned())
         if u.path == "/api/ideas":
             return self.send(200, load(IDEAS, {"ideas": []}))
+        if u.path == "/api/failed":
+            return self.send(200, failed())
         if u.path == "/api/inbox":
             return self.send(200, inbox())
         if u.path == "/api/tiktok":
@@ -569,6 +661,8 @@ class Handler(BaseHTTPRequestHandler):
             return self.send(200, set_auto(body.get("group"), body.get("on")))
         if self.path == "/api/style":
             return self.send(200, save_style(body.get("text", "")))
+        if self.path == "/api/failed_action":
+            return self.send(200, failed_action(body))
         if self.path == "/api/inbox_send":
             return self.send(200, inbox_send(body))
         if self.path == "/api/connect_inbox":

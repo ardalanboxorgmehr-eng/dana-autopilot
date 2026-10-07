@@ -390,7 +390,8 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                     # Final: a closed inbox, or a comment Instagram keeps refusing
                     # (same HTTP 500 run after run). Leave the public reply asking
                     # them to DM the keyword, so nobody is left without an answer.
-                    done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err, "tries": tries.pop(c["id"])}
+                    done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err, "tries": tries.pop(c["id"]),
+                                     "c_at": c.get("timestamp", ""), "text": (c.get("text") or "")[:120]}
                     bounce(ig, c["id"], done[c["id"]], kws[0], now, log, rid)
                 time.sleep(SEND_GAP_S * 3)
                 continue
@@ -542,7 +543,9 @@ def run_queue(ig, state, own, mode, now, log, extra=()):
         cid = item["id"]
         try:
             c = ig._call("GET", f"/{cid}", {"fields": "id,replies{username,from}"})
-            if has_our_reply(c, own):
+            # A retry from the Failed DMs tab: our "DM us the keyword" reply is
+            # already under the comment, so do not treat that as answered.
+            if has_our_reply(c, own) and not item.get("retry"):
                 done[cid] = {"at": now.isoformat(), "skipped": "already answered"}
                 continue
             if item.get("kind") == "dm":
@@ -563,8 +566,8 @@ def run_queue(ig, state, own, mode, now, log, extra=()):
         except IGError as e:
             err = str(e)[:200]
             log(f"queue reply failed {cid} @{item.get('user')}: {err}")
-            if "HTTP 400" in err and ("does not exist" in err or "Unsupported" in err):
-                done[cid] = {"at": now.isoformat(), "failed": err}   # comment deleted
+            if ("HTTP 400" in err and ("does not exist" in err or "Unsupported" in err)) or item.get("retry"):
+                done[cid] = {"at": now.isoformat(), "failed": err}   # comment deleted, or a one-shot retry
             else:
                 fails += 1
         time.sleep(SEND_GAP_S)
@@ -692,6 +695,18 @@ def phone_alerts(state, now, log):
         if late and desk_common.group_of(it["text"], kw, near_keyword) == "question":
             new_q.append(it["id"])
     dms = state.get("_health", {}).get("inbox_waiting", 0)
+    seen_fail = state.setdefault("_alerted_fail", {})
+    new_fail = []
+    for k, recs in state.items():
+        if k.startswith("_") or not isinstance(recs, dict):
+            continue
+        for cid, r in recs.items():
+            if r.get("failed") and cid not in seen_fail:
+                try:
+                    if datetime.fromisoformat(r["at"]) > now - timedelta(days=1):
+                        new_fail.append(cid)
+                except (KeyError, ValueError):
+                    pass
     lines = []
     if new_q:
         lines.append(f"{len(new_q)} question{'s' if len(new_q) > 1 else ''} waiting over 2 hours")
@@ -699,6 +714,8 @@ def phone_alerts(state, now, log):
     if dms and (not last_dm or datetime.fromisoformat(last_dm) < now - timedelta(hours=3)):
         lines.append(f"{dms} DM{'s' if dms > 1 else ''} waiting for a reply")
         state["_alerted_dm"] = now.isoformat()
+    if new_fail:
+        lines.append(f"{len(new_fail)} keyword DM{'s' if len(new_fail) > 1 else ''} failed, see the Failed DMs tab")
     week = local.strftime("%G-W%V")
     if local.weekday() == 0 and state.get("_weekly_push") != week:
         lines.append("Weekly summary is ready in the Weekly tab")
@@ -710,6 +727,9 @@ def phone_alerts(state, now, log):
     urllib.request.urlopen(req, timeout=20).read()
     for i in new_q:
         seen[i] = now.isoformat()
+    for i in new_fail:
+        seen_fail[i] = now.isoformat()
+    state["_alerted_fail"] = {k: v for k, v in seen_fail.items() if v >= (now - timedelta(days=10)).isoformat()}
     cut = (now - timedelta(days=10)).isoformat()
     state["_alerted"] = {k: v for k, v in seen.items() if v >= cut}
     log("phone alert: " + "; ".join(lines))
