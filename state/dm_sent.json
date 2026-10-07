@@ -13183,9 +13183,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T19:46:50.259751+00:00",
+    "at": "2026-10-07T19:56:51.938268+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 0,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -13195,18 +13195,18 @@
     "failures": [
       {
         "post": "p02",
-        "user": "yousef_karimi1",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AAzJ68-US4HQkfBIM_6Teyz\"}}"
+        "user": "orvefood",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AiYIzJ_SxomCrCPZKbNUR2h\"}}"
       },
       {
         "post": "p02",
-        "user": "jetfollow_official",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AE6TfsfRPZH44EEMO8iVu0i\"}}"
+        "user": "meysam_alizadeh_pv",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ApQHIPKZE-o5_IGd2GkPYYE\"}}"
       },
       {
         "post": "p02",
-        "user": "alilak.official",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Au7jzBYm7QFxMkfENaPyMPP\"}}"
+        "user": "reyhaneee_ha",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AkhJBGAdbO4GVeYMc1XBoJw\"}}"
       }
     ]
   },
@@ -15565,7 +15565,7 @@
   },
   "_health": {
     "last_sent_at": "2026-10-07T19:46:50.259751+00:00",
-    "at": "2026-10-07T19:46:50.259751+00:00",
+    "at": "2026-10-07T19:56:51.938268+00:00",
     "mode": "live",
     "waiting": {
       "p02": 5
@@ -15575,7 +15575,7 @@
     "posts_read": 25,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 279
+    "queue_left": 267
   },
   "_thanked": {
     "18130502443748401": {
@@ -16799,11 +16799,75 @@
       "at": "2026-10-07T19:46:50.259751+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "18632788063058320": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18090922607656501": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17932694934144211": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17947680882278908": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18447136498130367": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18085892555504934": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18101311136047321": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18138107368541733": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18077884880400434": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18077733215737475": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18097089680385370": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18108583046178841": {
+      "at": "2026-10-07T19:56:51.938268+00:00",
+      "kind": "nudge",
+      "via": "desk"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "17885349561653084": 1,
+    "18117046130039887": 1,
+    "17969509752170134": 1
+  },
   "_desk": {
-    "at": "2026-10-07T19:46:50.259751+00:00",
+    "at": "2026-10-07T19:56:51.938268+00:00",
     "items": [],
     "posts": {}
   },
