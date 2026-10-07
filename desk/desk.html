@@ -3,37 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <title>Reply Desk</title>
 <style>
-:root{--bg:#f6f5f2;--card:#fff;--ink:#1d1d1b;--mute:#6b6a66;--line:#e4e2dc;--acc:#2f6f5e;--acc-ink:#fff;--warn:#a5482b;--chip:#efede7}
-@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1f1f1d;--ink:#ecebe6;--mute:#9b9a94;--line:#33322f;--acc:#5fb39b;--acc-ink:#0e1a16;--warn:#e08a6c;--chip:#2a2a27}}
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1d1d1b;--mute:#6b6a66;--line:#e4e2dc;--acc:#2f6f5e;--acc-ink:#fff;--warn:#a5482b;--chip:#efede7;--yt:#c4302b}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1f1f1d;--ink:#ecebe6;--mute:#9b9a94;--line:#33322f;--acc:#5fb39b;--acc-ink:#0e1a16;--warn:#e08a6c;--chip:#2a2a27;--yt:#ff6b63}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-header{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 20px}
-.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-h1{font-size:18px;margin:0 12px 0 0}
+header{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 16px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+h1{font-size:18px;margin:0 8px 0 0}
+h2{font-size:15px;margin:22px 0 8px}
 .meta{color:var(--mute);font-size:13px}
 button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
 button:hover{border-color:var(--mute)}
 button.pri{background:var(--acc);border-color:var(--acc);color:var(--acc-ink);font-weight:600}
 button:disabled{opacity:.5;cursor:default}
-.tabs{margin-top:10px}
-.tab{background:none;border:none;padding:4px 10px;border-radius:20px;color:var(--mute)}
+.tabs{margin-top:10px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+.tab{background:none;border:none;padding:4px 10px;border-radius:20px;color:var(--mute);white-space:nowrap}
 .tab.on{background:var(--chip);color:var(--ink);font-weight:600}
-main{max-width:860px;margin:0 auto;padding:16px 20px 80px}
+.sep{width:1px;height:18px;background:var(--line);flex:none}
+main{max-width:860px;margin:0 auto;padding:16px 16px 80px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px}
 .top{display:flex;justify-content:space-between;gap:10px;color:var(--mute);font-size:13px}
 .user{color:var(--ink);font-weight:600}
 .cap{direction:rtl;text-align:right;color:var(--mute);font-size:13px;margin-top:4px}
 .text{direction:rtl;text-align:right;font-size:17px;margin:8px 0 10px;white-space:pre-wrap}
 textarea{width:100%;direction:rtl;text-align:right;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);color:var(--ink);resize:vertical;min-height:44px}
+textarea.ltr{direction:ltr;text-align:left;min-height:220px;font-size:14px}
 .acts{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
 select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:var(--card);color:var(--ink)}
 .chip{display:inline-block;background:var(--chip);border-radius:20px;padding:1px 9px;font-size:12px}
 .chip.spam{color:var(--warn)}
+.chip.yt{color:var(--yt);font-weight:600}
 .hint{color:var(--mute);font-size:13px}
 .empty{color:var(--mute);text-align:center;padding:60px 0}
 #log{white-space:pre-wrap;font:12px ui-monospace,Menlo,monospace;color:var(--mute);margin-top:8px;max-height:120px;overflow:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.stat b{font-size:22px;display:block}
+.bar{height:6px;background:var(--chip);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar i{display:block;height:100%;background:var(--acc)}
+.old{direction:rtl;text-align:right;color:var(--mute);text-decoration:line-through;font-size:14px}
+.new{direction:rtl;text-align:right;font-size:15px;margin-top:4px}
+.idea .n{font-size:22px;font-weight:700;color:var(--acc)}
+.ex{direction:rtl;text-align:right;color:var(--mute);font-size:13px;margin:2px 0}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:5;padding:16px}
+.modal.on{display:flex}
+.modal .card{max-width:360px;text-align:center}
+#qr{display:inline-block;background:#fff;padding:10px;border-radius:8px;margin:10px 0}
+.url{word-break:break-all;font:12px ui-monospace,Menlo,monospace;color:var(--mute)}
+@media (max-width:600px){header{padding:10px 12px}main{padding:12px 12px 80px}.card{padding:12px}#phone{display:none}}
 </style>
 </head>
 <body>
@@ -42,6 +61,7 @@ select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:5px 8
     <h1>Reply Desk</h1>
     <span class="meta" id="meta">loading</span>
     <span style="flex:1"></span>
+    <button id="phone">Phone</button>
     <button id="refresh">Refresh</button>
     <button id="push" class="pri">Send approved</button>
   </div>
@@ -49,68 +69,144 @@ select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:5px 8
   <div id="log"></div>
 </header>
 <main id="list"></main>
+<div class="modal" id="modal"><div class="card">
+  <b>Open on your iPhone</b>
+  <div class="hint">Same Wi-Fi as the Mac. Scan with the camera, then Share, Add to Home Screen.</div>
+  <div id="qr"></div>
+  <div class="url" id="purl"></div>
+  <div class="acts" style="justify-content:center"><button onclick="$('#modal').classList.remove('on')">Close</button></div>
+</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 const GROUPS = {all:"All", wants_dm:"Wants the DM", question:"Questions", chat:"Chat", spam:"Spam or ads"};
+const VIEWS = {ideas:"Ideas", learned:"Learned"};
 const KINDS = {dm:"Send the post's DM", answer:"Threaded reply", thanks:"Threaded thanks", nudge:"Ask them to DM the keyword"};
-let data = {items:[]}, tab = "all";
+const YT_KINDS = {answer:"Threaded reply", thanks:"Threaded thanks"};
+let data = {items:[]}, tab = "all", plat = "all";
 const $ = s => document.querySelector(s);
-const esc = s => (s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc = s => String(s??"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 async function api(path, body){
   const r = await fetch(path, body === undefined ? {} : {method:"POST", headers:{"X-Desk":"1","Content-Type":"application/json"}, body:JSON.stringify(body)});
   return r.json();
 }
 function ago(iso){
+  if (!iso) return "";
   const m = Math.round((Date.now() - new Date(iso.replace("+0000","Z")))/60000);
   if (isNaN(m)) return "";
   return m < 60 ? m+" min ago" : m < 1440 ? Math.round(m/60)+" h ago" : Math.round(m/1440)+" d ago";
 }
+function tabsHtml(counts){
+  const p = ["all","ig","yt"].map(k => `<button class="tab ${k===plat?"on":""}" data-p="${k}">${{all:"Both",ig:"Instagram",yt:"YouTube"}[k]}</button>`).join("");
+  const g = Object.keys(GROUPS).map(k => `<button class="tab ${k===tab?"on":""}" data-g="${k}">${GROUPS[k]} ${counts[k]||0}</button>`).join("");
+  const v = Object.keys(VIEWS).map(k => `<button class="tab ${k===tab?"on":""}" data-g="${k}">${VIEWS[k]}</button>`).join("");
+  return p + `<span class="sep"></span>` + g + `<span class="sep"></span>` + v
+    + (tab==="chat" ? ` <button id="allchat">Approve all chat</button>` : "");
+}
 async function load(){
   data = await api("/api/items");
-  const counts = {all:data.items.length};
-  data.items.forEach(i => counts[i.group] = (counts[i.group]||0)+1);
-  $("#tabs").innerHTML = Object.keys(GROUPS).map(g =>
-    `<button class="tab ${g===tab?"on":""}" data-g="${g}">${GROUPS[g]} ${counts[g]||0}</button>`).join("")
-    + (tab==="chat" ? ` <button id="allchat">Approve all chat</button>` : "");
-  $("#meta").textContent = (data.at ? "comments read "+ago(data.at) : "no snapshot yet, wait for the next job run")
-    + (data.queue_left ? " · "+data.queue_left+" replies waiting to post" : "");
+  const shown = data.items.filter(i => plat==="all" || i.platform===plat);
+  const counts = {all:shown.length};
+  shown.forEach(i => counts[i.group] = (counts[i.group]||0)+1);
+  $("#tabs").innerHTML = tabsHtml(counts);
+  let m = data.at ? "Instagram read "+ago(data.at) : "no snapshot yet";
+  m += data.yt_connected ? " · YouTube read "+ago(data.yt_at) : " · YouTube not connected";
+  if (data.queue_left) m += " · "+data.queue_left+" replies waiting to post";
+  if (data.auto_on.length) m += " · auto: "+data.auto_on.map(g=>GROUPS[g]).join(", ");
+  if (data.yt_error) m += " · YouTube error";
+  $("#meta").textContent = m;
   $("#push").textContent = data.pending_push ? `Send approved (${data.pending_push})` : "Send approved";
   $("#push").disabled = !data.pending_push;
+  if (tab === "learned") return renderLearned();
+  if (tab === "ideas") return renderIdeas();
   render();
 }
 function render(){
-  const list = data.items.filter(i => tab==="all" || i.group===tab);
+  const list = data.items.filter(i => (tab==="all" || i.group===tab) && (plat==="all" || i.platform===plat));
   if (!list.length){ $("#list").innerHTML = `<div class="empty">Nothing waiting here.</div>`; return; }
-  $("#list").innerHTML = list.map(i => `
-    <div class="card" data-id="${i.id}">
-      <div class="top"><span><span class="user">@${esc(i.user)}</span> · ${ago(i.at)} · keyword «${esc(i.keyword)}»</span>
+  $("#list").innerHTML = list.map(i => {
+    const kinds = i.platform==="yt" ? YT_KINDS : KINDS;
+    return `
+    <div class="card" data-id="${i.id}" data-draft="${esc(i.draft)}" data-kind="${i.kind}" data-group="${i.group}">
+      <div class="top"><span>${i.platform==="yt"?'<span class="chip yt">YouTube</span> ':""}<span class="user">${i.platform==="yt"?"":"@"}${esc(i.user)}</span> · ${ago(i.at)}${i.keyword?` · keyword «${esc(i.keyword)}»`:""}</span>
         <span class="chip ${i.group}">${GROUPS[i.group]}</span></div>
-      <div class="cap">${esc(i.caption)}</div>
+      <div class="cap">${i.url?`<a href="${esc(i.url)}" target="_blank" style="color:inherit">${esc(i.caption)}</a>`:esc(i.caption)}</div>
       <div class="text">${esc(i.text)}</div>
-      <textarea rows="${i.kind==="dm"?5:2}" placeholder="${i.group==="question"?"Write the answer, or ask Claude to draft the desk":""}">${esc(i.draft)}</textarea>
+      <textarea rows="${i.kind==="dm"?5:2}" placeholder="${i.group==="question"?"Write the answer, or wait for Claude's next drafting run":""}">${esc(i.draft)}</textarea>
       <div class="acts">
-        <select>${Object.keys(KINDS).map(k => `<option value="${k}" ${k===i.kind?"selected":""}>${KINDS[k]}</option>`).join("")}</select>
+        <select>${Object.keys(kinds).map(k => `<option value="${k}" ${k===i.kind?"selected":""}>${kinds[k]}</option>`).join("")}</select>
         <button class="pri" data-a="ok">Approve</button>
         <button data-a="skip">Skip</button>
         ${i.has_claude_draft ? '<span class="hint">drafted by Claude</span>' : ""}
       </div>
-    </div>`).join("");
+    </div>`}).join("");
+}
+async function renderLearned(){
+  const L = await api("/api/learned");
+  const names = {wants_dm:"Wants the DM", question:"Questions", chat:"Chat", spam:"Spam or ads"};
+  const cards = Object.keys(names).map(g => {
+    const s = L.stats[g] || {approved:0, edited:0, streak:0};
+    const can = L.auto_groups.includes(g);
+    const on = (L.auto[g]||{}).on;
+    const pct = Math.min(100, Math.round(100*s.streak/L.unlock));
+    let sw = "";
+    if (can && on) sw = `<button data-auto="${g}" data-on="0">Turn auto-send off</button>`;
+    else if (can && s.streak >= L.unlock) sw = `<button class="pri" data-auto="${g}" data-on="1">Turn auto-send on</button>`;
+    else if (can) sw = `<div class="hint">Auto-send unlocks at ${L.unlock} unedited in a row</div><div class="bar"><i style="width:${pct}%"></i></div>`;
+    else sw = `<div class="hint">Always waits for you</div>`;
+    return `<div class="card stat"><div class="hint">${names[g]}</div><b>${s.approved}</b>
+      <div class="hint">approved · ${s.edited} edited · ${s.streak} in a row as drafted</div>${on?'<div class="hint" style="color:var(--acc)">Auto-send is on</div>':""}${sw}</div>`;
+  }).join("");
+  const edits = L.edits.length ? L.edits.map(e => `<div class="card">
+      <div class="top"><span>${e.platform==="yt"?"YouTube":"Instagram"} · ${esc(e.user)} · ${ago(e.at)}</span><span class="chip">${names[e.group]||e.group}</span></div>
+      <div class="text" style="font-size:15px">${esc(e.comment)}</div>
+      <div class="old">${esc(e.draft)}</div><div class="new">${esc(e.final)}</div></div>`).join("")
+    : `<div class="hint">No edits yet. Every time you change a draft before approving, it shows up here and Claude learns from it.</div>`;
+  $("#list").innerHTML = `
+    <div class="grid">${cards}</div>
+    <h2>Style rules Claude follows</h2>
+    <div class="hint">Claude adds to this after each drafting run, from your edits. Change or delete anything that is wrong, then Save.</div>
+    <textarea class="ltr" id="style">${esc(L.style)}</textarea>
+    <div class="acts"><button class="pri" id="savestyle">Save rules</button><span class="hint" id="saved"></span></div>
+    <h2>Your thank-you lines (${L.total} approvals learned)</h2>
+    <div class="text" style="font-size:15px">${L.thanks.map(esc).join("<br>")}</div>
+    <h2>Recent edits</h2>${edits}`;
+}
+async function renderIdeas(){
+  const I = await api("/api/ideas");
+  if (!I.ideas || !I.ideas.length){ $("#list").innerHTML = `<div class="empty">No ideas yet. Claude fills this from the questions people ask, at each drafting run.</div>`; return; }
+  $("#list").innerHTML = `<div class="hint" style="margin-bottom:10px">Questions people keep asking, most asked first. Updated ${ago(I.at)}.</div>` +
+    I.ideas.map(d => `<div class="card idea"><div class="top"><span class="n">${d.count}×</span><span class="chip">${esc(d.status||"new")}</span></div>
+      <div class="text" style="font-size:16px;font-weight:600">${esc(d.topic)}</div>
+      ${(d.examples||[]).slice(0,3).map(x=>`<div class="ex">«${esc(x)}»</div>`).join("")}
+      ${d.post?`<div class="new" style="margin-top:8px">💡 ${esc(d.post)}</div>`:""}</div>`).join("");
 }
 $("#tabs").addEventListener("click", async e => {
+  if (e.target.dataset.p){ plat = e.target.dataset.p; if (tab==="learned"||tab==="ideas") tab="all"; load(); }
   if (e.target.dataset.g){ tab = e.target.dataset.g; load(); }
   if (e.target.id === "allchat"){
-    const batch = data.items.filter(i => i.group==="chat" && i.draft).map(i => ({id:i.id, kind:i.kind, text:i.draft}));
+    const batch = data.items.filter(i => i.group==="chat" && i.draft && (plat==="all"||i.platform===plat))
+      .map(i => ({id:i.id, kind:i.kind, text:i.draft, draft:i.draft, draft_kind:i.kind, group:i.group}));
     if (batch.length && confirm(`Approve ${batch.length} chat replies?`)){ await api("/api/approve", {items:batch}); load(); }
   }
 });
 $("#list").addEventListener("click", async e => {
+  if (e.target.id === "savestyle"){ await api("/api/style", {text:$("#style").value}); $("#saved").textContent = "Saved"; return; }
+  if (e.target.dataset.auto){
+    const on = e.target.dataset.on === "1";
+    if (on && !confirm("Replies in this group will go out on their own from now on. You can turn it off here any time. Then press Send approved to switch it on.")) return;
+    const r = await api("/api/auto", {group:e.target.dataset.auto, on});
+    $("#log").textContent = r.ok ? "Saved. Press Send approved to apply it." : r.log;
+    return load();
+  }
   const a = e.target.dataset.a; if (!a) return;
   const card = e.target.closest(".card"), id = card.dataset.id;
   if (a === "skip") await api("/api/skip", {ids:[id]});
   else {
     const text = card.querySelector("textarea").value.trim();
     if (!text){ card.querySelector("textarea").focus(); return; }
-    await api("/api/approve", {items:[{id, kind:card.querySelector("select").value, text}]});
+    await api("/api/approve", {items:[{id, kind:card.querySelector("select").value, text,
+      draft:card.dataset.draft, draft_kind:card.dataset.kind, group:card.dataset.group}]});
   }
   card.remove(); load();
 });
@@ -120,6 +216,12 @@ $("#push").onclick = async () => {
   const r = await api("/api/push", {});
   $("#log").textContent = r.ok ? "Sent. The job posts them in its next runs (every 15 minutes)." : "Push failed:\n"+r.log;
   load();
+};
+$("#phone").onclick = async () => {
+  const r = await api("/api/phone");
+  $("#qr").innerHTML = ""; $("#purl").textContent = r.url || "No Wi-Fi address found";
+  if (r.url && window.QRCode) new QRCode($("#qr"), {text:r.url, width:220, height:220});
+  $("#modal").classList.add("on");
 };
 load();
 </script>

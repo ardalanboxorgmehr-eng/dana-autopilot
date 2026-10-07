@@ -414,7 +414,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
             waiting[rid] = left
         if sends + errors >= MAX_SENDS_PER_RUN or streak >= MAX_ERROR_STREAK:
             break
-    queue_sent = run_queue(ig, state, own, mode, now, log) if mode == "live" else 0
+    queue_sent = run_queue(ig, state, own, mode, now, log, extra=auto_items(state, now, log)) if mode == "live" else 0
     desk_snapshot(state, desk_seen, own, exclude, now)
     inbox_sent = 0
     if dmcfg.get("inbox", True) and sends < MAX_SENDS_PER_RUN:
@@ -462,10 +462,67 @@ def thank_emoji(ig, comments, state, own, now, log, budget):
     return n
 
 
-def run_queue(ig, state, own, mode, now, log):
+def near_keyword(text, keyword):
+    k = norm(keyword)
+    return bool(k) and any(edit_distance(w, k) <= 2 for w in tokens(text) if len(w) >= 3)
+
+
+def auto_items(state, now, log):
+    """Reply Desk auto-send (added 7 Oct 2026). Groups Ehsan switched on in the
+    app (desk_auto.json) are answered here without waiting for approval, using
+    the last desk snapshot. Only "chat" (a thank-you) and "wants_dm" (the post's
+    DM) can ever be switched on; questions and spam always wait for him."""
+    import desk_common
+    auto = desk_common.load_auto()
+    on = {g: v for g, v in auto["groups"].items() if g in desk_common.AUTO_GROUPS and v.get("on")}
+    if not on:
+        return []
+    desk = state.get("_desk", {})
+    done = state.get("_queue", {})
+    skip = set(auto["skip"])
+    try:
+        rules, _ = load_rules()
+        msgs = {r[3]: (r[1], r[2]) for r in rules}
+    except Exception:
+        msgs = {}
+    thanks = auto["thanks"] or desk_common.THANKS
+    out = []
+    for it in desk.get("items", []):
+        if it["id"] in done or it["id"] in skip:
+            continue
+        post = desk.get("posts", {}).get(it["media"], {})
+        kws, msg = msgs.get(it.get("rule"), ([post.get("keyword", "")], ""))
+        kw = post.get("keyword") or (kws[0] if kws else "")
+        g = desk_common.group_of(it["text"], kw, near_keyword)
+        if g not in on:
+            continue
+        try:
+            at = ts(it["at"])
+            since = ts(on[g].get("since", "2000-01-01T00:00:00+0000"))
+        except (KeyError, ValueError):
+            continue
+        if at < since:
+            continue
+        if g == "chat":
+            kind, text = "thanks", thanks[len(out) % len(thanks)]
+        elif msg and now - at < timedelta(days=7):
+            kind, text = "dm", msg
+        else:
+            kind, text = "nudge", "یه دایرکت «%s» بهمون بده تا برات بفرستیم 📩" % kw
+        out.append({"id": it["id"], "media": it["media"], "user": it["user"], "kind": kind, "text": text,
+                    "at": int(at.timestamp()), "via": "auto"})
+    if out:
+        log(f"auto-send: {len(out)} replies from switched-on groups ({', '.join(on)})")
+    return out
+
+
+def run_queue(ig, state, own, mode, now, log, extra=()):
     """Post the hand-written threaded replies in reply_queue.json, a few per run.
-    Answers first, then thank-yous, then the 'DM us the keyword' replies."""
-    q = load(QUEUE, {"items": []}).get("items", [])
+    Answers first, then thank-yous, then the 'DM us the keyword' replies.
+    YouTube items (platform "yt") are left for scripts/yt_comments.py."""
+    q = [i for i in load(QUEUE, {"items": []}).get("items", []) if i.get("platform", "ig") == "ig"]
+    have = {i["id"] for i in q}
+    q += [i for i in extra if i["id"] not in have]
     done = state.setdefault("_queue", {})
     order = {"dm": 0, "answer": 0, "thanks": 1, "nudge": 2}
     todo = [i for i in q if i.get("text") and i["id"] not in done]
@@ -492,7 +549,7 @@ def run_queue(ig, state, own, mode, now, log):
                     pass
             else:
                 ig.public_reply(cid, item["text"])
-            done[cid] = {"at": now.isoformat(), "kind": item.get("kind")}
+            done[cid] = {"at": now.isoformat(), "kind": item.get("kind"), "via": item.get("via", "desk")}
             sent += 1
             fails = 0
         except IGError as e:

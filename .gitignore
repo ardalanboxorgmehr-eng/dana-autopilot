@@ -11,3 +11,7 @@ content/*/d*.png
 # Reply Desk, local only
 desk/local.json
 desk/drafts.json
+desk/learn.json
+desk/style.md
+desk/ideas.json
+desk/drafting.log
