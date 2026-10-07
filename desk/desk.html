@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reply Desk</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1d1d1b;--mute:#6b6a66;--line:#e4e2dc;--acc:#2f6f5e;--acc-ink:#fff;--warn:#a5482b;--chip:#efede7}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1f1f1d;--ink:#ecebe6;--mute:#9b9a94;--line:#33322f;--acc:#5fb39b;--acc-ink:#0e1a16;--warn:#e08a6c;--chip:#2a2a27}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 20px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+h1{font-size:18px;margin:0 12px 0 0}
+.meta{color:var(--mute);font-size:13px}
+button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+button:hover{border-color:var(--mute)}
+button.pri{background:var(--acc);border-color:var(--acc);color:var(--acc-ink);font-weight:600}
+button:disabled{opacity:.5;cursor:default}
+.tabs{margin-top:10px}
+.tab{background:none;border:none;padding:4px 10px;border-radius:20px;color:var(--mute)}
+.tab.on{background:var(--chip);color:var(--ink);font-weight:600}
+main{max-width:860px;margin:0 auto;padding:16px 20px 80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.top{display:flex;justify-content:space-between;gap:10px;color:var(--mute);font-size:13px}
+.user{color:var(--ink);font-weight:600}
+.cap{direction:rtl;text-align:right;color:var(--mute);font-size:13px;margin-top:4px}
+.text{direction:rtl;text-align:right;font-size:17px;margin:8px 0 10px;white-space:pre-wrap}
+textarea{width:100%;direction:rtl;text-align:right;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);color:var(--ink);resize:vertical;min-height:44px}
+.acts{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:var(--card);color:var(--ink)}
+.chip{display:inline-block;background:var(--chip);border-radius:20px;padding:1px 9px;font-size:12px}
+.chip.spam{color:var(--warn)}
+.hint{color:var(--mute);font-size:13px}
+.empty{color:var(--mute);text-align:center;padding:60px 0}
+#log{white-space:pre-wrap;font:12px ui-monospace,Menlo,monospace;color:var(--mute);margin-top:8px;max-height:120px;overflow:auto}
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>Reply Desk</h1>
+    <span class="meta" id="meta">loading</span>
+    <span style="flex:1"></span>
+    <button id="refresh">Refresh</button>
+    <button id="push" class="pri">Send approved</button>
+  </div>
+  <div class="row tabs" id="tabs"></div>
+  <div id="log"></div>
+</header>
+<main id="list"></main>
+<script>
+const GROUPS = {all:"All", wants_dm:"Wants the DM", question:"Questions", chat:"Chat", spam:"Spam or ads"};
+const KINDS = {dm:"Send the post's DM", answer:"Threaded reply", thanks:"Threaded thanks", nudge:"Ask them to DM the keyword"};
+let data = {items:[]}, tab = "all";
+const $ = s => document.querySelector(s);
+const esc = s => (s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+async function api(path, body){
+  const r = await fetch(path, body === undefined ? {} : {method:"POST", headers:{"X-Desk":"1","Content-Type":"application/json"}, body:JSON.stringify(body)});
+  return r.json();
+}
+function ago(iso){
+  const m = Math.round((Date.now() - new Date(iso.replace("+0000","Z")))/60000);
+  if (isNaN(m)) return "";
+  return m < 60 ? m+" min ago" : m < 1440 ? Math.round(m/60)+" h ago" : Math.round(m/1440)+" d ago";
+}
+async function load(){
+  data = await api("/api/items");
+  const counts = {all:data.items.length};
+  data.items.forEach(i => counts[i.group] = (counts[i.group]||0)+1);
+  $("#tabs").innerHTML = Object.keys(GROUPS).map(g =>
+    `<button class="tab ${g===tab?"on":""}" data-g="${g}">${GROUPS[g]} ${counts[g]||0}</button>`).join("")
+    + (tab==="chat" ? ` <button id="allchat">Approve all chat</button>` : "");
+  $("#meta").textContent = (data.at ? "comments read "+ago(data.at) : "no snapshot yet, wait for the next job run")
+    + (data.queue_left ? " · "+data.queue_left+" replies waiting to post" : "");
+  $("#push").textContent = data.pending_push ? `Send approved (${data.pending_push})` : "Send approved";
+  $("#push").disabled = !data.pending_push;
+  render();
+}
+function render(){
+  const list = data.items.filter(i => tab==="all" || i.group===tab);
+  if (!list.length){ $("#list").innerHTML = `<div class="empty">Nothing waiting here.</div>`; return; }
+  $("#list").innerHTML = list.map(i => `
+    <div class="card" data-id="${i.id}">
+      <div class="top"><span><span class="user">@${esc(i.user)}</span> · ${ago(i.at)} · keyword «${esc(i.keyword)}»</span>
+        <span class="chip ${i.group}">${GROUPS[i.group]}</span></div>
+      <div class="cap">${esc(i.caption)}</div>
+      <div class="text">${esc(i.text)}</div>
+      <textarea rows="${i.kind==="dm"?5:2}" placeholder="${i.group==="question"?"Write the answer, or ask Claude to draft the desk":""}">${esc(i.draft)}</textarea>
+      <div class="acts">
+        <select>${Object.keys(KINDS).map(k => `<option value="${k}" ${k===i.kind?"selected":""}>${KINDS[k]}</option>`).join("")}</select>
+        <button class="pri" data-a="ok">Approve</button>
+        <button data-a="skip">Skip</button>
+        ${i.has_claude_draft ? '<span class="hint">drafted by Claude</span>' : ""}
+      </div>
+    </div>`).join("");
+}
+$("#tabs").addEventListener("click", async e => {
+  if (e.target.dataset.g){ tab = e.target.dataset.g; load(); }
+  if (e.target.id === "allchat"){
+    const batch = data.items.filter(i => i.group==="chat" && i.draft).map(i => ({id:i.id, kind:i.kind, text:i.draft}));
+    if (batch.length && confirm(`Approve ${batch.length} chat replies?`)){ await api("/api/approve", {items:batch}); load(); }
+  }
+});
+$("#list").addEventListener("click", async e => {
+  const a = e.target.dataset.a; if (!a) return;
+  const card = e.target.closest(".card"), id = card.dataset.id;
+  if (a === "skip") await api("/api/skip", {ids:[id]});
+  else {
+    const text = card.querySelector("textarea").value.trim();
+    if (!text){ card.querySelector("textarea").focus(); return; }
+    await api("/api/approve", {items:[{id, kind:card.querySelector("select").value, text}]});
+  }
+  card.remove(); load();
+});
+$("#refresh").onclick = async () => { $("#log").textContent = "pulling..."; const r = await api("/api/refresh", {}); $("#log").textContent = r.ok ? "" : r.log; load(); };
+$("#push").onclick = async () => {
+  $("#push").disabled = true; $("#log").textContent = "sending to GitHub...";
+  const r = await api("/api/push", {});
+  $("#log").textContent = r.ok ? "Sent. The job posts them in its next runs (every 15 minutes)." : "Push failed:\n"+r.log;
+  load();
+};
+load();
+</script>
+</body>
+</html>

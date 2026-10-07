@@ -301,6 +301,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     pins = state.setdefault("_media_rules", {})     # media id -> rule id, fixed 7 Oct 2026
     by_id = {r[3]: r for r in rules}
     unmatched = []
+    desk_seen = []                   # (media, rule, comments in the window) for the Reply Desk
     for m in ig.recent_media():
         rule = by_id.get(pins.get(m["id"])) or rule_for(m.get("caption", ""), rules)
         if rule:
@@ -340,6 +341,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
             log(f"READ FAILED {rid}: {err}")
             continue
         fresh = [c for c in comments if ts(c["timestamp"]) >= window_start]
+        desk_seen.append((m, rule, fresh))
         posts_read += 1
         log(f"post {rid}: {len(comments)} comments read, {len(fresh)} in the window")
         for c in comments:
@@ -413,6 +415,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
         if sends + errors >= MAX_SENDS_PER_RUN or streak >= MAX_ERROR_STREAK:
             break
     queue_sent = run_queue(ig, state, own, mode, now, log) if mode == "live" else 0
+    desk_snapshot(state, desk_seen, own, exclude, now)
     inbox_sent = 0
     if dmcfg.get("inbox", True) and sends < MAX_SENDS_PER_RUN:
         inbox_sent = answer_inbox(ig, state, active, own, exclude, mode, max(start_at, now - timedelta(hours=INBOX_HOURS)),
@@ -464,7 +467,7 @@ def run_queue(ig, state, own, mode, now, log):
     Answers first, then thank-yous, then the 'DM us the keyword' replies."""
     q = load(QUEUE, {"items": []}).get("items", [])
     done = state.setdefault("_queue", {})
-    order = {"answer": 0, "thanks": 1, "nudge": 2}
+    order = {"dm": 0, "answer": 0, "thanks": 1, "nudge": 2}
     todo = [i for i in q if i.get("text") and i["id"] not in done]
     todo.sort(key=lambda i: (order.get(i.get("kind"), 3), -int(i.get("at") or 0)))
     sent = fails = 0
@@ -477,7 +480,18 @@ def run_queue(ig, state, own, mode, now, log):
             if has_our_reply(c, own):
                 done[cid] = {"at": now.isoformat(), "skipped": "already answered"}
                 continue
-            ig.public_reply(cid, item["text"])
+            if item.get("kind") == "dm":
+                # Reply Desk: the post's DM, sent as Instagram's one private reply
+                # to this comment (allowed within 7 days of the comment).
+                ig.private_reply(cid, item["text"])
+                if item.get("media"):
+                    state.setdefault(item["media"], {})[cid] = {"user": item.get("user", ""), "at": now.isoformat(), "via": "desk"}
+                try:
+                    ig.public_reply(cid, random.choice(PUBLIC_REPLIES))
+                except IGError:
+                    pass
+            else:
+                ig.public_reply(cid, item["text"])
             done[cid] = {"at": now.isoformat(), "kind": item.get("kind")}
             sent += 1
             fails = 0
@@ -494,6 +508,38 @@ def run_queue(ig, state, own, mode, now, log):
         log(f"reply queue: {sent} posted this run, {left} left")
     state.setdefault("_health", {})["queue_left"] = left
     return sent
+
+
+DESK_MAX = 400                # newest unanswered comments kept for the Reply Desk
+
+
+def desk_snapshot(state, seen, own, exclude, now):
+    """Unanswered comments for the Reply Desk app (desk/app.py), added 7 Oct 2026.
+    Public comments only: the repo is public, so DMs are never written here.
+    Leaves out our own comments, anything we already replied to, DM'd,
+    thanked or queued, and keyword comments the job is about to DM."""
+    handled = set(state.get("_thanked", {})) | set(state.get("_queue", {}))
+    items = []
+    for m, (_, kws, msg, rid), comments in seen:
+        done = state.get(m["id"], {})
+        for c in comments:
+            frm = c.get("from") or {}
+            user = frm.get("username") or c.get("username", "")
+            if c["id"] in done or c["id"] in handled or user in own or str(frm.get("id", "")) in own:
+                continue
+            if has_our_reply(c, own) or matches(c.get("text", ""), kws, exclude):
+                continue
+            if not any(ch.isalnum() for ch in (c.get("text") or "")):
+                continue                     # emoji-only: the job thanks those itself
+            items.append({"id": c["id"], "media": m["id"], "rule": rid, "user": user,
+                          "text": (c.get("text") or "")[:500], "at": c.get("timestamp", "")})
+    items.sort(key=lambda i: i["at"], reverse=True)
+    posts = {}
+    for m, (_, kws, msg, rid), _c in seen:
+        posts[m["id"]] = {"rule": rid, "keyword": kws[0] if kws else "",
+                          "caption": (m.get("caption") or "").split("\n")[0][:80]}
+    state["_desk"] = {"at": now.isoformat(), "items": items[:DESK_MAX],
+                      "posts": {k: v for k, v in posts.items() if any(i["media"] == k for i in items[:DESK_MAX])}}
 
 
 def count_waiting(comments, done, own, kws, exclude):
