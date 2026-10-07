@@ -76,7 +76,20 @@ def local():
     return l
 
 
+def clear_stale_locks(age=60):
+    """Leftover .git/*.lock files (git interrupted, or another tool) block every
+    push; remove any older than a minute before running git."""
+    import glob
+    for f in glob.glob(os.path.join(ROOT, ".git", "*.lock")):
+        try:
+            if time.time() - os.path.getmtime(f) > age:
+                os.remove(f)
+        except OSError:
+            pass
+
+
 def git(*args, timeout=90):
+    clear_stale_locks()
     try:
         r = subprocess.run(["git", "-C", ROOT] + list(args), capture_output=True, text=True, timeout=timeout)
         return r.returncode, (r.stdout + r.stderr).strip()
@@ -182,7 +195,21 @@ def items():
             "yt_error": yt.get("error", ""), "items": out,
             "pending_push": len(l["approved"]) + (1 if l.get("auto_dirty") else 0),
             "queue_left": (state.get("_health", {}).get("queue_left") or 0) + (yt.get("queue_left") or 0),
-            "auto_on": [g for g, v in auto["groups"].items() if v.get("on")]}
+            "auto_on": [g for g, v in auto["groups"].items() if v.get("on")],
+            "badges": badges()}
+
+
+def badges():
+    out = {}
+    try:
+        out["failed"] = sum(1 for i in failed()["items"] if not i["handled"] and not i["queued"])
+    except Exception:
+        out["failed"] = 0
+    try:
+        out["inbox"] = len(inbox().get("items", []))
+    except Exception:
+        out["inbox"] = 0
+    return out
 
 
 def sources():
@@ -592,6 +619,62 @@ def failed_action(b):
         return {"ok": True, "done": n}
 
 
+# ------------------------------------------------------------------ review before send (8 Oct 2026)
+
+def pending():
+    """Everything approved on this Mac but not pushed yet, for the Review screen."""
+    l = local()
+    ids = set(l["approved"])
+    learn = {e["id"]: e for e in load(LEARN, [])}
+    src = sources()
+    fail = {}
+    if ids:
+        try:
+            fail = {i["id"]: i for i in failed()["items"]}
+        except Exception:
+            fail = {}
+    out = []
+    for it in load(QUEUE, {"items": []}).get("items", []):
+        if it["id"] not in ids:
+            continue
+        s = src.get(it["id"], {})
+        f = fail.get(it["id"], {})
+        out.append({"id": it["id"], "kind": it.get("kind"), "text": it.get("text", ""), "user": it.get("user", ""),
+                    "platform": it.get("platform", "ig"), "retry": bool(it.get("retry")),
+                    "comment": s.get("text") or learn.get(it["id"], {}).get("comment") or f.get("text", ""),
+                    "where": "failed" if f else "comments"})
+    for o in l.get("outbox", []):
+        if o["id"] in ids:
+            out.append({"id": o["id"], "kind": "inbox", "text": o["text"], "user": learn.get(o["id"], {}).get("user", ""),
+                        "platform": "dm", "comment": learn.get(o["id"], {}).get("comment", ""), "where": "dms"})
+    other = []
+    if l.get("auto_dirty"):
+        auto = dc.load_auto()
+        on = [g for g, v in auto["groups"].items() if v.get("on")]
+        other.append("Auto-send settings" + (": on for " + ", ".join(on) if on else ": all off"))
+        q = [i for i in load(dc.IDEAS_QUEUE, {"items": []}).get("items", []) if i.get("status") == "new"]
+        if q:
+            other.append("%d idea%s in the carousel queue" % (len(q), "s" if len(q) > 1 else ""))
+    return {"items": out, "other": other}
+
+
+def unapprove(ids):
+    with LOCK:
+        ids = set(ids)
+        l = local()
+        mine = ids & set(l["approved"])           # only things not pushed yet
+        q = load(QUEUE, {"items": []})
+        q["items"] = [i for i in q["items"] if i["id"] not in mine]
+        save(QUEUE, q)
+        l["outbox"] = [o for o in l.get("outbox", []) if o["id"] not in mine]
+        for i in mine:
+            l["approved"].pop(i, None)
+        save(LOCAL, l)
+        learn = load(LEARN, [])
+        save(LEARN, [e for e in learn if e["id"] not in mine])
+        return {"ok": True, "removed": len(mine)}
+
+
 # ------------------------------------------------------------------ web
 
 class Handler(BaseHTTPRequestHandler):
@@ -633,6 +716,8 @@ class Handler(BaseHTTPRequestHandler):
             return self.send(200, learned())
         if u.path == "/api/ideas":
             return self.send(200, load(IDEAS, {"ideas": []}))
+        if u.path == "/api/pending":
+            return self.send(200, pending())
         if u.path == "/api/failed":
             return self.send(200, failed())
         if u.path == "/api/inbox":
@@ -661,6 +746,8 @@ class Handler(BaseHTTPRequestHandler):
             return self.send(200, set_auto(body.get("group"), body.get("on")))
         if self.path == "/api/style":
             return self.send(200, save_style(body.get("text", "")))
+        if self.path == "/api/unapprove":
+            return self.send(200, unapprove(body.get("ids", [])))
         if self.path == "/api/failed_action":
             return self.send(200, failed_action(body))
         if self.path == "/api/inbox_send":
