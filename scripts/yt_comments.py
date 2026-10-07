@@ -89,8 +89,8 @@ def read(tok, st, now):
             th = http("GET", API + "/commentThreads", {"part": "snippet,replies", "videoId": vid, "maxResults": 100,
                                                        "order": "time", "textFormat": "plainText"}, token=tok)
         except RuntimeError as e:
-            if "commentsDisabled" in str(e):
-                continue
+            if "HTTP 403" in str(e) or "HTTP 404" in str(e):
+                continue            # comments turned off on this video, or video gone
             raise
         for t in th.get("items", []):
             top = t["snippet"]["topLevelComment"]
