@@ -13112,30 +13112,30 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T16:04:55.717934+00:00",
+    "at": "2026-10-07T16:23:40.982702+00:00",
     "mode": "live",
-    "sent": 2,
+    "sent": 1,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 2,
     "bounce_backlog": 0,
     "queue_replies": 12,
     "thanks": 0,
     "failures": [
       {
         "post": "p02",
-        "user": "palm.iran",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AHPmqXsDHQd1fULbYSU9NPI\"}}"
+        "user": "mohsen.porsche",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ar-x05unuukP6u4bdGGNHmV\"}}"
       },
       {
         "post": "p02",
-        "user": "vianovaskin",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ACuvlZymDNNSTVq2xq-d0S1\"}}"
+        "user": "arezoo.taiarani",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AaTpi1auWS_AC66kaqs-6bG\"}}"
       },
       {
         "post": "p02",
-        "user": "benyamin972",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A2X75pMamxfLuo-hnzOK9bV\"}}"
+        "user": "boutique_amoot",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A5PckFM2qKYjMp3HNGIc_kP\"}}"
       }
     ]
   },
@@ -13874,6 +13874,18 @@
       "uid": "1242269055442729",
       "rule": "p00",
       "at": "2026-10-07T15:29:59.505173+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY5MjI4NDE1MzkxOTk2MTozMzA0NTMxNTUyNzEyMjE2MTg1MTIwMDI2MDI4MjUxNTQ1NgZDZD": {
+      "user": "telniik",
+      "uid": "1706020350460311",
+      "rule": "p00",
+      "at": "2026-10-07T16:23:40.982702+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDcwMDc4OTg0ODMzMDM1OTozMzA0NTMwNzYzMzE3NzQ1NTU5ODE1MzkwMTk2NTA0OTg1NgZDZD": {
+      "user": "mohsen7mohammady",
+      "uid": "1639411691101951",
+      "rule": "p00",
+      "at": "2026-10-07T16:23:40.982702+00:00"
     }
   },
   "18630278164012008": {
@@ -15389,8 +15401,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T16:04:55.717934+00:00",
-    "at": "2026-10-07T16:04:55.717934+00:00",
+    "last_sent_at": "2026-10-07T16:23:40.982702+00:00",
+    "at": "2026-10-07T16:23:40.982702+00:00",
     "mode": "live",
     "waiting": {
       "p02": 14
@@ -15400,7 +15412,7 @@
     "posts_read": 25,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 407
+    "queue_left": 395
   },
   "_thanked": {
     "18130502443748401": {
@@ -16036,12 +16048,88 @@
     "17877748839564650": {
       "at": "2026-10-07T16:04:55.717934+00:00",
       "kind": "nudge"
+    },
+    "17947892295342872": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "17973014637161160": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18119930920892088": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18086315606322205": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18245330392311100": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "17965244274190011": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "17986232601082571": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18123062404713842": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18130809856743201": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18046478201819113": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18086559182680009": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
+    },
+    "18011379911977343": {
+      "at": "2026-10-07T16:23:40.982702+00:00",
+      "kind": "nudge"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "17874107979636528": 1,
+    "18159429796503882": 1,
+    "18131869567740519": 1
+  },
   "_desk": {
-    "at": "2026-10-07T16:04:55.717934+00:00",
+    "at": "2026-10-07T16:23:40.982702+00:00",
     "items": [
+      {
+        "id": "18025797482866693",
+        "media": "17986701810116234",
+        "rule": "2026-10-07-1530",
+        "user": "slrstd4",
+        "text": "۶۶۶۶",
+        "at": "2026-10-07T16:23:06+0000"
+      },
+      {
+        "id": "18116812207794120",
+        "media": "17986701810116234",
+        "rule": "2026-10-07-1530",
+        "user": "slrstd4",
+        "text": "۶۶۶",
+        "at": "2026-10-07T16:23:03+0000"
+      },
+      {
+        "id": "18113192090120337",
+        "media": "17986701810116234",
+        "rule": "2026-10-07-1530",
+        "user": "slrstd4",
+        "text": "۶۶",
+        "at": "2026-10-07T16:23:02+0000"
+      },
       {
         "id": "18198514591388106",
         "media": "18121478000484793",
@@ -16107,44 +16195,12 @@
         "at": "2026-10-06T05:06:38+0000"
       },
       {
-        "id": "17973014637161160",
-        "media": "18121478000484793",
-        "rule": "2026-10-05-1530",
-        "user": "elimeli2017",
-        "text": "ورذ",
-        "at": "2026-10-06T02:02:51+0000"
-      },
-      {
-        "id": "18119930920892088",
-        "media": "18121478000484793",
-        "rule": "2026-10-05-1530",
-        "user": "gailan.abdalla",
-        "text": "ورود",
-        "at": "2026-10-05T22:56:00+0000"
-      },
-      {
-        "id": "18086315606322205",
-        "media": "18121478000484793",
-        "rule": "2026-10-05-1530",
-        "user": "dorri_it",
-        "text": "۳",
-        "at": "2026-10-05T20:37:38+0000"
-      },
-      {
         "id": "18429979684195811",
         "media": "18121478000484793",
         "rule": "2026-10-05-1530",
         "user": "razavi.hatam",
         "text": "وورد",
         "at": "2026-10-05T20:20:49+0000"
-      },
-      {
-        "id": "17965244274190011",
-        "media": "18121478000484793",
-        "rule": "2026-10-05-1530",
-        "user": "smtabatabaeiii",
-        "text": "😢نیومد",
-        "at": "2026-10-05T16:16:09+0000"
       },
       {
         "id": "18116399048517478",
@@ -16212,6 +16268,11 @@
       }
     ],
     "posts": {
+      "17986701810116234": {
+        "rule": "2026-10-07-1530",
+        "keyword": "کلون",
+        "caption": "فقط ۱۰ ثانیه از صدات کافیه تا یکی با صدای خودت به مامانت زنگ بزنه"
+      },
       "18121478000484793": {
         "rule": "2026-10-05-1530",
         "keyword": "ورد",
@@ -16248,6 +16309,10 @@
     "17999056443034505": {
       "user": "sha_9800000",
       "at": "2026-10-07T14:50:54.228593+00:00"
+    },
+    "18625811497013367": {
+      "user": "slrstd4",
+      "at": "2026-10-07T16:23:40.982702+00:00"
     }
   }
 }
