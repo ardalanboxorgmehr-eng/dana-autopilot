@@ -192,7 +192,7 @@ class IG:
     def me(self):
         return self._call("GET", "/me", {"fields": "user_id,username"})
 
-    def recent_media(self, limit=30):
+    def recent_media(self, limit=60):
         return self._call("GET", "/me/media", {"fields": "id,caption,timestamp", "limit": limit}).get("data", [])
 
     def comments(self, media_id):
@@ -255,8 +255,9 @@ def run(ig, cfg, state, now, log=print):
         if rule:
             active.append((m, rule))
     for m, rule in active:
-        if ts(m["timestamp"]) < now - timedelta(days=WINDOW_DAYS + 1):
-            continue
+        # No cut-off on the POST's age (fixed 7 Oct 2026): Instagram's 7-day limit
+        # is on the COMMENT, and old posts (Claude slides, Gemini, Photoshop) keep
+        # pulling keyword comments. window_start already limits comments to 7 days.
         _, kws, msg, rid = rule
         done = state.setdefault(m["id"], {})
         users_done = {v.get("user") for v in done.values() if "failed" not in v}
