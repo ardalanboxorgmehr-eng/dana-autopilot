@@ -47,6 +47,9 @@ CONTENT = os.path.join(ROOT, "content")
 MAX_SENDS_PER_RUN = 40
 SEND_GAP_S = 3
 MAX_ERROR_STREAK = 3          # this many failed sends in a row means throttling: stop the run
+STALL_ALERT_H = 2             # keyword comments waiting and nothing sent for this long: alert
+ALERT_REPEAT_H = 12           # do not email the same alert more often than this
+CTA_MARKS = ("📩", "کامنت کن", "کامنت بذار")   # a caption with these asks for a DM keyword
 RUN_BUDGET_S = 20 * 60       # stop starting new posts after 20 minutes; the next run carries on
 WINDOW_DAYS = 7
 PUBLIC_REPLIES = [
@@ -260,13 +263,25 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     log(f"connected to @{who.get('username')} · mode={mode} · handling comments after {window_start.isoformat()}")
 
     started = time.monotonic()
-    sends = errors = skipped = bounced = streak = 0
+    sends = errors = skipped = bounced = streak = posts_read = 0
+    waiting = {}
     failures = []
     active = []                      # (media, rule) for every recent post with a rule, newest first
+    pins = state.setdefault("_media_rules", {})     # media id -> rule id, fixed 7 Oct 2026
+    by_id = {r[3]: r for r in rules}
+    unmatched = []
     for m in ig.recent_media():
-        rule = rule_for(m.get("caption", ""), rules)
+        rule = by_id.get(pins.get(m["id"])) or rule_for(m.get("caption", ""), rules)
         if rule:
+            # Once a post has matched, remember it by its id: editing the caption
+            # later (it happened to the Opus 5.5 and iOS 27 posts) cannot break it.
+            pins[m["id"]] = rule[3]
             active.append((m, rule))
+        elif any(k in (m.get("caption") or "") for k in CTA_MARKS) and \
+                ts(m["timestamp"]) >= now - timedelta(days=WINDOW_DAYS):
+            unmatched.append({"id": m["id"], "caption": (m.get("caption") or "")[:60]})
+    for u in unmatched:
+        log(f"NO DM RULE for a post that asks for a keyword: {u['caption']}")
     for m, rule in active:
         # No cut-off on the POST's age (fixed 7 Oct 2026): Instagram's 7-day limit
         # is on the COMMENT, and old posts (Claude slides, Gemini, Photoshop) keep
@@ -294,6 +309,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
             log(f"READ FAILED {rid}: {err}")
             continue
         fresh = [c for c in comments if ts(c["timestamp"]) >= window_start]
+        posts_read += 1
         log(f"post {rid}: {len(comments)} comments read, {len(fresh)} in the window")
         for c in comments:
             if c["id"] in done or ts(c["timestamp"]) < window_start:
@@ -353,6 +369,9 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 done[c["id"]]["public_failed"] = str(e)[:200]
                 log(f"public reply failed {rid} @{user}: {e}")
             time.sleep(SEND_GAP_S)
+        left = count_waiting(fresh, done, own, kws, exclude)
+        if left:
+            waiting[rid] = left
         if sends + errors >= MAX_SENDS_PER_RUN or streak >= MAX_ERROR_STREAK:
             break
     inbox_sent = 0
@@ -363,9 +382,60 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                         "skipped": skipped, "inbox_sent": inbox_sent, "bounce_backlog": bounced,
                         "failures": failures[:20]}
     log(f"done: {sends} sent, {errors} failed, {skipped} skipped, {inbox_sent} answered from the inbox")
-    # A failed send is recorded and not retried. Only fail the job (and email
-    # the owner) when sending is broken outright: errors and nothing went out.
-    return (1 if errors and not sends else 0), sends
+    alert = health(state, now, mode, sends + inbox_sent, waiting, unmatched,
+                   posts_read, len(active), log)
+    # Fail the job (GitHub then emails the owner) when sending is broken
+    # outright, or when health() raises an alert.
+    return (1 if (errors and not sends) or alert else 0), sends
+
+
+def count_waiting(comments, done, own, kws, exclude):
+    """Keyword comments in the window that still have no DM and no reply from us."""
+    users = {v.get("user") for v in done.values() if "failed" not in v}
+    n = 0
+    for c in comments:
+        frm = c.get("from") or {}
+        user = frm.get("username") or c.get("username", "")
+        if c["id"] in done or user in own or str(frm.get("id", "")) in own or user in users:
+            continue
+        if not matches(c.get("text", ""), kws, exclude):
+            continue
+        replies = (c.get("replies") or {}).get("data", [])
+        if any((r.get("username") in own) or (str((r.get("from") or {}).get("id", "")) in own) for r in replies):
+            continue
+        n += 1
+    return n
+
+
+def health(state, now, mode, sent, waiting, unmatched, posts_read, posts_total, log):
+    """Write state['_health'] every run and decide whether to alert (added 7 Oct 2026,
+    after a bug left ~800 people without their DM for days unnoticed)."""
+    h = state.setdefault("_health", {})
+    if sent:
+        h["last_sent_at"] = now.isoformat()
+    h.update({"at": now.isoformat(), "mode": mode, "waiting": waiting,
+              "waiting_total": sum(waiting.values()), "unmatched_posts": unmatched,
+              "posts_read": posts_read, "posts_with_rule": posts_total})
+    problems = []
+    last = h.get("last_sent_at")
+    if mode == "live" and h["waiting_total"] and \
+            (not last or datetime.fromisoformat(last) < now - timedelta(hours=STALL_ALERT_H)):
+        problems.append(f"{h['waiting_total']} keyword comments waiting and nothing sent for "
+                        f"{STALL_ALERT_H}+ hours: {waiting}")
+    if unmatched:
+        problems.append(f"{len(unmatched)} post(s) ask for a keyword but have no DM rule: "
+                        + "; ".join(u["caption"] for u in unmatched))
+    h["problems"] = problems
+    if not problems:
+        h.pop("alerted_at", None)
+        return False
+    for p in problems:
+        log("ALERT: " + p)
+    last_alert = h.get("alerted_at")
+    if last_alert and datetime.fromisoformat(last_alert) > now - timedelta(hours=ALERT_REPEAT_H):
+        return False                       # already emailed for this, stay quiet
+    h["alerted_at"] = now.isoformat()
+    return True
 
 
 def forget_retryable(state):
