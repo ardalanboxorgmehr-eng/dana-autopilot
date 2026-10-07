@@ -47,6 +47,7 @@ CONTENT = os.path.join(ROOT, "content")
 MAX_SENDS_PER_RUN = 40
 SEND_GAP_S = 3
 MAX_ERROR_STREAK = 3          # this many failed sends in a row means throttling: stop the run
+MAX_TRIES = 4                 # a comment whose DM fails this many runs gets the public "DM us the keyword" reply instead
 QUEUE = os.path.join(ROOT, "reply_queue.json")
 QUEUE_PER_RUN = 12            # hand-written threaded replies posted per run (~48/hour)
 THANKS_PER_RUN = 5            # automatic thank-you replies to emoji-only comments per run
@@ -371,8 +372,13 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 # Fixed 7 Oct 2026: a burst of failures is Instagram throttling,
                 # not hundreds of closed inboxes. Only a lone closed-inbox error
                 # is final; everything else is retried on a later run.
-                if BOUNCE_CODE in err and streak == 1:
-                    done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err}
+                tries = state.setdefault("_tries", {})
+                tries[c["id"]] = tries.get(c["id"], 0) + 1
+                if (BOUNCE_CODE in err and streak == 1) or tries[c["id"]] >= MAX_TRIES:
+                    # Final: a closed inbox, or a comment Instagram keeps refusing
+                    # (same HTTP 500 run after run). Leave the public reply asking
+                    # them to DM the keyword, so nobody is left without an answer.
+                    done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err, "tries": tries.pop(c["id"])}
                     bounce(ig, c["id"], done[c["id"]], kws[0], now, log, rid)
                 time.sleep(SEND_GAP_S * 3)
                 continue
@@ -539,7 +545,7 @@ def forget_retryable(state):
         for cid in list(recs):
             r = recs[cid]
             f = r.get("failed", "")
-            if f and ("HTTP 500" in f or "bounce_failed" in r):
+            if f and ("bounce_failed" in r or ("HTTP 500" in f and not r.get("tries"))):
                 del recs[cid]
 
 
