@@ -13033,28 +13033,28 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T10:20:04.692929+00:00",
+    "at": "2026-10-07T10:36:14.806659+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 2,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 3,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "failures": [
       {
         "post": "p06",
         "user": "alirezaazarpour",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AFofyHOqKDLMq5kFWb5Tm7s\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AX253pwuvY-nVKfCs7I5blB\"}}"
       },
       {
         "post": "p02",
         "user": "faranapm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A3vUqsHrkGcmz4TZjeaTunL\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AmD7SmtVY4813R6W-7enKQZ\"}}"
       },
       {
         "post": "p02",
         "user": "pixel__motion_new",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AeTg0fHfp2MRR5YoYQ_PuyM\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ATCyiR0QGJ6WSMcBSm6Tuuc\"}}"
       }
     ]
   },
@@ -13696,6 +13696,12 @@
       "uid": "1775916910393419",
       "rule": "p00",
       "at": "2026-10-07T10:20:04.692929+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDM0MTkwMjMxMDk1MDk0NzozMzA0NDkyMTcxMzI3Njk2MjUwNjE5MTAzMjQzNDAzMjY0MAZDZD": {
+      "user": "1am.kosar",
+      "uid": "1392001155980955",
+      "rule": "p00",
+      "at": "2026-10-07T10:36:14.806659+00:00"
     }
   },
   "18630278164012008": {
@@ -15042,6 +15048,10 @@
     "18167812939426014": {
       "user": "s.abedini1994",
       "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "17964898556980255": {
+      "user": "nextcapital.ir",
+      "at": "2026-10-07T10:36:14.806659+00:00"
     }
   },
   "18092615075180960": {
@@ -15066,6 +15076,10 @@
     "18125668192891893": {
       "user": "nazari_elinaa",
       "at": "2026-10-07T08:48:14.702781+00:00"
+    },
+    "17881577994690941": {
+      "user": "ghasemhoseinpour",
+      "at": "2026-10-07T10:36:14.806659+00:00"
     }
   }
 }
