@@ -47,6 +47,10 @@ CONTENT = os.path.join(ROOT, "content")
 MAX_SENDS_PER_RUN = 40
 SEND_GAP_S = 3
 MAX_ERROR_STREAK = 3          # this many failed sends in a row means throttling: stop the run
+QUEUE = os.path.join(ROOT, "reply_queue.json")
+QUEUE_PER_RUN = 12            # hand-written threaded replies posted per run (~48/hour)
+THANKS_PER_RUN = 5            # automatic thank-you replies to emoji-only comments per run
+THANKS = ["مرسی از کامنتت 🙏", "مرسی که همراهمونی ✨", "ممنون که نظرت رو نوشتی 🙏", "مرسی ❤️"]
 STALL_ALERT_H = 2             # keyword comments waiting and nothing sent for this long: alert
 ALERT_REPEAT_H = 12           # do not email the same alert more often than this
 CTA_MARKS = ("📩", "کامنت کن", "کامنت بذار")   # a caption with these asks for a DM keyword
@@ -107,7 +111,23 @@ def hit(text, t, words, k):
         return bare == nk
     if len(nk) <= 3:
         return nk in words
-    return nk in t
+    if nk in t:
+        return True
+    # Misspellings (7 Oct 2026: «پرتمپت», «گیت آب», «جونای» never got their DM).
+    # Only for short comments, so a long sentence never matches by accident.
+    if len(t) <= len(nk) + 3:
+        return edit_distance(t, nk) <= (1 if len(nk) <= 4 else 2)
+    return False
+
+
+def edit_distance(a, b):
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i]
+        for j, cb in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1]
 
 
 def matches(text, keywords, exclude):
@@ -263,7 +283,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     log(f"connected to @{who.get('username')} · mode={mode} · handling comments after {window_start.isoformat()}")
 
     started = time.monotonic()
-    sends = errors = skipped = bounced = streak = posts_read = 0
+    sends = errors = skipped = bounced = streak = posts_read = thanked = 0
     waiting = {}
     failures = []
     active = []                      # (media, rule) for every recent post with a rule, newest first
@@ -369,17 +389,21 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 done[c["id"]]["public_failed"] = str(e)[:200]
                 log(f"public reply failed {rid} @{user}: {e}")
             time.sleep(SEND_GAP_S)
+        if mode == "live" and thanked < THANKS_PER_RUN:
+            thanked += thank_emoji(ig, fresh, state, own, now, log, THANKS_PER_RUN - thanked)
         left = count_waiting(fresh, done, own, kws, exclude)
         if left:
             waiting[rid] = left
         if sends + errors >= MAX_SENDS_PER_RUN or streak >= MAX_ERROR_STREAK:
             break
+    queue_sent = run_queue(ig, state, own, mode, now, log) if mode == "live" else 0
     inbox_sent = 0
     if dmcfg.get("inbox", True) and sends < MAX_SENDS_PER_RUN:
         inbox_sent = answer_inbox(ig, state, active, own, exclude, mode, max(start_at, now - timedelta(hours=INBOX_HOURS)),
                                   now, MAX_SENDS_PER_RUN - sends, log)
     state["_report"] = {"at": now.isoformat(), "mode": mode, "sent": sends, "failed": errors,
                         "skipped": skipped, "inbox_sent": inbox_sent, "bounce_backlog": bounced,
+                        "queue_replies": queue_sent, "thanks": thanked,
                         "failures": failures[:20]}
     log(f"done: {sends} sent, {errors} failed, {skipped} skipped, {inbox_sent} answered from the inbox")
     alert = health(state, now, mode, sends + inbox_sent, waiting, unmatched,
@@ -387,6 +411,73 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     # Fail the job (GitHub then emails the owner) when sending is broken
     # outright, or when health() raises an alert.
     return (1 if (errors and not sends) or alert else 0), sends
+
+
+def has_our_reply(c, own):
+    replies = (c.get("replies") or {}).get("data", [])
+    return any((r.get("username") in own) or (str((r.get("from") or {}).get("id", "")) in own) for r in replies)
+
+
+def thank_emoji(ig, comments, state, own, now, log, budget):
+    """Comments that are only emoji or hearts get a short threaded thank-you
+    (Ehsan, 7 Oct 2026: never leave a comment without the right response)."""
+    log_ = state.setdefault("_thanked", {})
+    n = 0
+    for c in comments:
+        if n >= budget:
+            break
+        frm = c.get("from") or {}
+        user = frm.get("username") or c.get("username", "")
+        if c["id"] in log_ or user in own or str(frm.get("id", "")) in own or has_our_reply(c, own):
+            continue
+        if any(ch.isalnum() for ch in (c.get("text") or "")):
+            continue
+        try:
+            ig.public_reply(c["id"], THANKS[len(log_) % len(THANKS)])
+            log_[c["id"]] = {"user": user, "at": now.isoformat()}
+            n += 1
+            time.sleep(SEND_GAP_S)
+        except IGError as e:
+            log(f"thank-you reply failed @{user}: {e}")
+            break
+    return n
+
+
+def run_queue(ig, state, own, mode, now, log):
+    """Post the hand-written threaded replies in reply_queue.json, a few per run.
+    Answers first, then thank-yous, then the 'DM us the keyword' replies."""
+    q = load(QUEUE, {"items": []}).get("items", [])
+    done = state.setdefault("_queue", {})
+    order = {"answer": 0, "thanks": 1, "nudge": 2}
+    todo = [i for i in q if i.get("text") and i["id"] not in done]
+    todo.sort(key=lambda i: (order.get(i.get("kind"), 3), -int(i.get("at") or 0)))
+    sent = fails = 0
+    for item in todo:
+        if sent >= QUEUE_PER_RUN or fails >= MAX_ERROR_STREAK:
+            break
+        cid = item["id"]
+        try:
+            c = ig._call("GET", f"/{cid}", {"fields": "id,replies{username,from}"})
+            if has_our_reply(c, own):
+                done[cid] = {"at": now.isoformat(), "skipped": "already answered"}
+                continue
+            ig.public_reply(cid, item["text"])
+            done[cid] = {"at": now.isoformat(), "kind": item.get("kind")}
+            sent += 1
+            fails = 0
+        except IGError as e:
+            err = str(e)[:200]
+            log(f"queue reply failed {cid} @{item.get('user')}: {err}")
+            if "HTTP 400" in err and ("does not exist" in err or "Unsupported" in err):
+                done[cid] = {"at": now.isoformat(), "failed": err}   # comment deleted
+            else:
+                fails += 1
+        time.sleep(SEND_GAP_S)
+    left = len([i for i in q if i.get("text") and i["id"] not in done])
+    if q:
+        log(f"reply queue: {sent} posted this run, {left} left")
+    state.setdefault("_health", {})["queue_left"] = left
+    return sent
 
 
 def count_waiting(comments, done, own, kws, exclude):
