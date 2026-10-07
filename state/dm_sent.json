@@ -13133,9 +13133,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T17:34:56.380429+00:00",
+    "at": "2026-10-07T17:49:45.305623+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 2,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -13145,18 +13145,18 @@
     "failures": [
       {
         "post": "p02",
-        "user": "mohsen.porsche",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AFR1HRqGRQUK6nizdgn2S_m\"}}"
+        "user": "hadis_beatey",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AKrwt7NEliPkayGU8GG2iLh\"}}"
       },
       {
         "post": "p02",
-        "user": "arezoo.taiarani",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ARYUauTQsCTwHQ0xg3y7zbh\"}}"
+        "user": "mohammadshahmoradiii",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A1ePMOV1DvnA7TubcT7WA8S\"}}"
       },
       {
         "post": "p02",
-        "user": "boutique_amoot",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AbzGur_mWvFoRu505S9L9TZ\"}}"
+        "user": "arat_ftm",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Avc7bBHjMKfbOGnxr00hc32\"}}"
       }
     ]
   },
@@ -15382,12 +15382,20 @@
     "17870691102642584": {
       "user": "madjid.navid",
       "at": "2026-10-07T17:10:25.855375+00:00"
+    },
+    "18098970533531991": {
+      "user": "hazratyhossein",
+      "at": "2026-10-07T17:49:45.305623+00:00"
     }
   },
   "18092615075180960": {
     "18121952401783977": {
       "user": "aalavi938",
       "at": "2026-10-06T14:37:03.221489+00:00"
+    },
+    "18165758851484772": {
+      "user": "zynb.i0",
+      "at": "2026-10-07T17:49:45.305623+00:00"
     }
   },
   "18118291519740191": {
@@ -15442,8 +15450,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T17:10:25.855375+00:00",
-    "at": "2026-10-07T17:34:56.380429+00:00",
+    "last_sent_at": "2026-10-07T17:49:45.305623+00:00",
+    "at": "2026-10-07T17:49:45.305623+00:00",
     "mode": "live",
     "waiting": {
       "p02": 11
@@ -15453,7 +15461,7 @@
     "posts_read": 25,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 359
+    "queue_left": 347
   },
   "_thanked": {
     "18130502443748401": {
@@ -16281,11 +16289,63 @@
     "17911899582496718": {
       "at": "2026-10-07T17:34:56.380429+00:00",
       "kind": "nudge"
+    },
+    "18135138865656598": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "18106261874227058": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "18125668192891893": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "18116452999786119": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "17910135084517710": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "17918781084239894": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "18001188752796358": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "18052963337804363": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "17905271226579030": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "17989713083859269": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "18251014990310517": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
+    },
+    "17946623883069573": {
+      "at": "2026-10-07T17:49:45.305623+00:00",
+      "kind": "nudge"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "17981886305904162": 1,
+    "18168335851482541": 1,
+    "18169740454462095": 1
+  },
   "_desk": {
-    "at": "2026-10-07T17:34:56.380429+00:00",
+    "at": "2026-10-07T17:49:45.305623+00:00",
     "items": [
       {
         "id": "18025797482866693",
@@ -16414,22 +16474,6 @@
         "user": "samancu1392",
         "text": "26",
         "at": "2026-10-01T11:57:29+0000"
-      },
-      {
-        "id": "17918781084239894",
-        "media": "18339980485287304",
-        "rule": "p02",
-        "user": "mehrdadkeivan",
-        "text": "پرامپت",
-        "at": "2026-10-01T02:27:39+0000"
-      },
-      {
-        "id": "18052963337804363",
-        "media": "18090474026675518",
-        "rule": "p04",
-        "user": "phoenix_76631",
-        "text": "Doorkari",
-        "at": "2026-09-30T22:26:13+0000"
       }
     ],
     "posts": {
@@ -16462,11 +16506,6 @@
         "rule": "p04",
         "keyword": "دورکاری",
         "caption": "دنبال کار دورکاری هستی؟ این ۴ پرامپت Claude از پیدا کردن شغل تا مصاحبه همراهته"
-      },
-      "18339980485287304": {
-        "rule": "p02",
-        "keyword": "جمنای",
-        "caption": "دیگه لازم نیست ساعت‌ها تو کپ‌کات ادیت کنی، Gemini الان ویدیوی خودت رو فقط با یه "
       }
     }
   },
