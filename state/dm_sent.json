@@ -2757,6 +2757,10 @@
       "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AxMspnKxDHLVfWxj-zIYrel\"}}",
       "tries": 4,
       "bounced": "2026-10-07T18:42:04.686799+00:00"
+    },
+    "17895198525612833": {
+      "user": "mouj_light",
+      "at": "2026-10-07T19:34:23.614800+00:00"
     }
   },
   "18017930855731657": {
@@ -13158,9 +13162,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T19:19:58.710763+00:00",
+    "at": "2026-10-07T19:34:23.614800+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 3,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 1,
@@ -13171,17 +13175,17 @@
       {
         "post": "p02",
         "user": "yousef_karimi1",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AbkjQvSsgoSMPr1p20EGGgA\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AeVjB8oUOmJviKTnvNI-1Z2\"}}"
       },
       {
         "post": "p02",
         "user": "jetfollow_official",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AWOORrM0wIvfGCpctHHIz-b\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AAkPMz9f_1qbtV5Li1mJgpy\"}}"
       },
       {
         "post": "p02",
         "user": "alilak.official",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AaMxYVbSJNp-VX_trVxwALl\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AQOpqEKNvmussgN0o82_HUx\"}}"
       }
     ]
   },
@@ -13963,6 +13967,12 @@
       "uid": "971705941956012",
       "rule": "p00",
       "at": "2026-10-07T19:19:58.710763+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgzMzg3ODgwNjI4MTUyODozMzA0NTUyNjI5MDEyNTE2OTA3NDEyNTc2MDI1NzU4OTI0OAZDZD": {
+      "user": "lths__28",
+      "uid": "1717806115948031",
+      "rule": "p00",
+      "at": "2026-10-07T19:34:23.614800+00:00"
     }
   },
   "18630278164012008": {
@@ -14630,6 +14640,10 @@
     "18004709355050623": {
       "user": "mohsen255908",
       "at": "2026-10-07T17:10:25.855375+00:00"
+    },
+    "18112801802029146": {
+      "user": "javad.hosseini.142",
+      "at": "2026-10-07T19:34:23.614800+00:00"
     }
   },
   "17977527015015936": {
@@ -15457,6 +15471,10 @@
       "user": "armaniiiiyy",
       "at": "2026-10-07T19:19:58.710763+00:00",
       "via": "desk"
+    },
+    "17975567384935136": {
+      "user": "shirafkan.bakhsha",
+      "at": "2026-10-07T19:34:23.614800+00:00"
     }
   },
   "18092615075180960": {
@@ -15521,8 +15539,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T19:19:58.710763+00:00",
-    "at": "2026-10-07T19:19:58.710763+00:00",
+    "last_sent_at": "2026-10-07T19:34:23.614800+00:00",
+    "at": "2026-10-07T19:34:23.614800+00:00",
     "mode": "live",
     "waiting": {
       "p02": 8
@@ -15532,7 +15550,7 @@
     "posts_read": 25,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 303
+    "queue_left": 291
   },
   "_thanked": {
     "18130502443748401": {
@@ -16648,66 +16666,65 @@
     "18116399048517478": {
       "at": "2026-10-07T19:19:58.710763+00:00",
       "kind": "dm"
+    },
+    "18111764471276146": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "answer"
+    },
+    "18076724381541447": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "thanks"
+    },
+    "18120433795975075": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "thanks"
+    },
+    "18385865569228441": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "thanks"
+    },
+    "18135826909646209": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
+    },
+    "17909039310493341": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
+    },
+    "18117162911053621": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
+    },
+    "18074123432466412": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
+    },
+    "18096962675535178": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
+    },
+    "18639544465046868": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
+    },
+    "18078069485397996": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
+    },
+    "18017709302941304": {
+      "at": "2026-10-07T19:34:23.614800+00:00",
+      "kind": "nudge"
     }
   },
   "_tries": {
-    "17982874281106186": 2,
-    "18091148564271059": 2,
-    "18144822829602800": 2
+    "17982874281106186": 3,
+    "18091148564271059": 3,
+    "18144822829602800": 3
   },
   "_desk": {
-    "at": "2026-10-07T19:19:58.710763+00:00",
-    "items": [
-      {
-        "id": "18076724381541447",
-        "media": "18090474026675518",
-        "rule": "p04",
-        "user": "anvar.kaikhosravi",
-        "text": "@danestani.ruzz 🌹🙏",
-        "at": "2026-10-07T05:56:55+0000"
-      },
-      {
-        "id": "18111764471276146",
-        "media": "18102800627254089",
-        "rule": "p06",
-        "user": "drhamidrezaezzati",
-        "text": "اسپوتیفلک به جای اپل موزیک و اسپوتیفای و تایدال های فای و کوباز و آمازون موزیک و دیزر و هرچی سرویس پولی و آنلاینه که تا 24 بیت 192 khz هم میتونه دانلود کنه.",
-        "at": "2026-10-04T04:06:10+0000"
-      },
-      {
-        "id": "18120433795975075",
-        "media": "18117297362054742",
-        "rule": "p07",
-        "user": "ush_bam",
-        "text": "GodBots.vercel.app/craft",
-        "at": "2026-10-01T17:40:03+0000"
-      },
-      {
-        "id": "18385865569228441",
-        "media": "18117297362054742",
-        "rule": "p07",
-        "user": "samancu1392",
-        "text": "26",
-        "at": "2026-10-01T11:57:29+0000"
-      }
-    ],
-    "posts": {
-      "18117297362054742": {
-        "rule": "p07",
-        "keyword": "ماینکرفت",
-        "caption": "قوی‌ترین هوش مصنوعی OpenAI ۱۴۱ ساعت ماینکرفت بازی کرد، یه Creeper همه‌چیزش رو من"
-      },
-      "18102800627254089": {
-        "rule": "p06",
-        "keyword": "رایگان",
-        "caption": "هنوز برای فتوشاپ و آفیس و Dropbox پول می‌دی؟ برای تقریبا هر برنامه‌ی پولی یه جای"
-      },
-      "18090474026675518": {
-        "rule": "p04",
-        "keyword": "دورکاری",
-        "caption": "دنبال کار دورکاری هستی؟ این ۴ پرامپت Claude از پیدا کردن شغل تا مصاحبه همراهته"
-      }
-    }
+    "at": "2026-10-07T19:34:23.614800+00:00",
+    "items": [],
+    "posts": {}
   },
   "17986701810116234": {
     "17999056443034505": {
