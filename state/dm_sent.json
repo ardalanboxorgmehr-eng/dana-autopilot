@@ -13479,12 +13479,16 @@
       "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AalOZhWeO_5ndwiaNPe0oNg\"}}",
       "tries": 4,
       "bounced": "2026-10-07T21:58:46.900415+00:00"
+    },
+    "18001674848809043": {
+      "user": "ahmadi_maghsoud",
+      "at": "2026-10-07T22:14:54.780860+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-07T21:58:46.900415+00:00",
+    "at": "2026-10-07T22:14:54.780860+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 1,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -13494,18 +13498,18 @@
     "failures": [
       {
         "post": "p00",
-        "user": "whatjasmineblooms",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AwNz9w_07FUaD-SZKzQ1EBj\"}}"
+        "user": "sheem_aaa_94",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Adp-zWXC-snRip03UzIOH4r\"}}"
       },
       {
         "post": "p00",
-        "user": "hasti.ab80",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AuZ0jJQzBpz9QGSN8NQSk7b\"}}"
+        "user": "sarah.smm",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AAGQuA6BqH9hyInJSg9Up7V\"}}"
       },
       {
         "post": "p00",
-        "user": "fatemehbeihaghi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AalOZhWeO_5ndwiaNPe0oNg\"}}"
+        "user": "evol_23u",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AKbM1COkFxjbD2idk2wc7-P\"}}"
       }
     ]
   },
@@ -15899,8 +15903,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T21:48:41.028721+00:00",
-    "at": "2026-10-07T21:58:46.900415+00:00",
+    "last_sent_at": "2026-10-07T22:14:54.780860+00:00",
+    "at": "2026-10-07T22:14:54.780860+00:00",
     "mode": "live",
     "waiting": {
       "p00": 450
@@ -15910,7 +15914,7 @@
     "posts_read": 26,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 171,
+    "queue_left": 159,
     "inbox_waiting": 0
   },
   "_thanked": {
@@ -17687,11 +17691,75 @@
       "at": "2026-10-07T21:58:46.900415+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "18135238684564951": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18066519830767777": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18408191050090597": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18104901962204000": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18157478737446984": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17997098336823522": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18159728707500718": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18128373967691551": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18095885432328141": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17903620275350558": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18106197163953172": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18126511906861277": {
+      "at": "2026-10-07T22:14:54.780860+00:00",
+      "kind": "nudge",
+      "via": "desk"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "17936547420388187": 1,
+    "17992307835029374": 1,
+    "18075140021722841": 1
+  },
   "_desk": {
-    "at": "2026-10-07T21:58:46.900415+00:00",
+    "at": "2026-10-07T22:14:54.780860+00:00",
     "items": [
       {
         "id": "18078244934401101",
