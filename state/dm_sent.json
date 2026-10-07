@@ -13037,33 +13037,28 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T10:51:11.973321+00:00",
+    "at": "2026-10-07T11:01:29.974207+00:00",
     "mode": "live",
     "sent": 1,
-    "failed": 4,
+    "failed": 3,
     "skipped": 0,
-    "inbox_sent": 2,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
     "failures": [
       {
         "post": "p06",
         "user": "alirezaazarpour",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9H9LMLaSKeMal72xyO2NDd\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A0a5MXoT6cYPbDS-DEjgXjb\"}}"
       },
       {
         "post": "p02",
         "user": "faranapm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A7Y1jvtu2AiBC8M26GyJdns\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AB4IkPwMwgsM_yX6mSLFGvk\"}}"
       },
       {
         "post": "p02",
         "user": "pixel__motion_new",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AXfYB7ZmqIgU_cCxPrOcNpT\"}}"
-      },
-      {
-        "post": "p02",
-        "user": "eslamii2021",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AhjV38foRxm5zxU88Qobebv\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AvY9O57p7iHlD4JHXZFyQ8Z\"}}"
       }
     ]
   },
@@ -13917,6 +13912,10 @@
     "17933361519142687": {
       "user": "mortezakhoshdoni",
       "at": "2026-10-07T10:02:57.349778+00:00"
+    },
+    "18117013012791414": {
+      "user": "askar.ekh0",
+      "at": "2026-10-07T11:01:29.974207+00:00"
     }
   },
   "18115467637951827": {
@@ -15132,8 +15131,8 @@
     "18087900869693182": "p01"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T10:51:11.973321+00:00",
-    "at": "2026-10-07T10:51:11.973321+00:00",
+    "last_sent_at": "2026-10-07T11:01:29.974207+00:00",
+    "at": "2026-10-07T11:01:29.974207+00:00",
     "mode": "live",
     "waiting": {
       "p06": 1,
