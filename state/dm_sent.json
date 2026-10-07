@@ -13542,10 +13542,14 @@
       "c_at": "2026-10-07T05:10:00+0000",
       "text": "پرامپت",
       "bounced": "2026-10-07T22:56:57.956402+00:00"
+    },
+    "18126817370485650": {
+      "user": "mohammad_ghorbanib",
+      "at": "2026-10-07T23:13:54.194197+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-07T22:56:57.956402+00:00",
+    "at": "2026-10-07T23:13:54.194197+00:00",
     "mode": "live",
     "sent": 2,
     "failed": 3,
@@ -13557,18 +13561,18 @@
     "failures": [
       {
         "post": "p00",
-        "user": "sheem_aaa_94",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ActKZxgEGOvG-cqpUoVIFA1\"}}"
+        "user": "mahdiss_81139",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AFcqcmzilBNyTxgo2amM0Z6\"}}"
       },
       {
         "post": "p00",
-        "user": "sarah.smm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"APyISiFmX1g5z49ekwDTE-K\"}}"
+        "user": "yousefisep",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AIpTQaFKgBPgMY3QoFjimU_\"}}"
       },
       {
         "post": "p00",
-        "user": "evol_23u",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AowI6Fl_-GMncjnIxL5DJSf\"}}"
+        "user": "lalmohammadrashidi",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AbmP0DPU94KySOpj8mMdqUA\"}}"
       }
     ]
   },
@@ -15059,6 +15063,10 @@
     "18191290234405967": {
       "user": "mohamadamin_afshar",
       "at": "2026-10-07T21:33:38.115647+00:00"
+    },
+    "18102257366048349": {
+      "user": "farshidjenabi",
+      "at": "2026-10-07T23:13:54.194197+00:00"
     }
   },
   "17977527015015936": {
@@ -15966,18 +15974,18 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T22:56:57.956402+00:00",
-    "at": "2026-10-07T22:56:57.956402+00:00",
+    "last_sent_at": "2026-10-07T23:13:54.194197+00:00",
+    "at": "2026-10-07T23:13:54.194197+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 421
+      "p00": 444
     },
-    "waiting_total": 421,
+    "waiting_total": 444,
     "unmatched_posts": [],
     "posts_read": 26,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 136,
+    "queue_left": 124,
     "inbox_waiting": 0
   },
   "_thanked": {
@@ -18090,12 +18098,96 @@
       "at": "2026-10-07T22:56:57.956402+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "17936547420388187": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ALQhWshy-yEQRnCktI-JzPt\"}}"
+    },
+    "17992307835029374": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ApCYY2UUsvti1Jo5kKZfp1u\"}}"
+    },
+    "18075140021722841": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AwgHnX9kxKRpUDLm6ppG1Vi\"}}"
+    },
+    "18032149415903646": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18165564493489417": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17888598807465454": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18125522593873388": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18173822467454466": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18139262560683429": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18173819068454159": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18129318079744154": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17864753061679223": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17887198920479742": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18130043392781518": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17936331180385077": {
+      "at": "2026-10-07T23:13:54.194197+00:00",
+      "kind": "nudge",
+      "via": "desk"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "18130629187749787": 1,
+    "18008801783779964": 1,
+    "17991665910022852": 1
+  },
   "_desk": {
-    "at": "2026-10-07T22:56:57.956402+00:00",
+    "at": "2026-10-07T23:13:54.194197+00:00",
     "items": [
+      {
+        "id": "18153826318525474",
+        "media": "17986701810116234",
+        "rule": "2026-10-07-1530",
+        "user": "milad.graphix",
+        "text": "پولیه دوستان ، گول رایگان بودن این ابزار رو نخورین و لجاش از ابزار رابگان گوگل ای آی استودیو استفاده کنین ، برای رفع تحریم هم به پیج من سر بزنین",
+        "at": "2026-10-07T22:59:24+0000"
+      },
       {
         "id": "17890332303455753",
         "media": "18017930855731657",
@@ -18106,6 +18198,11 @@
       }
     ],
     "posts": {
+      "17986701810116234": {
+        "rule": "2026-10-07-1530",
+        "keyword": "کلون",
+        "caption": "فقط ۱۰ ثانیه از صدات کافیه تا یکی با صدای خودت به مامانت زنگ بزنه"
+      },
       "18017930855731657": {
         "rule": "p00",
         "keyword": "پرامپت",
