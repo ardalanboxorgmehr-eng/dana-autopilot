@@ -218,8 +218,18 @@ class IG:
     def me(self):
         return self._call("GET", "/me", {"fields": "user_id,username"})
 
-    def recent_media(self, limit=60):
-        return self._call("GET", "/me/media", {"fields": "id,caption,timestamp", "limit": limit}).get("data", [])
+    def recent_media(self, limit=1000):
+        """Every post on the page, newest first. Pages through all of them (fixed
+        7 Oct 2026: only the newest 60 were read, so a comment on an older post
+        that went viral later was never seen)."""
+        out = []
+        r = self._call("GET", "/me/media", {"fields": "id,caption,timestamp", "limit": 100})
+        while True:
+            out += r.get("data", [])
+            nxt = r.get("paging", {}).get("next")
+            if not nxt or len(out) >= limit:
+                return out
+            r = self._call("GET", nxt)
 
     def comments(self, media_id, since=None):
         """All comments, or, when the API returns them newest first, stop paging
