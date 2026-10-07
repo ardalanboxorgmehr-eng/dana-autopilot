@@ -13037,28 +13037,28 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T11:33:08.933181+00:00",
+    "at": "2026-10-07T11:48:00.643054+00:00",
     "mode": "live",
     "sent": 2,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 4,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
     "failures": [
       {
         "post": "p06",
         "user": "alirezaazarpour",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A0Enek3GoEShW2K8kGK-cZq\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A70t9q9i4cHbD-i-2f7QmTK\"}}"
       },
       {
         "post": "p02",
         "user": "faranapm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AQb7h_Ae04R3JqMVJcsekuf\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A0xZovXuAlKN_SNPSFeZ8Fa\"}}"
       },
       {
         "post": "p02",
         "user": "pixel__motion_new",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AO1tWlP77kmuu2kdRkCAN6x\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Az-mF69cjszEoOFZtBUinai\"}}"
       }
     ]
   },
@@ -14395,6 +14395,10 @@
     "18110389916145260": {
       "user": "majidbabaei123",
       "at": "2026-10-06T02:32:06.181538+00:00"
+    },
+    "18166536406488287": {
+      "user": "sayvan_19_95",
+      "at": "2026-10-07T11:48:00.643054+00:00"
     }
   },
   "18121478000484793": {
@@ -15116,6 +15120,10 @@
     "17978610182918918": {
       "user": "vahidvqb",
       "at": "2026-10-07T11:33:08.933181+00:00"
+    },
+    "17964921368983177": {
+      "user": "mehrzadmeh",
+      "at": "2026-10-07T11:48:00.643054+00:00"
     }
   },
   "18092615075180960": {
@@ -15175,8 +15183,8 @@
     "18087900869693182": "p01"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T11:33:08.933181+00:00",
-    "at": "2026-10-07T11:33:08.933181+00:00",
+    "last_sent_at": "2026-10-07T11:48:00.643054+00:00",
+    "at": "2026-10-07T11:48:00.643054+00:00",
     "mode": "live",
     "waiting": {
       "p06": 1,
