@@ -44,8 +44,9 @@ RULES = os.path.join(ROOT, "dm_rules.json")
 STATE = os.path.join(ROOT, "state", "dm_sent.json")
 CONTENT = os.path.join(ROOT, "content")
 
-MAX_SENDS_PER_RUN = 80
+MAX_SENDS_PER_RUN = 40
 SEND_GAP_S = 3
+MAX_ERROR_STREAK = 3          # this many failed sends in a row means throttling: stop the run
 RUN_BUDGET_S = 20 * 60       # stop starting new posts after 20 minutes; the next run carries on
 WINDOW_DAYS = 7
 PUBLIC_REPLIES = [
@@ -248,6 +249,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
         start_at = now - timedelta(hours=float(look))
     window_start = max(start_at, now - timedelta(days=WINDOW_DAYS))
     rules, exclude = load_rules()
+    forget_retryable(state)
 
     try:
         who = ig.me()
@@ -258,7 +260,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     log(f"connected to @{who.get('username')} · mode={mode} · handling comments after {window_start.isoformat()}")
 
     started = time.monotonic()
-    sends = errors = skipped = bounced = 0
+    sends = errors = skipped = bounced = streak = 0
     failures = []
     active = []                      # (media, rule) for every recent post with a rule, newest first
     for m in ig.recent_media():
@@ -313,8 +315,11 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                     done[c["id"]] = {"user": user, "at": now.isoformat(), "skipped": "already sent to this person"}
                 skipped += 1
                 continue
-            if sends >= MAX_SENDS_PER_RUN:
+            if sends + errors >= MAX_SENDS_PER_RUN:
                 log("send limit for this run reached, the rest go next run")
+                break
+            if streak >= MAX_ERROR_STREAK:
+                log(f"{streak} failures in a row, Instagram is throttling: stopping, the rest go next run")
                 break
             if mode != "live":
                 log(f"[dry run] {rid}: would DM @{user} for «{c.get('text','')[:30]}»")
@@ -323,14 +328,19 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 ig.private_reply(c["id"], msg)
             except IGError as e:
                 errors += 1
+                streak += 1
                 err = str(e)[:300]
-                done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err}
                 failures.append({"post": rid, "user": user, "error": err})
                 log(f"DM FAILED {rid} @{user}: {err}")
-                if BOUNCE_CODE in err:
+                # Fixed 7 Oct 2026: a burst of failures is Instagram throttling,
+                # not hundreds of closed inboxes. Only a lone closed-inbox error
+                # is final; everything else is retried on a later run.
+                if BOUNCE_CODE in err and streak == 1:
+                    done[c["id"]] = {"user": user, "at": now.isoformat(), "failed": err}
                     bounce(ig, c["id"], done[c["id"]], kws[0], now, log, rid)
-                time.sleep(SEND_GAP_S)
+                time.sleep(SEND_GAP_S * 3)
                 continue
+            streak = 0
             done[c["id"]] = {"user": user, "at": now.isoformat()}
             users_done.add(user)
             sends += 1
@@ -343,7 +353,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 done[c["id"]]["public_failed"] = str(e)[:200]
                 log(f"public reply failed {rid} @{user}: {e}")
             time.sleep(SEND_GAP_S)
-        if sends >= MAX_SENDS_PER_RUN:
+        if sends + errors >= MAX_SENDS_PER_RUN or streak >= MAX_ERROR_STREAK:
             break
     inbox_sent = 0
     if dmcfg.get("inbox", True) and sends < MAX_SENDS_PER_RUN:
@@ -356,6 +366,20 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     # A failed send is recorded and not retried. Only fail the job (and email
     # the owner) when sending is broken outright: errors and nothing went out.
     return (1 if errors and not sends else 0), sends
+
+
+def forget_retryable(state):
+    """Drop failure records that were not final, so those comments are tried again:
+    Instagram 500s, and closed-inbox errors whose public reply also failed (the
+    7 Oct 2026 throttling burst). Real closed inboxes keep their record."""
+    for mid, recs in state.items():
+        if mid.startswith("_") or not isinstance(recs, dict):
+            continue
+        for cid in list(recs):
+            r = recs[cid]
+            f = r.get("failed", "")
+            if f and ("HTTP 500" in f or "bounce_failed" in r):
+                del recs[cid]
 
 
 def bounce(ig, comment_id, rec, keyword, now, log, rid):
