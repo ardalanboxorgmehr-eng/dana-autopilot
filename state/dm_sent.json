@@ -13158,9 +13158,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-07T18:42:04.686799+00:00",
+    "at": "2026-10-07T19:02:27.995608+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 2,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -13170,18 +13170,18 @@
     "failures": [
       {
         "post": "p02",
-        "user": "hadis_beatey",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AKaYyyN_vdJFXbwjJWl6w0k\"}}"
+        "user": "yousef_karimi1",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AJUgMsQXmODGUc-lfNhjaK3\"}}"
       },
       {
         "post": "p02",
-        "user": "mohammadshahmoradiii",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Afa2dGM1tU_FnK7HvbYkVWY\"}}"
+        "user": "jetfollow_official",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AwJllLM6pMBBfJT1e7_teaN\"}}"
       },
       {
         "post": "p02",
-        "user": "arat_ftm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AxMspnKxDHLVfWxj-zIYrel\"}}"
+        "user": "alilak.official",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AZk6-7ExFokXQn9zICJ5z2O\"}}"
       }
     ]
   },
@@ -13950,6 +13950,13 @@
       "uid": "1146181781408746",
       "rule": "p00",
       "at": "2026-10-07T18:21:13.035249+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTk1NTUyNjAzMDE3NzI3MzozMzA0NTQ3OTE2NzUzMzkwNjUyNzAzOTY2MTg5Nzk0MDk5MgZDZD": {
+      "user": "maryamebadiii.1997",
+      "uid": "1615955930319056",
+      "rule": "p00",
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
@@ -15421,6 +15428,14 @@
     "18098970533531991": {
       "user": "hazratyhossein",
       "at": "2026-10-07T17:49:45.305623+00:00"
+    },
+    "18023049800874198": {
+      "user": "aliyari.ali1400",
+      "at": "2026-10-07T19:02:27.995608+00:00"
+    },
+    "18427829878147692": {
+      "user": "rebwar_karimi_helsinki",
+      "at": "2026-10-07T19:02:27.995608+00:00"
     }
   },
   "18092615075180960": {
@@ -15485,8 +15500,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T18:42:04.686799+00:00",
-    "at": "2026-10-07T18:42:04.686799+00:00",
+    "last_sent_at": "2026-10-07T19:02:27.995608+00:00",
+    "at": "2026-10-07T19:02:27.995608+00:00",
     "mode": "live",
     "waiting": {
       "p02": 8
@@ -15496,7 +15511,7 @@
     "posts_read": 25,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 311
+    "queue_left": 299
   },
   "_thanked": {
     "18130502443748401": {
@@ -16516,11 +16531,63 @@
     "18118074130765313": {
       "at": "2026-10-07T18:42:04.686799+00:00",
       "kind": "nudge"
+    },
+    "17957285169014319": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "18128161687785661": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "17875922634632718": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "17950229988048194": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "17944736406345843": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "18383952754224046": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "18122856658844323": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "17904627840663873": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "18116021491791533": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "18122826067909379": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "18130482163817716": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
+    },
+    "18028583630882943": {
+      "at": "2026-10-07T19:02:27.995608+00:00",
+      "kind": "nudge"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "17982874281106186": 1,
+    "18091148564271059": 1,
+    "18144822829602800": 1
+  },
   "_desk": {
-    "at": "2026-10-07T18:42:04.686799+00:00",
+    "at": "2026-10-07T19:02:27.995608+00:00",
     "items": [
       {
         "id": "18025797482866693",
