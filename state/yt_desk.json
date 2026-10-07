@@ -2,5 +2,9 @@
  "done": {},
  "items": [],
  "queue_left": 0,
- "error": "2026-10-07T20:36:02.511617+00:00 HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"YouTube Data API v3 has not been used in project 411641935471 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=411641935471 then retry. If you enabled this "
+ "error": "2026-10-07T20:50:24.881847+00:00 HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The video identified by the \\u003ccode\\u003e\\u003ca href=\\\"/youtube/v3/docs/commentThreads/list#videoId\\\"\\u003evideoId\\u003c/a\\u003e\\u003c/code\\u003e parameter has disabled comments.\",\n    \"errors\": [\n      {\n        \"message\": \"The video ide",
+ "channel": {
+  "id": "UC5Dky4DXjJM387k9KTt9b8Q",
+  "title": "دانستنی روز"
+ }
 }
