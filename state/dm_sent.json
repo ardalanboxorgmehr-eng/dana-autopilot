@@ -2821,6 +2821,13 @@
     "18631649983034937": {
       "user": "blackpearla.rg",
       "at": "2026-10-07T20:59:14.504658+00:00"
+    },
+    "18115494071073298": {
+      "user": "mr_chargercar",
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A7515WJRm_gNz_Up9gF0c1P\"}}",
+      "tries": 4,
+      "bounced": "2026-10-07T21:48:41.028721+00:00"
     }
   },
   "18017930855731657": {
@@ -13443,15 +13450,23 @@
     "18102000443212537": {
       "user": "negardibaee",
       "at": "2026-10-07T21:33:38.115647+00:00"
+    },
+    "18357093715175228": {
+      "user": "im.zhrw_0",
+      "at": "2026-10-07T21:48:41.028721+00:00"
+    },
+    "18123099646717031": {
+      "user": "fatahiyanmehran",
+      "at": "2026-10-07T21:48:41.028721+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-07T21:33:38.115647+00:00",
+    "at": "2026-10-07T21:48:41.028721+00:00",
     "mode": "live",
-    "sent": 3,
+    "sent": 2,
     "failed": 4,
     "skipped": 0,
-    "inbox_sent": 1,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 12,
     "thanks": 0,
@@ -13459,22 +13474,22 @@
       {
         "post": "p02",
         "user": "mr_chargercar",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ADqnAukpt-qIapUhfczxbrC\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A7515WJRm_gNz_Up9gF0c1P\"}}"
       },
       {
         "post": "p00",
         "user": "whatjasmineblooms",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AVp0rKpkx79SGRCWm3lUQh7\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AduDy5eyL2a-iNw6QFGNFMg\"}}"
       },
       {
         "post": "p00",
         "user": "hasti.ab80",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ARnk20s9NbPlUbuRLE5wksH\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ANodJVqhcD0SSV0AJ9exFiF\"}}"
       },
       {
         "post": "p00",
         "user": "fatemehbeihaghi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AcJ7vO822raNvStJkRBF6Fp\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AIDiDgz2TCrtSI3fQN96YdI\"}}"
       }
     ]
   },
@@ -15868,20 +15883,19 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-07T21:33:38.115647+00:00",
-    "at": "2026-10-07T21:33:38.115647+00:00",
+    "last_sent_at": "2026-10-07T21:48:41.028721+00:00",
+    "at": "2026-10-07T21:48:41.028721+00:00",
     "mode": "live",
     "waiting": {
-      "p02": 1,
-      "p00": 454
+      "p00": 453
     },
-    "waiting_total": 455,
+    "waiting_total": 453,
     "unmatched_posts": [],
     "posts_read": 26,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 195,
-    "inbox_waiting": 1
+    "queue_left": 183,
+    "inbox_waiting": 0
   },
   "_thanked": {
     "18130502443748401": {
@@ -17537,16 +17551,75 @@
       "at": "2026-10-07T21:33:38.115647+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "18105364832204312": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18394641001206871": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18095110073401711": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17915991180453310": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18077994806452982": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18103858940254715": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18115618831961742": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17959918503238191": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17907644847488580": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18012348398976528": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18023168360867295": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18023799602873808": {
+      "at": "2026-10-07T21:48:41.028721+00:00",
+      "kind": "nudge",
+      "via": "desk"
     }
   },
   "_tries": {
-    "18115494071073298": 3,
-    "18037351700840015": 2,
-    "18069277964728195": 2,
-    "18228458383333955": 2
+    "18037351700840015": 3,
+    "18069277964728195": 3,
+    "18228458383333955": 3
   },
   "_desk": {
-    "at": "2026-10-07T21:33:38.115647+00:00",
+    "at": "2026-10-07T21:48:41.028721+00:00",
     "items": [
       {
         "id": "18078244934401101",
@@ -17643,14 +17716,6 @@
         "user": "darya_puuya",
         "text": "ممنون",
         "at": "2026-10-01T01:27:46+0000"
-      },
-      {
-        "id": "18124623584302453",
-        "media": "18017930855731657",
-        "rule": "p00",
-        "user": "nazanin_rastegar69",
-        "text": "@danestani.ruzz 🙏🌸",
-        "at": "2026-09-30T21:34:59+0000"
       }
     ],
     "posts": {
@@ -17686,7 +17751,7 @@
       "via": "desk"
     }
   },
-  "_inbox_hash": "c6fcf06d349bb4c4",
+  "_inbox_hash": "4f53cda18c2baa0c",
   "_alerted": {},
   "_alerted_dm": "2026-10-07T21:33:38.115647+00:00"
 }
