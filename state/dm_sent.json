@@ -12632,9 +12632,8 @@
     },
     "18129747992499135": {
       "user": "maryam_khedmati70",
-      "at": "2026-10-07T06:45:49.283932+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AG6knZQobZXg_0vx2-pn0qy\"}}",
-      "bounced": "2026-10-07T06:45:49.283932+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18133756210737319": {
       "user": "maryam.maryam.8850",
@@ -12781,9 +12780,8 @@
     },
     "18411012781081816": {
       "user": "fateme_sltni",
-      "at": "2026-10-07T08:48:14.702781+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A7YOQyDerT7BWQCFV2L4lM2\"}}",
-      "bounced": "2026-10-07T08:48:14.702781+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "17930738973410295": {
       "user": "sara.aquamarine",
@@ -12805,21 +12803,18 @@
     },
     "18493487854099862": {
       "user": "mahdieh.khani218",
-      "at": "2026-10-07T08:48:14.702781+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AqxZWhd6Z3P_snoxgK3SRXh\"}}",
-      "bounced": "2026-10-07T08:48:14.702781+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18217295647361632": {
       "user": "somikar87",
-      "at": "2026-10-07T08:48:14.702781+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"APv_PW0UqVOkdAO_Hp-hygX\"}}",
-      "bounced": "2026-10-07T08:48:14.702781+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18097277024434491": {
       "user": "its_.aisan",
-      "at": "2026-10-07T08:48:14.702781+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AHCskkRsWLZNwPMFeXPzJLN\"}}",
-      "bounced": "2026-10-07T08:48:14.702781+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18114917642098917": {
       "user": "hani.mohmdpour",
@@ -12827,9 +12822,8 @@
     },
     "17905492680578975": {
       "user": "elham.rz00",
-      "at": "2026-10-07T08:48:14.702781+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMqJA11Yd8zQnNMmpCuhxTy\"}}",
-      "bounced": "2026-10-07T08:48:14.702781+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18136332280645695": {
       "user": "saeed.robatipoor.23",
@@ -13239,21 +13233,18 @@
     },
     "18092806106439291": {
       "user": "mobinaafshaaar",
-      "at": "2026-10-07T09:18:47.046523+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ABYx4MpL-cmQ_WKll_TlPE_\"}}",
-      "bounced": "2026-10-07T09:18:47.046523+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18108453893211424": {
       "user": "yeektiil.h",
-      "at": "2026-10-07T09:18:47.046523+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A0nQxD0MnYoz687FE50CScj\"}}",
-      "bounced": "2026-10-07T09:18:47.046523+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "17883191658652793": {
       "user": "mary.8351__",
-      "at": "2026-10-07T09:18:47.046523+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Aih7eVXCk7DcaaNsPXZpi5U\"}}",
-      "bounced": "2026-10-07T09:18:47.046523+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18149617273550405": {
       "user": "mo.yar258",
@@ -13845,33 +13836,45 @@
     "18337189984272551": {
       "user": "omid._.kooshki",
       "at": "2026-10-08T05:59:52.956991+00:00"
+    },
+    "17909162349503843": {
+      "user": "fatemeh_behtari",
+      "at": "2026-10-08T06:24:13.524648+00:00"
+    },
+    "18635709607015078": {
+      "user": "abouten.___",
+      "at": "2026-10-08T06:24:13.524648+00:00"
+    },
+    "18196988560391084": {
+      "user": "heyy.1.7",
+      "at": "2026-10-08T06:24:13.524648+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T05:59:52.956991+00:00",
+    "at": "2026-10-08T06:24:13.524648+00:00",
     "mode": "live",
-    "sent": 3,
+    "sent": 4,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 2,
     "bounce_backlog": 0,
-    "queue_replies": 0,
+    "queue_replies": 12,
     "thanks": 0,
     "failures": [
       {
         "post": "p00",
         "user": "darya1234146",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ATiwQywkhJMPg4xkqcxr4Ea\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AZb3C4WduvWlylOpEmy3jtb\"}}"
       },
       {
         "post": "p00",
         "user": "noori.fateme42019",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AqmhQ2xwj9Spzuo4GdRosPr\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AZThdMF5dSg88pqJl0LRZyU\"}}"
       },
       {
         "post": "p00",
         "user": "mahlin.afh",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"APe2qQkMZv6IwEMCOF6wLWE\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A2ePEnamI9F3Fu1qyko_1q1\"}}"
       }
     ]
   },
@@ -14756,6 +14759,25 @@
       "uid": "3587851381391686",
       "rule": "2026-10-08-0600",
       "at": "2026-10-08T05:48:54.937586+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTEwOTU4ODY3MzA4NzU2MTozMzA0NjI1MTM0Mzc0NDg2MjQxNjAxNzI5OTc3MTIyODE2MAZDZD": {
+      "user": "yousef.toosii",
+      "uid": "1113746517870387",
+      "rule": "p02",
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDA1MzU0NDYyMzkwODI0MDozMzA0NjI0ODk4MTMxMDk2ODYyNjQ4NTMzMjc0Mjc2NjU5MgZDZD": {
+      "user": "_mina_mmn",
+      "uid": "1135043022378922",
+      "rule": "p00",
+      "at": "2026-10-08T06:24:13.524648+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI3MzAwNzU0MzQwNTQ5MTozMzA0NjIyNTI3NjYyNDc0NjYwNzY3Mzc1OTYwNTE5NDc1MgZDZD": {
+      "user": "sonya_shalmashi",
+      "uid": "1083291241166051",
+      "rule": "p00",
+      "at": "2026-10-08T06:24:13.524648+00:00"
     }
   },
   "18630278164012008": {
@@ -16216,9 +16238,8 @@
     },
     "18380573890235498": {
       "user": "vahid.akbari129",
-      "at": "2026-10-07T09:18:47.046523+00:00",
-      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A01qeuDBGi6fBcyByagSsQH\"}}",
-      "bounced": "2026-10-07T09:18:47.046523+00:00"
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "via": "desk"
     },
     "18167812939426014": {
       "user": "s.abedini1994",
@@ -16412,8 +16433,8 @@
     "18638190625053899": "2026-10-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T05:59:52.956991+00:00",
-    "at": "2026-10-08T05:59:52.956991+00:00",
+    "last_sent_at": "2026-10-08T06:24:13.524648+00:00",
+    "at": "2026-10-08T06:24:13.524648+00:00",
     "mode": "live",
     "waiting": {
       "p00": 409
@@ -16424,7 +16445,7 @@
     "posts_with_rule": 28,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 0
+    "inbox_waiting": 3
   },
   "_thanked": {
     "18130502443748401": {
@@ -19227,32 +19248,152 @@
       "at": "2026-10-08T02:30:47.944400+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "18130629187749787": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AY2qobN5zSJrMOJZb3Mb6-A\"}}"
+    },
+    "17933353350146236": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Axa3s0pL2_JQdULItdoViym\"}}"
+    },
+    "17908578204479241": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AMvnBngoz_0sW2nhIcoR3gU\"}}"
+    },
+    "17949286416342142": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AMkSUOngc1US-NUd9pP4qmx\"}}"
+    },
+    "18114754295022900": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A1tCeMrVCLO_VSTsoNedrBi\"}}"
+    },
+    "18197455498391126": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ASOJMQo--IVgO3gFn3iKy_U\"}}"
+    },
+    "18140827678719128": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AubLc0R_Vy3pdy1aQVfEu1S\"}}"
+    },
+    "18424432018158975": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AnrMj_FQPKpQWlqHZSMAm2w\"}}"
+    },
+    "18127216096872167": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AWM4DWJBo8ZibV-v7ZNAH-E\"}}"
+    },
+    "17939618334362758": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ABJWRPBUWmL-I2rfUGCZ3On\"}}"
+    },
+    "17882308842627045": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Aie532ohWhYWgxV5EqsI2Hx\"}}"
+    },
+    "18088598216259471": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AvOyeCsAznWd31OJ77wR7fA\"}}"
+    },
+    "18055246169804294": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AAfNtyR_CfENRMNZ3HJAPpl\"}}"
+    },
+    "17912426040549374": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ArZjSt6XHkqpu3akLknqdQ6\"}}"
+    },
+    "17918185941447443": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ADKc8ypVRAyqLeAK3jM_UZI\"}}"
+    },
+    "18008801783779964": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AFoLmEaHudbPB5xpWDQrbse\"}}"
+    },
+    "17991665910022852": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AG3eR9Z1VG9qhWphyIK4r1X\"}}"
+    },
+    "18129747992499135": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18217295647361632": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18493487854099862": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18092806106439291": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "17883191658652793": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18108453893211424": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18094685855152040": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "GET /18094685855152040 -> HTTP 400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18094685855152040' does not exist, cannot be loaded due to missing permissions, or does not support th"
+    },
+    "18380573890235498": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18411012781081816": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18037351700840015": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9hv9NWMRDpAIJL2bFJIuZn\"}}"
+    },
+    "18097277024434491": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "17905492680578975": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "dm",
+      "via": "desk"
+    },
+    "18153826318525474": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18345668836280153": {
+      "at": "2026-10-08T06:24:13.524648+00:00",
+      "kind": "thanks",
+      "via": "desk"
     }
   },
   "_tries": {
-    "17978064575918072": 2,
-    "18099263717537997": 2,
-    "18117327074515514": 2
+    "17978064575918072": 3,
+    "18099263717537997": 3,
+    "18117327074515514": 3
   },
   "_desk": {
-    "at": "2026-10-08T05:59:52.956991+00:00",
+    "at": "2026-10-08T06:24:13.524648+00:00",
     "items": [
-      {
-        "id": "18345668836280153",
-        "media": "18017930855731657",
-        "rule": "p00",
-        "user": "alireza.entehaee",
-        "text": "@danestani.ruzz ممنونم ❤️",
-        "at": "2026-10-08T05:19:14+0000"
-      },
-      {
-        "id": "18153826318525474",
-        "media": "17986701810116234",
-        "rule": "2026-10-07-1530",
-        "user": "milad.graphix",
-        "text": "پولیه دوستان ، گول رایگان بودن این ابزار رو نخورین و لجاش از ابزار رابگان گوگل ای آی استودیو استفاده کنین ، برای رفع تحریم هم به پیج من سر بزنین",
-        "at": "2026-10-07T22:59:24+0000"
-      },
       {
         "id": "17890332303455753",
         "media": "18017930855731657",
@@ -19263,11 +19404,6 @@
       }
     ],
     "posts": {
-      "17986701810116234": {
-        "rule": "2026-10-07-1530",
-        "keyword": "کلون",
-        "caption": "فقط ۱۰ ثانیه از صدات کافیه تا یکی با صدای خودت به مامانت زنگ بزنه"
-      },
       "18017930855731657": {
         "rule": "p00",
         "keyword": "پرامپت",
@@ -19304,13 +19440,19 @@
       "at": "2026-10-07T23:28:54.136691+00:00"
     }
   },
-  "_inbox_hash": "4f53cda18c2baa0c",
+  "_inbox_hash": "cd9157d356e50cfd",
   "_alerted": {},
   "_alerted_dm": "2026-10-07T21:33:38.115647+00:00",
   "18135383341710257": {
     "18097620227542206": {
       "user": "farshidjenabi",
       "at": "2026-10-07T22:56:57.956402+00:00"
+    }
+  },
+  "18638190625053899": {
+    "18052674311590883": {
+      "user": "dr_ramin_rouhi",
+      "at": "2026-10-08T06:24:13.524648+00:00"
     }
   }
 }
