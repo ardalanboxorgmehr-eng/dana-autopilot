@@ -2856,6 +2856,10 @@
     "17987074863076316": {
       "user": "bh.sepid",
       "at": "2026-10-08T05:17:51.512053+00:00"
+    },
+    "18372497173211677": {
+      "user": "pouria_kurdim",
+      "at": "2026-10-08T10:59:31.942562+00:00"
     }
   },
   "18017930855731657": {
@@ -14035,14 +14039,45 @@
     "18032175758893729": {
       "user": "saffatt90",
       "at": "2026-10-08T10:37:27.551472+00:00"
+    },
+    "18096122369536114": {
+      "user": "leila.zebhi",
+      "at": "2026-10-08T10:59:31.942562+00:00"
+    },
+    "18220472332350521": {
+      "user": "solo_sloghan",
+      "at": "2026-10-08T10:59:31.942562+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ABEpDXHNUEye80Xl9fMiKM_\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T18:39:36+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T10:59:31.942562+00:00"
+    },
+    "18118501145076877": {
+      "user": "_mehdi.alipur_",
+      "at": "2026-10-08T10:59:31.942562+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AuL_PM0BhLS9-Itd3rmkwjq\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T18:18:01+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T10:59:31.942562+00:00"
+    },
+    "18120354503057725": {
+      "user": "a_ashtari44",
+      "at": "2026-10-08T10:59:31.942562+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AkZ_Iz6lQFBdmWA2xmK2yRt\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T18:12:53+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T10:59:31.942562+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T10:37:27.551472+00:00",
+    "at": "2026-10-08T10:59:31.942562+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 3,
     "failed": 3,
-    "skipped": 0,
+    "skipped": 1,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
@@ -14051,17 +14086,17 @@
       {
         "post": "p00",
         "user": "solo_sloghan",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ApWtwy-Z-o-tIrmKnW3mC4n\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ABEpDXHNUEye80Xl9fMiKM_\"}}"
       },
       {
         "post": "p00",
         "user": "_mehdi.alipur_",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AGsY0iVjxKgES_IV80OKBgp\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AuL_PM0BhLS9-Itd3rmkwjq\"}}"
       },
       {
         "post": "p00",
         "user": "a_ashtari44",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"APoagPWMIkc6KGz1BlhgRke\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AkZ_Iz6lQFBdmWA2xmK2yRt\"}}"
       }
     ]
   },
@@ -15008,6 +15043,13 @@
       "uid": "1086657567559766",
       "rule": "p02",
       "at": "2026-10-08T09:36:52.941797+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTk3MTczOTk3MTg4OTcxMDozMzA0NjU0NDY1NDI3MDk3MTE5MDkwMjcyMTM1Mzg3NTQ1NgZDZD": {
+      "user": "alisadrosadati",
+      "uid": "1606505061174814",
+      "rule": "p00",
+      "at": "2026-10-08T10:59:31.942562+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
@@ -16623,6 +16665,15 @@
     "18022608149714609": {
       "user": "frashed48",
       "at": "2026-10-08T09:36:52.941797+00:00"
+    },
+    "17963023020203234": {
+      "user": "hamid.wise",
+      "at": "2026-10-08T10:59:31.942562+00:00"
+    },
+    "18112994048122370": {
+      "user": "hamid.wise",
+      "at": "2026-10-08T10:59:31.942562+00:00",
+      "skipped": "already sent to this person"
     }
   },
   "18092615075180960": {
@@ -16692,19 +16743,19 @@
     "18638190625053899": "2026-10-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T10:37:27.551472+00:00",
-    "at": "2026-10-08T10:37:27.551472+00:00",
+    "last_sent_at": "2026-10-08T10:59:31.942562+00:00",
+    "at": "2026-10-08T10:59:31.942562+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 383
+      "p00": 380
     },
-    "waiting_total": 383,
+    "waiting_total": 380,
     "unmatched_posts": [],
     "posts_read": 27,
     "posts_with_rule": 28,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 0
+    "inbox_waiting": 1
   },
   "_thanked": {
     "18130502443748401": {
@@ -19649,14 +19700,18 @@
       "via": "desk"
     }
   },
-  "_tries": {
-    "18220472332350521": 3,
-    "18118501145076877": 3,
-    "18120354503057725": 3
-  },
+  "_tries": {},
   "_desk": {
-    "at": "2026-10-08T10:37:27.551472+00:00",
+    "at": "2026-10-08T10:59:31.942562+00:00",
     "items": [
+      {
+        "id": "17937758586381372",
+        "media": "18339980485287304",
+        "rule": "p02",
+        "user": "pouria_kurdim",
+        "text": "@floraaa_83 v2دارم ضمانتی آیپی ثابت آلمان با شرط و پشتیبانی ۲۴ ساعته برای تمام هوش مصنوعی جواب میده",
+        "at": "2026-10-08T10:47:25+0000"
+      },
       {
         "id": "17907836046559403",
         "media": "18121478000484793",
@@ -19679,6 +19734,11 @@
         "rule": "2026-10-05-1530",
         "keyword": "ورد",
         "caption": "حالا ChatGPT مستقیم داخل ورد کار می‌کنه و دیگه لازم نیست متن رو این‌ور و اون‌ور "
+      },
+      "18339980485287304": {
+        "rule": "p02",
+        "keyword": "جمنای",
+        "caption": "دیگه لازم نیست ساعت‌ها تو کپ‌کات ادیت کنی، Gemini الان ویدیوی خودت رو فقط با یه "
       },
       "18017930855731657": {
         "rule": "p00",
@@ -19720,9 +19780,9 @@
       "at": "2026-10-08T07:38:33.125483+00:00"
     }
   },
-  "_inbox_hash": "4f53cda18c2baa0c",
+  "_inbox_hash": "87de8449395ab02e",
   "_alerted": {},
-  "_alerted_dm": "2026-10-08T07:19:57.095098+00:00",
+  "_alerted_dm": "2026-10-08T10:59:31.942562+00:00",
   "18135383341710257": {
     "18097620227542206": {
       "user": "farshidjenabi",
@@ -19858,6 +19918,9 @@
     "18131759983829104": "2026-10-08T08:19:42.314533+00:00",
     "18076877114468643": "2026-10-08T09:36:52.941797+00:00",
     "18056828795567390": "2026-10-08T09:36:52.941797+00:00",
-    "17907293043329999": "2026-10-08T09:36:52.941797+00:00"
+    "17907293043329999": "2026-10-08T09:36:52.941797+00:00",
+    "18220472332350521": "2026-10-08T10:59:31.942562+00:00",
+    "18118501145076877": "2026-10-08T10:59:31.942562+00:00",
+    "18120354503057725": "2026-10-08T10:59:31.942562+00:00"
   }
 }
