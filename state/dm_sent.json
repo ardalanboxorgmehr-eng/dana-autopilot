@@ -13980,12 +13980,16 @@
       "user": "signal_bours_technical",
       "at": "2026-10-08T09:00:34.833820+00:00",
       "skipped": "already sent to this person"
+    },
+    "17989578210058767": {
+      "user": "motahare_8049",
+      "at": "2026-10-08T09:18:57.812542+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T09:00:34.833820+00:00",
+    "at": "2026-10-08T09:18:57.812542+00:00",
     "mode": "live",
-    "sent": 5,
+    "sent": 4,
     "failed": 3,
     "skipped": 1,
     "inbox_sent": 1,
@@ -13996,17 +14000,17 @@
       {
         "post": "p00",
         "user": "f.ghaziani",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AOe55_YuIhRXOYZf3koV5Ag\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AjsKUpuCmIrOPFKXt2EZjuQ\"}}"
       },
       {
         "post": "p00",
         "user": "ehsanameri7",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ASG5px_vHuYrhdUt4HYo04A\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A63zaQgGh0AM4uHLEprZE47\"}}"
       },
       {
         "post": "p00",
         "user": "sadegh.azhari",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A4l7HdtzwrKYt9Nnc9SNHJG\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Av64WyPkml86uNmMV297IFU\"}}"
       }
     ]
   },
@@ -14941,6 +14945,12 @@
       "uid": "1858687935467953",
       "rule": "p02",
       "at": "2026-10-08T09:00:34.833820+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgyNTc0NzM5NzE4ODg2MjozMzA0NjQzMzgxMDQ5ODgzMTgxNDYxNTY3MTk4NTE0MzgwOAZDZD": {
+      "user": "md.rezai7",
+      "uid": "1676308603914148",
+      "rule": "p02",
+      "at": "2026-10-08T09:18:57.812542+00:00"
     }
   },
   "18630278164012008": {
@@ -15175,6 +15185,15 @@
     "18135529987727715": {
       "user": "arad.ijani",
       "at": "2026-10-08T05:48:54.937586+00:00"
+    },
+    "17997630189036591": {
+      "user": "mortezakhoshdoni",
+      "at": "2026-10-08T09:18:57.812542+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18128693645509478": {
+      "user": "abouzar_alikhamse",
+      "at": "2026-10-08T09:18:57.812542+00:00"
     }
   },
   "18115467637951827": {
@@ -15669,6 +15688,10 @@
     "17909716251552606": {
       "user": "saywan_ganji",
       "at": "2026-10-08T08:19:42.314533+00:00"
+    },
+    "17921955558220973": {
+      "user": "omidstar",
+      "at": "2026-10-08T09:18:57.812542+00:00"
     }
   },
   "17977527015015936": {
@@ -16535,6 +16558,10 @@
     "18565980913079188": {
       "user": "engjalilizadeh",
       "at": "2026-10-08T09:00:34.833820+00:00"
+    },
+    "18487103803128349": {
+      "user": "azarakhshshahbazi",
+      "at": "2026-10-08T09:18:57.812542+00:00"
     }
   },
   "18092615075180960": {
@@ -16604,13 +16631,13 @@
     "18638190625053899": "2026-10-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T09:00:34.833820+00:00",
-    "at": "2026-10-08T09:00:34.833820+00:00",
+    "last_sent_at": "2026-10-08T09:18:57.812542+00:00",
+    "at": "2026-10-08T09:18:57.812542+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 395
+      "p00": 392
     },
-    "waiting_total": 395,
+    "waiting_total": 392,
     "unmatched_posts": [],
     "posts_read": 27,
     "posts_with_rule": 28,
@@ -19562,12 +19589,12 @@
     }
   },
   "_tries": {
-    "18076877114468643": 2,
-    "18056828795567390": 2,
-    "17907293043329999": 2
+    "18076877114468643": 3,
+    "18056828795567390": 3,
+    "17907293043329999": 3
   },
   "_desk": {
-    "at": "2026-10-08T09:00:34.833820+00:00",
+    "at": "2026-10-08T09:18:57.812542+00:00",
     "items": [
       {
         "id": "17907836046559403",
@@ -19632,7 +19659,7 @@
       "at": "2026-10-08T07:38:33.125483+00:00"
     }
   },
-  "_inbox_hash": "d40fd638d692d06d",
+  "_inbox_hash": "9ea06a90122c5767",
   "_alerted": {},
   "_alerted_dm": "2026-10-08T07:19:57.095098+00:00",
   "18135383341710257": {
