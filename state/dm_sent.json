@@ -14387,10 +14387,28 @@
     "17890722312682546": {
       "user": "chakaameh123",
       "at": "2026-10-08T11:34:25.390170+00:00"
+    },
+    "18114462323002921": {
+      "user": "zienab__nd72",
+      "at": "2026-10-08T12:00:28.450355+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AG3jZ7GA_AeHRiL-VswEjL3\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T17:50:01+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T12:00:28.450355+00:00"
+    },
+    "18007426268781766": {
+      "user": "mutlububble",
+      "at": "2026-10-08T12:00:28.450355+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ad1Oe9MP3wy6v4PvMZCKMt7\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T04:37:13+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T12:00:28.450355+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T11:49:26.960348+00:00",
+    "at": "2026-10-08T12:00:28.450355+00:00",
     "mode": "live",
     "sent": 0,
     "failed": 3,
@@ -14403,17 +14421,17 @@
       {
         "post": "p00",
         "user": "zienab__nd72",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AZ3Jc0tnYhmFd4A17VPj0-B\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AG3jZ7GA_AeHRiL-VswEjL3\"}}"
       },
       {
         "post": "p00",
         "user": "mutlububble",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AyiuiD2BKFBeEdiVmiZ5mu6\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ad1Oe9MP3wy6v4PvMZCKMt7\"}}"
       },
       {
         "post": "p00",
         "user": "mamadxser",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ATNzrhFaLTYVRhdn9MAjIsS\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AZNOeUu7aykabOhRtJEovPv\"}}"
       }
     ]
   },
@@ -17065,12 +17083,12 @@
   },
   "_health": {
     "last_sent_at": "2026-10-08T11:34:25.390170+00:00",
-    "at": "2026-10-08T11:49:26.960348+00:00",
+    "at": "2026-10-08T12:00:28.450355+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 303
+      "p00": 301
     },
-    "waiting_total": 303,
+    "waiting_total": 301,
     "unmatched_posts": [],
     "posts_read": 27,
     "posts_with_rule": 28,
@@ -20022,13 +20040,11 @@
     }
   },
   "_tries": {
-    "18114462323002921": 3,
-    "18007426268781766": 3,
-    "17915960175263347": 2,
+    "17915960175263347": 3,
     "18647140699010204": 1
   },
   "_desk": {
-    "at": "2026-10-08T11:49:26.960348+00:00",
+    "at": "2026-10-08T12:00:28.450355+00:00",
     "items": [
       {
         "id": "17937758586381372",
@@ -20247,6 +20263,8 @@
     "17907293043329999": "2026-10-08T09:36:52.941797+00:00",
     "18220472332350521": "2026-10-08T10:59:31.942562+00:00",
     "18118501145076877": "2026-10-08T10:59:31.942562+00:00",
-    "18120354503057725": "2026-10-08T10:59:31.942562+00:00"
+    "18120354503057725": "2026-10-08T10:59:31.942562+00:00",
+    "18114462323002921": "2026-10-08T12:00:28.450355+00:00",
+    "18007426268781766": "2026-10-08T12:00:28.450355+00:00"
   }
 }
