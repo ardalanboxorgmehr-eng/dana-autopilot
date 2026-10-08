@@ -5323,16 +5323,6 @@
    "retry": true
   },
   {
-   "id": "18130629187749787",
-   "media": "18017930855731657",
-   "user": "mahdiss_81139",
-   "kind": "dm",
-   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
-   "at": 1791440227,
-   "via": "desk",
-   "retry": true
-  },
-  {
    "id": "18008801783779964",
    "media": "18017930855731657",
    "user": "yousefisep",
@@ -5351,6 +5341,17 @@
    "at": 1791440227,
    "via": "desk",
    "retry": true
+  },
+  {
+   "id": "18130629187749787",
+   "media": "18017930855731657",
+   "user": "mahdiss_81139",
+   "kind": "dm",
+   "text": "سلام، این پرامپت رو بده به Gemini یا ChatGPT (هر دو رایگانن و فارسی هم بلدن). فایل یا عکس جزوه‌ات رو هم همراهش آپلود کن:\n\n«این جزوه دانشگاهی رو به یک جزوه مرتب و کامل تبدیل کن. مطالب رو فصل‌بندی کن، برای هر فصل تیتر و زیرتیتر بذار، تعریف‌های مهم رو پررنگ کن، فرمول‌ها و مثال‌ها رو جدا و واضح بنویس، آخر هر فصل یک خلاصه کوتاه و ۵ سوال احتمالی امتحان با جواب بذار. زبان ساده و روان فارسی باشه. در آخر خروجی رو به شکل یک فایل PDF آماده چاپ بده.»\n\nاگه مستقیم PDF نداد، متن رو کپی کن تو Google Docs و از منوی File گزینه Download بعد PDF رو بزن.\n\nپرامپت‌های بیشتر تو کانال تلگراممون هست: t.me/danestani_ruzz",
+   "at": 1791440615,
+   "via": "desk",
+   "retry": true,
+   "own": true
   }
  ]
 }
