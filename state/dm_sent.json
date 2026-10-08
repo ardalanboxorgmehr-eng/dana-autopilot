@@ -13920,33 +13920,72 @@
     "17886448233492005": {
       "user": "samanehhh___",
       "at": "2026-10-08T07:38:33.125483+00:00"
+    },
+    "18416393545157500": {
+      "user": "seeeewin",
+      "at": "2026-10-08T08:19:42.314533+00:00"
+    },
+    "18096152162138818": {
+      "user": "negari.bh",
+      "at": "2026-10-08T08:19:42.314533+00:00"
+    },
+    "18114968881976463": {
+      "user": "moon.iooo",
+      "at": "2026-10-08T08:19:42.314533+00:00"
+    },
+    "18018153173941177": {
+      "user": "mahdis_sovarchi",
+      "at": "2026-10-08T08:19:42.314533+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AjxyQVVpTrUaIdTj4YNtniN\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T19:30:28+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T08:19:42.314533+00:00"
+    },
+    "18100240439339109": {
+      "user": "helia_q1990",
+      "at": "2026-10-08T08:19:42.314533+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AtTw9RUms6qNDn1ixinfAkG\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T19:18:22+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T08:19:42.314533+00:00"
+    },
+    "18131759983829104": {
+      "user": "shokouhaghaee1",
+      "at": "2026-10-08T08:19:42.314533+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AKV9CxLLLRS1rc4bff2k2Ws\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T19:17:24+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T08:19:42.314533+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T08:00:09.329807+00:00",
+    "at": "2026-10-08T08:19:42.314533+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 4,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
-    "thanks": 1,
+    "thanks": 0,
     "failures": [
       {
         "post": "p00",
         "user": "mahdis_sovarchi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AO6xqn0IrqFm8aKldYrHBvC\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AjxyQVVpTrUaIdTj4YNtniN\"}}"
       },
       {
         "post": "p00",
         "user": "helia_q1990",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AsXR0rL1iS7HPRsaX3SVEvR\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AtTw9RUms6qNDn1ixinfAkG\"}}"
       },
       {
         "post": "p00",
         "user": "shokouhaghaee1",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ai-Tl2PdDO3wCcuN1M2XRIU\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AKV9CxLLLRS1rc4bff2k2Ws\"}}"
       }
     ]
   },
@@ -14869,6 +14908,12 @@
       "rule": "p00",
       "at": "2026-10-08T07:38:33.125483+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTk3NzIzNTg0ODE5ODUxMDozMzA0NjM3MjI4NzUwOTg5Nzg1NTYxMjI0MDY4NDY0NjQwMAZDZD": {
+      "user": "mnnnafar",
+      "uid": "2317037392392285",
+      "rule": "p00",
+      "at": "2026-10-08T08:19:42.314533+00:00"
     }
   },
   "18630278164012008": {
@@ -15593,6 +15638,10 @@
       "user": "emaad1982",
       "at": "2026-10-08T05:17:51.512053+00:00",
       "skipped": "already sent to this person"
+    },
+    "17909716251552606": {
+      "user": "saywan_ganji",
+      "at": "2026-10-08T08:19:42.314533+00:00"
     }
   },
   "17977527015015936": {
@@ -16524,19 +16573,19 @@
     "18638190625053899": "2026-10-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T07:38:33.125483+00:00",
-    "at": "2026-10-08T08:00:09.329807+00:00",
+    "last_sent_at": "2026-10-08T08:19:42.314533+00:00",
+    "at": "2026-10-08T08:19:42.314533+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 401
+      "p00": 397
     },
-    "waiting_total": 401,
+    "waiting_total": 397,
     "unmatched_posts": [],
     "posts_read": 27,
     "posts_with_rule": 28,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 0
+    "inbox_waiting": 1
   },
   "_thanked": {
     "18130502443748401": {
@@ -19481,13 +19530,9 @@
       "via": "desk"
     }
   },
-  "_tries": {
-    "18018153173941177": 3,
-    "18100240439339109": 3,
-    "18131759983829104": 3
-  },
+  "_tries": {},
   "_desk": {
-    "at": "2026-10-08T08:00:09.329807+00:00",
+    "at": "2026-10-08T08:19:42.314533+00:00",
     "items": [
       {
         "id": "17907836046559403",
@@ -19552,7 +19597,7 @@
       "at": "2026-10-08T07:38:33.125483+00:00"
     }
   },
-  "_inbox_hash": "4f53cda18c2baa0c",
+  "_inbox_hash": "452a417256e68381",
   "_alerted": {},
   "_alerted_dm": "2026-10-08T07:19:57.095098+00:00",
   "18135383341710257": {
@@ -19684,6 +19729,9 @@
     "18125589125486330": "2026-10-08T07:19:57.095098+00:00",
     "18088587203257501": "2026-10-08T07:19:57.095098+00:00",
     "18384074227227238": "2026-10-08T07:19:57.095098+00:00",
-    "18456468469123392": "2026-10-08T07:19:57.095098+00:00"
+    "18456468469123392": "2026-10-08T07:19:57.095098+00:00",
+    "18018153173941177": "2026-10-08T08:19:42.314533+00:00",
+    "18100240439339109": "2026-10-08T08:19:42.314533+00:00",
+    "18131759983829104": "2026-10-08T08:19:42.314533+00:00"
   }
 }
