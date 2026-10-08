@@ -1,5 +1,5 @@
 {
- "made": "2026-10-07T22:20:37.905330+00:00",
+ "made": "2026-10-08T06:16:19.065451+00:00",
  "items": [
   {
    "id": "18097998509376608",
@@ -5043,6 +5043,144 @@
    "at": 1791414188,
    "via": "desk",
    "retry": true
+  },
+  {
+   "id": "17905492680578975",
+   "media": "18017930855731657",
+   "user": "elham.rz00",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414237,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18097277024434491",
+   "media": "18017930855731657",
+   "user": "its_.aisan",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414239,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18037351700840015",
+   "media": "18017930855731657",
+   "user": "whatjasmineblooms",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414242,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18411012781081816",
+   "media": "18017930855731657",
+   "user": "fateme_sltni",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414245,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18380573890235498",
+   "media": "18121478000484793",
+   "user": "vahid.akbari129",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n\nنصب ChatGPT داخل ورد 👇\n\n۱. افزونه‌ی ChatGPT رو از Microsoft Marketplace پیدا کن و Get it now رو بزن\n۲. ورد رو باز کن و از نوار بالای صفحه ChatGPT رو بزن\n۳. با اکانت ChatGPT خودت وارد شو (پلن رایگان هم کار می‌کنه)\n\n۳ پرامپت آماده، کپی کن و تو پنل بفرست:\n\n۱. خلاصه:\nSummarize this document in 5 bullet points, then list anything that is unclear, repeated or missing.\n\n۲. پیش‌نویس از یادداشت:\nTurn my notes below into a clear one-page document with headings. Keep my facts and do not add new information.\n\n۳. بازنویسی متن انتخاب‌شده:\nRewrite the selected text to be shorter and more formal. Keep the meaning and every number exactly the same.\n\nقبل از هر تغییر بزرگ یه نسخه از فایلت ذخیره کن 🔒\nراهنمای رسمی: help.openai.com/en/articles/20001526-chatgpt-for-word",
+   "at": 1791414246,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18094685855152040",
+   "media": "18630278164012008",
+   "user": "mortezakhoshdoni",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n\nاینم لینک هر ۳ ابزار روی گیت‌هاب 👇\n\n۱. Open Notebook (جایگزین رایگان NotebookLM):\ngithub.com/lfnovo/open-notebook\n\n۲. No AI Slop (طبیعی کردن متن‌های AI):\ngithub.com/petergyang/no-ai-slop\n\n۳. Book to Skill (کتاب به مهارت دستیار برنامه‌نویسی):\ngithub.com/virgiliojr94/book-to-skill",
+   "at": 1791414247,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18108453893211424",
+   "media": "18017930855731657",
+   "user": "yeektiil.h",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414248,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "17883191658652793",
+   "media": "18017930855731657",
+   "user": "mary.8351__",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414249,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18092806106439291",
+   "media": "18017930855731657",
+   "user": "mobinaafshaaar",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414250,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18493487854099862",
+   "media": "18017930855731657",
+   "user": "mahdieh.khani218",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414252,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18217295647361632",
+   "media": "18017930855731657",
+   "user": "somikar87",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414253,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18129747992499135",
+   "media": "18017930855731657",
+   "user": "maryam_khedmati70",
+   "kind": "dm",
+   "text": "سلام! مرسی که کامنت گذاشتی 😊\n۶ پرامپت ساخت ارائه با Claude، مرحله به مرحله. جای [topic] موضوع خودت رو بذار 👇\n\n۱. نقشه: Build a full blueprint for [topic]: goal, audience, key message, slide flow and the ideal slide count.\n\n۲. ترتیب: Design a slide-by-slide structure. For each slide give the title, one core idea and what goes on it.\n\n۳. قصه: Turn [topic] into a story: hook, tension, turning point, resolution, call to action.\n\n۴. طراحی: Give me a visual design system: layout grid, type scale, colour palette and chart style.\n\n۵. متن: Write the slide copy: short headlines, max three bullets a slide, plus speaker notes.\n\n۶. ساده‌سازی: Now cut it. Remove every slide that does not change the audience's mind, and tell me why.",
+   "at": 1791414262,
+   "via": "desk",
+   "retry": true
+  },
+  {
+   "id": "18345668836280153",
+   "media": "18017930855731657",
+   "user": "alireza.entehaee",
+   "kind": "thanks",
+   "text": "ممنون که همراهمونی ✨",
+   "at": 1791436754,
+   "via": "desk"
+  },
+  {
+   "id": "18153826318525474",
+   "media": "17986701810116234",
+   "user": "milad.graphix",
+   "kind": "answer",
+   "text": "ما تو پست دقیق گفتیم چی رایگانه و چی پولیه، هر کس خودش امتحان کنه می‌بینه. Google AI Studio هم خوبه، ما هم قبلاً معرفیش کردیم. فقط مراقب باشید، به هر پیجی که برای دور زدن تحریم پیام میده اعتماد نکنید.",
+   "at": 1791413964,
+   "via": "desk"
   }
  ]
 }
