@@ -13585,12 +13585,16 @@
     "18093506648165115": {
       "user": "imrahilsistani",
       "at": "2026-10-08T00:26:01.659663+00:00"
+    },
+    "18069225602765183": {
+      "user": "rr.___sj",
+      "at": "2026-10-08T01:18:43.673920+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T00:55:16.996410+00:00",
+    "at": "2026-10-08T01:18:43.673920+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 1,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -13601,17 +13605,17 @@
       {
         "post": "p00",
         "user": "hojjat__rajaei",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Azs6UecC0eNsH7oFXhherHX\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AMKolgsbC6rIAettSFR1mIH\"}}"
       },
       {
         "post": "p00",
         "user": "seyed_zahed_ebrahimi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AofAwdsPjFGnI37QM9gwepI\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AlPIuGiIFFUtXdnXKABhS0h\"}}"
       },
       {
         "post": "p00",
         "user": "m13704",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AW6Z4E1avkcUyMO3TNaY91L\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9UKoNAjiDBOIjycUC5ot4Y\"}}"
       }
     ]
   },
@@ -16033,18 +16037,18 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T00:26:01.659663+00:00",
-    "at": "2026-10-08T00:55:16.996410+00:00",
+    "last_sent_at": "2026-10-08T01:18:43.673920+00:00",
+    "at": "2026-10-08T01:18:43.673920+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 439
+      "p00": 438
     },
-    "waiting_total": 439,
+    "waiting_total": 438,
     "unmatched_posts": [],
     "posts_read": 26,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 64,
+    "queue_left": 52,
     "inbox_waiting": 0
   },
   "_thanked": {
@@ -18529,15 +18533,75 @@
       "at": "2026-10-08T00:55:16.996410+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "18150683485546716": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18060534149790425": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17959613451000549": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18225564115329470": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18138267442722962": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18130732024765107": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18188886121367652": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17896675812607851": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17985811847877762": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18132264112666011": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18115977998092103": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17889178206460268": {
+      "at": "2026-10-08T01:18:43.673920+00:00",
+      "kind": "nudge",
+      "via": "desk"
     }
   },
   "_tries": {
-    "18055246169804294": 2,
-    "17912426040549374": 2,
-    "17918185941447443": 2
+    "18055246169804294": 3,
+    "17912426040549374": 3,
+    "17918185941447443": 3
   },
   "_desk": {
-    "at": "2026-10-08T00:55:16.996410+00:00",
+    "at": "2026-10-08T01:18:43.673920+00:00",
     "items": [
       {
         "id": "18153826318525474",
