@@ -13698,33 +13698,41 @@
       "c_at": "2026-10-06T22:05:22+0000",
       "text": "پرامپت",
       "bounced": "2026-10-08T03:34:58.931132+00:00"
+    },
+    "18130481377688918": {
+      "user": "2162_sima",
+      "at": "2026-10-08T03:51:10.043130+00:00"
+    },
+    "18627057784009702": {
+      "user": "alireza_najafi1400",
+      "at": "2026-10-08T03:51:10.043130+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T03:34:58.931132+00:00",
+    "at": "2026-10-08T03:51:10.043130+00:00",
     "mode": "live",
-    "sent": 4,
+    "sent": 2,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
     "failures": [
       {
         "post": "p00",
-        "user": "sina.nankeli",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AlFR6ePomrHoN90OB8Q06Au\"}}"
+        "user": "m_mfhh",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AtlZBbaw6UeeeNufDF0Qs-n\"}}"
       },
       {
         "post": "p00",
-        "user": "golshahi_finance",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AMLbD0IYYxzG4kqicgMMgai\"}}"
+        "user": "meysam_nurse_sari",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AlIUMHQJnvlD0hok07nSGBj\"}}"
       },
       {
         "post": "p00",
-        "user": "shyn_rgr",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AnOg0gYi6jshR6Fw4u36TMd\"}}"
+        "user": "mahya.shnik",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Axgp5ytiFi_aRRcn68L_QZo\"}}"
       }
     ]
   },
@@ -14550,6 +14558,12 @@
       "uid": "1077780051637324",
       "rule": "p11",
       "at": "2026-10-08T03:17:56.573046+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc2OTc4MjExNjE0MTY2MjozMzA0NjA2NDc5MTYwNDY1MDExMjQxMzE0MDA5NzQzMzYwMAZDZD": {
+      "user": "golshahi_finance",
+      "uid": "2366006207140352",
+      "rule": "p00",
+      "at": "2026-10-08T03:51:10.043130+00:00"
     }
   },
   "18630278164012008": {
@@ -16184,8 +16198,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T03:34:58.931132+00:00",
-    "at": "2026-10-08T03:34:58.931132+00:00",
+    "last_sent_at": "2026-10-08T03:51:10.043130+00:00",
+    "at": "2026-10-08T03:51:10.043130+00:00",
     "mode": "live",
     "waiting": {
       "p00": 424
@@ -16196,7 +16210,7 @@
     "posts_with_rule": 27,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 0
+    "inbox_waiting": 1
   },
   "_thanked": {
     "18130502443748401": {
@@ -19001,9 +19015,13 @@
       "via": "desk"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "18114754295022900": 1,
+    "18197455498391126": 1,
+    "18140827678719128": 1
+  },
   "_desk": {
-    "at": "2026-10-08T03:34:58.931132+00:00",
+    "at": "2026-10-08T03:51:10.043130+00:00",
     "items": [
       {
         "id": "18153826318525474",
@@ -19064,7 +19082,7 @@
       "at": "2026-10-07T23:28:54.136691+00:00"
     }
   },
-  "_inbox_hash": "4f53cda18c2baa0c",
+  "_inbox_hash": "f8c7804e8cbe9b9b",
   "_alerted": {},
   "_alerted_dm": "2026-10-07T21:33:38.115647+00:00",
   "18135383341710257": {
