@@ -13848,33 +13848,80 @@
     "18196988560391084": {
       "user": "heyy.1.7",
       "at": "2026-10-08T06:24:13.524648+00:00"
+    },
+    "18105875105257558": {
+      "user": "asma._.krn",
+      "at": "2026-10-08T06:54:14.767313+00:00"
+    },
+    "18082407227709323": {
+      "user": "zahraaghaei_psyc",
+      "at": "2026-10-08T06:54:14.767313+00:00"
+    },
+    "17994146319046482": {
+      "user": "sinshin128",
+      "at": "2026-10-08T06:54:14.767313+00:00"
+    },
+    "18345218614250438": {
+      "user": "k0sarbazgir",
+      "at": "2026-10-08T06:54:14.767313+00:00"
+    },
+    "18095046311130327": {
+      "user": "mhmwdtfrd",
+      "at": "2026-10-08T06:54:14.767313+00:00"
+    },
+    "17978064575918072": {
+      "user": "darya1234146",
+      "at": "2026-10-08T06:54:14.767313+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AB0y_bmtilHln56PSTh0wAl\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T20:10:52+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T06:54:14.767313+00:00"
+    },
+    "18099263717537997": {
+      "user": "noori.fateme42019",
+      "at": "2026-10-08T06:54:14.767313+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A-H9rJr6xhPUwdsGwg9Y3Z_\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T19:51:18+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T06:54:14.767313+00:00"
+    },
+    "18117327074515514": {
+      "user": "mahlin.afh",
+      "at": "2026-10-08T06:54:14.767313+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ARrbNdvEeXe9gg_0YQ60XhB\"}}",
+      "tries": 4,
+      "c_at": "2026-10-06T19:41:26+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T06:54:14.767313+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T06:24:13.524648+00:00",
+    "at": "2026-10-08T06:54:14.767313+00:00",
     "mode": "live",
-    "sent": 4,
+    "sent": 5,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 2,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
-    "queue_replies": 12,
+    "queue_replies": 0,
     "thanks": 0,
     "failures": [
       {
         "post": "p00",
         "user": "darya1234146",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AZb3C4WduvWlylOpEmy3jtb\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AB0y_bmtilHln56PSTh0wAl\"}}"
       },
       {
         "post": "p00",
         "user": "noori.fateme42019",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AZThdMF5dSg88pqJl0LRZyU\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A-H9rJr6xhPUwdsGwg9Y3Z_\"}}"
       },
       {
         "post": "p00",
         "user": "mahlin.afh",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A2ePEnamI9F3Fu1qyko_1q1\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ARrbNdvEeXe9gg_0YQ60XhB\"}}"
       }
     ]
   },
@@ -16433,19 +16480,19 @@
     "18638190625053899": "2026-10-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T06:24:13.524648+00:00",
-    "at": "2026-10-08T06:24:13.524648+00:00",
+    "last_sent_at": "2026-10-08T06:54:14.767313+00:00",
+    "at": "2026-10-08T06:54:14.767313+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 409
+      "p00": 404
     },
-    "waiting_total": 409,
+    "waiting_total": 404,
     "unmatched_posts": [],
     "posts_read": 27,
     "posts_with_rule": 28,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 3
+    "inbox_waiting": 0
   },
   "_thanked": {
     "18130502443748401": {
@@ -19386,14 +19433,18 @@
       "via": "desk"
     }
   },
-  "_tries": {
-    "17978064575918072": 3,
-    "18099263717537997": 3,
-    "18117327074515514": 3
-  },
+  "_tries": {},
   "_desk": {
-    "at": "2026-10-08T06:24:13.524648+00:00",
+    "at": "2026-10-08T06:54:14.767313+00:00",
     "items": [
+      {
+        "id": "17907836046559403",
+        "media": "18121478000484793",
+        "rule": "2026-10-05-1530",
+        "user": "electrical_ltd",
+        "text": "ورود",
+        "at": "2026-10-08T06:39:24+0000"
+      },
       {
         "id": "17890332303455753",
         "media": "18017930855731657",
@@ -19404,6 +19455,11 @@
       }
     ],
     "posts": {
+      "18121478000484793": {
+        "rule": "2026-10-05-1530",
+        "keyword": "ورد",
+        "caption": "حالا ChatGPT مستقیم داخل ورد کار می‌کنه و دیگه لازم نیست متن رو این‌ور و اون‌ور "
+      },
       "18017930855731657": {
         "rule": "p00",
         "keyword": "پرامپت",
@@ -19440,7 +19496,7 @@
       "at": "2026-10-07T23:28:54.136691+00:00"
     }
   },
-  "_inbox_hash": "cd9157d356e50cfd",
+  "_inbox_hash": "4f53cda18c2baa0c",
   "_alerted": {},
   "_alerted_dm": "2026-10-07T21:33:38.115647+00:00",
   "18135383341710257": {
