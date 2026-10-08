@@ -13658,30 +13658,30 @@
     }
   },
   "_report": {
-    "at": "2026-10-08T02:30:47.944400+00:00",
+    "at": "2026-10-08T02:46:11.962012+00:00",
     "mode": "live",
-    "sent": 2,
+    "sent": 0,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
-    "queue_replies": 3,
+    "queue_replies": 0,
     "thanks": 0,
     "failures": [
       {
         "post": "p00",
-        "user": "seyyedjavad.ir",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A9OD9iYeugHZGvkuSAIs0pG\"}}"
+        "user": "sina.nankeli",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A4lvxX_SrBXC5SLMtVZHb3n\"}}"
       },
       {
         "post": "p00",
-        "user": "paris.newuae",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AoFllhdR1q2fo_0zvQS7JU-\"}}"
+        "user": "golshahi_finance",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AnkFqzzTwnv7BecKszXqOMw\"}}"
       },
       {
         "post": "p00",
-        "user": "kaveh_mi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AeEbp5SsmbDdPEosj4xT0i4\"}}"
+        "user": "shyn_rgr",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A8qNU350KQYIBc3Z6OwyJE6\"}}"
       }
     ]
   },
@@ -16108,7 +16108,7 @@
   },
   "_health": {
     "last_sent_at": "2026-10-08T02:30:47.944400+00:00",
-    "at": "2026-10-08T02:30:47.944400+00:00",
+    "at": "2026-10-08T02:46:11.962012+00:00",
     "mode": "live",
     "waiting": {
       "p00": 429
@@ -18924,9 +18924,13 @@
       "via": "desk"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "18424432018158975": 1,
+    "18092314772190501": 1,
+    "18127216096872167": 1
+  },
   "_desk": {
-    "at": "2026-10-08T02:30:47.944400+00:00",
+    "at": "2026-10-08T02:46:11.962012+00:00",
     "items": [
       {
         "id": "18153826318525474",
