@@ -2872,6 +2872,10 @@
     "18151664467545401": {
       "user": "mahdieh_kh00",
       "at": "2026-10-08T13:40:15.284996+00:00"
+    },
+    "18106546537968782": {
+      "user": "vajihe82",
+      "at": "2026-10-08T15:01:04.699912+00:00"
     }
   },
   "18017930855731657": {
@@ -15494,12 +15498,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-08T14:40:18.334302+00:00",
+    "at": "2026-10-08T15:01:04.699912+00:00",
     "mode": "live",
-    "sent": 36,
-    "failed": 4,
+    "sent": 6,
+    "failed": 3,
     "skipped": 0,
-    "inbox_sent": 1,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
@@ -15507,22 +15511,17 @@
       {
         "post": "p00",
         "user": "sarin_javadi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AayxMTdp92eogEfhoJLwioS\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AzUwxXOZJXf42A-yKvb-nex\"}}"
       },
       {
         "post": "p00",
         "user": "a.moghaddam1984",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AGlIouTS3np3NumY-zZP6Wq\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AfBHSmiNYpfvQEOYLbhV1bC\"}}"
       },
       {
         "post": "p00",
         "user": "motv_business",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ARjvyQz2bqYkack65qnoN_T\"}}"
-      },
-      {
-        "post": "p00",
-        "user": "_dr_faeze_vaziri",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Awtg7qANL-01p3KHV1vt415\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AasONm6KYYcKtyFJ2i9yxT1\"}}"
       }
     ]
   },
@@ -17247,6 +17246,14 @@
     "18101579501223293": {
       "user": "kind.star4791",
       "at": "2026-10-08T14:40:18.334302+00:00"
+    },
+    "18234475468319472": {
+      "user": "ziaramoz",
+      "at": "2026-10-08T15:01:04.699912+00:00"
+    },
+    "18107854379580398": {
+      "user": "shabnamkermanshahi",
+      "at": "2026-10-08T15:01:04.699912+00:00"
     }
   },
   "17977527015015936": {
@@ -18159,6 +18166,10 @@
       "user": "electrical_ltd",
       "at": "2026-10-08T14:20:53.174137+00:00",
       "via": "desk"
+    },
+    "18097516133433331": {
+      "user": "n.sahebzamani",
+      "at": "2026-10-08T15:01:04.699912+00:00"
     }
   },
   "18092615075180960": {
@@ -18229,19 +18240,19 @@
     "18078694667709793": "2026-10-08-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T14:40:18.334302+00:00",
-    "at": "2026-10-08T14:40:18.334302+00:00",
+    "last_sent_at": "2026-10-08T15:01:04.699912+00:00",
+    "at": "2026-10-08T15:01:04.699912+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 59
+      "p00": 60
     },
-    "waiting_total": 59,
+    "waiting_total": 60,
     "unmatched_posts": [],
     "posts_read": 28,
     "posts_with_rule": 29,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 2
+    "inbox_waiting": 1
   },
   "_thanked": {
     "18130502443748401": {
@@ -21271,13 +21282,13 @@
     "18145083361566824": 1,
     "18156977611521522": 1,
     "17960705046213255": 1,
-    "17875169091634264": 1,
-    "18099664328453506": 1,
-    "18072810119735904": 1,
+    "17875169091634264": 2,
+    "18099664328453506": 2,
+    "18072810119735904": 2,
     "18106894193220423": 1
   },
   "_desk": {
-    "at": "2026-10-08T14:40:18.334302+00:00",
+    "at": "2026-10-08T15:01:04.699912+00:00",
     "items": [
       {
         "id": "17890332303455753",
@@ -21333,7 +21344,7 @@
       "at": "2026-10-08T12:54:53.739395+00:00"
     }
   },
-  "_inbox_hash": "46f584c87fb31902",
+  "_inbox_hash": "331e1c3456d374e9",
   "_alerted": {},
   "_alerted_dm": "2026-10-08T14:40:18.334302+00:00",
   "18135383341710257": {
@@ -21483,6 +21494,14 @@
     "18103090313528673": {
       "user": "farhadassar",
       "at": "2026-10-08T14:40:18.334302+00:00"
+    },
+    "18025726538859890": {
+      "user": "anwar_khatami",
+      "at": "2026-10-08T15:01:04.699912+00:00"
+    },
+    "18638540791032783": {
+      "user": "n_und_a_2025",
+      "at": "2026-10-08T15:01:04.699912+00:00"
     }
   }
 }
