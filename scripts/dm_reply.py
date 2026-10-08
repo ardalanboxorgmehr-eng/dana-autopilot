@@ -157,6 +157,19 @@ def save(path, data):
     os.replace(tmp, path)
 
 
+GREETING = "سلام! مرسی که کامنت گذاشتی 😊"
+GREETINGS = [GREETING, "سلام! ممنون از کامنتت 😊", "سلام 👋 مرسی که کامنت گذاشتی!",
+             "سلام! خوشحالم که کامنت گذاشتی 🌱", "سلام! مرسی از کامنتت ✨"]
+
+
+def vary(msg):
+    """Swap the stock greeting for one of a few (8 Oct 2026): hundreds of identical
+    private replies in a row is what Meta throttles with HTTP 500 code 1."""
+    if msg.startswith(GREETING):
+        return random.choice(GREETINGS) + msg[len(GREETING):]
+    return msg
+
+
 def load_rules():
     """[(caption_prefix, keywords, message, rule_id)] from both sources."""
     out = []
@@ -344,7 +357,9 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
         desk_seen.append((m, rule, fresh))
         posts_read += 1
         log(f"post {rid}: {len(comments)} comments read, {len(fresh)} in the window")
-        for c in comments:
+        # Oldest first (8 Oct 2026): Instagram returns newest first, so with a
+        # backlog the oldest comments ran out of their 7-day DM window unsent.
+        for c in sorted(comments, key=lambda c: c.get("timestamp", "")):
             if c["id"] in done or ts(c["timestamp"]) < window_start:
                 continue
             frm = c.get("from") or {}
@@ -374,7 +389,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 log(f"[dry run] {rid}: would DM @{user} for «{c.get('text','')[:30]}»")
                 continue
             try:
-                ig.private_reply(c["id"], msg)
+                ig.private_reply(c["id"], vary(msg))
             except IGError as e:
                 errors += 1
                 streak += 1
