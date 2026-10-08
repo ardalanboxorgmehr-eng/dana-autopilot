@@ -13588,9 +13588,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-08T00:26:01.659663+00:00",
+    "at": "2026-10-08T00:55:16.996410+00:00",
     "mode": "live",
-    "sent": 3,
+    "sent": 0,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -13601,17 +13601,17 @@
       {
         "post": "p00",
         "user": "hojjat__rajaei",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A8BcsLh4StzlDLBkTUkaT_g\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Azs6UecC0eNsH7oFXhherHX\"}}"
       },
       {
         "post": "p00",
         "user": "seyed_zahed_ebrahimi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ALihojLDdeuQi0XZBILj-OI\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AofAwdsPjFGnI37QM9gwepI\"}}"
       },
       {
         "post": "p00",
         "user": "m13704",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AnQ2BZ3IoYOlBUtzrzE17qR\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AW6Z4E1avkcUyMO3TNaY91L\"}}"
       }
     ]
   },
@@ -16034,7 +16034,7 @@
   },
   "_health": {
     "last_sent_at": "2026-10-08T00:26:01.659663+00:00",
-    "at": "2026-10-08T00:26:01.659663+00:00",
+    "at": "2026-10-08T00:55:16.996410+00:00",
     "mode": "live",
     "waiting": {
       "p00": 439
@@ -16044,7 +16044,7 @@
     "posts_read": 26,
     "posts_with_rule": 27,
     "problems": [],
-    "queue_left": 76,
+    "queue_left": 64,
     "inbox_waiting": 0
   },
   "_thanked": {
@@ -18469,15 +18469,75 @@
       "at": "2026-10-08T00:26:01.659663+00:00",
       "kind": "nudge",
       "via": "desk"
+    },
+    "18633979282042763": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17966131920186684": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17948838528057549": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18165163801480465": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18125616250872078": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18394822513201300": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18079167401371704": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18112009637464043": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17988855669026148": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17975028150136510": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "18122956897909979": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
+    },
+    "17904453099583977": {
+      "at": "2026-10-08T00:55:16.996410+00:00",
+      "kind": "nudge",
+      "via": "desk"
     }
   },
   "_tries": {
-    "18055246169804294": 1,
-    "17912426040549374": 1,
-    "17918185941447443": 1
+    "18055246169804294": 2,
+    "17912426040549374": 2,
+    "17918185941447443": 2
   },
   "_desk": {
-    "at": "2026-10-08T00:26:01.659663+00:00",
+    "at": "2026-10-08T00:55:16.996410+00:00",
     "items": [
       {
         "id": "18153826318525474",
