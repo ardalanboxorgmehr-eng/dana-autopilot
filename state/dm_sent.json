@@ -13655,15 +13655,23 @@
       "c_at": "2026-10-06T23:10:25+0000",
       "text": "پرامپت",
       "bounced": "2026-10-08T02:30:47.944400+00:00"
+    },
+    "18467824453137429": {
+      "user": "mahsah8",
+      "at": "2026-10-08T03:17:56.573046+00:00"
+    },
+    "18419506006155725": {
+      "user": "aisoo23di",
+      "at": "2026-10-08T03:17:56.573046+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T02:57:55.584857+00:00",
+    "at": "2026-10-08T03:17:56.573046+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 4,
     "failed": 3,
     "skipped": 0,
-    "inbox_sent": 2,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
@@ -13671,17 +13679,17 @@
       {
         "post": "p00",
         "user": "sina.nankeli",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AV_xrbhJiBQpFVjAOhM-Dhc\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AeZkWe-95VleIrUvtFtTuLP\"}}"
       },
       {
         "post": "p00",
         "user": "golshahi_finance",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ain9i_zIKv0iSodVEmjnhZ4\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AwlKtaiPq7c6b2B1ufIl9if\"}}"
       },
       {
         "post": "p00",
         "user": "shyn_rgr",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AfS8sgzhU4NgWhShli5b15z\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AKO0xvWjPxAOu1tEfK_9F9b\"}}"
       }
     ]
   },
@@ -14501,6 +14509,12 @@
       "uid": "1119662183933225",
       "rule": "p00",
       "at": "2026-10-08T02:57:55.584857+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MjE5MzAzOTk1NTU4MTMxODozMzA0NjAyMTUwNDU4OTQxMzQ1MjMyNDQ2NDYzMDk1NjAzMgZDZD": {
+      "user": "pouriahajiasiabani",
+      "uid": "1077780051637324",
+      "rule": "p11",
+      "at": "2026-10-08T03:17:56.573046+00:00"
     }
   },
   "18630278164012008": {
@@ -15200,6 +15214,14 @@
     "18412524517084179": {
       "user": "armansaydanzad",
       "at": "2026-10-07T23:28:54.136691+00:00"
+    },
+    "18131490232666623": {
+      "user": "doodooqan",
+      "at": "2026-10-08T03:17:56.573046+00:00"
+    },
+    "18109638182223706": {
+      "user": "afiiii1404",
+      "at": "2026-10-08T03:17:56.573046+00:00"
     }
   },
   "17977527015015936": {
@@ -16119,8 +16141,8 @@
     "17986701810116234": "2026-10-07-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T02:57:55.584857+00:00",
-    "at": "2026-10-08T02:57:55.584857+00:00",
+    "last_sent_at": "2026-10-08T03:17:56.573046+00:00",
+    "at": "2026-10-08T03:17:56.573046+00:00",
     "mode": "live",
     "waiting": {
       "p00": 428
@@ -16131,7 +16153,7 @@
     "posts_with_rule": 27,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 2
+    "inbox_waiting": 1
   },
   "_thanked": {
     "18130502443748401": {
@@ -18937,12 +18959,12 @@
     }
   },
   "_tries": {
-    "18424432018158975": 2,
-    "18092314772190501": 2,
-    "18127216096872167": 2
+    "18424432018158975": 3,
+    "18092314772190501": 3,
+    "18127216096872167": 3
   },
   "_desk": {
-    "at": "2026-10-08T02:57:55.584857+00:00",
+    "at": "2026-10-08T03:17:56.573046+00:00",
     "items": [
       {
         "id": "18153826318525474",
@@ -19003,7 +19025,7 @@
       "at": "2026-10-07T23:28:54.136691+00:00"
     }
   },
-  "_inbox_hash": "a64d4a09f6e5403e",
+  "_inbox_hash": "1cb06899f60f5129",
   "_alerted": {},
   "_alerted_dm": "2026-10-07T21:33:38.115647+00:00",
   "18135383341710257": {
