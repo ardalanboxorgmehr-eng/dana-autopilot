@@ -15498,9 +15498,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-08T15:01:04.699912+00:00",
+    "at": "2026-10-08T15:18:59.238058+00:00",
     "mode": "live",
-    "sent": 6,
+    "sent": 1,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -15511,17 +15511,17 @@
       {
         "post": "p00",
         "user": "sarin_javadi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AzUwxXOZJXf42A-yKvb-nex\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AaRpui_OXTzSHtYQgOYCQIW\"}}"
       },
       {
         "post": "p00",
         "user": "a.moghaddam1984",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AfBHSmiNYpfvQEOYLbhV1bC\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AtqOB3fwAv60uWw8i2XQ1Me\"}}"
       },
       {
         "post": "p00",
         "user": "motv_business",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AasONm6KYYcKtyFJ2i9yxT1\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AnfJJV54zSFxoFASrpxwT68\"}}"
       }
     ]
   },
@@ -18240,13 +18240,13 @@
     "18078694667709793": "2026-10-08-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T15:01:04.699912+00:00",
-    "at": "2026-10-08T15:01:04.699912+00:00",
+    "last_sent_at": "2026-10-08T15:18:59.238058+00:00",
+    "at": "2026-10-08T15:18:59.238058+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 60
+      "p00": 62
     },
-    "waiting_total": 60,
+    "waiting_total": 62,
     "unmatched_posts": [],
     "posts_read": 28,
     "posts_with_rule": 29,
@@ -21282,13 +21282,13 @@
     "18145083361566824": 1,
     "18156977611521522": 1,
     "17960705046213255": 1,
-    "17875169091634264": 2,
-    "18099664328453506": 2,
-    "18072810119735904": 2,
+    "17875169091634264": 3,
+    "18099664328453506": 3,
+    "18072810119735904": 3,
     "18106894193220423": 1
   },
   "_desk": {
-    "at": "2026-10-08T15:01:04.699912+00:00",
+    "at": "2026-10-08T15:18:59.238058+00:00",
     "items": [
       {
         "id": "17890332303455753",
@@ -21502,6 +21502,10 @@
     "18638540791032783": {
       "user": "n_und_a_2025",
       "at": "2026-10-08T15:01:04.699912+00:00"
+    },
+    "18114930032091922": {
+      "user": "aramkhayam1980",
+      "at": "2026-10-08T15:18:59.238058+00:00"
     }
   }
 }
