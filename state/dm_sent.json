@@ -2880,6 +2880,10 @@
     "18097381970432927": {
       "user": "saman.tarah",
       "at": "2026-10-08T15:37:53.347342+00:00"
+    },
+    "18131872702793989": {
+      "user": "help__yardm",
+      "at": "2026-10-08T17:17:33.903457+00:00"
     }
   },
   "18017930855731657": {
@@ -15814,15 +15818,24 @@
     "18022304603712564": {
       "user": "zahrai._.abc",
       "at": "2026-10-08T17:00:50.707124+00:00"
+    },
+    "18647140699010204": {
+      "user": "_farzam0",
+      "at": "2026-10-08T17:17:33.903457+00:00",
+      "failed": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A83ZmRHmekH7c70w5mKHiNl\"}}",
+      "tries": 4,
+      "c_at": "2026-10-05T07:31:20+0000",
+      "text": "پرامپت",
+      "bounced": "2026-10-08T17:17:33.903457+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-08T17:00:50.707124+00:00",
+    "at": "2026-10-08T17:17:33.903457+00:00",
     "mode": "live",
-    "sent": 25,
+    "sent": 2,
     "failed": 2,
-    "skipped": 3,
-    "inbox_sent": 1,
+    "skipped": 0,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
@@ -15830,12 +15843,12 @@
       {
         "post": "p00",
         "user": "avaa_bagheriiiii",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AX3Tl_DubjeRrt3Fzr2KPE6\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AI1uw9jwHVDj4QRXFXt2u1s\"}}"
       },
       {
         "post": "p00",
         "user": "_farzam0",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AwYpSDl98Mm71gQ9_sCI7ST\"}}"
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A83ZmRHmekH7c70w5mKHiNl\"}}"
       }
     ]
   },
@@ -18498,6 +18511,10 @@
     "18219591349350512": {
       "user": "chemistry5399",
       "at": "2026-10-08T16:40:30.070833+00:00"
+    },
+    "18109328096065421": {
+      "user": "dr.a.samadi",
+      "at": "2026-10-08T17:17:33.903457+00:00"
     }
   },
   "18092615075180960": {
@@ -18568,19 +18585,19 @@
     "18078694667709793": "2026-10-08-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-08T17:00:50.707124+00:00",
-    "at": "2026-10-08T17:00:50.707124+00:00",
+    "last_sent_at": "2026-10-08T17:17:33.903457+00:00",
+    "at": "2026-10-08T17:17:33.903457+00:00",
     "mode": "live",
     "waiting": {
-      "p00": 2
+      "p00": 1
     },
-    "waiting_total": 2,
+    "waiting_total": 1,
     "unmatched_posts": [],
     "posts_read": 29,
     "posts_with_rule": 29,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 1
+    "inbox_waiting": 0
   },
   "_thanked": {
     "18130502443748401": {
@@ -21606,11 +21623,10 @@
     }
   },
   "_tries": {
-    "18647140699010204": 3,
-    "18145083361566824": 2
+    "18145083361566824": 3
   },
   "_desk": {
-    "at": "2026-10-08T17:00:50.707124+00:00",
+    "at": "2026-10-08T17:17:33.903457+00:00",
     "items": [
       {
         "id": "17890332303455753",
@@ -21670,7 +21686,7 @@
       "at": "2026-10-08T16:21:01.062442+00:00"
     }
   },
-  "_inbox_hash": "dfbfd66bc5fe8311",
+  "_inbox_hash": "4f53cda18c2baa0c",
   "_alerted": {},
   "_alerted_dm": "2026-10-08T14:40:18.334302+00:00",
   "18135383341710257": {
@@ -21820,7 +21836,8 @@
     "18072810119735904": "2026-10-08T15:37:53.347342+00:00",
     "18106894193220423": "2026-10-08T16:40:30.070833+00:00",
     "17960705046213255": "2026-10-08T16:40:30.070833+00:00",
-    "18156977611521522": "2026-10-08T16:40:30.070833+00:00"
+    "18156977611521522": "2026-10-08T16:40:30.070833+00:00",
+    "18647140699010204": "2026-10-08T17:17:33.903457+00:00"
   },
   "18078694667709793": {
     "18103090313528673": {
