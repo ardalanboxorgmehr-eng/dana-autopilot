@@ -16223,16 +16223,22 @@
     }
   },
   "_report": {
-    "at": "2026-10-09T08:37:48.123521+00:00",
+    "at": "2026-10-09T09:00:02.183526+00:00",
     "mode": "live",
-    "sent": 8,
-    "failed": 0,
-    "skipped": 0,
+    "sent": 5,
+    "failed": 1,
+    "skipped": 1,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "p00",
+        "user": "_moon__mth_",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The requested user cannot be found.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534014,\"fbtrace_id\":\"AziJEoeWEirhYaQku0MtKx-\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -19099,11 +19105,13 @@
     "17949524649057536": "2026-10-09-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-09T08:37:48.123521+00:00",
-    "at": "2026-10-09T08:37:48.123521+00:00",
+    "last_sent_at": "2026-10-09T09:00:02.183526+00:00",
+    "at": "2026-10-09T09:00:02.183526+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "p00": 1
+    },
+    "waiting_total": 1,
     "unmatched_posts": [],
     "posts_read": 30,
     "posts_with_rule": 30,
@@ -22138,9 +22146,11 @@
       "via": "desk"
     }
   },
-  "_tries": {},
+  "_tries": {
+    "18112462723874020": 1
+  },
   "_desk": {
-    "at": "2026-10-09T08:37:48.123521+00:00",
+    "at": "2026-10-09T09:00:02.183526+00:00",
     "items": [
       {
         "id": "18111932855159030",
@@ -23094,6 +23104,31 @@
     "18126116945511439": {
       "user": "hiva_yariii",
       "at": "2026-10-09T08:37:48.123521+00:00"
+    },
+    "18007577969988564": {
+      "user": "za63418",
+      "at": "2026-10-09T09:00:02.183526+00:00"
+    },
+    "18128783983891704": {
+      "user": "dr_mandanafarsi",
+      "at": "2026-10-09T09:00:02.183526+00:00"
+    },
+    "18029754602885929": {
+      "user": "pilates_corrective_p",
+      "at": "2026-10-09T09:00:02.183526+00:00"
+    },
+    "18414049867159317": {
+      "user": "jalekaniamirreza",
+      "at": "2026-10-09T09:00:02.183526+00:00"
+    },
+    "18178851997442224": {
+      "user": "jalekaniamirreza",
+      "at": "2026-10-09T09:00:02.183526+00:00",
+      "skipped": "already sent to this person"
+    },
+    "18094148408655022": {
+      "user": "razzaghkiyani",
+      "at": "2026-10-09T09:00:02.183526+00:00"
     }
   },
   "17949524649057536": {
