@@ -16596,12 +16596,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-09T19:16:16.608650+00:00",
+    "at": "2026-10-09T19:32:27.881185+00:00",
     "mode": "live",
-    "sent": 5,
+    "sent": 2,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
@@ -17686,6 +17686,19 @@
       "uid": "2147571175854356",
       "rule": "p02",
       "at": "2026-10-09T19:00:31.053527+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTk5OTQ3NzUyNjA2NjcyNzozMzA0ODcwMTM1ODA2OTM5NjA3NjEzMDY5ODkyOTM3MzE4NAZDZD": {
+      "user": "parviz.soheil",
+      "uid": "2039320963409868",
+      "rule": "2026-10-08-1530",
+      "at": "2026-10-09T19:32:27.881185+00:00",
+      "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI3MjE0MDcyMDEzNjAwMzozMzA0ODY5OTQ0NjYwOTQ5MjU3MDI1Nzg2NDg5MDc3NzYwMAZDZD": {
+      "user": "tork9607",
+      "uid": "1558992879366022",
+      "rule": "2026-10-08-1530",
+      "at": "2026-10-09T19:32:27.881185+00:00"
     }
   },
   "18630278164012008": {
@@ -19607,8 +19620,8 @@
     "18115478212820539": "2026-10-09-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-09T19:16:16.608650+00:00",
-    "at": "2026-10-09T19:16:16.608650+00:00",
+    "last_sent_at": "2026-10-09T19:32:27.881185+00:00",
+    "at": "2026-10-09T19:32:27.881185+00:00",
     "mode": "live",
     "waiting": {},
     "waiting_total": 0,
@@ -19617,7 +19630,7 @@
     "posts_with_rule": 31,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 1
+    "inbox_waiting": 2
   },
   "_thanked": {
     "18130502443748401": {
@@ -22654,7 +22667,7 @@
     "18112462723874020": 1
   },
   "_desk": {
-    "at": "2026-10-09T19:16:16.608650+00:00",
+    "at": "2026-10-09T19:32:27.881185+00:00",
     "items": [
       {
         "id": "17948227737299424",
@@ -22873,7 +22886,7 @@
       "at": "2026-10-09T19:00:31.053527+00:00"
     }
   },
-  "_inbox_hash": "3be4173c9cb84d34",
+  "_inbox_hash": "d4f5ea0f5b3ff911",
   "_alerted": {
     "18341536663284536": "2026-10-09T07:38:07.097687+00:00",
     "17880965223626981": "2026-10-09T13:23:32.276633+00:00",
@@ -24329,6 +24342,14 @@
     "18166867531470830": {
       "user": "leila.karimi85",
       "at": "2026-10-09T19:16:16.608650+00:00"
+    },
+    "18639455419063132": {
+      "user": "romasinaser",
+      "at": "2026-10-09T19:32:27.881185+00:00"
+    },
+    "18125098693907920": {
+      "user": "parviz.soheil",
+      "at": "2026-10-09T19:32:27.881185+00:00"
     }
   },
   "17949524649057536": {
