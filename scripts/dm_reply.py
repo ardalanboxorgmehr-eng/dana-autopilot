@@ -494,8 +494,8 @@ def near_keyword(text, keyword):
 def auto_items(state, now, log):
     """Reply Desk auto-send (added 7 Oct 2026). Groups Ehsan switched on in the
     app (desk_auto.json) are answered here without waiting for approval, using
-    the last desk snapshot. Only "chat" (a thank-you) and "wants_dm" (the post's
-    DM) can ever be switched on; questions and spam always wait for him."""
+    the last desk snapshot. Only "chat" (a thank-you), "tip" (thanks for a tip) and
+    "wants_dm" (the post's DM) can ever be switched on; questions and spam always wait for him."""
     import desk_common
     auto = desk_common.load_auto()
     on = {g: v for g, v in auto["groups"].items() if g in desk_common.AUTO_GROUPS and v.get("on")}
@@ -529,6 +529,8 @@ def auto_items(state, now, log):
             continue
         if g == "chat":
             kind, text = "thanks", thanks[len(out) % len(thanks)]
+        elif g == "tip":
+            kind, text = "thanks", desk_common.TIP_REPLIES[len(out) % len(desk_common.TIP_REPLIES)]
         elif msg and now - at < timedelta(days=7):
             kind, text = "dm", msg
         else:

@@ -8,7 +8,7 @@ import json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUTO = os.path.join(ROOT, "desk_auto.json")
-AUTO_GROUPS = ("chat", "wants_dm")       # the only groups that may ever send on their own
+AUTO_GROUPS = ("chat", "wants_dm", "tip")  # the only groups that may ever send on their own
 STREAK_TO_UNLOCK = 20                    # unedited approvals in a row before the switch appears
 
 THANKS = ["مرسی از کامنتت 🙏", "مرسی که نظرت رو نوشتی 🙏", "ممنون که همراهمونی ✨", "مرسی ❤️"]
@@ -17,6 +17,11 @@ QUESTION_WORDS = ["چطور", "چجوری", "چطوری", "کجا", "چرا", "�
                   "how", "where", "free", "price", "why"]
 WANTS_DM = ["دایرکت", "بفرست", "بفرستید", "لینک", "ارسال", "پیوی", "پی وی", "send", "link", "dm",
             "دریافت نشد", "نرسید", "نیومد", "نیامد"]
+# "tip": someone recommending a tool or giving another viewer a tip (added 10 Oct 2026).
+# Only when the comment is not a question. Answered with a short thank-you.
+TIP_WORDS = ["نصب کنید", "استفاده کنید", "امتحان کنید", "پیشنهاد میکنم", "پیشنهاد می‌کنم", "توصیه میکنم",
+             "توصیه می‌کنم", "لوکیشن", "سرورا", "سرور رو", "جواب میده", "جواب می‌ده"]
+TIP_REPLIES = ["مرسی که معرفی کردی 🙏", "مرسی که راهنمایی کردی 🙏"]
 SPAM = ["http", "www.", ".com", ".app", ".io", "فالوور", "فالو کن", "فالوم", "پیجم", "پیج ما", "تبلیغ", "سفارش",
         "خرید", "follow", "promo", "crypto", "کریپتو", "سرمایه گذاری", "سرمایه‌گذاری"]
 
@@ -30,6 +35,8 @@ def group_of(text, keyword="", near=None):
         return "wants_dm"
     if "?" in t or "؟" in t or any(w in t for w in QUESTION_WORDS):
         return "question"
+    if any(w in t for w in TIP_WORDS):
+        return "tip"
     return "chat"
 
 
