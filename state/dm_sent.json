@@ -17343,12 +17343,12 @@
     }
   },
   "_report": {
-    "at": "2026-10-11T07:33:44.862049+00:00",
+    "at": "2026-10-11T07:47:55.922861+00:00",
     "mode": "live",
-    "sent": 3,
+    "sent": 0,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
@@ -18518,6 +18518,12 @@
       "uid": "2578564592569917",
       "rule": "p00",
       "at": "2026-10-11T04:33:22.019573+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTEwNzAxNjA3Njg1MjAwNDozMzA0OTgwMzU2MzUyOTA4NDg5MzYxNjQyMzIyMTMyOTkyMAZDZD": {
+      "user": "_mahsaamiriiii",
+      "uid": "1777897813259513",
+      "rule": "2026-10-11-0600",
+      "at": "2026-10-11T07:47:55.922861+00:00"
     }
   },
   "18630278164012008": {
@@ -20617,8 +20623,8 @@
     "17985127155019950": "2026-10-11-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-11T07:33:44.862049+00:00",
-    "at": "2026-10-11T07:33:44.862049+00:00",
+    "last_sent_at": "2026-10-11T07:47:55.922861+00:00",
+    "at": "2026-10-11T07:47:55.922861+00:00",
     "mode": "live",
     "waiting": {},
     "waiting_total": 0,
@@ -23714,7 +23720,7 @@
     "17936438226385563": 1
   },
   "_desk": {
-    "at": "2026-10-11T07:33:44.862049+00:00",
+    "at": "2026-10-11T07:47:55.922861+00:00",
     "items": [
       {
         "id": "18116281097082687",
