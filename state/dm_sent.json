@@ -18530,15 +18530,23 @@
     "18155451154518362": {
       "user": "moshrefi28",
       "at": "2026-10-14T12:58:24.027388+00:00"
+    },
+    "18453017251192450": {
+      "user": "artiam20",
+      "at": "2026-10-14T13:35:24.761624+00:00"
+    },
+    "17981784905907864": {
+      "user": "arghavan_sarhadi_10",
+      "at": "2026-10-14T13:35:24.761624+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-14T12:58:24.027388+00:00",
+    "at": "2026-10-14T13:35:24.761624+00:00",
     "mode": "live",
-    "sent": 6,
+    "sent": 3,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
@@ -19784,6 +19792,26 @@
       "rule": "p00",
       "at": "2026-10-14T11:48:34.478449+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgwODYwMDMwMTk3ODAxODozMzA1NjI3MTY5MDA4OTQ1MDg4Mzk4NzQ3MDg2MTQ2NzY0OAZDZD": {
+      "user": "mahnaz._.riyahi_",
+      "uid": "1410686464014293",
+      "rule": "p02",
+      "at": "2026-10-14T13:35:24.761624+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgwODYwMDMwMTk3ODAxODozMzA1NjI3Mjg4MTI2ODY3MjU5NjIyNDczOTk4MzIyODkyOAZDZD": {
+      "user": "mahnaz._.riyahi_",
+      "uid": "1410686464014293",
+      "rule": "p02",
+      "at": "2026-10-14T13:35:24.761624+00:00",
+      "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgwODYwMDMwMTk3ODAxODozMzA1NjI3Mjk3MDM1Njk2NDg0NTc4Nzk4NzU3ODk3ODMwNAZDZD": {
+      "user": "mahnaz._.riyahi_",
+      "uid": "1410686464014293",
+      "rule": "p02",
+      "at": "2026-10-14T13:35:24.761624+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
@@ -20271,6 +20299,10 @@
     "18118107172997723": {
       "user": "mr.mreza.b_2650",
       "at": "2026-10-13T22:57:17.517276+00:00"
+    },
+    "17938206042381600": {
+      "user": "adalt.da",
+      "at": "2026-10-14T13:35:24.761624+00:00"
     }
   },
   "18043727183817647": {
@@ -22091,8 +22123,8 @@
     "18146255764573407": "2026-10-14-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-14T12:58:24.027388+00:00",
-    "at": "2026-10-14T12:58:24.027388+00:00",
+    "last_sent_at": "2026-10-14T13:35:24.761624+00:00",
+    "at": "2026-10-14T13:35:24.761624+00:00",
     "mode": "live",
     "waiting": {},
     "waiting_total": 0,
@@ -22101,7 +22133,7 @@
     "posts_with_rule": 40,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 0
+    "inbox_waiting": 1
   },
   "_thanked": {
     "18130502443748401": {
@@ -25360,8 +25392,16 @@
     "17936438226385563": 1
   },
   "_desk": {
-    "at": "2026-10-14T12:58:24.027388+00:00",
+    "at": "2026-10-14T13:35:24.761624+00:00",
     "items": [
+      {
+        "id": "18113299295332242",
+        "media": "18017930855731657",
+        "rule": "p00",
+        "user": "arghavan_sarhadi_10",
+        "text": "6",
+        "at": "2026-10-14T13:05:46+0000"
+      },
       {
         "id": "18081295613359343",
         "media": "18078694667709793",
@@ -25772,7 +25812,7 @@
       "at": "2026-10-14T09:17:03.912751+00:00"
     }
   },
-  "_inbox_hash": "4f53cda18c2baa0c",
+  "_inbox_hash": "53bebec7701e9bc7",
   "_alerted": {
     "18341536663284536": "2026-10-09T07:38:07.097687+00:00",
     "17880965223626981": "2026-10-09T13:23:32.276633+00:00",
@@ -25792,7 +25832,7 @@
     "18024847790920229": "2026-10-12T19:34:42.457076+00:00",
     "18073415000783881": "2026-10-13T15:51:52.507662+00:00"
   },
-  "_alerted_dm": "2026-10-13T17:21:50.404653+00:00",
+  "_alerted_dm": "2026-10-14T13:35:24.761624+00:00",
   "18135383341710257": {
     "18097620227542206": {
       "user": "farshidjenabi",
