@@ -19366,9 +19366,9 @@
     }
   },
   "_report": {
-    "at": "2026-10-16T08:50:35.711365+00:00",
+    "at": "2026-10-16T09:17:02.462731+00:00",
     "mode": "live",
-    "sent": 2,
+    "sent": 1,
     "failed": 0,
     "skipped": 0,
     "inbox_sent": 1,
@@ -20679,6 +20679,19 @@
       "uid": "1170575845505110",
       "rule": "p00",
       "at": "2026-10-16T08:50:35.711365+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1NzkxNjczNDA1MjU3NDozMzA1OTE3OTk3NDg4ODc0Mzg0NzI1MDk1NTk5NjIzMzcyOAZDZD": {
+      "user": "sgg153268",
+      "uid": "2187475405485497",
+      "rule": "2026-10-12-0600",
+      "at": "2026-10-16T09:17:02.462731+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU1NzkxNjczNDA1MjU3NDozMzA1OTE3OTk4NjI5NjIyODgyOTE3NzAxNjQyNTExOTc0NAZDZD": {
+      "user": "sgg153268",
+      "uid": "2187475405485497",
+      "rule": "2026-10-12-0600",
+      "at": "2026-10-16T09:17:02.462731+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
@@ -23102,8 +23115,8 @@
     "17991263751046424": "2026-10-16-0600"
   },
   "_health": {
-    "last_sent_at": "2026-10-16T08:50:35.711365+00:00",
-    "at": "2026-10-16T08:50:35.711365+00:00",
+    "last_sent_at": "2026-10-16T09:17:02.462731+00:00",
+    "at": "2026-10-16T09:17:02.462731+00:00",
     "mode": "live",
     "waiting": {},
     "waiting_total": 0,
@@ -26389,7 +26402,7 @@
     "17936438226385563": 1
   },
   "_desk": {
-    "at": "2026-10-16T08:50:35.711365+00:00",
+    "at": "2026-10-16T09:17:02.462731+00:00",
     "items": [
       {
         "id": "17994642245868202",
@@ -26921,9 +26934,13 @@
     "18115524794270449": {
       "user": "samisoroodi",
       "at": "2026-10-16T08:50:35.711365+00:00"
+    },
+    "18420269704155430": {
+      "user": "saba_62366",
+      "at": "2026-10-16T09:17:02.462731+00:00"
     }
   },
-  "_inbox_hash": "09432bc3e4dcc9e9",
+  "_inbox_hash": "503e0410d8e6d18a",
   "_alerted": {
     "18341536663284536": "2026-10-09T07:38:07.097687+00:00",
     "17880965223626981": "2026-10-09T13:23:32.276633+00:00",
