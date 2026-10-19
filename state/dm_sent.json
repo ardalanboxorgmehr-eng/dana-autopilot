@@ -20080,15 +20080,19 @@
     "18219754069348985": {
       "user": "hana__abbaspour",
       "at": "2026-10-19T17:15:42.120136+00:00"
+    },
+    "18078457574723530": {
+      "user": "_royakr",
+      "at": "2026-10-19T18:57:48.214023+00:00"
     }
   },
   "_report": {
-    "at": "2026-10-19T18:10:52.425046+00:00",
+    "at": "2026-10-19T18:57:48.214023+00:00",
     "mode": "live",
-    "sent": 1,
+    "sent": 4,
     "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 2,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
@@ -21471,6 +21475,18 @@
       "uid": "1662501675661040",
       "rule": "p00",
       "at": "2026-10-18T04:45:55.431765+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDIxOTYzMjg0NjYxMzgzOTozMzA2NDU4MDk1NzE0OTc4ODIzNzc0NzAzNzE1NTYyMjkxMgZDZD": {
+      "user": "glaris1110",
+      "uid": "28984094214561658",
+      "rule": "2026-10-17-1530",
+      "at": "2026-10-19T18:57:48.214023+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDIxOTYzMjg0NjYxMzgzOTozMzA2NDU4MTg0Nzk0MTE1OTU0MjU0MTY5MjYwODQ0NjQ2NAZDZD": {
+      "user": "glaris1110",
+      "uid": "28984094214561658",
+      "rule": "p00",
+      "at": "2026-10-19T18:57:48.214023+00:00"
     }
   },
   "18630278164012008": {
@@ -24024,8 +24040,8 @@
     "18094913069647475": "2026-10-19-1530"
   },
   "_health": {
-    "last_sent_at": "2026-10-19T18:10:52.425046+00:00",
-    "at": "2026-10-19T18:10:52.425046+00:00",
+    "last_sent_at": "2026-10-19T18:57:48.214023+00:00",
+    "at": "2026-10-19T18:57:48.214023+00:00",
     "mode": "live",
     "waiting": {},
     "waiting_total": 0,
@@ -24034,7 +24050,7 @@
     "posts_with_rule": 51,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 2
+    "inbox_waiting": 1
   },
   "_thanked": {
     "18130502443748401": {
@@ -27329,7 +27345,7 @@
     "17936438226385563": 1
   },
   "_desk": {
-    "at": "2026-10-19T18:10:52.425046+00:00",
+    "at": "2026-10-19T18:57:48.214023+00:00",
     "items": [
       {
         "id": "18107238878235618",
@@ -28063,9 +28079,13 @@
     "18117027899077719": {
       "user": "omid0op",
       "at": "2026-10-19T16:15:25.327348+00:00"
+    },
+    "18102762329049515": {
+      "user": "iii.saeed.iii",
+      "at": "2026-10-19T18:57:48.214023+00:00"
     }
   },
-  "_inbox_hash": "a323c6f33a06f52e",
+  "_inbox_hash": "eda610d4c1d60d1b",
   "_alerted": {
     "17951704593340063": "2026-10-09T18:19:32.034430+00:00",
     "17970330411188018": "2026-10-09T19:46:26.440431+00:00",
@@ -31182,6 +31202,14 @@
     "18111536102465058": {
       "user": "honeyyyyy2370",
       "at": "2026-10-19T16:51:15.037982+00:00"
+    },
+    "18136227406638306": {
+      "user": "glaris1110",
+      "at": "2026-10-19T18:57:48.214023+00:00"
+    },
+    "18371347720212128": {
+      "user": "dr.nimataheri",
+      "at": "2026-10-19T18:57:48.214023+00:00"
     }
   },
   "17949524649057536": {
