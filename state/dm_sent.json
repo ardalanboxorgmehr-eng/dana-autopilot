@@ -21064,20 +21064,25 @@
     }
   },
   "_report": {
-    "at": "2026-11-01T07:18:09.610178+00:00",
+    "at": "2026-11-01T14:18:42.086579+00:00",
     "mode": "live",
-    "sent": 3,
-    "failed": 1,
-    "skipped": 0,
+    "sent": 12,
+    "failed": 2,
+    "skipped": 1,
     "inbox_sent": 0,
     "bounce_backlog": 0,
-    "queue_replies": 0,
+    "queue_replies": 12,
     "thanks": 0,
     "failures": [
       {
         "post": "n2026-11-01-0600",
         "user": "moham_madghasmi_",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The length of the message sent is over 1000 characters\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534038,\"fbtrace_id\":\"A5p5LRRVe17qUdTADLRsDRX\"}}"
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The length of the message sent is over 1000 characters\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534038,\"fbtrace_id\":\"APG-CSl6TGHQNgOTQk1365r\"}}"
+      },
+      {
+        "post": "n2026-11-01-0600",
+        "user": "kornamir",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The length of the message sent is over 1000 characters\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534038,\"fbtrace_id\":\"AmPkkVb04XDA3tVdo7E3Y8f\"}}"
       }
     ]
   },
@@ -25364,6 +25369,10 @@
     "18130944263492593": {
       "user": "its.solita",
       "at": "2026-10-31T21:55:05.275852+00:00"
+    },
+    "17893154199653964": {
+      "user": "samirghaed",
+      "at": "2026-11-01T14:18:42.086579+00:00"
     }
   },
   "18092615075180960": {
@@ -25539,13 +25548,13 @@
     "18018006083967642": "n2026-11-01-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-01T07:18:09.610178+00:00",
-    "at": "2026-11-01T07:18:09.610178+00:00",
+    "last_sent_at": "2026-11-01T14:18:42.086579+00:00",
+    "at": "2026-11-01T14:18:42.086579+00:00",
     "mode": "live",
     "waiting": {
-      "n2026-11-01-0600": 1
+      "n2026-11-01-0600": 2
     },
-    "waiting_total": 1,
+    "waiting_total": 2,
     "unmatched_posts": [
       {
         "id": "18102018053626790",
@@ -25573,9 +25582,9 @@
     "problems": [
       "5 post(s) ask for a keyword but have no DM rule: کیمی یه دستیار هوش مصنوعی رایگانه که برات اسلاید و سایت چندص; اگه جمینای رو رایگان استفاده می‌کنی، از ۹ اکتبر فقط Flash-Li; به‌جای اینکه ده بار جزوه رو بخونی، بذار ازت امتحان بگیره\nNot; افزونه‌ی ChatGPT توی کروم دیگه فقط حرف نمی‌زنه، خودش تب‌ها ر; هفت تا برنامه‌ی رایگان اومده که جای فتوشاپ و ایلاستریتور و پ"
     ],
-    "queue_left": 0,
+    "queue_left": 46,
     "inbox_waiting": 0,
-    "alerted_at": "2026-10-31T21:55:05.275852+00:00"
+    "alerted_at": "2026-11-01T14:18:42.086579+00:00"
   },
   "_thanked": {
     "18130502443748401": {
@@ -28913,15 +28922,76 @@
       "at": "2026-10-24T17:00:25.989458+00:00",
       "kind": "dm",
       "via": "auto"
+    },
+    "17919566820527265": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17882311287630157": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18115914710033587": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18112553225580351": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17866614801678035": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17919222861525507": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18113964535844984": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18104857259343716": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17991458709052565": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18019622183940089": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18097619336409664": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17919278016452080": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "kind": "answer",
+      "via": "desk"
     }
   },
   "_tries": {
     "18112462723874020": 1,
     "17936438226385563": 1,
-    "18092555057222927": 1
+    "18092555057222927": 2,
+    "18100097132655826": 1
   },
   "_desk": {
-    "at": "2026-11-01T07:18:09.610178+00:00",
+    "at": "2026-11-01T14:18:42.086579+00:00",
     "items": [
       {
         "id": "18093324797690475",
@@ -29068,44 +29138,12 @@
         "at": "2026-10-31T09:48:35+0000"
       },
       {
-        "id": "17919566820527265",
-        "media": "18078694667709793",
-        "rule": "2026-10-08-1530",
-        "user": "416_city",
-        "text": "سلام دقیقا\" چی است؟",
-        "at": "2026-10-29T03:06:26+0000"
-      },
-      {
-        "id": "17882311287630157",
-        "media": "18096035018451431",
-        "rule": "2026-10-20-1530",
-        "user": "afra45715",
-        "text": "من فرستادم عکس شناسنامه مو🤦‍♀️",
-        "at": "2026-10-28T04:41:12+0000"
-      },
-      {
-        "id": "18115914710033587",
-        "media": "18078694667709793",
-        "rule": "2026-10-08-1530",
-        "user": "neek_ta",
-        "text": "خیلی اذیت می‌کند. ویدیوهایی که می‌سازد را اجازه نمی‌دهد دانلود کنیم . البته گاهی .",
-        "at": "2026-10-27T15:27:08+0000"
-      },
-      {
         "id": "17933215821413830",
         "media": "18096035018451431",
         "rule": "2026-10-20-1530",
         "user": "truedideban",
         "text": "واسه تشخیص ابزار جاسوسی و هک ذهن و پهپادهای مخفی ، به پیج من با موضوعات امنیتی سر بزن. 🔍🔥",
         "at": "2026-10-27T11:22:55+0000"
-      },
-      {
-        "id": "18112553225580351",
-        "media": "18078694667709793",
-        "rule": "2026-10-08-1530",
-        "user": "farzanehfarrokhzad",
-        "text": "اصلا در حق ما جفا شد  پن باید دوباره بروم درس بخونم  بخدا نمره Aمی گیرم 😂",
-        "at": "2026-10-26T21:30:32+0000"
       },
       {
         "id": "17861162370697139",
@@ -29142,11 +29180,6 @@
         "rule": "2026-10-20-0600",
         "keyword": "آیلتس",
         "caption": "پارتنر اسپیکینگ نداری؟ چت‌باتی که تو گوشیته می‌تونه هر شب نقش ممتحن آیلتس رو برا"
-      },
-      "18078694667709793": {
-        "rule": "2026-10-08-1530",
-        "keyword": "جزوه",
-        "caption": "هنوز جزوه‌ت رو خط به خط می‌خونی؟ جمنای حالا ازش ویدیوی یه دقیقه‌ای و کوییز می‌سا"
       },
       "18017930855731657": {
         "rule": "p00",
@@ -30068,16 +30101,18 @@
     "18130163731891318": {
       "user": "amirali___911",
       "at": "2026-11-01T00:53:22.382976+00:00"
+    },
+    "17996523143841034": {
+      "user": "aghabygibizhan",
+      "at": "2026-11-01T14:18:42.086579+00:00"
     }
   },
   "_inbox_hash": "4f53cda18c2baa0c",
   "_alerted": {
-    "18113463287146063": "2026-10-21T10:50:28.845118+00:00",
-    "18013673363969377": "2026-10-22T07:03:24.656909+00:00",
-    "18097619336409664": "2026-10-22T11:47:59.186734+00:00",
     "18104857259343716": "2026-10-24T09:45:47.545970+00:00",
     "17866614801678035": "2026-10-24T17:00:25.989458+00:00",
-    "17919566820527265": "2026-10-29T11:41:14.925407+00:00"
+    "17919566820527265": "2026-10-29T11:41:14.925407+00:00",
+    "18093324797690475": "2026-11-01T14:18:42.086579+00:00"
   },
   "_alerted_dm": "2026-10-31T08:45:03.885711+00:00",
   "18135383341710257": {
@@ -30090,6 +30125,10 @@
     "18052674311590883": {
       "user": "dr_ramin_rouhi",
       "at": "2026-10-08T06:24:13.524648+00:00"
+    },
+    "17974969188157242": {
+      "user": "gh_sara",
+      "at": "2026-11-01T14:18:42.086579+00:00"
     }
   },
   "_alerted_fail": {},
@@ -33980,6 +34019,19 @@
     "17968725288191816": {
       "user": "zzaaa784",
       "at": "2026-11-01T07:18:09.610178+00:00"
+    },
+    "18194832685402112": {
+      "user": "ahmadsayadi_t",
+      "at": "2026-11-01T14:18:42.086579+00:00"
+    },
+    "18070942265782147": {
+      "user": "n_r_o2020",
+      "at": "2026-11-01T14:18:42.086579+00:00"
+    },
+    "18222504013341794": {
+      "user": "n_r_o2020",
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "skipped": "already sent to this person"
     }
   },
   "17949524649057536": {
@@ -34088,6 +34140,37 @@
     },
     "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTMxODc5OTI2ODUxMjUyMzozMzA1MTg3NDA4OTQ4MTc4MDMxOTkzNTE1ODYwMjk1NjgwMAZDZD": {
       "at": "2026-10-11T20:31:49.266837+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTg4MTg0Njk2NDU2Mjg1MDozMzA3NDE0ODU1Mjg5MTUxMjAzMzAwNjY5MzA5NDc4NTAyNAZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AgOMlWUYrvccwbFsEWwN8LE\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTE0NTI4MjM3NjUxMjE2MTozMzA3Mzg5NTkzNjUyMjA4MzMzMDUyMjQ2NzIwOTgzODU5MgZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"A9Aw6Tb5Isax-v21Rb1aZOX\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI3NDA2NDMxMzU4NjUyNjozMzA3Mzc2MDU5MDUxNTY5ODE5NTgxOTIxODUwOTc1ODQ2NAZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"Ak4KrWB4e1loqpAZ4xJtGTC\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY2MDA1MDQyNzQ0MjMyNjozMzA3NDk3OTUyNzU2NDY3MTU2ODE1NjIyNTI5MDg5NTM2MAZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AxJZpdvQvcU81ny4hcLaX-i\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MTgxNjk3OTQ0OTcxOTE1MDozMzA3ODIzODY3MzQ3OTQyMjI5OTkxMTE3OTk3ODQwNzkzNgZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDA5MDQwMjgzOTg2NzM2MDozMzA3OTY2NjM3MzI2NTgxMTI1ODk0NjgzNTQzMTAzMDc4NAZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AWTFGuDSs-67mV54XGHIGyb\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDA5MDQwMjgzOTg2NzM2MDozMzA4MDYyODA3MzgxOTQxNzEzMjExMTQ1NDg4NTkwNDM4NAZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"ABnl4pGdi9315QifPcibs2Y\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY3ODk2MzMxODY0MjEwNDozMzA4MDUyMDc2NjM5MTQ3Mzc5Mjk5MDQ0NDkyMjA3NzE4NAZDZD": {
+      "at": "2026-11-01T14:18:42.086579+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AsqLLcB-42lMeFET5lA-kB6\"}}"
     }
   },
   "17909885199538481": {
@@ -35313,6 +35396,18 @@
     "17965758294235896": {
       "user": "kaveh_mahdvian",
       "at": "2026-11-01T07:18:09.610178+00:00"
+    },
+    "18116180399152089": {
+      "user": "mahsabme91",
+      "at": "2026-11-01T14:18:42.086579+00:00"
+    },
+    "18087064904702791": {
+      "user": "maral.sajadi1",
+      "at": "2026-11-01T14:18:42.086579+00:00"
+    },
+    "18117180413043414": {
+      "user": "helloellliii",
+      "at": "2026-11-01T14:18:42.086579+00:00"
     }
   },
   "18096035018451431": {
@@ -36791,6 +36886,10 @@
     "17949323541069301": {
       "user": "farnaz_m369",
       "at": "2026-10-31T14:48:01.276301+00:00"
+    },
+    "17921408466244925": {
+      "user": "bitaaab",
+      "at": "2026-11-01T14:18:42.086579+00:00"
     }
   },
   "18145734595567717": {
@@ -37000,6 +37099,14 @@
     "18031622189914084": {
       "user": "rangin.amini24",
       "at": "2026-10-30T19:37:27.777922+00:00"
+    },
+    "18074256995752061": {
+      "user": "mahdi__kpd",
+      "at": "2026-11-01T14:18:42.086579+00:00"
+    },
+    "18413608414090152": {
+      "user": "daena.io",
+      "at": "2026-11-01T14:18:42.086579+00:00"
     }
   },
   "17911080426535738": {
@@ -37080,6 +37187,10 @@
     "17873215923643369": {
       "user": "z.sara679",
       "at": "2026-10-30T14:32:50.808876+00:00"
+    },
+    "17945928471357359": {
+      "user": "khateresharifi6",
+      "at": "2026-11-01T14:18:42.086579+00:00"
     }
   },
   "18390697843164405": {

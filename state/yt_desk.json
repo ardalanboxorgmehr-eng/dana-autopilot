@@ -1,29 +1,23 @@
 {
- "done": {},
- "items": [
-  {
-   "id": "UgxItbRlYxZ-KP6WVCN4AaABAg",
-   "media": "If3iyWS9Iss",
-   "title": "گوگل خودش نوشته: چیزی که نمی‌خوای یه بازبین انسانی ببینه رو تو جمنای ننویس",
-   "user": "@Syavash_memer",
-   "text": "❤ممنون از این اطلاعات",
-   "at": "2026-10-20T18:11:40Z",
-   "url": "https://www.youtube.com/shorts/If3iyWS9Iss"
+ "done": {
+  "UgzwZYOjaoupBfSIDmN4AaABAg": {
+   "at": "2026-11-01T14:22:40.986736+00:00",
+   "kind": "answer"
   },
-  {
-   "id": "UgyruuTQaTW2psdHz9d4AaABAg",
-   "media": "wnn5-IdzXsk",
-   "title": "ابزار تشخیص متن AI گفت کار خودت نیست؟ خود OpenAI ابزار تشخیصش رو به خاطر دقت پای",
-   "user": "@Syavash_memer",
-   "text": "عالیه،داداش یکم رو ادیت کار کن و چنتا ویدیو بیار اینجوری بهتر میشی❤",
-   "at": "2026-10-17T18:33:17Z",
-   "url": "https://www.youtube.com/shorts/wnn5-IdzXsk"
+  "UgyruuTQaTW2psdHz9d4AaABAg": {
+   "at": "2026-11-01T14:22:40.986736+00:00",
+   "kind": "answer"
+  },
+  "UgxItbRlYxZ-KP6WVCN4AaABAg": {
+   "at": "2026-11-01T14:22:40.986736+00:00",
+   "kind": "thanks"
   }
- ],
+ },
+ "items": [],
  "queue_left": 0,
  "channel": {
   "id": "UC5Dky4DXjJM387k9KTt9b8Q",
   "title": "دانستنی روز"
  },
- "at": "2026-11-01T07:19:08.614290+00:00"
+ "at": "2026-11-01T14:22:40.986736+00:00"
 }
