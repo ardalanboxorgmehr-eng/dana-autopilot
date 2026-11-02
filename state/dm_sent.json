@@ -21064,10 +21064,10 @@
     }
   },
   "_report": {
-    "at": "2026-11-01T22:40:52.811626+00:00",
+    "at": "2026-11-02T01:51:36.827974+00:00",
     "mode": "live",
-    "sent": 5,
-    "failed": 2,
+    "sent": 0,
+    "failed": 1,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
@@ -21076,13 +21076,8 @@
     "failures": [
       {
         "post": "n2026-11-01-0600",
-        "user": "moham_madghasmi_",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The length of the message sent is over 1000 characters\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534038,\"fbtrace_id\":\"Azx6NFqAgXVZ_6ntH9-V-CC\"}}"
-      },
-      {
-        "post": "n2026-11-01-0600",
         "user": "kornamir",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The length of the message sent is over 1000 characters\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534038,\"fbtrace_id\":\"AVrji8eCNwx8jSr1GK__5Ng\"}}"
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The length of the message sent is over 1000 characters\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534038,\"fbtrace_id\":\"AGASubM159haniOz9Fy1d6d\"}}"
       }
     ]
   },
@@ -25550,12 +25545,10 @@
   },
   "_health": {
     "last_sent_at": "2026-11-01T22:40:52.811626+00:00",
-    "at": "2026-11-01T22:40:52.811626+00:00",
+    "at": "2026-11-02T01:51:36.827974+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-01-0600": 1
-    },
-    "waiting_total": 1,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [
       {
         "id": "18102018053626790",
@@ -25583,7 +25576,7 @@
     "problems": [
       "5 post(s) ask for a keyword but have no DM rule: کیمی یه دستیار هوش مصنوعی رایگانه که برات اسلاید و سایت چندص; اگه جمینای رو رایگان استفاده می‌کنی، از ۹ اکتبر فقط Flash-Li; به‌جای اینکه ده بار جزوه رو بخونی، بذار ازت امتحان بگیره\nNot; افزونه‌ی ChatGPT توی کروم دیگه فقط حرف نمی‌زنه، خودش تب‌ها ر; هفت تا برنامه‌ی رایگان اومده که جای فتوشاپ و ایلاستریتور و پ"
     ],
-    "queue_left": 23,
+    "queue_left": 10,
     "inbox_waiting": 1,
     "alerted_at": "2026-11-01T14:18:42.086579+00:00"
   },
@@ -29103,15 +29096,78 @@
       "at": "2026-11-01T22:40:52.811626+00:00",
       "kind": "answer",
       "via": "desk"
+    },
+    "17972927742177312": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17990875625861218": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18113299295332242": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18081295613359343": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18073415000783881": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18026920208871936": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18024847790920229": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17909510376486335": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18372408985211504": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "failed": "GET /18372408985211504 -> HTTP 400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18372408985211504' does not exist, cannot be loaded due to missing permissions, or does not support th"
+    },
+    "18117343579969219": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17861162370697139": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "thanks",
+      "via": "desk"
+    },
+    "18115559888519960": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "thanks",
+      "via": "desk"
+    },
+    "18034981907852349": {
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "kind": "thanks",
+      "via": "desk"
     }
   },
   "_tries": {
     "18112462723874020": 1,
-    "17936438226385563": 1,
-    "18100097132655826": 3
+    "17936438226385563": 1
   },
   "_desk": {
-    "at": "2026-11-01T22:40:52.811626+00:00",
+    "at": "2026-11-02T01:51:36.827974+00:00",
     "items": [
       {
         "id": "17913978969552679",
@@ -29280,22 +29336,6 @@
         "user": "truedideban",
         "text": "واسه تشخیص ابزار جاسوسی و هک ذهن و پهپادهای مخفی ، به پیج من با موضوعات امنیتی سر بزن. 🔍🔥",
         "at": "2026-10-27T11:22:55+0000"
-      },
-      {
-        "id": "17861162370697139",
-        "media": "18017930855731657",
-        "rule": "p00",
-        "user": "nahid_rze_404",
-        "text": "۶",
-        "at": "2026-10-26T06:31:40+0000"
-      },
-      {
-        "id": "18115559888519960",
-        "media": "18096035018451431",
-        "rule": "2026-10-20-1530",
-        "user": "dezireax",
-        "text": "۴ تشکر فراوان برای آگاهی دادنتان❤️❤️❤️❤️❤️❤️❤️",
-        "at": "2026-10-26T06:09:39+0000"
       }
     ],
     "posts": {
@@ -37449,6 +37489,15 @@
       "c_at": "2026-11-01T06:16:29+0000",
       "text": "آفلاین",
       "bounced": "2026-11-01T22:40:52.811626+00:00"
+    },
+    "18100097132655826": {
+      "user": "kornamir",
+      "at": "2026-11-02T01:51:36.827974+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The length of the message sent is over 1000 characters\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534038,\"fbtrace_id\":\"AGASubM159haniOz9Fy1d6d\"}}",
+      "tries": 4,
+      "c_at": "2026-11-01T14:12:49+0000",
+      "text": "آفلاین",
+      "bounced": "2026-11-02T01:51:36.827974+00:00"
     }
   }
 }
