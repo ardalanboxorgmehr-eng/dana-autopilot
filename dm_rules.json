@@ -195,6 +195,142 @@
         "قفل چت"
       ],
       "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nقفل کردن یه چت، قدم‌به‌قدم 🔒\n\n1. چتی که می‌خوای قفل کنی رو باز کن.\n2. منوی سه‌نقطه‌ی اون چت رو بزن (تو گوشی بالای چت، تو وب کنار اسم چت تو لیست).\n3. Lock chat رو انتخاب کن و یه بار دیگه تاییدش کن.\n4. دفعه‌ی اول ازت می‌خواد یه رمز بسازی. تو گوشی می‌تونی Face ID یا اثر انگشت رو هم فعال کنی.\n\nبعدش اون چت از تاریخچه، جست‌وجو و پین‌شده‌ها حذف می‌شه و فقط با رمز باز می‌شه.\n\nبرای باز کردن قفل: همون منوی سه‌نقطه، گزینه‌ی Unlock chat.\n\nنکته‌ها:\n• تو پلن رایگان هم هست، ولی کم‌کم برای همه فعال می‌شه. اگه گزینه رو نمی‌بینی، برنامه رو آپدیت کن و چند روز بعد دوباره چک کن.\n• روی کامپیوتر فقط تو برنامه‌ی جدید ChatGPT برای ویندوز و مک کار می‌کنه، یا تو مرورگر.\n• چت قفل‌شده رو نمی‌شه پین، آرشیو یا شیر کرد. اول باید بازش کنی.\n• قفل یعنی رمز روی گوشی خودت. رمزنگاری سرتاسری نیست و روی سرور OpenAI همون‌طور که بود می‌مونه.\n\nمنبع: help.openai.com، مقاله‌ی Using locked chats in ChatGPT\n\nکانال تلگرام دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-03-0600",
+      "caption_starts": "برای زیرنویس کردن ویدیو لازم نیست پول بدی",
+      "keywords": [
+        "زیرنویس",
+        "زيرنويس",
+        "زیر نویس",
+        "subtitle",
+        "whisper",
+        "ویسپر"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nساده‌ترین راه نصب ویسپر 🎬\n\nراه ۱، بدون کدنویسی، با Buzz (رایگان):\n1. از sourceforge.net/projects/buzz-captions/files نسخه‌ی خودت رو نصب کن.\n2. ویندوز هشدار می‌ده چون برنامه امضا نداره: More info و بعد Run anyway.\n3. برنامه رو باز کن، Import رو بزن و فایلت رو بده.\n4. Task رو Transcribe، زبان رو Persian، مدل رو Whisper. اندازه: small برای شروع، medium برای دقت بیشتر. Run رو بزن.\n5. آخرش روی فایل کلیک کن و Export > SRT.\nمدل یه بار دانلود می‌شه، بعدش همه چی روی کامپیوتر خودته.\n\nراه ۲، خط فرمان، اگه پایتون داری:\nffmpeg رو از ffmpeg.org نصب کن، بعد:\npip install -U openai-whisper\nwhisper video.mp4 --language Persian --model medium --output_format srt\n\nنکته‌ها:\n• بدون کارت گرافیک، medium کنده. با small شروع کن.\n• ویدیوی انگلیسی و زیرنویس فارسی؟ اول SRT انگلیسی بگیر، بعد متنش رو به چت‌بات بده و بگو شماره و زمان‌ها رو دست نزنه، فقط ترجمه کنه.\n• اسم‌های خاص رو یه بار چک کن.\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-03-1530",
+      "caption_starts": "یه سایت هست که هزاران ابزار هوش مصنوعی رو همون‌جا توی مرورگر",
+      "keywords": [
+        "مدل",
+        "model",
+        "hugging",
+        "هاگینگ"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nبهترین Spaceهای رایگان Hugging Face 🤗\nآدرس هر کدوم: huggingface.co/spaces/ + اسمی که نوشتم\n\n۱. حذف پس‌زمینه‌ی عکس، توی مرورگر، بدون نوبت:\nXenova/remove-background-web\n\n۲. تبدیل صدا به متن (ویسپر رسمی OpenAI)، فارسی رو می‌فهمه:\nopenai/whisper\n\n۳. ساخت عکس از متن با FLUX:\nblack-forest-labs/FLUX.1-dev\n\n۴. ویرایش عکس با دستور متنی (عوض کردن پس‌زمینه، لباس، سبک):\nblack-forest-labs/FLUX.1-Kontext-Dev\n\n۵. بزرگ کردن و شفاف کردن عکس بی‌کیفیت:\njasperai/Flux.1-dev-Controlnet-Upscaler\n\n۶. متن به گفتار با صدای فارسی (صداهای مایکروسافت):\ninnoai/Edge-TTS-Text-to-Speech\n\n۷. چت با مدل تصویری دیپ‌سیک، عکس بده و سؤال بپرس:\ndeepseek-ai/Janus-Pro-7B\n\nنکته‌ها:\n• برای بیشترشون حساب لازم نیست؛ اگه خواست، فقط ایمیل.\n• روی ZeroGPU رایگان صف و سهمیه‌ی روزانه داری. نوشت quota؟ چند ساعت بعد برگرد.\n• huggingface.co/spaces رو با Trending مرتب کن تا تازه‌ها رو ببینی.\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-04-0600",
+      "caption_starts": "جزوه‌ات رو بده تبدیلش کنه به پادکست و توی راه گوش بده",
+      "keywords": [
+        "پادکست"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nقدم‌به‌قدم ساخت پادکست از جزوه 🎧\n\n۱. برو notebooklm.google.com (اسم جدیدش Gemini Notebook) و با اکانت گوگل وارد شو\n۲. New notebook > Add source > PDF جزوه، فایل Word، یا متنش رو کپی کن\n۳. سمت راست، تو پنل Studio گزینه‌ی Audio Overview رو بزن\n۴. قبل از ساختن، روی Customize بزن: زبان رو Persian بذار و بگو روی چی تمرکز کنه (مثلاً «فقط فصل ۳، برای امتحان»)\n۵. Generate رو بزن؛ چند دقیقه طول می‌کشه. فایل صوتی رو دانلود کن و تو راه گوش بده\n۶. نسخه‌ی تعاملی (Interactive mode): وسط پادکست دکمه‌ی Join رو بزن و با میکروفون سؤال بپرس\n۷. تو همون پنل Studio، Video Overview یه خلاصه‌ی ویدیویی و Flashcards و Quiz هم می‌سازن\n\nنکته‌ها:\n• رایگانه، با سقفی که هر چند ساعت تازه می‌شه\n• گاهی چیزی رو اشتباه می‌فهمه؛ عددها و اسم‌ها رو با جزوه چک کن\n• گوگل ایران رو تو لیست کشورهای پشتیبانی‌شده نذاشته\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-04-1530",
+      "caption_starts": "یه شرکت گفت ایجنت هوش مصنوعی‌مون براتون پیتزا سفارش می‌ده",
+      "keywords": [
+        "پیتزا"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nچک‌لیست امن کار کردن با ایجنت‌های هوش مصنوعی 🛡️\n\n۱. کارت اصلی رو وصل نکن. اگه لازمه، یه کارت جدا با موجودی کم یا کارت مجازی با سقف خرج بساز\n۲. ایمیل اصلی رو نده. یه اکانت جیمیل جدا فقط برای ابزارهای هوش مصنوعی بساز\n۳. قبل از «اجازه دادن»، لیست دسترسی‌ها رو بخون: خوندن ایمیل؟ فرستادن ایمیل؟ خرید؟ هر چیزی که لازم نیست رو تیک نزن\n۴. ایجنتی رو انتخاب کن که قبل از پرداخت یا فرستادن پیام، تأیید بخواد\n۵. بعد از تست، دسترسی رو قطع کن: Google Account > Security > Third-party access > Remove\n۶. تا چند روز بعد، تراکنش‌های کارت و پوشه‌ی Sent ایمیل رو چک کن\n۷. به ایجنت رمز عبور یا کد تأیید نده؛ هیچ ابزار درستی اینو نمی‌خواد\n۸. «رایگان» یعنی تبلیغ: هر چقدر داده‌ی بیشتری می‌خواد، بیشتر شک کن\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-05-0600",
+      "caption_starts": "هنوز مقاله‌ی انگلیسی رو صفحه‌به‌صفحه ترجمه می‌کنی؟ کل PDF رو",
+      "keywords": [
+        "ترجمه"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای ترجمه‌ی یه‌جای PDF 👇\n\n۱. روی کامپیوتر برو translate.google.com (روی گوشی نیست)\n۲. بالای صفحه تب «اسناد» (Documents) رو بزن\n۳. مبدأ انگلیسی، مقصد فارسی\n۴. فایل رو بکش بنداز (PDF، Word، PowerPoint، Excel؛ تا ۱۰ مگابایت)\n۵. «ترجمه» و بعد «دانلود ترجمه»\nنکته: صفحه‌ی اسکن‌شده ترجمه نمی‌شه، فایل باید متن واقعی داشته باشه.\n\n۳ پرامپت برای ترجمه‌ی روان تو جمنای، ChatGPT یا Claude:\n\n1. ترجمه‌ی دانشگاهی:\n\"Translate this into fluent, natural Persian for a university reader. Keep technical terms in English in parentheses the first time they appear, and do not shorten anything: ___\"\n2. ساده‌سازی:\n\"Translate this into simple spoken Persian, as if explaining to a first-year student. Then list the 5 key points: ___\"\n3. چک ترجمه:\n\"Here is an English text and my Persian translation. Find every place where the meaning changed or a sentence was dropped, and suggest the fix: ___\"\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-05-1530",
+      "caption_starts": "۵۰۰ تا پیام نخونده تو گروه؟ همه‌ش رو نخون، خلاصه‌ش رو بخون",
+      "keywords": [
+        "گروه"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۴ پرامپت آماده برای خلاصه‌ی گروه 👇\nاول چت رو بیرون بکش: واتساپ > گروه > سه‌نقطه > بیشتر > Export chat > بدون رسانه. فایل رو تو جمنای یا ChatGPT آپلود کن.\n\n1. خلاصه‌ی کلی:\n\"Summarize this group chat in Persian in 5 bullet points. Then list every decision made, every task assigned to ___ with its deadline, and any question that was asked but never answered.\"\n2. فقط چیزهایی که به من مربوطه:\n\"I am ___. From this chat, extract only the messages that mention me or need my reply, in Persian, with the sender and date.\"\n3. گروه کلاس:\n\"This is a class group chat. List in Persian: exam dates, homework and deadlines, files that were shared, and what the teacher asked for.\"\n4. گروه کاری:\n\"Turn this work chat into meeting notes in Persian: topics, decisions, owners, deadlines, and open issues. Keep names as written.\"\n\nنکته: اگه چیزی خصوصیه، قبل از آپلود اسم‌ها و شماره‌ها رو پاک کن.\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-06-0600",
+      "caption_starts": "کوسه‌ها از درخت‌ها پیرترن. ۴۵۰ میلیون ساله رو زمین‌ان و از س",
+      "keywords": [
+        "کوسه"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۵ حقیقت عجیب دیگه درباره‌ی کوسه‌ها 👇\n\n1. کوسه‌ی نهنگ بزرگ‌ترین ماهی دنیاست، تا حدود ۱۸ متر، ولی فقط پلانکتون و ماهی‌های ریز می‌خوره.\n2. کوسه‌ها می‌تونن میدان الکتریکی ضربان قلب شکار رو حس کنن؛ با حسگرهایی روی پوزه‌شون به اسم آمپول‌های لورنزینی.\n3. پوست کوسه از دندونه‌های ریز پوشیده شده و اگه از دم به سر دست بکشی مثل سمباده‌ست. همین ساختار الهام‌بخش لباس شنای مسابقه‌ای شد.\n4. بیشتر گونه‌های کوسه برای انسان خطرناک نیستن؛ تعداد حمله‌های مرگبار کوسه در کل دنیا معمولاً کمتر از ۱۰ تا در ساله، ولی آدم‌ها سالانه ده‌ها میلیون کوسه رو می‌کشن.\n5. بعضی کوسه‌ها تخم می‌ذارن، تخم‌هایی با پوشش چرمی که بهش «کیف پری دریایی» می‌گن و گاهی تو ساحل پیدا می‌شه.\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-06-1530",
+      "caption_starts": "هنوز لیست قیمت رو دستی تو اکسل تایپ می‌کنی؟ عکسش رو بگیر، جد",
+      "keywords": [
+        "جدول"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای عکس به جدول 👇\n\n۱. gemini.google.com یا اپ جمنای رو باز کن\n۲. عکس لیست قیمت، فاکتور یا منو رو آپلود کن\n۳. یکی از پرامپت‌های زیر رو بنویس\n۴. زیر جدول، Export to Sheets رو بزن؛ فایل تو گوگل‌درایوت ساخته می‌شه و از File > Download می‌تونی Excel بگیری\nنکته: دست‌خط رو گاهی اشتباه می‌خونه، اعداد رو با عکس چک کن.\n\n۳ پرامپت:\n1. جدول ساده:\n\"Read this photo and turn it into a table with columns: item, unit, price. Keep the Persian names exactly as written, convert Persian digits to English digits, and add a total row.\"\n2. چند تا عکس با هم:\n\"These photos are pages of one price list. Merge them into one table, remove duplicates, sort by item name, and flag any item that appears with two different prices.\"\n3. برگه‌ی نمره یا حضور و غیاب:\n\"Turn this class sheet into a table with columns: name, score. Add a column that marks anyone under ___ as 'needs follow-up'.\"\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-07-0600",
+      "caption_starts": "خداحافظ معلم خصوصی؟ ChatGPT یه حالت داره که جواب نمی‌ده، یاد",
+      "keywords": [
+        "معلم"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۴ پرامپت آماده برای درس خوندن با هوش مصنوعی 👇\nتو ChatGPT از منوی + گزینه‌ی Study and learn رو روشن کن (جمنای: Guided Learning). جای ___ رو پر کن.\n\n1. شروع:\n\"I'm studying ___ for an exam in ___ days. Teach me in Persian, one concept at a time. Ask me a question after each part, don't move on until I answer correctly, and give me a 5-question quiz at the end.\"\n2. از روی جزوه:\n\"Here are my notes: ___. Make a study plan for ___ days in Persian, then start teaching the first topic. Quiz me at the end of each session.\"\n3. وقتی یه چیزی رو نمی‌فهمی:\n\"Explain ___ in Persian three ways: with a simple example from daily life, with a drawing described in words, and with the formal definition. Then ask me to explain it back.\"\n4. مرور شب امتحان:\n\"Give me 20 rapid-fire questions on ___ in Persian, one at a time. Tell me if I'm right, and at the end list the topics I got wrong.\"\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-07-1530",
+      "caption_starts": "جواب آزمایشت رو گرفتی و هیچی ازش نفهمیدی؟ عکسش رو بده به هوش",
+      "keywords": [
+        "آزمایش"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۳ پرامپت برای فهمیدن جواب آزمایش 👇\nاول اسم، کد ملی و شماره‌ی پرونده رو روی برگه بپوشون، بعد عکس رو تو جمنای یا ChatGPT آپلود کن.\n\n1. توضیح خط به خط:\n\"Explain each line of this lab report in simple Persian: what it measures, whether my value is inside the normal range printed on the sheet, and what questions I should ask my doctor. Do not diagnose.\"\n2. مقایسه با آزمایش قبلی:\n\"Here are my lab reports from two dates. In Persian, make a table of each value on both dates, mark what went up or down, and tell me which changes are worth asking my doctor about.\"\n3. آماده شدن برای نوبت دکتر:\n\"Based on this report, write 5 clear questions in Persian that I should ask my doctor, and a one-paragraph summary I can read to the doctor in 30 seconds.\"\n\nیادت باشه: هوش مصنوعی جای دکتر نیست؛ تشخیص و دارو فقط با پزشک.\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-08-0600",
+      "caption_starts": "رو مسئله‌ی ریاضی گیر کردی؟ عکسش رو بگیر، حل قدم‌به‌قدمش رو ب",
+      "keywords": [
+        "ریاضی"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای حل مسئله از روی عکس 👇\n\n۱. اپ Photomath رو نصب کن (رایگان، فارسی داره). دوربین رو رو مسئله بگیر، جواب و مرحله‌ها رو ببین. مرحله‌های پایه رایگانه؛ انیمیشن و راهنمایی اضافه (Plus) پولیه.\n۲. مسئله‌ی متنی فارسی: عکسش رو تو جمنای یا ChatGPT آپلود کن و یکی از پرامپت‌های زیر رو بنویس.\n۳. جواب نهایی رو همیشه با ماشین‌حساب چک کن.\n\n۳ پرامپت:\n1. حل با توضیح:\n\"Solve this step by step in Persian. Before each step, say which rule you are using and why. At the end, give me a similar problem to solve myself and check my answer.\"\n2. فقط راهنمایی:\n\"Do not give me the answer. Give me only the first step and one hint in Persian, then wait for me to try.\"\n3. پیدا کردن اشتباه خودم:\n\"Here is my solution: ___. Find the first step where I went wrong, explain in Persian why it is wrong, and let me fix it myself.\"\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-08-1530",
+      "caption_starts": "یه محاسبه که ابرکامپیوتر براش ۱۰ میلیون میلیارد میلیارد سال ",
+      "keywords": [
+        "کوانتوم"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nکامپیوتر کوانتومی به زبون ساده 👇\n\n1. سکه‌ی چرخان: بیت معمولی مثل سکه‌ی افتاده روی میزه: شیر یا خط. کیوبیت مثل سکه‌ایه که هنوز می‌چرخه؛ تا نگاهش نکنی، ترکیبی از هر دوئه.\n2. هزارتو: کامپیوتر معمولی راه‌ها رو یکی‌یکی امتحان می‌کنه. کوانتومی جوری چیده می‌شه که راه‌های غلط همدیگه رو خنثی کنن و راه درست پررنگ بشه.\n3. گره خوردن (درهم‌تنیدگی): دو کیوبیت گره‌خورده مثل دو دستکش از یه جفتن تو دو جعبه؛ تا یکی رو باز کنی، اون یکی هم معلومه.\n4. خطا: کیوبیت مثل شمع تو باده؛ گرما و نویز خاموشش می‌کنه. برای همین تراشه رو تا نزدیک صفر مطلق سرد می‌کنن و چند کیوبیت فیزیکی با هم یه کیوبیت «منطقی» می‌سازن. خبر Willow این بود که هرچی این ترکیب بزرگ‌تر شد، خطا کمتر شد.\n5. به چه دردی می‌خوره: شبیه‌سازی مولکول برای دارو و باتری، بهینه‌سازی مسیر و زمان‌بندی، و شکستن بعضی رمزهای امروزی؛ برای همین رمزهای «مقاوم به کوانتوم» می‌سازن.\n\nمنبع: وبلاگ گوگل، دسامبر ۲۰۲۴ (Willow، ۱۰۵ کیوبیت، در Nature).\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-09-0600",
+      "caption_starts": "هنوز برای یه تحقیق ۲۰ تا تب باز می‌کنی؟ موضوع رو بده، گزارش ",
+      "keywords": [
+        "تحقیق"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای Deep Research 👇\n۱. gemini.google.com > ابزارها > Deep Research\n۲. موضوع رو دقیق بنویس (پرامپت‌های زیر)\n۳. نقشه‌ی تحقیق رو ویرایش کن، Start بزن\n۴. چند دقیقه بعد گزارش با لینک منبع‌ها میاد\n۵. هر عدد مهم رو با منبعش چک کن\n\n۴ پرامپت:\n1. مقاله‌ی دانشگاهی:\n\"Research ___ for a university essay. Compare at least 5 sources, note where they disagree, give key numbers with dates, and write the report in Persian with a sources list.\"\n2. پیشینه‌ی پژوهش:\n\"Find the 10 most cited recent studies on ___. For each: authors, year, method, main finding, limitation. Write in Persian, keep titles in English.\"\n3. مقایسه برای تصمیم:\n\"Compare ___ and ___ for someone who wants ___. Table in Persian: price, pros, cons, who it suits, with sources.\"\n4. خلاصه‌ی یه موضوع داغ:\n\"What happened with ___ in the last 12 months? Timeline in Persian with dates and sources, then 3 open questions.\"\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-09-1530",
+      "caption_starts": "ویس ۵ دقیقه‌ای فرستادن؟ گوش نده، متنش رو بخون",
+      "keywords": [
+        "صوتی"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای تبدیل ویس به متن 👇\n۱. تو واتساپ یا تلگرام ویس رو نگه دار > Share یا Save (تلگرام دسکتاپ: Save as)\n۲. gemini.google.com یا اپ جمنای > آپلود فایل صوتی (تا ۱۰ دقیقه تو نسخه‌ی رایگان)\n۳. یکی از پرامپت‌های زیر رو بنویس\nنکته: واتساپ خودش برای فارسی تبدیل به متن نداره و ChatGPT رایگان فایل صوتی قبول نمی‌کنه.\n\n۳ پرامپت:\n1. متن کامل و خلاصه:\n\"Transcribe this voice message in Persian exactly as spoken. Then give me: a 3-line summary, any question I was asked, and anything I need to do, with dates.\"\n2. فقط نکته‌ها:\n\"Don't transcribe. Just list in Persian the 5 most important points of this voice message and what the sender wants from me.\"\n3. کلاس یا جلسه:\n\"This is a recording of a class. Write clean Persian notes with headings, the key definitions, and any homework or dates mentioned. Mark anything you could not hear clearly.\"\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-10-0600",
+      "caption_starts": "می‌خوای به استاد خارجی ایمیل بزنی؟ اولین ایمیلت همه‌چیزه، با",
+      "keywords": [
+        "استاد"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۳ پرامپت ایمیل به استاد و انگیزه‌نامه 👇\nاول این‌ها رو آماده کن: چکیده‌ی ۲ مقاله‌ی اخیر استاد، رزومه‌ت، و یه خط که چرا این آزمایشگاه.\n\n1. ایمیل اول:\n\"Write a 150-word email to Professor ___ about PhD openings for ___ (term). Use my CV: ___ and two abstracts of their recent papers: ___. Name one idea from their work and tie it to my experience. Plain, polite, no flattery. Include a subject line.\"\n2. انگیزه‌نامه (SOP):\n\"My notes in Persian about my background and why this program: ___. Write a 600-word SOP in English: a concrete opening, my experience, why this program and professor, my plan after graduation. No clichés.\"\n3. نقد سخت‌گیرانه:\n\"Act as a strict admissions professor. Critique this email/SOP: ___. List every vague sentence, claim without evidence and cliché, then rewrite only the weak parts.\"\n\nیادت باشه: هر اسم مقاله یا عددی که نوشت رو با سایت استاد چک کن.\n\nکانال دانستنی روز: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-10-1530",
+      "caption_starts": "قرارداد اجاره رو قبل از امضا بده هوش مصنوعی بخونه؛ بندهای به",
+      "keywords": [
+        "قرارداد"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۳ پرامپت برای چک کردن قرارداد 👇\nاول اسم، کد ملی، شماره‌ی حساب و آدرس رو بپوشون، بعد عکس یا PDF قرارداد رو تو جمنای یا ChatGPT آپلود کن. جای tenant نقش خودت رو بنویس (employee، buyer...).\n\n1. بندهای به ضرر من:\n\"I am the tenant. Read this Persian rental contract and list in Persian: every clause that favors the other side, every penalty and its amount, how either side can cancel, and anything a standard contract has that this one lacks.\"\n2. ترجمه به زبون ساده:\n\"Rewrite each clause of this contract in simple spoken Persian, one line per clause, keeping the clause numbers. Mark with ⚠️ any clause a careful person should ask about.\"\n3. سؤال‌ها برای جلسه‌ی امضا:\n\"Give me 7 questions in Persian to ask before signing, ordered by importance, each with the clause number.\"\n\nیادت باشه: هوش مصنوعی جای وکیل نیست؛ برای قرارداد بزرگ با وکیل چک کن.\n\nکانال دانستنی روز: t.me/danestani_ruzz"
     }
   ]
 }
