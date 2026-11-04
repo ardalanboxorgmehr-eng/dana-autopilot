@@ -74,7 +74,9 @@ To retry a failed post: fix the cause, set `status` back to `pending`, adjust
 
 ## Adding a post
 
-1. Make `content/<post-id>/` with a spec, caption, and dm.json.
+1. Make `content/<post-id>/` with a spec, caption, and dm.json. The DM text (`dm_single`, or `message` in
+   `dm_rules.json`) must be 950 characters or fewer, greeting and Telegram link included. Instagram refuses
+   anything over 1000; a longer text is not sent and raises an alert until it is shortened.
 2. Add the entry to `queue.json` with `"status": "pending"`.
 3. Push. The build workflow renders the slides and publishes them to Pages.
 4. The publish workflow takes it from there.

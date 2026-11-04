@@ -57,6 +57,7 @@ ALERT_REPEAT_H = 12           # do not email the same alert more often than this
 CTA_MARKS = ("📩", "کامنت کن", "کامنت بذار")   # a caption with these asks for a DM keyword
 RUN_BUDGET_S = 20 * 60       # stop starting new posts after 20 minutes; the next run carries on
 WINDOW_DAYS = 7
+MAX_DM_CHARS = 950           # Instagram refuses a DM over 1000 characters; 950 leaves room for the greeting swap (Ehsan, 4 Nov 2026)
 PUBLIC_REPLIES = [
     "برات فرستادم، دایرکتت رو چک کن 📩",
     "فرستادم تو دایرکت 🌱",
@@ -382,6 +383,10 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
             if sends + errors >= MAX_SENDS_PER_RUN:
                 log("send limit for this run reached, the rest go next run")
                 break
+            if len(msg) > MAX_DM_CHARS:
+                # Too long: Instagram would refuse it and the person would wrongly be told
+                # their inbox is closed. Leave the comment waiting; health() raises the alert.
+                continue
             if streak >= MAX_ERROR_STREAK:
                 log(f"{streak} failures in a row, Instagram is throttling: stopping, the rest go next run")
                 break
@@ -449,8 +454,9 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                         "queue_replies": queue_sent, "thanks": thanked,
                         "failures": failures[:20]}
     log(f"done: {sends} sent, {errors} failed, {skipped} skipped, {inbox_sent} answered from the inbox")
+    too_long = sorted({f"{r[3]} ({len(r[2])})" for _, r in active if len(r[2]) > MAX_DM_CHARS})
     alert = health(state, now, mode, sends + inbox_sent, waiting, unmatched,
-                   posts_read, len(active), log)
+                   posts_read, len(active), log, too_long)
     # Fail the job (GitHub then emails the owner) when sending is broken
     # outright, or when health() raises an alert.
     return (1 if (errors and not sends) or alert else 0), sends
@@ -770,7 +776,7 @@ def count_waiting(comments, done, own, kws, exclude):
     return n
 
 
-def health(state, now, mode, sent, waiting, unmatched, posts_read, posts_total, log):
+def health(state, now, mode, sent, waiting, unmatched, posts_read, posts_total, log, too_long=()):
     """Write state['_health'] every run and decide whether to alert (added 7 Oct 2026,
     after a bug left ~800 people without their DM for days unnoticed)."""
     h = state.setdefault("_health", {})
@@ -788,6 +794,9 @@ def health(state, now, mode, sent, waiting, unmatched, posts_read, posts_total, 
     if unmatched:
         problems.append(f"{len(unmatched)} post(s) ask for a keyword but have no DM rule: "
                         + "; ".join(u["caption"] for u in unmatched))
+    if too_long:
+        problems.append(f"{len(too_long)} DM text(s) over {MAX_DM_CHARS} characters, not being sent until shortened: "
+                        + ", ".join(too_long))
     h["problems"] = problems
     if not problems:
         h.pop("alerted_at", None)
@@ -864,6 +873,8 @@ def answer_inbox(ig, state, active, own, exclude, mode, since, now, budget, log)
                                           for v in box.values()):
                 if mode == "live":
                     box[mm["id"]] = {"user": user, "uid": uid, "rule": rid, "at": now.isoformat(), "skipped": "already has it"}
+                continue
+            if len(msg) > MAX_DM_CHARS:
                 continue
             if mode != "live":
                 log(f"[dry run] inbox {rid}: would DM @{user} for «{mm.get('message','')[:30]}»")

@@ -107,6 +107,14 @@ def main():
     check("second run publishes nothing new",
           "nothing due" in r2.stdout or ">>>" not in r2.stdout, r2.stdout[-200:])
 
+    # Every DM text must fit Instagram's limit (Ehsan, 4 Nov 2026)
+    print("\nchecking DM text lengths")
+    sys.path.insert(0, os.path.join(ROOT, "scripts"))
+    import dm_reply
+    rules, _ = dm_reply.load_rules()
+    long_dms = [f"{r[3]} ({len(r[2])})" for r in rules if len(r[2]) > dm_reply.MAX_DM_CHARS]
+    check(f"every DM text is {dm_reply.MAX_DM_CHARS} characters or fewer", not long_dms, ", ".join(long_dms))
+
     httpd.shutdown()
     shutil.rmtree(work, ignore_errors=True)
 
