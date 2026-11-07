@@ -21105,9 +21105,9 @@
     }
   },
   "_report": {
-    "at": "2026-11-07T15:11:46.344386+00:00",
+    "at": "2026-11-07T15:19:30.455353+00:00",
     "mode": "live",
-    "sent": 32,
+    "sent": 0,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -21117,18 +21117,18 @@
     "failures": [
       {
         "post": "n2026-11-07-0600",
-        "user": "_s.h.141_",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AQMqJXZtqhFqmQa-VBGmqq6\"}}"
-      },
-      {
-        "post": "n2026-11-07-0600",
         "user": "bmmr461",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Am69KZxsifWPp7vkx1eVqse\"}}"
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AXdgxn6F3En1JkaUCpYJ5M_\"}}"
       },
       {
         "post": "n2026-11-07-0600",
         "user": "ay67so",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ao7b-B837dkerG8NxcFt1Fd\"}}"
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A14OAX40_rfWpX1hRvPkZX6\"}}"
+      },
+      {
+        "post": "n2026-11-07-0600",
+        "user": "shahab.ohadi",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ALHHAQENI8OngQ-_T_nSHXe\"}}"
       }
     ]
   },
@@ -25691,12 +25691,12 @@
   },
   "_health": {
     "last_sent_at": "2026-11-07T15:11:46.344386+00:00",
-    "at": "2026-11-07T15:11:46.344386+00:00",
+    "at": "2026-11-07T15:19:30.455353+00:00",
     "mode": "live",
     "waiting": {
-      "n2026-11-07-0600": 11
+      "n2026-11-07-0600": 14
     },
-    "waiting_total": 11,
+    "waiting_total": 14,
     "unmatched_posts": [],
     "posts_read": 1,
     "posts_with_rule": 86,
@@ -29371,11 +29371,11 @@
   "_tries": {
     "18112462723874020": 1,
     "17936438226385563": 1,
-    "17992670304097722": 1,
-    "18110564453460403": 1
+    "18110564453460403": 2,
+    "18082746605355658": 1
   },
   "_desk": {
-    "at": "2026-11-07T15:11:46.344386+00:00",
+    "at": "2026-11-07T15:19:30.455353+00:00",
     "items": [
       {
         "id": "18644622841006799",
@@ -30400,7 +30400,8 @@
     "18092555057222927": "2026-11-01T22:40:52.811626+00:00",
     "18100097132655826": "2026-11-02T08:24:26.010239+00:00",
     "18133483708690097": "2026-11-03T16:02:33.499481+00:00",
-    "18389834038224183": "2026-11-07T15:11:46.344386+00:00"
+    "18389834038224183": "2026-11-07T15:11:46.344386+00:00",
+    "17992670304097722": "2026-11-07T15:19:30.455353+00:00"
   },
   "18078694667709793": {
     "18103090313528673": {
@@ -39959,6 +39960,15 @@
       "c_at": "2026-11-07T14:52:31+0000",
       "text": "معلم",
       "bounced": "2026-11-07T15:11:46.344386+00:00"
+    },
+    "17992670304097722": {
+      "user": "bmmr461",
+      "at": "2026-11-07T15:19:30.455353+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AXdgxn6F3En1JkaUCpYJ5M_\"}}",
+      "tries": 2,
+      "c_at": "2026-11-07T14:54:01+0000",
+      "text": "معلم",
+      "bounced": "2026-11-07T15:19:30.455353+00:00"
     }
   }
 }
