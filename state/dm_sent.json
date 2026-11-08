@@ -21110,10 +21110,10 @@
     }
   },
   "_report": {
-    "at": "2026-11-08T14:47:05.812347+00:00",
+    "at": "2026-11-08T15:02:06.564062+00:00",
     "mode": "live",
-    "sent": 18,
-    "failed": 3,
+    "sent": 1,
+    "failed": 4,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
@@ -21121,19 +21121,24 @@
     "thanks": 0,
     "failures": [
       {
-        "post": "n2026-11-07-0600",
-        "user": "farah.53_",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AZJDcfkT-cSrTZq_Ho2x2MF\"}}"
+        "post": "n2026-11-08-0600",
+        "user": "ghazal_esmaeilei",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AqN5Un0igRfl6Vw9CgWhlWk\"}}"
       },
       {
         "post": "n2026-11-07-0600",
         "user": "zahrafamily89",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwSqUDR7htHdLeSii0Yv-eS\"}}"
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMnDgVTRlPQ_2c7r-ctE2BP\"}}"
       },
       {
         "post": "n2026-11-07-0600",
         "user": "mahsa.mohammadshahi",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AP8lsCsQwXtSpqnWnRWW7sK\"}}"
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ACw3xIdbYiz0BMek2SJ_ju_\"}}"
+      },
+      {
+        "post": "n2026-11-07-0600",
+        "user": "atefeh.delfani_",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A-IWOamRbNrx2rRwJky7u2k\"}}"
       }
     ]
   },
@@ -25697,13 +25702,13 @@
     "18156292165533423": "n2026-11-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-08T14:47:05.812347+00:00",
-    "at": "2026-11-08T14:47:05.812347+00:00",
+    "last_sent_at": "2026-11-08T15:02:06.564062+00:00",
+    "at": "2026-11-08T15:02:06.564062+00:00",
     "mode": "live",
     "waiting": {
-      "n2026-11-07-0600": 249
+      "n2026-11-07-0600": 252
     },
-    "waiting_total": 249,
+    "waiting_total": 252,
     "unmatched_posts": [],
     "posts_read": 3,
     "posts_with_rule": 88,
@@ -29401,12 +29406,20 @@
     "17997199281108471": 1,
     "17888785017690326": 1,
     "17994236076025983": 1,
-    "18116152465858304": 1,
-    "18109812755194259": 1
+    "18109812755194259": 2,
+    "18655749319043899": 1
   },
   "_desk": {
-    "at": "2026-11-08T14:47:05.812347+00:00",
+    "at": "2026-11-08T15:02:06.564062+00:00",
     "items": [
+      {
+        "id": "18127227598917464",
+        "media": "17924533371223372",
+        "rule": "n2026-11-07-0600",
+        "user": "amirsam_606591",
+        "text": "Teacher",
+        "at": "2026-11-08T14:56:35+0000"
+      },
       {
         "id": "17917590963535846",
         "media": "17924533371223372",
@@ -30755,7 +30768,9 @@
     "18145134211523634": "2026-11-08T13:01:49.784895+00:00",
     "18090815573702163": "2026-11-08T13:16:52.023638+00:00",
     "17874801696645128": "2026-11-08T13:46:57.100421+00:00",
-    "17973822603159309": "2026-11-08T14:47:05.812347+00:00"
+    "17973822603159309": "2026-11-08T14:47:05.812347+00:00",
+    "18116152465858304": "2026-11-08T15:02:06.564062+00:00",
+    "18031573985857378": "2026-11-08T15:02:06.564062+00:00"
   },
   "18078694667709793": {
     "18103090313528673": {
@@ -43383,6 +43398,15 @@
       "c_at": "2026-11-08T06:53:20+0000",
       "text": "معلم",
       "bounced": "2026-11-08T14:47:05.812347+00:00"
+    },
+    "18116152465858304": {
+      "user": "zahrafamily89",
+      "at": "2026-11-08T15:02:06.564062+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMnDgVTRlPQ_2c7r-ctE2BP\"}}",
+      "tries": 2,
+      "c_at": "2026-11-08T07:02:58+0000",
+      "text": "معلم",
+      "bounced": "2026-11-08T15:02:06.564062+00:00"
     }
   },
   "18156292165533423": {
@@ -43551,6 +43575,19 @@
     "18456606895127723": {
       "user": "yilmaz_mohamadamin",
       "at": "2026-11-08T14:47:05.812347+00:00"
+    },
+    "18031573985857378": {
+      "user": "ghazal_esmaeilei",
+      "at": "2026-11-08T15:02:06.564062+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AqN5Un0igRfl6Vw9CgWhlWk\"}}",
+      "tries": 1,
+      "c_at": "2026-11-08T14:50:10+0000",
+      "text": "ریاضی",
+      "bounced": "2026-11-08T15:02:06.564062+00:00"
+    },
+    "17979141909136244": {
+      "user": "zahra14046565",
+      "at": "2026-11-08T15:02:06.564062+00:00"
     }
   }
 }
