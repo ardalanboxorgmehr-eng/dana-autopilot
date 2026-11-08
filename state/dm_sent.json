@@ -21110,11 +21110,11 @@
     }
   },
   "_report": {
-    "at": "2026-11-08T12:46:53.925902+00:00",
+    "at": "2026-11-08T13:01:49.784895+00:00",
     "mode": "live",
-    "sent": 23,
+    "sent": 33,
     "failed": 3,
-    "skipped": 1,
+    "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
@@ -21122,18 +21122,18 @@
     "failures": [
       {
         "post": "n2026-11-07-0600",
-        "user": "rrroya_roya",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"Ag3f-4lGd5WfODKQaH1qN5A\"}}"
+        "user": "khaleh.zahra.morabi",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMzlZ-U_r86L62zHbGmbzHc\"}}"
       },
       {
         "post": "n2026-11-07-0600",
-        "user": "zhr_3313",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AJ4zr3UVPJZ3UHNWZULdN7Z\"}}"
+        "user": "razimarzi43",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AaGPVFRRxtPY3NRDhqaa4mP\"}}"
       },
       {
         "post": "n2026-11-07-0600",
-        "user": "katty.mb1",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AUBRx6IweUHmBjxQqnQiPhQ\"}}"
+        "user": "seyran5992",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AG8R34-gK5x222kMlAHVN3X\"}}"
       }
     ]
   },
@@ -25697,13 +25697,13 @@
     "18156292165533423": "n2026-11-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-08T12:46:53.925902+00:00",
-    "at": "2026-11-08T12:46:53.925902+00:00",
+    "last_sent_at": "2026-11-08T13:01:49.784895+00:00",
+    "at": "2026-11-08T13:01:49.784895+00:00",
     "mode": "live",
     "waiting": {
-      "n2026-11-07-0600": 444
+      "n2026-11-07-0600": 418
     },
-    "waiting_total": 444,
+    "waiting_total": 418,
     "unmatched_posts": [],
     "posts_read": 3,
     "posts_with_rule": 88,
@@ -29394,10 +29394,12 @@
     "18155010493542278": 1,
     "18004539200809080": 1,
     "18122228953961282": 1,
-    "18170814553471921": 1
+    "18170814553471921": 1,
+    "18148149307630820": 1,
+    "18203554867377557": 1
   },
   "_desk": {
-    "at": "2026-11-08T12:46:53.925902+00:00",
+    "at": "2026-11-08T13:01:49.784895+00:00",
     "items": [
       {
         "id": "17939402811401640",
@@ -30727,7 +30729,8 @@
     "17916059994508834": "2026-11-07T15:56:26.047659+00:00",
     "18139148482726960": "2026-11-07T19:56:55.665252+00:00",
     "18120943019094484": "2026-11-07T20:11:57.518653+00:00",
-    "18007699601793310": "2026-11-08T12:46:53.925902+00:00"
+    "18007699601793310": "2026-11-08T12:46:53.925902+00:00",
+    "18145134211523634": "2026-11-08T13:01:49.784895+00:00"
   },
   "18078694667709793": {
     "18103090313528673": {
@@ -42372,6 +42375,143 @@
       "c_at": "2026-11-08T03:09:14+0000",
       "text": "معلم",
       "bounced": "2026-11-08T12:46:53.925902+00:00"
+    },
+    "18122228953961282": {
+      "user": "zhr_3313",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18170814553471921": {
+      "user": "katty.mb1",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18358585078220339": {
+      "user": "parwin_shirvani",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "17945197953373408": {
+      "user": "farahnaaaaaaaaaaz4204",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18216682105362856": {
+      "user": "s.mahdikhanif",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "17978302358934713": {
+      "user": "baharehmn9752",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18232973911328582": {
+      "user": "mahsa_b_i",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18082944353372205": {
+      "user": "ebrahim.asadi82",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18375914077215463": {
+      "user": "ar.fooladi",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18120957562766966": {
+      "user": "f.ebrahimiiii9",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18109135910264461": {
+      "user": "masoumalimehri",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18201095302391620": {
+      "user": "saiedeh3106",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18123280504958283": {
+      "user": "valizadeh._sh",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18154467319537628": {
+      "user": "sanam.niaz",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18122047253066938": {
+      "user": "maryam__.tr",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18081517004392420": {
+      "user": "leylaa.noori",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18096656792175606": {
+      "user": "samanehdehghan0148",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18145257742614203": {
+      "user": "sanaz.5952",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18152491936559926": {
+      "user": "mahboubeh19903",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18120757573768701": {
+      "user": "olduz1364",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18187721068421991": {
+      "user": "anita_arnica",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18048485096818271": {
+      "user": "samaneh.s_61",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "17991930939092979": {
+      "user": "reza_sam88",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18196899400400056": {
+      "user": "fa_ezeh7852",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18298111336722635": {
+      "user": "simaaaaa9809",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18014246921985884": {
+      "user": "p.erfan2000",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18575873350074611": {
+      "user": "shirin.zrg",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18068830274616224": {
+      "user": "nahidfarnad",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18123552848066417": {
+      "user": "maryam.rtehrani",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18212184565368380": {
+      "user": "1394parmi",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18051021332813438": {
+      "user": "fkhatibii",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "17912800272481610": {
+      "user": "g.rezayavari97",
+      "at": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18145134211523634": {
+      "user": "khaleh.zahra.morabi",
+      "at": "2026-11-08T13:01:49.784895+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMzlZ-U_r86L62zHbGmbzHc\"}}",
+      "tries": 1,
+      "c_at": "2026-11-08T03:45:59+0000",
+      "text": "معلم",
+      "bounced": "2026-11-08T13:01:49.784895+00:00"
     }
   },
   "18156292165533423": {
@@ -42487,6 +42627,10 @@
     "18123116236946256": {
       "user": "iiueks",
       "at": "2026-11-08T12:46:53.925902+00:00"
+    },
+    "17919445146263633": {
+      "user": "shahyad4356",
+      "at": "2026-11-08T13:01:49.784895+00:00"
     }
   }
 }
