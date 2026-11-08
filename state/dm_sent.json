@@ -21110,9 +21110,9 @@
     }
   },
   "_report": {
-    "at": "2026-11-08T13:01:49.784895+00:00",
+    "at": "2026-11-08T13:16:52.023638+00:00",
     "mode": "live",
-    "sent": 33,
+    "sent": 34,
     "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
@@ -21122,18 +21122,18 @@
     "failures": [
       {
         "post": "n2026-11-07-0600",
-        "user": "khaleh.zahra.morabi",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMzlZ-U_r86L62zHbGmbzHc\"}}"
+        "user": "parvizi.yalda",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6RVmuNSDTjgEKdzq26WT8e\"}}"
       },
       {
         "post": "n2026-11-07-0600",
-        "user": "razimarzi43",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AaGPVFRRxtPY3NRDhqaa4mP\"}}"
+        "user": "mehdirokhzadian",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANna2v8AAbSkeO5LB6AFUMB\"}}"
       },
       {
         "post": "n2026-11-07-0600",
-        "user": "seyran5992",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AG8R34-gK5x222kMlAHVN3X\"}}"
+        "user": "amenehrasuoli",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AwRfwcz0HdpXVwWywagG_NO\"}}"
       }
     ]
   },
@@ -25697,13 +25697,13 @@
     "18156292165533423": "n2026-11-08-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-08T13:01:49.784895+00:00",
-    "at": "2026-11-08T13:01:49.784895+00:00",
+    "last_sent_at": "2026-11-08T13:16:52.023638+00:00",
+    "at": "2026-11-08T13:16:52.023638+00:00",
     "mode": "live",
     "waiting": {
-      "n2026-11-07-0600": 418
+      "n2026-11-07-0600": 387
     },
-    "waiting_total": 418,
+    "waiting_total": 387,
     "unmatched_posts": [],
     "posts_read": 3,
     "posts_with_rule": 88,
@@ -29396,10 +29396,12 @@
     "18122228953961282": 1,
     "18170814553471921": 1,
     "18148149307630820": 1,
-    "18203554867377557": 1
+    "18203554867377557": 1,
+    "18004923053979578": 1,
+    "17997199281108471": 1
   },
   "_desk": {
-    "at": "2026-11-08T13:01:49.784895+00:00",
+    "at": "2026-11-08T13:16:52.023638+00:00",
     "items": [
       {
         "id": "17939402811401640",
@@ -30730,7 +30732,8 @@
     "18139148482726960": "2026-11-07T19:56:55.665252+00:00",
     "18120943019094484": "2026-11-07T20:11:57.518653+00:00",
     "18007699601793310": "2026-11-08T12:46:53.925902+00:00",
-    "18145134211523634": "2026-11-08T13:01:49.784895+00:00"
+    "18145134211523634": "2026-11-08T13:01:49.784895+00:00",
+    "18090815573702163": "2026-11-08T13:16:52.023638+00:00"
   },
   "18078694667709793": {
     "18103090313528673": {
@@ -42512,6 +42515,151 @@
       "c_at": "2026-11-08T03:45:59+0000",
       "text": "معلم",
       "bounced": "2026-11-08T13:01:49.784895+00:00"
+    },
+    "18148149307630820": {
+      "user": "razimarzi43",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18203554867377557": {
+      "user": "seyran5992",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18108975212526932": {
+      "user": "_mina_nilaa",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18098577761672365": {
+      "user": "najafi6529",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18101563961555627": {
+      "user": "fahimeh_adm",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17886962178512556": {
+      "user": "vahiddeh_ghahremany",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18117096446468705": {
+      "user": "pariya5816",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18140540086709948": {
+      "user": "raei2514",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18103500638384933": {
+      "user": "elhaa_msh",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18290019274293702": {
+      "user": "mojhgan_43",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17910819183664808": {
+      "user": "___this.is.life.buddy",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18120735142780897": {
+      "user": "avak3021",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18131260510861449": {
+      "user": "soheila_dindarlou",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18354975088269382": {
+      "user": "pleila2022",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18096554021174807": {
+      "user": "rsrs42494",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17987968806087113": {
+      "user": "n.arian.58",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18115650716152463": {
+      "user": "shimataraz",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18125789669473965": {
+      "user": "mehdi30361",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18190570138365695": {
+      "user": "f_m_reza",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18080080637425464": {
+      "user": "bime.pasargad.chekin",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17912204160590629": {
+      "user": "ahmadian_baran",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18119275892604909": {
+      "user": "farzadmanzarii",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17921967165453252": {
+      "user": "fh_.sh",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17949682641072155": {
+      "user": "vakil1358.ir",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18116565383012652": {
+      "user": "hes.am6855",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17895805674437765": {
+      "user": "sh136000000",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18126208150926238": {
+      "user": "negar.goals2019",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "17963530005000544": {
+      "user": "alireza_alizadeh5372",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18102398888532760": {
+      "user": "sheyda.azizi7",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18000292227030541": {
+      "user": "javadipooneh",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18133698877794525": {
+      "user": "fatemeh.hajibandeh",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18168811843490911": {
+      "user": "a.s.ghappani.7515",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18060870119798133": {
+      "user": "itx_man13",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18120373000962257": {
+      "user": "atefe_ghodousi",
+      "at": "2026-11-08T13:16:52.023638+00:00"
+    },
+    "18090815573702163": {
+      "user": "parvizi.yalda",
+      "at": "2026-11-08T13:16:52.023638+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A6RVmuNSDTjgEKdzq26WT8e\"}}",
+      "tries": 1,
+      "c_at": "2026-11-08T04:13:53+0000",
+      "text": "معلم",
+      "bounced": "2026-11-08T13:16:52.023638+00:00"
     }
   },
   "18156292165533423": {
