@@ -21110,7 +21110,7 @@
     }
   },
   "_report": {
-    "at": "2026-11-08T16:02:15.373375+00:00",
+    "at": "2026-11-08T16:17:18.658541+00:00",
     "mode": "live",
     "sent": 0,
     "failed": 3,
@@ -21121,19 +21121,19 @@
     "thanks": 0,
     "failures": [
       {
-        "post": "n2026-11-07-0600",
-        "user": "mina_hadinezhad",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A3UiaTGns2hZvAU3iJ6vdZN\"}}"
+        "post": "n2026-11-08-0600",
+        "user": "ghmj1348",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANmuJa4q293kPZ1ZsdZ5682\"}}"
       },
       {
-        "post": "n2026-11-07-0600",
-        "user": "fereshteh.fard_",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AIyhfYGJVJynES1QOBRgkbK\"}}"
+        "post": "n2026-11-08-0600",
+        "user": "mti3246",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AMgL4ky7qWchq2E6FyU3nc-\"}}"
       },
       {
-        "post": "n2026-11-07-0600",
-        "user": "roya_salehi72.00",
-        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"A8C6LHr1Tb0JcQmKFtAVayS\"}}"
+        "post": "n2026-11-08-0600",
+        "user": "adz20205",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"AmJbE5LvoNYodPZfDzDYGje\"}}"
       }
     ]
   },
@@ -25699,14 +25699,14 @@
   },
   "_health": {
     "last_sent_at": "2026-11-08T15:54:50.388216+00:00",
-    "at": "2026-11-08T16:02:15.373375+00:00",
+    "at": "2026-11-08T16:17:18.658541+00:00",
     "mode": "live",
     "waiting": {
-      "n2026-11-07-0600": 118
+      "n2026-11-08-0600": 2
     },
-    "waiting_total": 118,
+    "waiting_total": 2,
     "unmatched_posts": [],
-    "posts_read": 4,
+    "posts_read": 2,
     "posts_with_rule": 89,
     "problems": [],
     "queue_left": 0,
@@ -29409,107 +29409,14 @@
     "18109812755194259": 2,
     "18655749319043899": 1,
     "18176678824409472": 2,
-    "18155074357536340": 1
+    "18155074357536340": 1,
+    "18134007649761354": 1,
+    "18109321052195619": 1
   },
   "_desk": {
-    "at": "2026-11-08T16:02:15.373375+00:00",
-    "items": [
-      {
-        "id": "18127227598917464",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "amirsam_606591",
-        "text": "Teacher",
-        "at": "2026-11-08T14:56:35+0000"
-      },
-      {
-        "id": "17917590963535846",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "ke.yvans",
-        "text": "۵",
-        "at": "2026-11-08T13:59:39+0000"
-      },
-      {
-        "id": "18134400121814958",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "maryam_._1973",
-        "text": "۵",
-        "at": "2026-11-08T13:48:28+0000"
-      },
-      {
-        "id": "17939402811401640",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "mooojgan.m",
-        "text": "۵",
-        "at": "2026-11-08T11:50:07+0000"
-      },
-      {
-        "id": "18107199887575701",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "elaheaminnn",
-        "text": "۵",
-        "at": "2026-11-08T09:10:48+0000"
-      },
-      {
-        "id": "17978010159157746",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "f.v769",
-        "text": "۵",
-        "at": "2026-11-08T09:03:05+0000"
-      },
-      {
-        "id": "18436283137150666",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "kamifarahi",
-        "text": "چجوری میشه به pro تغییر داد؟",
-        "at": "2026-11-08T07:55:12+0000"
-      },
-      {
-        "id": "17952848055343383",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "_.s___93",
-        "text": "۵",
-        "at": "2026-11-08T06:45:18+0000"
-      },
-      {
-        "id": "18393188872224884",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "hosein669264",
-        "text": "5",
-        "at": "2026-11-08T06:26:25+0000"
-      },
-      {
-        "id": "18346536349259684",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "chenur.1404.1404",
-        "text": "۵",
-        "at": "2026-11-08T06:22:30+0000"
-      },
-      {
-        "id": "18020702018951521",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "masumeh.jafari1367",
-        "text": "۵",
-        "at": "2026-11-08T05:45:33+0000"
-      }
-    ],
-    "posts": {
-      "17924533371223372": {
-        "rule": "n2026-11-07-0600",
-        "keyword": "معلم",
-        "caption": "خداحافظ معلم خصوصی؟ ChatGPT یه حالت داره که جواب نمی‌ده، یادت می‌ده"
-      }
-    }
+    "at": "2026-11-08T16:17:18.658541+00:00",
+    "items": [],
+    "posts": {}
   },
   "17986701810116234": {
     "17999056443034505": {
@@ -30510,7 +30417,8 @@
     "18116152465858304": "2026-11-08T15:02:06.564062+00:00",
     "18031573985857378": "2026-11-08T15:02:06.564062+00:00",
     "18078761099736645": "2026-11-08T15:54:50.388216+00:00",
-    "18133056562771887": "2026-11-08T16:02:15.373375+00:00"
+    "18133056562771887": "2026-11-08T16:02:15.373375+00:00",
+    "17903251179388823": "2026-11-08T16:17:18.658541+00:00"
   },
   "18078694667709793": {
     "18103090313528673": {
@@ -43948,6 +43856,15 @@
     "17918799108532725": {
       "user": "asizaki64631",
       "at": "2026-11-08T15:54:50.388216+00:00"
+    },
+    "17903251179388823": {
+      "user": "ghmj1348",
+      "at": "2026-11-08T16:17:18.658541+00:00",
+      "failed": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The thread owner has archived or deleted this conversation, or the thread does not exist.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534001,\"fbtrace_id\":\"ANmuJa4q293kPZ1ZsdZ5682\"}}",
+      "tries": 1,
+      "c_at": "2026-11-08T16:08:23+0000",
+      "text": "ریاضی",
+      "bounced": "2026-11-08T16:17:18.658541+00:00"
     }
   }
 }
