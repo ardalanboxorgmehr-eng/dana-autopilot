@@ -9,6 +9,10 @@ on:
         type: choice
         options: ["", "dry_run", "live"]
         default: ""
+      keep_sweeping:
+        description: "Stay alive and sweep every 15 min for 5.5 hours"
+        type: boolean
+        default: false
 concurrency:
   group: dm
   cancel-in-progress: false
@@ -17,60 +21,26 @@ permissions:
 jobs:
   dm:
     runs-on: ubuntu-latest
+    # A scheduled run stays alive and sweeps on its own clock, because GitHub's
+    # cron mostly does not fire on this repo. 345 leaves the job room to finish
+    # its last push inside GitHub's 6 hour ceiling.
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Reply to comments
+      - name: Sweep comments and send DMs
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           DM_MODE: ${{ inputs.mode }}
           DESK_KEY: ${{ secrets.DESK_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: python scripts/dm_reply.py
-      - name: YouTube comments
-        if: always()
-        env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python scripts/yt_comments.py
-      - name: Record who was sent a DM
-        if: always()
-        run: |
-          if [ -z "$(git status --porcelain state/dm_sent.json state/yt_desk.json state/desk_inbox.enc)" ]; then
-            echo "no new DMs"
-            exit 0
-          fi
-          git config user.name "dana-autopilot"
-          git config user.email "actions@github.com"
-          # Keep this run's state aside. If another run pushed while we were
-          # working, rebasing would conflict on these files and the step used to
-          # fail, throwing this run's records away and messaging everyone again
-          # next run. Instead take the branch as it stands now and merge our
-          # records into it (9 Nov 2026).
-          mkdir -p /tmp/ours
-          cp state/dm_sent.json /tmp/ours/ 2>/dev/null || true
-          cp state/yt_desk.json /tmp/ours/ 2>/dev/null || true
-          cp state/desk_inbox.enc /tmp/ours/ 2>/dev/null || true
-          for try in 1 2 3 4 5; do
-            git fetch origin "${GITHUB_REF_NAME}"
-            git reset --hard FETCH_HEAD
-            python scripts/merge_state.py /tmp/ours
-            if [ -z "$(git status --porcelain state/)" ]; then
-              echo "nothing new to record"
-              exit 0
-            fi
-            git add state/dm_sent.json
-            [ -f state/yt_desk.json ] && git add state/yt_desk.json
-            [ -f state/desk_inbox.enc ] && git add state/desk_inbox.enc
-            git commit -m "dm: record sent messages"
-            if git push; then
-              exit 0
-            fi
-            echo "push lost a race, merging again (attempt $try)"
-            sleep $((try * 5))
-          done
-          echo "could not record this run's messages after 5 tries"
-          exit 1
+          # 15 minutes keeps the Instagram read load identical to the old
+          # four-runs-an-hour cron. 0 means one sweep and out.
+          SWEEP_EVERY_MIN: ${{ (github.event_name == 'schedule' || inputs.keep_sweeping) && '15' || '0' }}
+          SWEEP_BUDGET_MIN: "330"
+        run: bash scripts/sweep.sh
