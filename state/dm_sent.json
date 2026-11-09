@@ -21123,16 +21123,32 @@
     }
   },
   "_report": {
-    "at": "2026-11-09T17:57:51.639844+00:00",
+    "at": "2026-11-09T18:00:16.945735+00:00",
     "mode": "live",
-    "sent": 7,
-    "failed": 0,
+    "sent": 0,
+    "failed": 3,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-09-1530",
+        "user": "maziartaleb",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Ai9KmbqGhEMSl5dnq0A1xWf\"}}"
+      },
+      {
+        "post": "n2026-11-09-1530",
+        "user": "daena.vibes",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A3F9OQ156F-cuOlVwPxmrxW\"}}"
+      },
+      {
+        "post": "n2026-11-09-1530",
+        "user": "lei_ly1354",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ANLex8k_C_4gelVjT_uXqrJ\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -22749,7 +22765,7 @@
       "user": "azadeh_taraneh",
       "uid": "1943719853305614",
       "rule": "n2026-11-07-0600",
-      "at": "2026-11-09T17:12:51.501655+00:00"
+      "at": "2026-11-09T18:00:16.945735+00:00"
     }
   },
   "18630278164012008": {
@@ -25766,20 +25782,28 @@
     "18104759468369848": "n2026-11-09-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-09T17:57:51.639844+00:00",
-    "at": "2026-11-09T17:57:51.639844+00:00",
+    "last_sent_at": "2026-11-09T18:00:16.945735+00:00",
+    "at": "2026-11-09T18:00:16.945735+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-09-1530": 3,
+      "n2026-11-09-0600": 3,
+      "n2026-11-08-0600": 6,
+      "n2026-11-07-0600": 22
+    },
+    "waiting_total": 34,
     "unmatched_posts": [],
     "posts_read": 91,
     "posts_with_rule": 91,
-    "problems": [],
+    "problems": [
+      "a keyword comment has been waiting 3.0 hours; 34 waiting across 4 post(s), worst: n2026-11-07-0600 (22), n2026-11-08-0600 (6), n2026-11-09-1530 (3), n2026-11-09-0600 (3)"
+    ],
     "queue_left": 0,
     "inbox_waiting": 3,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
-    "swept_all_posts": true
+    "oldest_waiting_at": "2026-11-09T15:01:58+0000",
+    "oldest_waiting_hours": 2.97,
+    "swept_all_posts": true,
+    "alerted_at": "2026-11-09T18:00:16.945735+00:00"
   },
   "_thanked": {
     "18130502443748401": {
@@ -29508,10 +29532,13 @@
     "17894199888654382": 1,
     "17884737195627108": 1,
     "18120393821470002": 1,
-    "17989514838110625": 1
+    "17989514838110625": 1,
+    "18123591206282201": 1,
+    "18038243378897028": 1,
+    "18144638494592788": 1
   },
   "_desk": {
-    "at": "2026-11-09T17:57:51.639844+00:00",
+    "at": "2026-11-09T18:00:16.945735+00:00",
     "items": [
       {
         "id": "18154801990532878",
@@ -31088,7 +31115,7 @@
     "18427216702153635": "2026-11-08T18:02:32.700288+00:00",
     "17963629490999219": "2026-11-09T08:21:17.773259+00:00"
   },
-  "_alerted_dm": "2026-11-09T17:12:51.501655+00:00",
+  "_alerted_dm": "2026-11-09T18:00:16.945735+00:00",
   "18135383341710257": {
     "18097620227542206": {
       "user": "farshidjenabi",
