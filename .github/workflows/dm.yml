@@ -39,15 +39,38 @@ jobs:
       - name: Record who was sent a DM
         if: always()
         run: |
-          if [ -n "$(git status --porcelain state/dm_sent.json state/yt_desk.json state/desk_inbox.enc)" ]; then
-            git config user.name "dana-autopilot"
-            git config user.email "actions@github.com"
+          if [ -z "$(git status --porcelain state/dm_sent.json state/yt_desk.json state/desk_inbox.enc)" ]; then
+            echo "no new DMs"
+            exit 0
+          fi
+          git config user.name "dana-autopilot"
+          git config user.email "actions@github.com"
+          # Keep this run's state aside. If another run pushed while we were
+          # working, rebasing would conflict on these files and the step used to
+          # fail, throwing this run's records away and messaging everyone again
+          # next run. Instead take the branch as it stands now and merge our
+          # records into it (9 Nov 2026).
+          mkdir -p /tmp/ours
+          cp state/dm_sent.json /tmp/ours/ 2>/dev/null || true
+          cp state/yt_desk.json /tmp/ours/ 2>/dev/null || true
+          cp state/desk_inbox.enc /tmp/ours/ 2>/dev/null || true
+          for try in 1 2 3 4 5; do
+            git fetch origin "${GITHUB_REF_NAME}"
+            git reset --hard FETCH_HEAD
+            python scripts/merge_state.py /tmp/ours
+            if [ -z "$(git status --porcelain state/)" ]; then
+              echo "nothing new to record"
+              exit 0
+            fi
             git add state/dm_sent.json
             [ -f state/yt_desk.json ] && git add state/yt_desk.json
             [ -f state/desk_inbox.enc ] && git add state/desk_inbox.enc
             git commit -m "dm: record sent messages"
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
-            git push
-          else
-            echo "no new DMs"
-          fi
+            if git push; then
+              exit 0
+            fi
+            echo "push lost a race, merging again (attempt $try)"
+            sleep $((try * 5))
+          done
+          echo "could not record this run's messages after 5 tries"
+          exit 1

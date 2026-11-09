@@ -17,7 +17,9 @@ Safety:
     this on does not mass-message an old backlog.
   * One DM per comment and one per person per post (state/dm_sent.json).
   * Instagram only allows a private reply within 7 days of the comment.
-  * At most MAX_SENDS_PER_RUN sends a run, a few seconds apart.
+  * At most MAX_SENDS_PER_RUN sends a run, a few seconds apart, and sending stops
+    after SEND_BUDGET_S. Every post is still READ and counted after that, so
+    _health.waiting_total is the real backlog and no post is starved.
 
 When a DM bounces because the person's inbox is closed to pages (Instagram
 error 2534001), it leaves a threaded public reply asking them to DM the keyword
@@ -44,7 +46,10 @@ RULES = os.path.join(ROOT, "dm_rules.json")
 STATE = os.path.join(ROOT, "state", "dm_sent.json")
 CONTENT = os.path.join(ROOT, "content")
 
-MAX_SENDS_PER_RUN = 40
+MAX_SENDS_PER_RUN = 150       # safety net; SEND_BUDGET_S normally stops the sending first
+SEND_BUDGET_S = 12 * 60       # keep sending for this long, then only read and count, so the
+                              # run still finishes inside the 15-minute gap to the next one.
+                              # 150 sends x 4 runs an hour stays under Instagram's ~750/hour.
 SEND_GAP_S = 3
 MAX_ERROR_STREAK = 3          # this many failed sends in a row means throttling: stop the run
 MAX_TRIES = 4                 # a comment whose DM fails this many runs gets the public "DM us the keyword" reply instead
@@ -52,7 +57,8 @@ QUEUE = os.path.join(ROOT, "reply_queue.json")
 QUEUE_PER_RUN = 12            # hand-written threaded replies posted per run (~48/hour)
 THANKS_PER_RUN = 5            # automatic thank-you replies to emoji-only comments per run
 THANKS = ["مرسی از کامنتت 🙏", "مرسی که همراهمونی ✨", "ممنون که نظرت رو نوشتی 🙏", "مرسی ❤️"]
-STALL_ALERT_H = 2             # keyword comments waiting and nothing sent for this long: alert
+STALL_ALERT_H = 2             # kept for the old "nothing sent at all" case
+WAIT_ALERT_H = 1              # a keyword comment waiting longer than this: alert, day or night
 ALERT_REPEAT_H = 12           # do not email the same alert more often than this
 CTA_MARKS = ("📩", "کامنت کن", "کامنت بذار")   # a caption with these asks for a DM keyword
 RUN_BUDGET_S = 20 * 60       # stop starting new posts after 20 minutes; the next run carries on
@@ -309,6 +315,8 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
 
     started = time.monotonic()
     sends = errors = skipped = bounced = streak = posts_read = thanked = 0
+    sending = True               # False once the send budget is used: read and count only
+    oldest = None                # timestamp of the oldest keyword comment still waiting
     waiting = {}
     failures = []
     active = []                      # (media, rule) for every recent post with a rule, newest first
@@ -380,15 +388,15 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                     done[c["id"]] = {"user": user, "at": now.isoformat(), "skipped": "already sent to this person"}
                 skipped += 1
                 continue
-            if sends + errors >= MAX_SENDS_PER_RUN:
-                log("send limit for this run reached, the rest go next run")
-                break
+            if not sending:
+                break                    # budget spent: this post is only being counted now
             if len(msg) > MAX_DM_CHARS:
                 # Too long: Instagram would refuse it and the person would wrongly be told
                 # their inbox is closed. Leave the comment waiting; health() raises the alert.
                 continue
             if streak >= MAX_ERROR_STREAK:
                 log(f"{streak} failures in a row, Instagram is throttling: stopping, the rest go next run")
+                sending = False
                 break
             if mode != "live":
                 log(f"[dry run] {rid}: would DM @{user} for «{c.get('text','')[:30]}»")
@@ -416,7 +424,8 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 time.sleep(SEND_GAP_S * 3)
                 continue
             streak = 0
-            done[c["id"]] = {"user": user, "at": now.isoformat()}
+            # c_at added 9 Nov 2026: without it the comment-to-DM wait cannot be measured.
+            done[c["id"]] = {"user": user, "at": now.isoformat(), "c_at": c.get("timestamp", "")}
             users_done.add(user)
             sends += 1
             if checkpoint:
@@ -430,11 +439,24 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
             time.sleep(SEND_GAP_S)
         if mode == "live" and thanked < THANKS_PER_RUN:
             thanked += thank_emoji(ig, fresh, state, own, now, log, THANKS_PER_RUN - thanked)
-        left = count_waiting(fresh, done, own, kws, exclude)
+        left, oldest_here = count_waiting(fresh, done, own, kws, exclude)
         if left:
             waiting[rid] = left
-        if sends + errors >= MAX_SENDS_PER_RUN or streak >= MAX_ERROR_STREAK:
-            break
+            if oldest_here and (oldest is None or oldest_here < oldest):
+                oldest = oldest_here
+        # Fixed 9 Nov 2026: this used to break out of the sweep once the send cap was
+        # reached, so on a busy day only the 3-5 newest posts were ever read. Keyword
+        # comments on older posts waited up to 22 hours and waiting_total counted a
+        # fraction of the real backlog. Now the sweep always finishes; only the
+        # SENDING stops.
+        if not sending:
+            continue
+        if sends + errors >= MAX_SENDS_PER_RUN or time.monotonic() - started > SEND_BUDGET_S:
+            log("send budget for this run used; still reading the remaining posts to count them")
+            sending = False
+        elif streak >= MAX_ERROR_STREAK:
+            log(f"{streak} failures in a row, Instagram is throttling: no more sends this run")
+            sending = False
     queue_sent = run_queue(ig, state, own, mode, now, log, extra=auto_items(state, now, log)) if mode == "live" else 0
     desk_snapshot(state, desk_seen, own, exclude, now)
     try:
@@ -456,7 +478,7 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     log(f"done: {sends} sent, {errors} failed, {skipped} skipped, {inbox_sent} answered from the inbox")
     too_long = sorted({f"{r[3]} ({len(r[2])})" for _, r in active if len(r[2]) > MAX_DM_CHARS})
     alert = health(state, now, mode, sends + inbox_sent, waiting, unmatched,
-                   posts_read, len(active), log, too_long)
+                   posts_read, len(active), log, too_long, oldest)
     # Fail the job (GitHub then emails the owner) when sending is broken
     # outright, or when health() raises an alert.
     return (1 if (errors and not sends) or alert else 0), sends
@@ -701,6 +723,23 @@ def phone_alerts(state, now, log):
     if not topic:
         return
     local = now.astimezone(ZoneInfo("Europe/London"))
+    # Added 9 Nov 2026: DMs stalling is the one thing Ehsan wants at any hour.
+    hstate = state.get("_health", {})
+    stalled = hstate.get("oldest_waiting_hours", 0) >= WAIT_ALERT_H
+    if stalled:
+        last_stall = state.get("_alerted_stall", "")
+        if not last_stall or datetime.fromisoformat(last_stall) < now - timedelta(hours=1):
+            state["_alerted_stall"] = now.isoformat()
+            body = (f"DMs are behind: oldest keyword comment waiting "
+                    f"{hstate.get('oldest_waiting_hours')} h, {hstate.get('waiting_total')} waiting")
+            try:
+                urllib.request.urlopen(urllib.request.Request(
+                    "https://ntfy.sh/" + urllib.parse.quote(topic), data=body.encode(),
+                    headers={"Title": "DMs behind", "Tags": "warning", "Priority": "high"},
+                    method="POST"), timeout=20).read()
+                log("phone alert (any hour): " + body)
+            except Exception as e:
+                log(f"stall push failed: {e}")
     if local.hour < 8 or local.hour >= 23:
         return
     seen = state.setdefault("_alerted", {})
@@ -759,9 +798,12 @@ def phone_alerts(state, now, log):
 
 
 def count_waiting(comments, done, own, kws, exclude):
-    """Keyword comments in the window that still have no DM and no reply from us."""
+    """Keyword comments in the window that still have no DM and no reply from us.
+    Returns (count, timestamp of the oldest one) so health() can alert on the wait
+    itself rather than on whether anything was sent."""
     users = {v.get("user") for v in done.values() if "failed" not in v}
     n = 0
+    oldest = None
     for c in comments:
         frm = c.get("from") or {}
         user = frm.get("username") or c.get("username", "")
@@ -773,21 +815,40 @@ def count_waiting(comments, done, own, kws, exclude):
         if any((r.get("username") in own) or (str((r.get("from") or {}).get("id", "")) in own) for r in replies):
             continue
         n += 1
-    return n
+        at = c.get("timestamp")
+        if at and (oldest is None or at < oldest):
+            oldest = at
+    return n, oldest
 
 
-def health(state, now, mode, sent, waiting, unmatched, posts_read, posts_total, log, too_long=()):
+def health(state, now, mode, sent, waiting, unmatched, posts_read, posts_total, log, too_long=(), oldest=None):
     """Write state['_health'] every run and decide whether to alert (added 7 Oct 2026,
     after a bug left ~800 people without their DM for days unnoticed)."""
     h = state.setdefault("_health", {})
     if sent:
         h["last_sent_at"] = now.isoformat()
+    waited_h = 0.0
+    if oldest:
+        try:
+            waited_h = (now - ts(oldest)).total_seconds() / 3600
+        except ValueError:
+            waited_h = 0.0
     h.update({"at": now.isoformat(), "mode": mode, "waiting": waiting,
               "waiting_total": sum(waiting.values()), "unmatched_posts": unmatched,
-              "posts_read": posts_read, "posts_with_rule": posts_total})
+              "posts_read": posts_read, "posts_with_rule": posts_total,
+              "oldest_waiting_at": oldest, "oldest_waiting_hours": round(waited_h, 2),
+              "swept_all_posts": posts_read >= posts_total})
     problems = []
     last = h.get("last_sent_at")
-    if mode == "live" and h["waiting_total"] and \
+    # Fixed 9 Nov 2026. The old test was "nothing sent for 2 hours". On a busy day every
+    # run sent its full cap, so last_sent_at was refreshed every run and this never fired
+    # while comments on older posts waited 22 hours. Alert on the WAIT instead.
+    if mode == "live" and waited_h >= WAIT_ALERT_H:
+        worst = sorted(waiting.items(), key=lambda kv: -kv[1])[:5]
+        problems.append(f"a keyword comment has been waiting {waited_h:.1f} hours; "
+                        f"{h['waiting_total']} waiting across {len(waiting)} post(s), worst: "
+                        + ", ".join(f"{k} ({v})" for k, v in worst))
+    elif mode == "live" and h["waiting_total"] and \
             (not last or datetime.fromisoformat(last) < now - timedelta(hours=STALL_ALERT_H)):
         problems.append(f"{h['waiting_total']} keyword comments waiting and nothing sent for "
                         f"{STALL_ALERT_H}+ hours: {waiting}")
