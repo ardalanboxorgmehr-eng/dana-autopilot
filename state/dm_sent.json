@@ -21128,16 +21128,32 @@
     }
   },
   "_report": {
-    "at": "2026-11-10T02:42:37.949370+00:00",
+    "at": "2026-11-10T02:44:47.661338+00:00",
     "mode": "live",
-    "sent": 3,
-    "failed": 0,
+    "sent": 0,
+    "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-09-0600",
+        "user": "mamdreza.1379",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A4pCYN3LPwrBmJcbusoCb8G\"}}"
+      },
+      {
+        "post": "n2026-11-09-0600",
+        "user": "_mariya_zed",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AHhVNFo8BJs-gXq9mOFka3P\"}}"
+      },
+      {
+        "post": "n2026-11-09-0600",
+        "user": "atasaeed6",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AWDZccSfNQ_O67M_L-yfaxV\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25771,20 +25787,29 @@
     "18104759468369848": "n2026-11-09-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-10T02:42:37.949370+00:00",
-    "at": "2026-11-10T02:42:37.949370+00:00",
+    "last_sent_at": "2026-11-09T22:12:37.458668+00:00",
+    "at": "2026-11-10T02:44:47.661338+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-09-0600": 3,
+      "n2026-11-08-0600": 7,
+      "n2026-11-07-0600": 11,
+      "n2026-11-05-0600": 4,
+      "p02": 1
+    },
+    "waiting_total": 26,
     "unmatched_posts": [],
     "posts_read": 91,
     "posts_with_rule": 91,
-    "problems": [],
+    "problems": [
+      "a keyword comment has been waiting 4.4 hours; 26 waiting across 5 post(s), worst: n2026-11-07-0600 (11), n2026-11-08-0600 (7), n2026-11-05-0600 (4), n2026-11-09-0600 (3), p02 (1)"
+    ],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
-    "swept_all_posts": true
+    "oldest_waiting_at": "2026-11-09T22:18:32+0000",
+    "oldest_waiting_hours": 4.44,
+    "swept_all_posts": true,
+    "alerted_at": "2026-11-10T02:44:47.661338+00:00"
   },
   "_thanked": {
     "18130502443748401": {
@@ -29516,10 +29541,13 @@
     "17989514838110625": 1,
     "18123591206282201": 1,
     "18038243378897028": 1,
-    "18144638494592788": 1
+    "18144638494592788": 1,
+    "18656799250029516": 1,
+    "18033167795855484": 1,
+    "18168639103469366": 1
   },
   "_desk": {
-    "at": "2026-11-10T02:42:37.949370+00:00",
+    "at": "2026-11-10T02:44:47.661338+00:00",
     "items": [
       {
         "id": "18208712977375421",
