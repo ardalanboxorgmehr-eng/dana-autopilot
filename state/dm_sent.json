@@ -21128,32 +21128,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-10T22:23:06.691936+00:00",
+    "at": "2026-11-10T22:38:06.878171+00:00",
     "mode": "live",
     "sent": 0,
-    "failed": 3,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-07-1530",
-        "user": "kavoshai",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AIFMbLpqZC7YNh1iQHjm4-h\"}}"
-      },
-      {
-        "post": "n2026-11-07-0600",
-        "user": "soroush1602",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"ABu_mFHqKR1FU7F-xDH2w48\"}}"
-      },
-      {
-        "post": "n2026-11-07-0600",
-        "user": "hengamenegar",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AONE6EtBANtdz657tbqPIyA\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25802,22 +25786,18 @@
   },
   "_health": {
     "last_sent_at": "2026-11-10T22:06:27.189472+00:00",
-    "at": "2026-11-10T22:23:06.691936+00:00",
+    "at": "2026-11-10T22:38:06.878171+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-07-1530": 1,
-      "n2026-11-07-0600": 2,
-      "2026-10-20-0600": 1
-    },
-    "waiting_total": 4,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 93,
     "posts_with_rule": 93,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": "2026-11-10T22:13:59+0000",
-    "oldest_waiting_hours": 0.15,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29560,7 +29540,7 @@
     "17918897541532155": 1
   },
   "_desk": {
-    "at": "2026-11-10T22:23:06.691936+00:00",
+    "at": "2026-11-10T22:38:06.878171+00:00",
     "items": [
       {
         "id": "18117630080035650",
