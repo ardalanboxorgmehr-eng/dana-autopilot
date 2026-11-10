@@ -12,7 +12,13 @@ on:
       keep_sweeping:
         description: "Stay alive and sweep every 15 min for 5.5 hours"
         type: boolean
-        default: false
+        # Default true since 10 Nov 2026. The Mac launchd kick dispatches with
+        # no inputs, so with this false the run that took over when a keepalive
+        # ended was a single sweep: on 9 Nov that left a 215 minute gap between
+        # 18:04 and 21:39. Defaulting true means the kick starts a keepalive
+        # too, and coverage is continuous without touching the Mac.
+        # Untick it for a one-off poke.
+        default: true
 concurrency:
   group: dm
   cancel-in-progress: false
