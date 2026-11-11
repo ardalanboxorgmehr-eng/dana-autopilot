@@ -21133,22 +21133,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-11T08:56:14.033259+00:00",
+    "at": "2026-11-11T09:11:12.529967+00:00",
     "mode": "live",
     "sent": 0,
-    "failed": 1,
-    "skipped": 1,
+    "failed": 0,
+    "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-05-0600",
-        "user": "s.riwe",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AAxPUW7731jfPOe3TPnr9YC\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25803,12 +25797,10 @@
   },
   "_health": {
     "last_sent_at": "2026-11-11T08:24:48.999621+00:00",
-    "at": "2026-11-11T08:56:14.033259+00:00",
+    "at": "2026-11-11T09:11:12.529967+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-05-0600": 1
-    },
-    "waiting_total": 1,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [
       {
         "id": "17952570714056649",
@@ -25822,8 +25814,8 @@
     ],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": "2026-11-11T08:55:07+0000",
-    "oldest_waiting_hours": 0.02,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true,
     "alerted_at": "2026-11-11T06:09:48.779998+00:00"
   },
@@ -29573,7 +29565,7 @@
     "18393990781230727": 1
   },
   "_desk": {
-    "at": "2026-11-11T08:56:14.033259+00:00",
+    "at": "2026-11-11T09:11:12.529967+00:00",
     "items": [
       {
         "id": "18123885859982821",
