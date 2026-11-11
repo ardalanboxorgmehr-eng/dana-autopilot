@@ -21128,16 +21128,22 @@
     }
   },
   "_report": {
-    "at": "2026-11-11T03:38:06.127033+00:00",
+    "at": "2026-11-11T03:39:48.807158+00:00",
     "mode": "live",
-    "sent": 1,
-    "failed": 0,
+    "sent": 0,
+    "failed": 1,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-08-0600",
+        "user": "amiri13442257",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AEppKXLiq__q9DsZr-oRiVS\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25791,19 +25797,21 @@
     "18133404121806743": "n2026-11-10-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-11T03:38:06.127033+00:00",
-    "at": "2026-11-11T03:38:06.127033+00:00",
+    "last_sent_at": "2026-11-11T03:23:06.775678+00:00",
+    "at": "2026-11-11T03:39:48.807158+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-08-0600": 1
+    },
+    "waiting_total": 1,
     "unmatched_posts": [],
     "posts_read": 93,
     "posts_with_rule": 93,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-11T03:34:41+0000",
+    "oldest_waiting_hours": 0.09,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29543,10 +29551,11 @@
     "18118753433279163": 1,
     "18128327794928559": 1,
     "17913450057578795": 1,
-    "17918897541532155": 1
+    "17918897541532155": 1,
+    "18135052717813387": 1
   },
   "_desk": {
-    "at": "2026-11-11T03:38:06.127033+00:00",
+    "at": "2026-11-11T03:39:48.807158+00:00",
     "items": [
       {
         "id": "18130106704895402",
