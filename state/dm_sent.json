@@ -21138,27 +21138,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-12T06:02:32.668339+00:00",
+    "at": "2026-11-12T06:17:32.530053+00:00",
     "mode": "live",
-    "sent": 0,
-    "failed": 2,
+    "sent": 2,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-07-0600",
-        "user": "atenanika58",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"Aed_bcTvl0rtmSAa91ME0Ov\"}}"
-      },
-      {
-        "post": "n2026-11-07-0600",
-        "user": "ramin_me59",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AbBrAHVJWAvFp90or8xc597\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25812,13 +25801,11 @@
     "18133404121806743": "n2026-11-10-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-12T05:46:26.034566+00:00",
-    "at": "2026-11-12T06:02:32.668339+00:00",
+    "last_sent_at": "2026-11-12T06:17:32.530053+00:00",
+    "at": "2026-11-12T06:17:32.530053+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-07-0600": 2
-    },
-    "waiting_total": 2,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [
       {
         "id": "18428307565156750",
@@ -25840,10 +25827,10 @@
     ],
     "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": "2026-11-12T05:48:57+0000",
-    "oldest_waiting_hours": 0.23,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true,
-    "alerted_at": "2026-11-11T18:12:38.183608+00:00"
+    "alerted_at": "2026-11-12T06:17:32.530053+00:00"
   },
   "_thanked": {
     "18130502443748401": {
@@ -29603,7 +29590,7 @@
     "18122297020970257": 1
   },
   "_desk": {
-    "at": "2026-11-12T06:02:32.668339+00:00",
+    "at": "2026-11-12T06:17:32.530053+00:00",
     "items": [
       {
         "id": "17904075501672602",
@@ -47995,6 +47982,11 @@
       "user": "ramin_me59",
       "at": "2026-11-12T06:01:25.153659+00:00",
       "c_at": "2026-11-12T05:57:59+0000"
+    },
+    "17933279367414526": {
+      "user": "miladbn82",
+      "at": "2026-11-12T06:17:32.530053+00:00",
+      "c_at": "2026-11-12T06:13:43+0000"
     }
   },
   "18156292165533423": {
@@ -49618,6 +49610,11 @@
       "user": "n.ghavidel82",
       "at": "2026-11-12T05:16:25.145621+00:00",
       "c_at": "2026-11-12T05:03:15+0000"
+    },
+    "18121747559083183": {
+      "user": "e.135555",
+      "at": "2026-11-12T06:17:32.530053+00:00",
+      "c_at": "2026-11-12T06:09:15+0000"
     }
   },
   "18100292204408210": {
