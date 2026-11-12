@@ -21143,16 +21143,32 @@
     }
   },
   "_report": {
-    "at": "2026-11-12T11:17:33.042709+00:00",
+    "at": "2026-11-12T11:19:44.093932+00:00",
     "mode": "live",
-    "sent": 3,
-    "failed": 0,
+    "sent": 0,
+    "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-07-0600",
+        "user": "metanoia_8119",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AYLaPmZekjvXymDwAMuQtxw\"}}"
+      },
+      {
+        "post": "n2026-11-07-0600",
+        "user": "fatimashahgholi",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"AHE8SSPaUykxAeUELM6sacw\"}}"
+      },
+      {
+        "post": "p00",
+        "user": "alikargar.313",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"An unknown error has occurred.\",\"type\":\"OAuthException\",\"code\":1,\"fbtrace_id\":\"A2cWrxwbNK3sqdr7P2-wp4a\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25806,11 +25822,14 @@
     "18133404121806743": "n2026-11-10-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-12T11:17:33.042709+00:00",
-    "at": "2026-11-12T11:17:33.042709+00:00",
+    "last_sent_at": "2026-11-12T10:47:32.865886+00:00",
+    "at": "2026-11-12T11:19:44.093932+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-07-0600": 2,
+      "p00": 1
+    },
+    "waiting_total": 3,
     "unmatched_posts": [
       {
         "id": "18428307565156750",
@@ -25832,8 +25851,8 @@
     ],
     "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-12T11:03:24+0000",
+    "oldest_waiting_hours": 0.27,
     "swept_all_posts": true,
     "alerted_at": "2026-11-12T06:17:32.530053+00:00"
   },
@@ -29592,10 +29611,13 @@
     "18137654716679367": 1,
     "18102549953639681": 1,
     "18160112278446980": 1,
-    "18122297020970257": 1
+    "18122297020970257": 1,
+    "18146756758590576": 1,
+    "18019116479988532": 1,
+    "18120563864325141": 1
   },
   "_desk": {
-    "at": "2026-11-12T11:17:33.042709+00:00",
+    "at": "2026-11-12T11:19:44.093932+00:00",
     "items": [
       {
         "id": "18114790454176528",
@@ -30228,14 +30250,6 @@
         "user": "shahryar_maf",
         "text": "تازه متوجه شدی؟ این امکان سالهاست که فعاله!",
         "at": "2026-11-05T21:01:47+0000"
-      },
-      {
-        "id": "18431710222151727",
-        "media": "18154203544523432",
-        "rule": "n2026-10-30-0600",
-        "user": "so_yes00",
-        "text": "زبان فارسی رو پشتیبانی میکنن؟",
-        "at": "2026-11-05T11:18:53+0000"
       }
     ],
     "posts": {
@@ -31238,7 +31252,7 @@
     "18154801990532878": "2026-11-09T21:27:37.456347+00:00",
     "18381007438233738": "2026-11-11T08:09:48.543989+00:00"
   },
-  "_alerted_dm": "2026-11-12T11:17:33.042709+00:00",
+  "_alerted_dm": "2026-11-12T11:19:44.093932+00:00",
   "18135383341710257": {
     "18097620227542206": {
       "user": "farshidjenabi",
