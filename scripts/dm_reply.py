@@ -61,6 +61,9 @@ STALL_ALERT_H = 2             # kept for the old "nothing sent at all" case
 WAIT_ALERT_H = 1              # a keyword comment waiting longer than this: alert, day or night
 ALERT_REPEAT_H = 12           # do not email the same alert more often than this
 CTA_MARKS = ("📩", "کامنت کن", "کامنت بذار")   # a caption with these asks for a DM keyword
+# The word a caption tells people to comment, as in: کلمه‌ی «نقشه» رو کامنت کن.
+# Anchored on کلمه because captions quote other things too, e.g. «چی بپزم؟».
+_ASKED_KW = re.compile(r"کلمه\S*\s*[«\"\']([^»\"\']{1,30})[»\"\']")
 RUN_BUDGET_S = 20 * 60       # stop starting new posts after 20 minutes; the next run carries on
 WINDOW_DAYS = 7
 MAX_DM_CHARS = 950           # Instagram refuses a DM over 1000 characters; 950 leaves room for the greeting swap (Ehsan, 4 Nov 2026)
@@ -333,7 +336,10 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
             active.append((m, rule))
         elif any(k in (m.get("caption") or "") for k in CTA_MARKS) and \
                 ts(m["timestamp"]) >= now - timedelta(days=WINDOW_DAYS):
-            unmatched.append({"id": m["id"], "caption": (m.get("caption") or "")[:60]})
+            cap = m.get("caption") or ""
+            kw = _ASKED_KW.search(cap)
+            unmatched.append({"id": m["id"], "caption": cap[:60],
+                              "asks_for": kw.group(1).strip() if kw else ""})
     for u in unmatched:
         log(f"NO DM RULE for a post that asks for a keyword: {u['caption']}")
     for m, rule in active:
@@ -740,6 +746,42 @@ def phone_alerts(state, now, log):
                 log("phone alert (any hour): " + body)
             except Exception as e:
                 log(f"stall push failed: {e}")
+    # Added 12 Nov 2026. A post that asks for a keyword with no rule behind it
+    # only ever reached a failed run and a GitHub email, and sat unnoticed for
+    # two days while 14 people commented and got nothing. Same treatment as a
+    # stall now: straight to the phone, at any hour, because every hour it
+    # stands is more people left hanging. Repeated every 6 hours per post.
+    norule = hstate.get("unmatched_posts") or []
+    seen_nr = state.get("_alerted_norule")
+    if seen_nr is not None:
+        live = {u["id"] for u in norule}
+        for k in list(seen_nr):
+            if k not in live:
+                seen_nr.pop(k)              # rule added, stop tracking it
+        if not seen_nr:
+            state.pop("_alerted_norule")
+    if norule:
+        seen_nr = state.setdefault("_alerted_norule", {})
+        due = []
+        for u in norule:
+            last = seen_nr.get(u["id"])
+            if not last or datetime.fromisoformat(last) < now - timedelta(hours=6):
+                due.append(u)
+        if due:
+            for u in due:
+                seen_nr[u["id"]] = now.isoformat()
+            words = ", ".join(u.get("asks_for") or u["caption"][:20] for u in due)
+            body = (f"{len(due)} post(s) ask for a keyword with no DM rule: {words}. "
+                    f"Anyone commenting gets nothing until a rule is added.")
+            try:
+                urllib.request.urlopen(urllib.request.Request(
+                    "https://ntfy.sh/" + urllib.parse.quote(topic), data=body.encode(),
+                    headers={"Title": "Post has no DM rule", "Tags": "warning",
+                             "Priority": "high"},
+                    method="POST"), timeout=20).read()
+                log("phone alert (any hour): " + body)
+            except Exception as e:
+                log(f"no-rule push failed: {e}")
     if local.hour < 8 or local.hour >= 23:
         return
     seen = state.setdefault("_alerted", {})
