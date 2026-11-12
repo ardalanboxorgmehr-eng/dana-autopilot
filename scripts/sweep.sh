@@ -82,6 +82,20 @@ while :; do
     echo "budget of ${BUDGET} min used after $n sweeps; the next scheduled run takes over"
     break
   fi
+  # Pick up anything merged while this run has been alive. A run holds the
+  # concurrency group for its whole budget, so without this a 5.5 hour run
+  # keeps the code and the DM rules it checked out at the start, and every
+  # kick behind it is cancelled while it waits. On 12 Nov 2026 that meant
+  # three new DM rules sat merged for hours with 14 people still waiting.
+  # Only when the tree is clean: record() has pushed, so there is nothing
+  # of ours to lose.
+  if [ -z "$(git status --porcelain)" ]; then
+    if git fetch origin "${GITHUB_REF_NAME}" && git reset --hard FETCH_HEAD; then
+      echo "refreshed to $(git rev-parse --short HEAD)"
+    else
+      echo "could not refresh the checkout, carrying on with what we have"
+    fi
+  fi
   # Sleep to the next interval boundary rather than a flat interval, so the
   # sweeps do not drift later and later across five hours.
   target=$((n * EVERY * 60))
