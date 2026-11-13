@@ -21153,32 +21153,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-13T03:13:07.049330+00:00",
+    "at": "2026-11-13T03:28:06.847147+00:00",
     "mode": "live",
-    "sent": 1,
-    "failed": 3,
+    "sent": 0,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-07-0600",
-        "user": "m_diaan.h4",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"Af7g82uoRcDCi4olcK2I_LV\"}}"
-      },
-      {
-        "post": "n2026-11-07-0600",
-        "user": "real_somayeh",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"A8Yo_zLNNwcb5syh0F0fnZZ\"}}"
-      },
-      {
-        "post": "n2026-11-05-0600",
-        "user": "e.bf11032",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"ArshAPwwbHLTOSxtYBQS2Mv\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25856,13 +25840,10 @@
   },
   "_health": {
     "last_sent_at": "2026-11-13T03:13:07.049330+00:00",
-    "at": "2026-11-13T03:13:07.049330+00:00",
+    "at": "2026-11-13T03:28:06.847147+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-07-0600": 2,
-      "n2026-11-05-0600": 1
-    },
-    "waiting_total": 3,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [
       {
         "id": "17911561491578755",
@@ -25877,8 +25858,8 @@
     ],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": "2026-11-13T03:00:59+0000",
-    "oldest_waiting_hours": 0.2,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true,
     "alerted_at": "2026-11-12T15:34:43.244492+00:00"
   },
@@ -29659,7 +29640,7 @@
     "17957981877027410": 1
   },
   "_desk": {
-    "at": "2026-11-13T03:13:07.049330+00:00",
+    "at": "2026-11-13T03:28:06.847147+00:00",
     "items": [
       {
         "id": "18608193886064908",
@@ -29790,6 +29771,14 @@
         "at": "2026-11-09T17:14:35+0000"
       },
       {
+        "id": "18133267108775282",
+        "media": "18156292165533423",
+        "rule": "n2026-11-08-0600",
+        "user": "meysambahadori1",
+        "text": "۳",
+        "at": "2026-11-09T10:38:58+0000"
+      },
+      {
         "id": "18134662439496509",
         "media": "17924533371223372",
         "rule": "n2026-11-07-0600",
@@ -29806,6 +29795,22 @@
         "at": "2026-11-09T06:21:15+0000"
       },
       {
+        "id": "18119810161791184",
+        "media": "18156292165533423",
+        "rule": "n2026-11-08-0600",
+        "user": "fahime_entezary_lawyer",
+        "text": "۳",
+        "at": "2026-11-09T04:11:24+0000"
+      },
+      {
+        "id": "18648953971019753",
+        "media": "18156292165533423",
+        "rule": "n2026-11-08-0600",
+        "user": "azadeh_azadeh5882",
+        "text": "@smr13_89",
+        "at": "2026-11-09T03:00:16+0000"
+      },
+      {
         "id": "18134482483688565",
         "media": "17924533371223372",
         "rule": "n2026-11-07-0600",
@@ -29820,6 +29825,14 @@
         "user": "fj.mj.vb",
         "text": "Promet",
         "at": "2026-11-09T02:52:41+0000"
+      },
+      {
+        "id": "18013908353770506",
+        "media": "18156292165533423",
+        "rule": "n2026-11-08-0600",
+        "user": "e___hsa__n",
+        "text": "@marco_polo1989 سلام سوال منم هست لطفا کمکم کنید",
+        "at": "2026-11-08T21:56:08+0000"
       },
       {
         "id": "17945332011363654",
