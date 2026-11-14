@@ -21163,16 +21163,27 @@
     }
   },
   "_report": {
-    "at": "2026-11-14T21:22:51.988801+00:00",
+    "at": "2026-11-14T21:24:13.230253+00:00",
     "mode": "live",
-    "sent": 2,
-    "failed": 0,
+    "sent": 0,
+    "failed": 2,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-07-0600",
+        "user": "nokhbeparvaranksh",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"APYSgl3P6khOC5xZVOyEOOt\"}}"
+      },
+      {
+        "post": "2026-10-24-0600",
+        "user": "alborz.shnia",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"A1jCuYqqpSfl4wO_RxY0gnm\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25884,19 +25895,22 @@
     "18347275540253258": "n2026-11-14-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-14T21:22:51.988801+00:00",
-    "at": "2026-11-14T21:22:51.988801+00:00",
+    "last_sent_at": "2026-11-14T21:07:51.746767+00:00",
+    "at": "2026-11-14T21:24:13.230253+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-07-0600": 1,
+      "2026-10-24-0600": 1
+    },
+    "waiting_total": 2,
     "unmatched_posts": [],
     "posts_read": 101,
     "posts_with_rule": 101,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-14T21:11:31+0000",
+    "oldest_waiting_hours": 0.21,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29684,10 +29698,12 @@
     "17959298136271242": 1,
     "18159263158479361": 1,
     "18131919931831481": 1,
-    "18135505234781036": 1
+    "18135505234781036": 1,
+    "17888040522506135": 1,
+    "18142673761714426": 1
   },
   "_desk": {
-    "at": "2026-11-14T21:22:51.988801+00:00",
+    "at": "2026-11-14T21:24:13.230253+00:00",
     "items": [
       {
         "id": "18106491749022636",
