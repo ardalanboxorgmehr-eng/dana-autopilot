@@ -21158,22 +21158,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-14T10:51:47.345134+00:00",
+    "at": "2026-11-14T11:06:48.074709+00:00",
     "mode": "live",
     "sent": 0,
-    "failed": 1,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-08-0600",
-        "user": "astaneh_tm",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AdvZeqQVhTSr8LBJhJV802i\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25873,20 +25867,18 @@
   },
   "_health": {
     "last_sent_at": "2026-11-14T10:34:57.152155+00:00",
-    "at": "2026-11-14T10:51:47.345134+00:00",
+    "at": "2026-11-14T11:06:48.074709+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-08-0600": 1
-    },
-    "waiting_total": 1,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 100,
     "posts_with_rule": 100,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 3,
-    "oldest_waiting_at": "2026-11-14T10:47:06+0000",
-    "oldest_waiting_hours": 0.08,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29677,7 +29669,7 @@
     "18135505234781036": 1
   },
   "_desk": {
-    "at": "2026-11-14T10:51:47.345134+00:00",
+    "at": "2026-11-14T11:06:48.074709+00:00",
     "items": [
       {
         "id": "18147708892598404",
@@ -31357,7 +31349,7 @@
     "18381007438233738": "2026-11-11T08:09:48.543989+00:00",
     "18650038729050045": "2026-11-13T12:29:12.361106+00:00"
   },
-  "_alerted_dm": "2026-11-14T08:04:57.438569+00:00",
+  "_alerted_dm": "2026-11-14T11:06:48.074709+00:00",
   "18135383341710257": {
     "18097620227542206": {
       "user": "farshidjenabi",
