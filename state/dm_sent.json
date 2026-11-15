@@ -21163,27 +21163,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-15T13:14:27.082884+00:00",
+    "at": "2026-11-15T13:29:26.549261+00:00",
     "mode": "live",
     "sent": 0,
-    "failed": 2,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-08-0600",
-        "user": "btparisa",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AsqLMCCu9Unvo2opoDp7MH1\"}}"
-      },
-      {
-        "post": "n2026-11-05-0600",
-        "user": "hadi_mehraban1",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AgzInafrWSb8iLHDo6dI1DX\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25908,21 +25897,18 @@
   },
   "_health": {
     "last_sent_at": "2026-11-15T12:43:18.885815+00:00",
-    "at": "2026-11-15T13:14:27.082884+00:00",
+    "at": "2026-11-15T13:29:26.549261+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-08-0600": 1,
-      "n2026-11-05-0600": 1
-    },
-    "waiting_total": 2,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 102,
     "posts_with_rule": 102,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": "2026-11-15T12:58:28+0000",
-    "oldest_waiting_hours": 0.27,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29719,7 +29705,7 @@
     "18140194675638694": 1
   },
   "_desk": {
-    "at": "2026-11-15T13:14:27.082884+00:00",
+    "at": "2026-11-15T13:29:26.549261+00:00",
     "items": [
       {
         "id": "18132636691745476",
