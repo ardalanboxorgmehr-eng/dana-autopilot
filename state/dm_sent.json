@@ -21163,16 +21163,22 @@
     }
   },
   "_report": {
-    "at": "2026-11-15T18:29:27.070003+00:00",
+    "at": "2026-11-15T18:31:25.332678+00:00",
     "mode": "live",
-    "sent": 1,
-    "failed": 0,
+    "sent": 0,
+    "failed": 1,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-07-0600",
+        "user": "mryam_.zn",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"ATwU2zxBaRGF0GWTrgb2u8x\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25897,19 +25903,21 @@
     "18117243623151652": "n2026-11-15-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-15T18:29:27.070003+00:00",
-    "at": "2026-11-15T18:29:27.070003+00:00",
+    "last_sent_at": "2026-11-15T18:14:26.983545+00:00",
+    "at": "2026-11-15T18:31:25.332678+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-07-0600": 1
+    },
+    "waiting_total": 1,
     "unmatched_posts": [],
     "posts_read": 103,
     "posts_with_rule": 103,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-15T18:22:50+0000",
+    "oldest_waiting_hours": 0.14,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29704,10 +29712,11 @@
     "17919684711262241": 1,
     "18081311843420995": 1,
     "18140194675638694": 1,
-    "18192402085413245": 1
+    "18192402085413245": 1,
+    "18138985666737165": 1
   },
   "_desk": {
-    "at": "2026-11-15T18:29:27.070003+00:00",
+    "at": "2026-11-15T18:31:25.332678+00:00",
     "items": [
       {
         "id": "18132636691745476",
