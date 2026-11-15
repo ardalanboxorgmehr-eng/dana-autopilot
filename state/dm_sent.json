@@ -21163,22 +21163,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-15T18:31:25.332678+00:00",
+    "at": "2026-11-15T18:46:25.291643+00:00",
     "mode": "live",
     "sent": 0,
-    "failed": 1,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-07-0600",
-        "user": "mryam_.zn",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"ATwU2zxBaRGF0GWTrgb2u8x\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25904,20 +25898,18 @@
   },
   "_health": {
     "last_sent_at": "2026-11-15T18:14:26.983545+00:00",
-    "at": "2026-11-15T18:31:25.332678+00:00",
+    "at": "2026-11-15T18:46:25.291643+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-07-0600": 1
-    },
-    "waiting_total": 1,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 103,
     "posts_with_rule": 103,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": "2026-11-15T18:22:50+0000",
-    "oldest_waiting_hours": 0.14,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29716,7 +29708,7 @@
     "18138985666737165": 1
   },
   "_desk": {
-    "at": "2026-11-15T18:31:25.332678+00:00",
+    "at": "2026-11-15T18:46:25.291643+00:00",
     "items": [
       {
         "id": "18132636691745476",
@@ -29997,14 +29989,6 @@
         "user": "gemstones_shiraz",
         "text": "Study and learn نداره!!!",
         "at": "2026-11-08T20:19:07+0000"
-      },
-      {
-        "id": "18114260192586357",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "peymanazari_",
-        "text": "@danestani.ruzz چیزی نمیبینم",
-        "at": "2026-11-08T18:44:39+0000"
       }
     ],
     "posts": {
