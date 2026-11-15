@@ -21163,16 +21163,22 @@
     }
   },
   "_report": {
-    "at": "2026-11-15T17:44:26.537399+00:00",
+    "at": "2026-11-15T17:59:26.092318+00:00",
     "mode": "live",
-    "sent": 1,
-    "failed": 0,
+    "sent": 0,
+    "failed": 1,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-07-1530",
+        "user": "moslem.oliyaei",
+        "error": "POST /me/messages -> HTTP 400: {\"error\":{\"message\":\"The requested user cannot be found.\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":2534014,\"fbtrace_id\":\"ABBo1WNEY9CaSv2xfhj-NXg\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25898,18 +25904,20 @@
   },
   "_health": {
     "last_sent_at": "2026-11-15T17:44:26.537399+00:00",
-    "at": "2026-11-15T17:44:26.537399+00:00",
+    "at": "2026-11-15T17:59:26.092318+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-07-1530": 1
+    },
+    "waiting_total": 1,
     "unmatched_posts": [],
     "posts_read": 103,
     "posts_with_rule": 103,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-15T17:58:44+0000",
+    "oldest_waiting_hours": 0.01,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29703,10 +29711,11 @@
     "18075862748502641": 1,
     "17919684711262241": 1,
     "18081311843420995": 1,
-    "18140194675638694": 1
+    "18140194675638694": 1,
+    "18192402085413245": 1
   },
   "_desk": {
-    "at": "2026-11-15T17:44:26.537399+00:00",
+    "at": "2026-11-15T17:59:26.092318+00:00",
     "items": [
       {
         "id": "18132636691745476",
