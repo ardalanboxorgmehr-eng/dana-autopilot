@@ -21168,16 +21168,32 @@
     }
   },
   "_report": {
-    "at": "2026-11-16T20:50:25.974700+00:00",
+    "at": "2026-11-16T20:52:10.344119+00:00",
     "mode": "live",
-    "sent": 2,
-    "failed": 0,
+    "sent": 0,
+    "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-16-0600",
+        "user": "a.m.i.n.r.b",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AbNv7Akx1t_c4TCsJkMUr69\"}}"
+      },
+      {
+        "post": "n2026-11-15-1530",
+        "user": "sh_shaka",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AMtNbJbjwLT3EihnNPQ79dD\"}}"
+      },
+      {
+        "post": "n2026-11-05-0600",
+        "user": "hsafikhani1352",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"A1panrDEpQTbtNdjcmzys7a\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25910,19 +25926,23 @@
     "18112943702615468": "n2026-11-16-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-16T20:50:25.974700+00:00",
-    "at": "2026-11-16T20:50:25.974700+00:00",
+    "last_sent_at": "2026-11-16T19:35:25.520661+00:00",
+    "at": "2026-11-16T20:52:10.344119+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-16-0600": 1,
+      "n2026-11-15-1530": 1,
+      "n2026-11-05-0600": 1
+    },
+    "waiting_total": 3,
     "unmatched_posts": [],
     "posts_read": 105,
     "posts_with_rule": 105,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 4,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-16T20:28:09+0000",
+    "oldest_waiting_hours": 0.4,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29718,10 +29738,13 @@
     "18081311843420995": 1,
     "18140194675638694": 1,
     "18192402085413245": 1,
-    "18138985666737165": 1
+    "18138985666737165": 1,
+    "18111989858523675": 1,
+    "18127098361713568": 1,
+    "18119789831010081": 1
   },
   "_desk": {
-    "at": "2026-11-16T20:50:25.974700+00:00",
+    "at": "2026-11-16T20:52:10.344119+00:00",
     "items": [
       {
         "id": "17981441720920353",
