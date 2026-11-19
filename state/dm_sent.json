@@ -21173,16 +21173,32 @@
     }
   },
   "_report": {
-    "at": "2026-11-19T06:49:07.736323+00:00",
+    "at": "2026-11-19T06:50:07.889899+00:00",
     "mode": "live",
-    "sent": 3,
-    "failed": 0,
+    "sent": 1,
+    "failed": 3,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-08-0600",
+        "user": "n58e66",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AHnwXqzbuzpMnpLU5ZAg7K9\"}}"
+      },
+      {
+        "post": "n2026-11-08-0600",
+        "user": "h.a_6791",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AZM8rAD8SFQ6huFVCuRNnq1\"}}"
+      },
+      {
+        "post": "n2026-11-07-0600",
+        "user": "hadi_va63",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AHymT9d-H2Q9FLL3q5rQMjV\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25938,11 +25954,14 @@
     "18387011989300991": "n2026-11-18-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-19T06:49:07.736323+00:00",
-    "at": "2026-11-19T06:49:07.736323+00:00",
+    "last_sent_at": "2026-11-19T06:50:07.889899+00:00",
+    "at": "2026-11-19T06:50:07.889899+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-08-0600": 2,
+      "n2026-11-07-0600": 1
+    },
+    "waiting_total": 3,
     "unmatched_posts": [
       {
         "id": "18180236434447479",
@@ -25957,8 +25976,8 @@
     ],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-19T06:34:22+0000",
+    "oldest_waiting_hours": 0.26,
     "swept_all_posts": true,
     "alerted_at": "2026-11-19T06:04:07.984016+00:00"
   },
@@ -29785,10 +29804,13 @@
     "18139040677735619": 1,
     "18110491577191971": 1,
     "18139033438657945": 1,
-    "18036890711853893": 1
+    "18036890711853893": 1,
+    "18102518060406359": 1,
+    "17910830991331017": 1,
+    "18221988106358089": 1
   },
   "_desk": {
-    "at": "2026-11-19T06:49:07.736323+00:00",
+    "at": "2026-11-19T06:50:07.889899+00:00",
     "items": [
       {
         "id": "18093884792239488",
@@ -52646,6 +52668,11 @@
       "user": "golabkashan.zarrin",
       "at": "2026-11-19T06:04:07.984016+00:00",
       "c_at": "2026-11-19T05:56:02+0000"
+    },
+    "18121102691620373": {
+      "user": "eng.khz1349",
+      "at": "2026-11-19T06:50:07.889899+00:00",
+      "c_at": "2026-11-19T06:50:04+0000"
     }
   },
   "18387011989300991": {
