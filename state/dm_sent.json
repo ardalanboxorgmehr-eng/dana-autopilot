@@ -21173,16 +21173,22 @@
     }
   },
   "_report": {
-    "at": "2026-11-19T12:05:07.413712+00:00",
+    "at": "2026-11-19T12:06:21.982784+00:00",
     "mode": "live",
-    "sent": 1,
-    "failed": 0,
+    "sent": 0,
+    "failed": 1,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
-    "queue_replies": 1,
+    "queue_replies": 0,
     "thanks": 0,
-    "failures": []
+    "failures": [
+      {
+        "post": "n2026-11-18-1530",
+        "user": "m.hasanvaezipoor",
+        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"ALp0LNi9VNhSEvghj48kF6V\"}}"
+      }
+    ]
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -25945,19 +25951,21 @@
     "18180236434447479": "n2026-11-19-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-19T12:05:07.413712+00:00",
-    "at": "2026-11-19T12:05:07.413712+00:00",
+    "last_sent_at": "2026-11-19T11:35:08.032469+00:00",
+    "at": "2026-11-19T12:06:21.982784+00:00",
     "mode": "live",
-    "waiting": {},
-    "waiting_total": 0,
+    "waiting": {
+      "n2026-11-18-1530": 1
+    },
+    "waiting_total": 1,
     "unmatched_posts": [],
     "posts_read": 110,
     "posts_with_rule": 110,
     "problems": [],
-    "queue_left": 0,
+    "queue_left": 1,
     "inbox_waiting": 0,
-    "oldest_waiting_at": null,
-    "oldest_waiting_hours": 0.0,
+    "oldest_waiting_at": "2026-11-19T11:56:33+0000",
+    "oldest_waiting_hours": 0.16,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -29795,11 +29803,20 @@
     "18036890711853893": 1,
     "18102518060406359": 1,
     "17910830991331017": 1,
-    "18221988106358089": 1
+    "18221988106358089": 1,
+    "18029026667865688": 1
   },
   "_desk": {
-    "at": "2026-11-19T12:05:07.413712+00:00",
+    "at": "2026-11-19T12:06:21.982784+00:00",
     "items": [
+      {
+        "id": "17943766734391430",
+        "media": "18128956097304559",
+        "rule": "n2026-11-18-1530",
+        "user": "rogayehramzani",
+        "text": "مدیریت مالی",
+        "at": "2026-11-19T11:35:59+0000"
+      },
       {
         "id": "18381991867211587",
         "media": "17924533371223372",
@@ -29970,6 +29987,11 @@
       }
     ],
     "posts": {
+      "18128956097304559": {
+        "rule": "n2026-11-18-1530",
+        "keyword": "مقاله",
+        "caption": "مقاله‌ی ۳۰ صفحه‌ای انگلیسی داری؟ تو ۵ دقیقه بفهم درباره‌ی چیه و کدوم بخشش رو بای"
+      },
       "18056005388804343": {
         "rule": "n2026-11-16-0600",
         "keyword": "برنامه",
