@@ -9,7 +9,10 @@ leaves a short threaded public reply under the comment.
 
 Rules come from two places:
   content/<post-id>/dm.json   autopilot posts, matched by caption.txt
-  dm_rules.json               older posts, matched by the caption's first words
+  dm_rules.json               older posts, matched by the caption's first words,
+                              or (no caption_starts) by the word the caption asks
+                              people to comment ("asked"), for posts scheduled
+                              before their caption is known
 
 Safety:
   * config.json "dm.mode" must be "live" to send anything. "dry_run" only logs.
@@ -180,13 +183,21 @@ def vary(msg):
     return msg
 
 
+ASKED = {}   # rule id -> (asked word, earliest post time) for rules matched by the asked word
+
+
 def load_rules():
-    """[(caption_prefix, keywords, message, rule_id)] from both sources."""
+    """[(caption_prefix, keywords, message, rule_id)] from both sources.
+    A rule with no caption_starts has prefix "" (rule_for never picks it) and is
+    matched by asked_rule() instead, from its "asked" word (added 19 Nov 2026)."""
     out = []
     old = load(RULES, {"rules": [], "exclude": []})
     exclude = old.get("exclude", [])
+    ASKED.clear()
     for r in old.get("rules", []):
-        out.append((r["caption_starts"], r["keywords"], r["message"], r["id"]))
+        out.append((r.get("caption_starts", ""), r["keywords"], r["message"], r["id"]))
+        if r.get("asked") and not r.get("caption_starts"):
+            ASKED[r["id"]] = (r["asked"], r.get("after", ""))
     for d in sorted(glob.glob(os.path.join(CONTENT, "*", "dm.json"))):
         folder = os.path.dirname(d)
         cap_path = os.path.join(folder, "caption.txt")
@@ -198,6 +209,38 @@ def load_rules():
         if dm.get("dm_single") and dm.get("keywords"):
             out.append((first[:40], dm["keywords"], dm["dm_single"], os.path.basename(folder)))
     return out, exclude
+
+
+def asked_words(caption):
+    """Words a caption asks people to comment: کلمه‌ی «X», or any «X» in a caption with a CTA."""
+    cap = caption or ""
+    if not any(k in cap for k in CTA_MARKS):
+        return set()
+    found = [m.group(1) for m in _ASKED_KW.finditer(cap)] + re.findall(r"«([^»]{1,30})»", cap)
+    return {norm(w).translate(_DIGITS) for w in found if norm(w)}
+
+
+def asked_rule(media, rules):
+    """Added 19 Nov 2026 (Ehsan: posts kept going out with no DM rule because their
+    captions were written in Instagram's scheduler, not in this repo). A rule can
+    name the word its post asks for instead of the caption's first words; the
+    newest such rule whose "after" time the post is not older than wins."""
+    want = asked_words(media.get("caption"))
+    if not want:
+        return None
+    by_id = {r[3]: r for r in rules}
+    best = None
+    for rid, (word, after) in ASKED.items():
+        if norm(word).translate(_DIGITS) not in want or rid not in by_id:
+            continue
+        try:
+            if after and media.get("timestamp") and ts(media["timestamp"]) < ts(after):
+                continue
+        except ValueError:
+            continue
+        if best is None or after > best[0]:
+            best = (after, by_id[rid])
+    return best[1] if best else None
 
 
 def rule_for(caption, rules):
@@ -328,7 +371,8 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
     unmatched = []
     desk_seen = []                   # (media, rule, comments in the window) for the Reply Desk
     for m in ig.recent_media():
-        rule = by_id.get(pins.get(m["id"])) or rule_for(m.get("caption", ""), rules)
+        rule = by_id.get(pins.get(m["id"])) or rule_for(m.get("caption", ""), rules) \
+            or asked_rule(m, rules)
         if rule:
             # Once a post has matched, remember it by its id: editing the caption
             # later (it happened to the Opus 5.5 and iOS 27 posts) cannot break it.

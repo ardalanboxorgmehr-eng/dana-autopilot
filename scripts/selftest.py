@@ -115,6 +115,23 @@ def main():
     long_dms = [f"{r[3]} ({len(r[2])})" for r in rules if len(r[2]) > dm_reply.MAX_DM_CHARS]
     check(f"every DM text is {dm_reply.MAX_DM_CHARS} characters or fewer", not long_dms, ", ".join(long_dms))
 
+    # Rules matched by the asked word (19 Nov 2026)
+    fake = {"rules": [{"id": "t-new", "asked": "تست", "after": "2026-11-19T00:00:00+0000",
+                       "keywords": ["تست"], "message": "x"}], "exclude": []}
+    saved = dm_reply.RULES
+    tmp_rules = os.path.join(work, "rules.json")
+    json.dump(fake, open(tmp_rules, "w", encoding="utf-8"), ensure_ascii=False)
+    dm_reply.RULES = tmp_rules
+    rules, _ = dm_reply.load_rules()
+    def pick(cap, t):
+        r = dm_reply.asked_rule({"caption": cap, "timestamp": t}, rules)
+        return r and r[3]
+    check("asked-word rule matches a new post", pick("📩 کلمه‌ی «تست» رو کامنت کن", "2026-11-20T06:00:00+0000") == "t-new")
+    check("asked-word rule ignores older posts", pick("📩 کلمه‌ی «تست» رو کامنت کن", "2026-11-10T06:00:00+0000") is None)
+    check("asked-word rule needs a call to comment", pick("«تست»", "2026-11-20T06:00:00+0000") is None)
+    dm_reply.RULES = saved
+    dm_reply.load_rules()
+
     httpd.shutdown()
     shutil.rmtree(work, ignore_errors=True)
 
