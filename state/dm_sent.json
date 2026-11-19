@@ -21173,32 +21173,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-19T06:50:07.889899+00:00",
+    "at": "2026-11-19T07:05:07.604813+00:00",
     "mode": "live",
-    "sent": 1,
-    "failed": 3,
+    "sent": 2,
+    "failed": 0,
     "skipped": 0,
-    "inbox_sent": 0,
+    "inbox_sent": 1,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-08-0600",
-        "user": "n58e66",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AHnwXqzbuzpMnpLU5ZAg7K9\"}}"
-      },
-      {
-        "post": "n2026-11-08-0600",
-        "user": "h.a_6791",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AZM8rAD8SFQ6huFVCuRNnq1\"}}"
-      },
-      {
-        "post": "n2026-11-07-0600",
-        "user": "hadi_va63",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AHymT9d-H2Q9FLL3q5rQMjV\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -22915,6 +22899,12 @@
       "rule": "n2026-11-08-0600",
       "at": "2026-11-19T05:34:08.055919+00:00",
       "skipped": "already has it"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTI4Mjk1ODU2MjI5MTY5MzozMzExMzIyMTA0MTE4NDQxNTE1MTg5NjY3Mzc0MDkxNDY4OAZDZD": {
+      "user": "hamdam.mehdi",
+      "uid": "1653135680191181",
+      "rule": "n2026-11-18-0600",
+      "at": "2026-11-19T07:05:07.604813+00:00"
     }
   },
   "18630278164012008": {
@@ -25954,14 +25944,11 @@
     "18387011989300991": "n2026-11-18-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-19T06:50:07.889899+00:00",
-    "at": "2026-11-19T06:50:07.889899+00:00",
+    "last_sent_at": "2026-11-19T07:05:07.604813+00:00",
+    "at": "2026-11-19T07:05:07.604813+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-08-0600": 2,
-      "n2026-11-07-0600": 1
-    },
-    "waiting_total": 3,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [
       {
         "id": "18180236434447479",
@@ -25975,9 +25962,9 @@
       "1 post(s) ask for a keyword but have no DM rule: نمونه‌سوال سال قبل رو عکس بگیر و ۲۰ تا سؤال تازه به همون سبک"
     ],
     "queue_left": 0,
-    "inbox_waiting": 0,
-    "oldest_waiting_at": "2026-11-19T06:34:22+0000",
-    "oldest_waiting_hours": 0.26,
+    "inbox_waiting": 1,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true,
     "alerted_at": "2026-11-19T06:04:07.984016+00:00"
   },
@@ -29810,7 +29797,7 @@
     "18221988106358089": 1
   },
   "_desk": {
-    "at": "2026-11-19T06:50:07.889899+00:00",
+    "at": "2026-11-19T07:05:07.604813+00:00",
     "items": [
       {
         "id": "18093884792239488",
@@ -30982,7 +30969,7 @@
       "at": "2026-11-06T05:13:35.810998+00:00"
     }
   },
-  "_inbox_hash": "4f53cda18c2baa0c",
+  "_inbox_hash": "e3444881569f0899",
   "_alerted": {
     "18093324797690475": "2026-11-01T14:18:42.086579+00:00",
     "17877206406587822": "2026-11-04T11:19:43.103207+00:00",
@@ -49399,6 +49386,11 @@
       "user": "hadi_va63",
       "at": "2026-11-19T06:49:07.736323+00:00",
       "c_at": "2026-11-19T06:40:17+0000"
+    },
+    "17925100044445282": {
+      "user": "snz_prs",
+      "at": "2026-11-19T07:05:07.604813+00:00",
+      "c_at": "2026-11-19T06:58:00+0000"
     }
   },
   "18156292165533423": {
@@ -52673,6 +52665,11 @@
       "user": "eng.khz1349",
       "at": "2026-11-19T06:50:07.889899+00:00",
       "c_at": "2026-11-19T06:50:04+0000"
+    },
+    "18472404193184878": {
+      "user": "t.mon.tazeri",
+      "at": "2026-11-19T07:05:07.604813+00:00",
+      "c_at": "2026-11-19T06:55:03+0000"
     }
   },
   "18387011989300991": {
