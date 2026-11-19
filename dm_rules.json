@@ -489,6 +489,17 @@
       "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای خلاصه‌ی مقاله با NotebookLM 👇\n۱. برو notebooklm.google.com (رایگانه)\n۲. New notebook بزن و PDF مقاله رو آپلود کن\n۳. تو چت سوالت رو بپرس (پرامپت‌های زیر)\n۴. کنار هر جواب شماره‌ی منبع هست؛ بزنی همون تیکه از مقاله رو نشون می‌ده\nجمنای، ChatGPT یا Claude هم PDF می‌گیرن، همین پرامپت‌ها اون‌جا هم کار می‌کنه.\n\n۳ پرامپت:\n1. خلاصه‌ی ۵ دقیقه‌ای:\n\"Summarize this paper in Persian: the question, the method, the 3 main findings and the limitations. Keep technical terms in English in parentheses.\"\n2. فقط بخش مهم:\n\"Which sections and figures of this paper should I read first if I only have 10 minutes? Explain each in 2 lines in Persian.\"\n3. چک فهمیدن:\n\"Ask me 5 questions to test if I understood this paper, then correct my answers in Persian.\"\n\nنکته: عدد و نتیجه‌ی مهم رو با خود مقاله چک کن.\n\nکانال تلگرام: t.me/danestani_ruzz"
     },
     {
+      "id": "n2026-11-19-0600",
+      "asked": "سوال",
+      "after": "2026-11-19T05:00:00+0000",
+      "keywords": [
+        "سوال",
+        "سؤال",
+        "سوآل"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nاینم بسته‌ی نمونه‌سوال:\n\n۱) از نمونه‌سوال سال قبل یه عکس صاف و واضح بگیر و تو ChatGPT یا جمنای آپلود کن.\n\n۲) پرامپت اول:\n«این نمونه‌سوال امتحان پارساله. سبک سؤال‌ها، سطح سختی و مبحث هر سؤال رو برام لیست کن.»\n\n۳) پرامپت دوم:\n«حالا ۲۰ تا سؤال تازه دقیقاً به همین سبک و همین سطح از همین مبحث‌ها بساز. جواب‌ها رو فعلاً نده.»\n\n۴) بعد از اینکه جواب دادی:\n«جواب‌های من اینه: ... . تصحیح کن، بگو کجا اشتباه کردم و کدوم مبحث رو باید دوباره بخونم.»\n\nنکته: جواب‌های عددی و فرمول‌ها رو خودت با جزوه چک کن.\n\nکانال تلگرام: t.me/danestani_ruzz"
+    },
+    {
       "id": "n2026-11-19-1530",
       "asked": "ضبط",
       "after": "2026-11-19T14:30:00+0000",
