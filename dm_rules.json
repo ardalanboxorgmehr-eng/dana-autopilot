@@ -469,6 +469,24 @@
         "محصول"
       ],
       "message": "سلام! مرسی که کامنت گذاشتی 😊\n\n۳ پرامپت عکس محصول 👇\nعکس رو تو نور روز بگیر و تو جمنای یا ChatGPT آپلود کن:\n\n1. سفید استودیویی:\n\"Put this exact product on a clean white studio background with a soft shadow. Do not change the product, logo or label.\"\n2. صحنه:\n\"Place this exact product on a wooden café table with warm morning light. Keep the product unchanged.\"\n3. رنگی برای پست:\n\"Put this exact product on a plain ___ background for an Instagram post, centred, with space at the top for text.\"\n\nقبل از پست، برچسب رو زوم کن.\n\nکانال تلگرام: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-18-0600",
+      "caption_starts": "حالت معلم ChatGPT رو دیدی؟ جمنای هم یکی دا",
+      "keywords": [
+        "یادگیری",
+        "یاد گیری"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای حالت معلم جمنای (Guided Learning) 👇\n۱. برو gemini.google.com یا اپ جمنای\n۲. ابزارها (Tools) > Guided Learning\n۳. موضوع یا سوالت رو بنویس، یا PDF و عکس جزوه رو بفرست\n۴. به‌جای جواب آماده، قدم‌به‌قدم سوال می‌پرسه تا خودت برسی\nتو ChatGPT هم: دکمه‌ی + > Study and learn\n\n۳ پرامپت:\n1. یاد گرفتن از صفر:\n\"Teach me ___ step by step. Don't give me the answer. Ask me one question at a time and wait for my reply. Explain in Persian.\"\n2. حل تمرین:\n\"Here is my homework problem: ___. Don't solve it. Give me one hint at a time and check each step I write.\"\n3. آزمون قبل از امتحان:\n\"Quiz me on this chapter: ___. 10 questions, one by one. After each answer tell me what I got wrong and why, in Persian.\"\n\nکانال تلگرام: t.me/danestani_ruzz"
+    },
+    {
+      "id": "n2026-11-18-1530",
+      "caption_starts": "مقاله‌ی ۳۰ صفحه‌ای انگلیسی داری؟ تو ۵ دقیقه",
+      "keywords": [
+        "مقاله",
+        "مقالە"
+      ],
+      "message": "سلام! مرسی که کامنت گذاشتی 😊\n\nراهنمای خلاصه‌ی مقاله با NotebookLM 👇\n۱. برو notebooklm.google.com (رایگانه)\n۲. New notebook بزن و PDF مقاله رو آپلود کن\n۳. تو چت سوالت رو بپرس (پرامپت‌های زیر)\n۴. کنار هر جواب شماره‌ی منبع هست؛ بزنی همون تیکه از مقاله رو نشون می‌ده\nجمنای، ChatGPT یا Claude هم PDF می‌گیرن، همین پرامپت‌ها اون‌جا هم کار می‌کنه.\n\n۳ پرامپت:\n1. خلاصه‌ی ۵ دقیقه‌ای:\n\"Summarize this paper in Persian: the question, the method, the 3 main findings and the limitations. Keep technical terms in English in parentheses.\"\n2. فقط بخش مهم:\n\"Which sections and figures of this paper should I read first if I only have 10 minutes? Explain each in 2 lines in Persian.\"\n3. چک فهمیدن:\n\"Ask me 5 questions to test if I understood this paper, then correct my answers in Persian.\"\n\nنکته: عدد و نتیجه‌ی مهم رو با خود مقاله چک کن.\n\nکانال تلگرام: t.me/danestani_ruzz"
     }
   ]
 }
