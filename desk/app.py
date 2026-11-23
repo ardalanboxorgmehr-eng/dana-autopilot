@@ -339,6 +339,38 @@ def push():
         return {"ok": code == 0, "log": "\n".join(x for x in log if x)[-800:]}
 
 
+AUTOSEND_EVERY = 600  # seconds (10 minutes)
+AUTOSEND_LOG = os.path.join(HERE, "autosend.log")
+
+
+def autosend_log(line):
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+    try:
+        with open(AUTOSEND_LOG, "a", encoding="utf-8") as f:
+            f.write("%s %s\n" % (stamp, line))
+    except OSError:
+        pass
+
+
+def autosend_loop():
+    """Every 10 minutes: send approved replies (same as pressing Send)."""
+    time.sleep(60)
+    autosend_log("STARTED auto-send every %d min" % (AUTOSEND_EVERY // 60))
+    while True:
+        try:
+            n = len(local().get("approved") or {})
+            if n or local().get("auto_dirty"):
+                r = push()
+                if r.get("ok"):
+                    autosend_log("OK sent %d approved replies" % n)
+                else:
+                    last = [x for x in (r.get("log") or "").splitlines() if x.strip()]
+                    autosend_log("FAILED " + (last[-1][:200] if last else "git push failed"))
+        except Exception as e:  # keep the loop alive
+            autosend_log("ERROR %s" % str(e)[:200])
+        time.sleep(AUTOSEND_EVERY)
+
+
 def lan_ip():
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -771,6 +803,8 @@ def main():
     url = "http://127.0.0.1:%d/" % PORT
     print("Reply Desk running at " + url + "  (close this window to stop)")
     print("On your iPhone (same Wi-Fi): press Phone in the app and scan the code.")
+    threading.Thread(target=autosend_loop, daemon=True).start()
+    print("Auto-send: approved replies go out every 10 minutes (log: desk/autosend.log).")
     if "--no-browser" not in sys.argv:
         threading.Timer(0.8, lambda: webbrowser.open(url)).start()
     try:
