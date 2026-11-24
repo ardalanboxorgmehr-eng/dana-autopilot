@@ -21193,14 +21193,14 @@
     }
   },
   "_report": {
-    "at": "2026-11-24T14:07:19.535256+00:00",
+    "at": "2026-11-24T14:22:19.527490+00:00",
     "mode": "live",
-    "sent": 0,
+    "sent": 1,
     "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
-    "queue_replies": 0,
+    "queue_replies": 12,
     "thanks": 0,
     "failures": []
   },
@@ -26175,8 +26175,8 @@
     "17923138605241123": "n2026-11-24-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-24T13:37:19.625310+00:00",
-    "at": "2026-11-24T14:07:19.535256+00:00",
+    "last_sent_at": "2026-11-24T14:22:19.527490+00:00",
+    "at": "2026-11-24T14:22:19.527490+00:00",
     "mode": "live",
     "waiting": {},
     "waiting_total": 0,
@@ -26184,7 +26184,7 @@
     "posts_read": 120,
     "posts_with_rule": 120,
     "problems": [],
-    "queue_left": 0,
+    "queue_left": 149,
     "inbox_waiting": 1,
     "oldest_waiting_at": null,
     "oldest_waiting_hours": 0.0,
@@ -30560,6 +30560,66 @@
       "at": "2026-11-24T12:49:06.965227+00:00",
       "kind": "dm",
       "via": "auto"
+    },
+    "17882870436553654": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18127368571925349": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17964538356258029": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18109503074249070": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18183424372428422": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18085578221399222": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18154814401510228": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18137005877498523": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18034126400683761": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17912535654580095": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "18141373627736345": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
+    },
+    "17954493774053658": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "kind": "answer",
+      "via": "desk"
     }
   },
   "_tries": {
@@ -30697,7 +30757,7 @@
     "18137790166678861": 1
   },
   "_desk": {
-    "at": "2026-11-24T14:07:19.535256+00:00",
+    "at": "2026-11-24T14:22:19.527490+00:00",
     "items": [
       {
         "id": "18090755762721445",
@@ -30748,52 +30808,12 @@
         "at": "2026-11-23T17:19:16+0000"
       },
       {
-        "id": "17882870436553654",
-        "media": "17924533371223372",
-        "rule": "n2026-11-07-0600",
-        "user": "zohreh_developer59",
-        "text": "شما limitرو چه می کنید چت خیلی زود غیر فعال میشه",
-        "at": "2026-11-23T09:50:09+0000"
-      },
-      {
-        "id": "18127368571925349",
-        "media": "18130111858893357",
-        "rule": "n2026-11-22-1530",
-        "user": "mohsenpb2500",
-        "text": "نوت بوک برام باز نمیکنه",
-        "at": "2026-11-23T05:32:01+0000"
-      },
-      {
-        "id": "17964538356258029",
-        "media": "18156292165533423",
-        "rule": "n2026-11-08-0600",
-        "user": "heliya.13681234",
-        "text": "3",
-        "at": "2026-11-23T02:49:19+0000"
-      },
-      {
         "id": "18158433982522991",
         "media": "17886067083629381",
         "rule": "n2026-11-19-1530",
         "user": "fatemehahmadi892",
         "text": "جزوه ساز",
         "at": "2026-11-22T20:38:23+0000"
-      },
-      {
-        "id": "18109503074249070",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "osame.4781",
-        "text": "ترجیح میدم انجام ندم چون تو گوشیم ۹۹۹۹۹۹تا عکس از تخته دبیرستان به جا مونده وداره ته گالریم خاک میخوره😂😂🙌",
-        "at": "2026-11-22T13:10:35+0000"
-      },
-      {
-        "id": "18183424372428422",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "maedeh_sedqi_",
-        "text": "جزوه",
-        "at": "2026-11-21T12:00:40+0000"
       },
       {
         "id": "18111277508191939",
@@ -30804,68 +30824,12 @@
         "at": "2026-11-21T08:40:32+0000"
       },
       {
-        "id": "18085578221399222",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "the.el.hamid",
-        "text": "جواب نمیده. دو خط مینویسه د  این کلاس دربهره فلان چیز صحبت شد",
-        "at": "2026-11-21T08:14:15+0000"
-      },
-      {
-        "id": "18154814401510228",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "km301125",
-        "text": "جزوه ساز",
-        "at": "2026-11-21T07:56:33+0000"
-      },
-      {
-        "id": "18137005877498523",
-        "media": "18117243623151652",
-        "rule": "n2026-11-15-1530",
-        "user": "academy_shahab_ai",
-        "text": "امتحان",
-        "at": "2026-11-21T06:52:47+0000"
-      },
-      {
-        "id": "18034126400683761",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "mohi_est4",
-        "text": "نوتبوک الم نمیاد ارور 403 میده",
-        "at": "2026-11-21T05:24:20+0000"
-      },
-      {
-        "id": "17912535654580095",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "amirmohammad_karimi2025",
-        "text": "ص",
-        "at": "2026-11-20T23:07:07+0000"
-      },
-      {
-        "id": "18141373627736345",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "mehri00pourahangar",
-        "text": "۳",
-        "at": "2026-11-20T22:51:35+0000"
-      },
-      {
         "id": "17914067670302509",
         "media": "17886067083629381",
         "rule": "n2026-11-19-1530",
         "user": "mehri00pourahangar",
         "text": "۳",
         "at": "2026-11-20T22:51:23+0000"
-      },
-      {
-        "id": "17954493774053658",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "farah.jafari66",
-        "text": "3",
-        "at": "2026-11-20T22:13:32+0000"
       },
       {
         "id": "18472513966188963",
@@ -31020,12 +30984,164 @@
         "at": "2026-11-20T13:55:48+0000"
       },
       {
+        "id": "18192816370408670",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "molear91",
+        "text": "۳",
+        "at": "2026-11-20T13:44:35+0000"
+      },
+      {
+        "id": "17956703778342191",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "mohmdreza_emz",
+        "text": "3",
+        "at": "2026-11-20T13:37:22+0000"
+      },
+      {
+        "id": "17916455490559570",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "fatemeh.shahgholi",
+        "text": "3",
+        "at": "2026-11-20T12:56:43+0000"
+      },
+      {
+        "id": "18145084696614726",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "baharakzt",
+        "text": "@danestani.ruzz 🙏",
+        "at": "2026-11-20T12:37:49+0000"
+      },
+      {
+        "id": "17986255877904009",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "houshang742",
+        "text": "جزوه",
+        "at": "2026-11-20T12:23:11+0000"
+      },
+      {
+        "id": "17888407128624100",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "safir_hoghogh",
+        "text": "۳",
+        "at": "2026-11-20T12:15:04+0000"
+      },
+      {
+        "id": "18438452926147135",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "zartala_20",
+        "text": "۳",
+        "at": "2026-11-20T12:00:12+0000"
+      },
+      {
+        "id": "18138970078631242",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "a.amini.powerengineer",
+        "text": "نوت بوک اندرویدم داره؟",
+        "at": "2026-11-20T11:57:03+0000"
+      },
+      {
+        "id": "17921209983330738",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "saramoalej",
+        "text": "جزوه",
+        "at": "2026-11-20T11:45:01+0000"
+      },
+      {
+        "id": "18033141395859959",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "lawyer_criminallaw_",
+        "text": "3",
+        "at": "2026-11-20T11:36:54+0000"
+      },
+      {
+        "id": "17875297653641197",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "mehrzad79942",
+        "text": "فایل پر حجم آپ نمیکنه !!!!!",
+        "at": "2026-11-20T11:30:23+0000"
+      },
+      {
+        "id": "18124603450983487",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "haniyeh_kb",
+        "text": "واسه من notebooklm کار نمیکنه",
+        "at": "2026-11-20T11:17:03+0000"
+      },
+      {
+        "id": "18345512794256044",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "mariyana.tdehghani",
+        "text": "جزوه ساز",
+        "at": "2026-11-20T10:50:53+0000"
+      },
+      {
+        "id": "17883245976543857",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "ma._zk",
+        "text": "٣",
+        "at": "2026-11-20T10:48:39+0000"
+      },
+      {
+        "id": "18039228956847046",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "laleh176",
+        "text": "۳",
+        "at": "2026-11-20T10:28:13+0000"
+      },
+      {
+        "id": "18137508739739841",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "masoudp7075",
+        "text": "مینویسم",
+        "at": "2026-11-20T10:05:57+0000"
+      },
+      {
+        "id": "17981966363920202",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "a.golshahi1980",
+        "text": "یادش بخیر. از مهر ماه سال ۱۳۸۰ این کار رو شروع و انجام دادن.",
+        "at": "2026-11-20T09:41:54+0000"
+      },
+      {
+        "id": "17929341468205795",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "gallerymahss",
+        "text": "جزوه ساز",
+        "at": "2026-11-20T09:36:51+0000"
+      },
+      {
         "id": "18088903997334955",
         "media": "18387011989300991",
         "rule": "n2026-11-18-0600",
         "user": "ghazaleh_khaef",
         "text": "پرامپ",
         "at": "2026-11-20T07:36:03+0000"
+      },
+      {
+        "id": "17928818670202807",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "mobina_sh2001",
+        "text": "به زبان دیگه هم متنو میسازه اگ وویسو بدیم؟",
+        "at": "2026-11-20T07:00:12+0000"
       },
       {
         "id": "18169817485472575",
@@ -31036,12 +31152,60 @@
         "at": "2026-11-20T06:55:15+0000"
       },
       {
+        "id": "18182498368453119",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "katayoun.49",
+        "text": "جزوه ساز",
+        "at": "2026-11-20T04:10:27+0000"
+      },
+      {
+        "id": "18080804843431587",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "ghahari.mahrokh",
+        "text": "۳",
+        "at": "2026-11-20T03:59:03+0000"
+      },
+      {
+        "id": "17913203298664319",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "m.z.f1164",
+        "text": "چرا هر چی میزنم ارور میده",
+        "at": "2026-11-19T23:02:34+0000"
+      },
+      {
+        "id": "17876558016649963",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "mahdi1401200",
+        "text": "پولیه یا داخل کشور نمیشه",
+        "at": "2026-11-19T22:46:50+0000"
+      },
+      {
         "id": "18117440801139926",
         "media": "18156292165533423",
         "rule": "n2026-11-08-0600",
         "user": "bashirzadeh_omid",
         "text": "جواب",
         "at": "2026-11-19T20:40:44+0000"
+      },
+      {
+        "id": "17913970176304684",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "pariichehr.gmt",
+        "text": "نوت بوک lm که باز نمیشه چند روزه",
+        "at": "2026-11-19T18:15:32+0000"
+      },
+      {
+        "id": "18158415517480865",
+        "media": "17886067083629381",
+        "rule": "n2026-11-19-1530",
+        "user": "avin2016_ku",
+        "text": "دیدم نبود😂",
+        "at": "2026-11-19T17:33:04+0000"
       },
       {
         "id": "18122500961101628",
@@ -31101,11 +31265,6 @@
       }
     ],
     "posts": {
-      "18130111858893357": {
-        "rule": "n2026-11-22-1530",
-        "keyword": "ویدیو",
-        "caption": "ویدیوی درس رو بده، جزوه‌ی زمان‌دارش رو بگیر"
-      },
       "18154831213546882": {
         "rule": "n2026-11-21-0600",
         "keyword": "ایمیل",
@@ -36330,6 +36489,98 @@
     "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY3ODk2MzMxODY0MjEwNDozMzA4MDUyMDc2NjM5MTQ3Mzc5Mjk5MDQ0NDkyMjA3NzE4NAZDZD": {
       "at": "2026-11-01T14:18:42.086579+00:00",
       "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AsqLLcB-42lMeFET5lA-kB6\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgyNTI1MzA5MDM3MDk2NjozMzA4NzgwODA1NDM5NjA0MTYyNDk3NzY4MTUxODk1MjQ0OAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AeQBHrAqFz4Hl9WZvJ86iij\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTE0NTI4MjM3NjUxMjE2MTozMzA4NzI5MDAzMzA1MDg3ODI0NDkzMjM0NzQzMzU4MjU5MgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AhgMh8_lBG8R_Rlwf6rQ1ch\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgxNzMwNzY0ODEwODMxOTozMzA5MTM1NzA3MzI1NzgyNzI0MzY4OTk2OTk4NTc4MTc2MAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AUFrCNajLVTgbZRHH2VK9Z7\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY3ODk2MzMxODY0MjEwNDozMzEwMzgyNDEwMjIzMTY1MTUxMTM2MDE0MTEyOTY3ODg0OAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"ApFWolL9S7xV2a6RQ1KPruW\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTk4MDc1ODg5NzU2Mzg1MzozMzEwMzgyMDE2MjA0OTg1ODQ3MzAxODcwMDk4MzE3MzEyMAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AtnrTd3_Xyk-K5qcrWWD0ao\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU3MDMyNDMwOTc2NTQzMjozMzEwMzcwNDE2MDc0NzE3NTUyNTc1MjY2NTgxNzQ4MTIxNgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AuYlbOnYJMrmweOzwsxFbPy\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTMwNDA5NjkxNjk5ODY4NzozMzEwNTQxMDIwMTg0MzEyNjg3MTUxNjM1NjczMTIwNzY4MAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AcaoPc41RrX3kLYGPrw76jN\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTU4MTI1OTgxODM3MDQ2NzozMzEwNTI4MjUyNDI3NDU3NjQ4MTI5MDQ3NzgxMTc5MzkyMAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AvsGAfAV3OMYWyxAbiTF9Ow\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI4MTE2MDc0ODI2OTQ1MTAzODI3MDozMzEwNjE2MTgxNTM4NzM1MzQ2Mjc2NDcwNzM1MDgzOTI5NgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AjMsJ8XEpXMEDFID5OUdQMQ\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTYyMDU0OTEyNzY0NDE4MTozMzExMjIxMzQ5NzMwOTE0NzE3OTI5MTAwNzAzMDEzMjczNgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"Aa7hDNFM7FUhxFAcoI4lpDJ\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTE2NjEzNDA5NzMxNDkyNzozMzExMTk4MjczMTQ2NTgyOTk0MDMzNjE5MzM0MTIyNzAwOAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AsTIwV4HNEXXtyULT4GSBuL\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTgxNzc5MDIxMTAxNjYyMzozMzExMTgxNDQ0MzQ5OTAxODYyMTgyMzI0NDQ0Mjc5NjAzMgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AtUnOUPuabMF7nBg29XQJ0y\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDU4MTQ1ODc4Njk3OTM1OTozMzExMTc1MTcxMDEzNDIwMzM5MDA0NDQ3ODAwMjY5MjA5NgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"ATOGx5NpgYtidmNHWhxdi4R\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDU1OTQ4ODY5NjE0MTA3OTozMzExMTM3NTg1Mjk3NjA5OTkyOTE2NzgyMjEyMjM4NTQwOAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"APs8y_LKBVBi8lGI6d_-Ljk\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY2OTQyMDk1NjMyNTM4NTozMzExNTY1MTgxODExNjQzMTcwODUxMTE5MzE2NzU2MDcwNAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"A7NlxRkIbQi-13q8d9RGqKq\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MTA2MTk1ODUyMjExOTYwNTozMzExNzAzMzg3NDA0MjQyNjQ4Mjk2MTY5NDE0MDEzNzQ3MgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"A5JW1GUjN_FZY--eignj3mt\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MjgwODk2NDQwMDYxNzcxOTozMzExNjk2ODM0NjE5MjkxMzc1NzYzNzE0OTU5Njg0NDAzMgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AaWr2dKHGqYRATXuQoJgyZ_\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTc5NTk2ODAwMjk3NzUzMzozMzExNjg5NDQ2NTEwODkxMjI2NzE3ODg0Nzg3NzcyNjIwOAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"Aq_HhHQIwwpmNsxT5_uw0C1\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY3ODk2MzMxODY0MjEwNDozMzExODYyNDYyNzQ3MDE2MjM1OTI4OTk1MzAzNDE3NDQ2NAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"Ak0UjZDTUoAsFSRm_TjxHko\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTY3Nzk5OTAzMjEyODc0ODozMzExODMyODc1NjA3ODYwNzU4MDk1NTIxMjUyNzk2MDA2NAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AsuPA6mZ8LDC-t166egp8qJ\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI1OTk3Nzc3MjgyMTM3ODA1NzozMzExODI4MDE0NDM2NjI1NTgzODEzMDg5Njc5MzIzOTU1MgZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AXc60Jxstfx0UqZdxvRan2P\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI4NzI1Mjk4MjAyODk4MzY1NzozMzEyMDA1NTAwODE2NDQ5Nzk3NjA4OTA4NzYxMzg2MTg4OAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"A07BP1ij4SOTetRKmShu_xN\"}}"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI2MDA1MDE2NzI1NDM0NDEwMDozMzExOTkzNjk1MDAyMDEzMzEwNTUwNTMwMTE3NjUxNjYwOAZDZD": {
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "failed": "POST /me/messages -> HTTP 403: {\"error\":{\"message\":\"This message is sent outside of allowed window.\",\"type\":\"IGApiException\",\"code\":10,\"error_subcode\":2534022,\"fbtrace_id\":\"AutcKqHh7-pJ2t1GIu6CQwu\"}}"
     }
   },
   "17909885199538481": {
@@ -64085,6 +64336,11 @@
       "user": "mina741400",
       "at": "2026-11-24T09:19:06.756762+00:00",
       "c_at": "2026-11-24T09:15:57+0000"
+    },
+    "18101701679408039": {
+      "user": "fereydoon_alipoor",
+      "at": "2026-11-24T14:22:19.527490+00:00",
+      "c_at": "2026-11-24T14:17:09+0000"
     }
   },
   "18094613624203787": {
