@@ -21193,32 +21193,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-24T13:37:19.625310+00:00",
+    "at": "2026-11-24T13:52:19.448144+00:00",
     "mode": "live",
-    "sent": 1,
-    "failed": 3,
+    "sent": 0,
+    "failed": 0,
     "skipped": 0,
-    "inbox_sent": 1,
+    "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-19-1530",
-        "user": "mahmodii2022",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AUecd2rfYRQMvmiWeMkYk5m\"}}"
-      },
-      {
-        "post": "n2026-11-19-1530",
-        "user": "novinbime.ir",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AZXFmplVWoFW9DaJJHD37W_\"}}"
-      },
-      {
-        "post": "n2026-11-19-1530",
-        "user": "sadeghi___mahdi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AC8wvbD3l89ErDarJ8TBYOQ\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -26192,22 +26176,18 @@
   },
   "_health": {
     "last_sent_at": "2026-11-24T13:37:19.625310+00:00",
-    "at": "2026-11-24T13:37:19.625310+00:00",
+    "at": "2026-11-24T13:52:19.448144+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-19-1530": 3,
-      "n2026-11-08-0600": 1,
-      "n2026-11-05-0600": 1
-    },
-    "waiting_total": 5,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 120,
     "posts_with_rule": 120,
     "problems": [],
-    "queue_left": 1,
+    "queue_left": 0,
     "inbox_waiting": 1,
-    "oldest_waiting_at": "2026-11-24T12:50:30+0000",
-    "oldest_waiting_hours": 0.78,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -30717,16 +30697,8 @@
     "18137790166678861": 1
   },
   "_desk": {
-    "at": "2026-11-24T13:37:19.625310+00:00",
+    "at": "2026-11-24T13:52:19.448144+00:00",
     "items": [
-      {
-        "id": "18151885435661985",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "miss__mehdiloo1212",
-        "text": "ظبط",
-        "at": "2026-11-24T12:31:09+0000"
-      },
       {
         "id": "18090755762721445",
         "media": "17886067083629381",
