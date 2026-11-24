@@ -21193,32 +21193,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-24T08:19:06.991025+00:00",
+    "at": "2026-11-24T08:34:06.965405+00:00",
     "mode": "live",
     "sent": 0,
-    "failed": 3,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-19-1530",
-        "user": "nazila_b.u.t",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AeAps1IQhrQRub0z0ZE5ewK\"}}"
-      },
-      {
-        "post": "n2026-11-18-1530",
-        "user": "zakeri.rahmat",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AOnerZC8G0kyl_aB0gR6nWZ\"}}"
-      },
-      {
-        "post": "n2026-11-18-1530",
-        "user": "rasht.teacher",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"ACA4Exxf7jdll7R5mZbKDcz\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -26186,22 +26170,18 @@
   },
   "_health": {
     "last_sent_at": "2026-11-24T08:02:18.286129+00:00",
-    "at": "2026-11-24T08:19:06.991025+00:00",
+    "at": "2026-11-24T08:34:06.965405+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-19-1530": 1,
-      "n2026-11-18-1530": 2,
-      "n2026-11-07-0600": 1
-    },
-    "waiting_total": 4,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 120,
     "posts_with_rule": 120,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": "2026-11-24T08:02:35+0000",
-    "oldest_waiting_hours": 0.28,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -30703,7 +30683,7 @@
     "18121464584104955": 1
   },
   "_desk": {
-    "at": "2026-11-24T08:19:06.991025+00:00",
+    "at": "2026-11-24T08:34:06.965405+00:00",
     "items": [
       {
         "id": "18084302729568064",
