@@ -21193,7 +21193,7 @@
     }
   },
   "_report": {
-    "at": "2026-11-25T11:27:36.712411+00:00",
+    "at": "2026-11-25T11:42:36.134632+00:00",
     "mode": "live",
     "sent": 0,
     "failed": 0,
@@ -23137,6 +23137,13 @@
       "uid": "4564543883761448",
       "rule": "p02",
       "at": "2026-11-25T09:56:25.098953+00:00"
+    },
+    "aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDYyODU3NzIyMTQwOjM0MDI4MjM2Njg0MTcxMDMwMTI0NDI4NzA1MDgxMzc2OTE3ODQ5NzozMzEyMzA4NzI2MTk4NjQyNDMwNTI3MjI5MzQyMDk1NzY5NgZDZD": {
+      "user": "zahrasavary_89",
+      "uid": "1458214992397898",
+      "rule": "n2026-11-19-1530",
+      "at": "2026-11-25T11:42:36.134632+00:00",
+      "skipped": "already has it"
     }
   },
   "18630278164012008": {
@@ -26190,7 +26197,7 @@
   },
   "_health": {
     "last_sent_at": "2026-11-25T11:12:36.276666+00:00",
-    "at": "2026-11-25T11:27:36.712411+00:00",
+    "at": "2026-11-25T11:42:36.134632+00:00",
     "mode": "live",
     "waiting": {},
     "waiting_total": 0,
@@ -26199,7 +26206,7 @@
     "posts_with_rule": 122,
     "problems": [],
     "queue_left": 0,
-    "inbox_waiting": 1,
+    "inbox_waiting": 2,
     "oldest_waiting_at": null,
     "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
@@ -31518,7 +31525,7 @@
     "18109947863196083": 1
   },
   "_desk": {
-    "at": "2026-11-25T11:27:36.712411+00:00",
+    "at": "2026-11-25T11:42:36.134632+00:00",
     "items": [
       {
         "id": "17919701787482578",
@@ -32636,7 +32643,7 @@
       "at": "2026-11-06T05:13:35.810998+00:00"
     }
   },
-  "_inbox_hash": "34547734311aeabf",
+  "_inbox_hash": "be7e8ad1b1e8770c",
   "_alerted": {
     "18093324797690475": "2026-11-01T14:18:42.086579+00:00",
     "17877206406587822": "2026-11-04T11:19:43.103207+00:00",
