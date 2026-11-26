@@ -77,6 +77,11 @@ PUBLIC_REPLIES = [
     "تو دایرکت منتظرته 📩",
 ]
 BOUNCE_CODE = "2534001"      # inbox closed to pages / thread deleted: retrying never helps
+# Follow gate, 26 Nov 2026 (Ehsan, like Higgsfield): with config dm.gate on, the
+# comment gets a short DM with a button instead of the content. The tap goes to
+# the Cloudflare Worker in worker/, which checks the follow and sends the content.
+GATE_TEXT = "سلام! مرسی که کامنت گذاشتی 😊\nدکمه‌ی زیر رو بزن تا همین الان برات بفرستمش"
+GATE_BUTTON = "بفرستش برام 📩"
 INBOX_HOURS = 24             # Instagram's reply window for a message they sent us
 
 
@@ -322,6 +327,12 @@ class IG:
     def private_reply(self, comment_id, text):
         return self._call("POST", "/me/messages", body={"recipient": {"comment_id": comment_id}, "message": {"text": text}})
 
+    def private_reply_button(self, comment_id, rid):
+        """First DM of the follow gate: one line and a button whose tap the Worker answers."""
+        return self._call("POST", "/me/messages", body={"recipient": {"comment_id": comment_id}, "message": {
+            "attachment": {"type": "template", "payload": {"template_type": "button", "text": GATE_TEXT,
+                "buttons": [{"type": "postback", "title": GATE_BUTTON, "payload": f"DANA:SEND:{rid}"}]}}}})
+
     def public_reply(self, comment_id, text):
         return self._call("POST", f"/{comment_id}/replies", {"message": text})
 
@@ -452,7 +463,10 @@ def run(ig, cfg, state, now, log=print, checkpoint=None):
                 log(f"[dry run] {rid}: would DM @{user} for «{c.get('text','')[:30]}»")
                 continue
             try:
-                ig.private_reply(c["id"], vary(msg))
+                if (cfg.get("dm") or {}).get("gate"):
+                    ig.private_reply_button(c["id"], rid)
+                else:
+                    ig.private_reply(c["id"], vary(msg))
             except IGError as e:
                 errors += 1
                 streak += 1

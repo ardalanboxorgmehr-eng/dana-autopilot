@@ -12,6 +12,8 @@
     "mode": "live",
     "start_at": "2026-09-27T14:51:00+0000",
     "_note": "live since 28 Sep 2026 10:49 UTC, when the ReplyRush automations were unlinked. Set mode to dry_run to pause sending.",
-    "dry_run_lookback_hours": 12
+    "dry_run_lookback_hours": 12,
+    "gate": false,
+    "_gate_note": "26 Nov 2026: true = first DM is a button, the follow check and content come from worker/ (Cloudflare). Turn on only after the Worker is live and subscribed."
   }
 }
