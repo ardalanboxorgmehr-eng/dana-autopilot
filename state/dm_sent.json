@@ -21198,22 +21198,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-26T13:09:46.275414+00:00",
+    "at": "2026-11-26T13:24:46.314721+00:00",
     "mode": "live",
     "sent": 0,
-    "failed": 1,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-25-1530",
-        "user": "ar.ramezanali",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AziKjXvB9SjyksAPxd3I8Ln\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -26223,20 +26217,18 @@
   },
   "_health": {
     "last_sent_at": "2026-11-26T12:08:15.038905+00:00",
-    "at": "2026-11-26T13:09:46.275414+00:00",
+    "at": "2026-11-26T13:24:46.314721+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-25-1530": 1
-    },
-    "waiting_total": 1,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 124,
     "posts_with_rule": 124,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 3,
-    "oldest_waiting_at": "2026-11-26T12:55:05+0000",
-    "oldest_waiting_hours": 0.24,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -31586,7 +31578,7 @@
     "18361242403221435": 1
   },
   "_desk": {
-    "at": "2026-11-26T13:09:46.275414+00:00",
+    "at": "2026-11-26T13:24:46.314721+00:00",
     "items": [
       {
         "id": "18148508401598378",
