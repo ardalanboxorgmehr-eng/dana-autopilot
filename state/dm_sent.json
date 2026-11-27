@@ -21198,27 +21198,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-27T04:59:24.066936+00:00",
+    "at": "2026-11-27T05:14:23.763548+00:00",
     "mode": "live",
-    "sent": 0,
-    "failed": 2,
+    "sent": 1,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-21-1530",
-        "user": "azita_ebrahimnia",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AEUsBVWKMLgbvNcjTxM7Ajn\"}}"
-      },
-      {
-        "post": "n2026-11-19-1530",
-        "user": "sh__aghajaniyan",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AI4YNNHzjRptW2IntQmLzd3\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -26228,22 +26217,19 @@
     "18319902994303864": "n2026-11-26-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-27T04:12:34.673856+00:00",
-    "at": "2026-11-27T04:59:24.066936+00:00",
+    "last_sent_at": "2026-11-27T05:14:23.763548+00:00",
+    "at": "2026-11-27T05:14:23.763548+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-21-1530": 1,
-      "n2026-11-19-1530": 1
-    },
-    "waiting_total": 2,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 125,
     "posts_with_rule": 125,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 5,
-    "oldest_waiting_at": "2026-11-27T04:44:03+0000",
-    "oldest_waiting_hours": 0.26,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -31595,7 +31581,7 @@
     "18135758272843863": 1
   },
   "_desk": {
-    "at": "2026-11-27T04:59:24.066936+00:00",
+    "at": "2026-11-27T05:14:23.763548+00:00",
     "items": [
       {
         "id": "18130516531967734",
@@ -31748,22 +31734,6 @@
         "user": "matin__hf",
         "text": "@danestani.ruzz 🙏",
         "at": "2026-11-21T08:40:32+0000"
-      },
-      {
-        "id": "17914067670302509",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "mehri00pourahangar",
-        "text": "۳",
-        "at": "2026-11-20T22:51:23+0000"
-      },
-      {
-        "id": "18110730476221857",
-        "media": "17886067083629381",
-        "rule": "n2026-11-19-1530",
-        "user": "marjan0310m",
-        "text": "جزوه",
-        "at": "2026-11-20T14:14:25+0000"
       }
     ],
     "posts": {
@@ -54245,6 +54215,11 @@
       "user": "fat.penchaksilat6",
       "at": "2026-11-26T11:38:14.260638+00:00",
       "c_at": "2026-11-26T11:28:03+0000"
+    },
+    "18355310629269153": {
+      "user": "shohreh.kmi",
+      "at": "2026-11-27T05:14:23.763548+00:00",
+      "c_at": "2026-11-27T05:13:13+0000"
     }
   },
   "18100292204408210": {
