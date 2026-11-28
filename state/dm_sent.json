@@ -21198,27 +21198,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-28T12:38:01.272675+00:00",
+    "at": "2026-11-28T12:53:01.268776+00:00",
     "mode": "live",
-    "sent": 0,
-    "failed": 2,
+    "sent": 1,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-27-1530",
-        "user": "david.k.h",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AmNPrXBWUksw8HvWx7E7XmY\"}}"
-      },
-      {
-        "post": "n2026-11-19-1530",
-        "user": "__mahdion.zhr__",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"A6hj8gb1p_5IDbL1jzGWlyX\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -26249,22 +26238,19 @@
     "18116595788125065": "n2026-11-28-0600"
   },
   "_health": {
-    "last_sent_at": "2026-11-28T12:21:45.887835+00:00",
-    "at": "2026-11-28T12:38:01.272675+00:00",
+    "last_sent_at": "2026-11-28T12:53:01.268776+00:00",
+    "at": "2026-11-28T12:53:01.268776+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-27-1530": 1,
-      "n2026-11-19-1530": 1
-    },
-    "waiting_total": 2,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 128,
     "posts_with_rule": 128,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 3,
-    "oldest_waiting_at": "2026-11-28T12:21:53+0000",
-    "oldest_waiting_hours": 0.27,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -31637,7 +31623,7 @@
     "17914727355309555": 1
   },
   "_desk": {
-    "at": "2026-11-28T12:38:01.272675+00:00",
+    "at": "2026-11-28T12:53:01.268776+00:00",
     "items": [
       {
         "id": "18458292280123517",
@@ -67567,6 +67553,11 @@
       "user": "david.k.h",
       "at": "2026-11-28T12:36:45.388955+00:00",
       "c_at": "2026-11-28T12:24:12+0000"
+    },
+    "18030721889865547": {
+      "user": "seidkarimhashemi",
+      "at": "2026-11-28T12:53:01.268776+00:00",
+      "c_at": "2026-11-28T12:45:09+0000"
     }
   },
   "18116595788125065": {
