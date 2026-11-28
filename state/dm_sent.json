@@ -21198,22 +21198,16 @@
     }
   },
   "_report": {
-    "at": "2026-11-28T02:05:35.866965+00:00",
+    "at": "2026-11-28T02:20:34.230754+00:00",
     "mode": "live",
-    "sent": 0,
-    "failed": 1,
+    "sent": 1,
+    "failed": 0,
     "skipped": 0,
     "inbox_sent": 0,
     "bounce_backlog": 0,
     "queue_replies": 0,
     "thanks": 0,
-    "failures": [
-      {
-        "post": "n2026-11-16-0600",
-        "user": "mah.batebi",
-        "error": "POST /me/messages -> HTTP 500: {\"error\":{\"message\":\"The comment you are trying to reply to, already has a reply.\",\"type\":\"IGApiException\",\"code\":-1,\"error_subcode\":2534023,\"fbtrace_id\":\"AbTTjwNi5BgG4k2u61y8ong\"}}"
-      }
-    ]
+    "failures": []
   },
   "18098287586435729": {
     "18368066743301055": {
@@ -26237,21 +26231,19 @@
     "18171186823471174": "n2026-11-27-1530"
   },
   "_health": {
-    "last_sent_at": "2026-11-28T01:03:10.309824+00:00",
-    "at": "2026-11-28T02:05:35.866965+00:00",
+    "last_sent_at": "2026-11-28T02:20:34.230754+00:00",
+    "at": "2026-11-28T02:20:34.230754+00:00",
     "mode": "live",
-    "waiting": {
-      "n2026-11-16-0600": 1
-    },
-    "waiting_total": 1,
+    "waiting": {},
+    "waiting_total": 0,
     "unmatched_posts": [],
     "posts_read": 127,
     "posts_with_rule": 127,
     "problems": [],
     "queue_left": 0,
     "inbox_waiting": 0,
-    "oldest_waiting_at": "2026-11-28T02:00:57+0000",
-    "oldest_waiting_hours": 0.08,
+    "oldest_waiting_at": null,
+    "oldest_waiting_hours": 0.0,
     "swept_all_posts": true
   },
   "_thanked": {
@@ -31622,7 +31614,7 @@
     "18037960838907563": 1
   },
   "_desk": {
-    "at": "2026-11-28T02:05:35.866965+00:00",
+    "at": "2026-11-28T02:20:34.230754+00:00",
     "items": [
       {
         "id": "18364263361217499",
@@ -67298,6 +67290,11 @@
       "user": "sh.sarkarzadeh",
       "at": "2026-11-28T01:03:10.309824+00:00",
       "c_at": "2026-11-28T00:58:48+0000"
+    },
+    "18106324730548616": {
+      "user": "hamedbasiri_architect",
+      "at": "2026-11-28T02:20:34.230754+00:00",
+      "c_at": "2026-11-28T02:15:41+0000"
     }
   }
 }
